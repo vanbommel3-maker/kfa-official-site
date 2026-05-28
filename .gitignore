@@ -1,0 +1,12 @@
+download/
+incoming/
+private-documents/
+official-site/dist/
+.vercel/
+*.zip
+official-site/KFA_MEMBER_APPS_SCRIPT.gs
+official-site/KFA_MEMBER_SYSTEM_SETUP.md
+official-site/fruit-image-inventory.json
+official-site/files/*.pdf
+official-site/files/KFA_과일_TSTC.html
+official-site/files/tstc결과확인.html

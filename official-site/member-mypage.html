@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>마이페이지 · 대한과일협회</title>
+  <link rel="stylesheet" href="member-style.css" />
+</head>
+<body>
+  <nav class="m-nav">
+    <div class="m-nav__inner">
+      <a class="m-nav__brand" href="index.html"><span>대한과일협회</span><span class="m-nav__brand-en">KFA</span></a>
+      <div class="m-nav__crumbs"><a href="index.html">홈</a><span class="sep">›</span><span>회원</span><span class="sep">›</span><span>마이페이지</span></div>
+      <div class="m-nav__util"><a href="member-login.html">로그인</a><a href="member-join.html">회원가입</a><a href="member-mypage.html" class="is-active">마이페이지</a></div>
+    </div>
+  </nav>
+
+  <main class="m-page m-page--wide">
+    <div style="max-width: 1180px; width: 100%;">
+      <div class="m-head">
+        <p class="m-head__eyebrow">KFA MEMBER</p>
+        <h1>회원 정보</h1>
+        <p class="m-head__lead">승인된 회원 정보와 회원증 기재 정보를 확인합니다.</p>
+      </div>
+
+      <div class="config-box">
+        <label for="gas-url">Apps Script 배포 URL</label>
+        <input id="gas-url" type="url" />
+        <button id="save-gas-url" type="button">저장</button>
+        <div id="config-msg" class="msg"></div>
+      </div>
+
+      <div id="mypage-msg" class="msg"></div>
+
+      <section id="member-panel" class="m-mypage">
+        <div class="m-info">
+          <div class="m-info__head">
+            <span class="m-status"><span class="dot"></span><span id="member-status">-</span></span>
+            <h2 class="m-info__name" id="member-name">-</h2>
+            <p class="m-info__sub" id="member-email">-</p>
+          </div>
+          <dl class="m-info__list">
+            <div class="row"><dt>회원번호</dt><dd id="member-no">-</dd></div>
+            <div class="row"><dt>연락처</dt><dd id="member-phone">-</dd></div>
+            <div class="row"><dt>업체명</dt><dd id="member-business">-</dd></div>
+            <div class="row"><dt>업종</dt><dd id="member-type">-</dd></div>
+            <div class="row"><dt>지역</dt><dd id="member-region">-</dd></div>
+            <div class="row"><dt>가입 목적</dt><dd id="member-role">-</dd></div>
+            <div class="row"><dt>회원기간</dt><dd id="member-period">-</dd></div>
+          </dl>
+          <div class="m-info__actions">
+            <button id="logout-btn" type="button" class="m-btn m-btn--ghost">로그아웃</button>
+          </div>
+        </div>
+
+        <div class="m-cert">
+          <div class="m-cert__head">
+            <h2>대한과일협회 회원증</h2>
+            <p>실제 회원증 자동 생성은 다음 단계에서 연결할 수 있습니다.</p>
+          </div>
+          <img src="assets/kfa-membership-certificate.png" alt="대한과일협회 회원증 예시" />
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="assets/kfa-member.js"></script>
+</body>
+</html>
