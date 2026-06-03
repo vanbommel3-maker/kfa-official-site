@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>알림 · 대한과일협회</title>
+  <title>커뮤니티 · 대한과일협회</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,25 +11,47 @@
 
   <main>
     <header class="kfa-page-head">
-      <p class="kfa-eyebrow">NOTICE</p>
+      <p class="kfa-eyebrow">COMMUNITY</p>
       <h1 class="kfa-page-head__h">
-        협회의 소식은<br />차분히 남기겠습니다.
+        대한과일협회 커뮤니티
       </h1>
+      <p class="kfa-page-head__sub">
+        가입 안내, 운영 공지, 교육 후기, 오픈 아카이브를 한 화면에서 정리합니다.
+      </p>
     </header>
 
-    <section class="kfa-notice-list">
-      <a href="coordinator.html" class="kfa-notice">
-        <time>2026.05</time>
-        <span class="kfa-notice__title">과일코디네이터 교육 과정 기관 협의 접수 안내</span>
-      </a>
-      <a href="tstc.html" class="kfa-notice">
-        <time>2026.05</time>
-        <span class="kfa-notice__title">TSTC 감각 진단 운영 안내</span>
-      </a>
+    <section class="kfa-notice-page" aria-label="커뮤니티 게시판">
+      <ul class="kfa-notice__list">
+        <li onclick="location.href='member-login.html'">
+          <span class="kfa-notice__tag">MEMBER</span>
+          <span class="kfa-notice__title">회원 커뮤니티 · 승인 회원 전용 입구</span>
+          <span class="kfa-notice__date">상시</span>
+        </li>
+        <li onclick="location.href='member-join.html'">
+          <span class="kfa-notice__tag">JOIN</span>
+          <span class="kfa-notice__title">회원가입 신청 · 대한과일협회 활동에 참여하기</span>
+          <span class="kfa-notice__date">상시</span>
+        </li>
+        <li onclick="location.href='media.html'">
+          <span class="kfa-notice__tag">OPEN</span>
+          <span class="kfa-notice__title">비회원 오픈 아카이브 · 미디어와 관찰 기록 보기</span>
+          <span class="kfa-notice__date">공개</span>
+        </li>
+        <li onclick="location.href='coordinator.html'">
+          <span class="kfa-notice__tag">CLASS</span>
+          <span class="kfa-notice__title">교육 후기와 과정 문의 · 과일코디네이터 섹션으로 이동</span>
+          <span class="kfa-notice__date">안내</span>
+        </li>
+        <li onclick="location.href='files/tstc진단프로그램.html'">
+          <span class="kfa-notice__tag">TSTC</span>
+          <span class="kfa-notice__title">감각 진단 참여 · TSTC 검사 시작하기</span>
+          <span class="kfa-notice__date">진행</span>
+        </li>
+      </ul>
     </section>
   </main>
 
   <div data-chrome="footer"></div>
-  <script src="shared.js"></script>
+  <script src="shared-design.js"></script>
 </body>
 </html>

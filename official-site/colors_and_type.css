@@ -1,207 +1,206 @@
 /* ============================================================
-   대한과일협회 · Korea Fruit Association
-   Design tokens — colors, type, spacing, radii, shadows.
-   Aesthetic reference: early-Apple (apple.com c. 2008–2012)
+   대한과일협회 · 디자인 토큰
+   Editorial direction · warm paper · terracotta accent
    ============================================================ */
 
-/* ---------- Fonts -------------------------------------------------
-   Pretendard = de-facto SF-Pro-equivalent for Korean.
-   Inter is a stand-in for SF Pro / Helvetica Neue for Latin.
-   New York is used for a single editorial/display moment.
-   See README for substitution notes — swap to real SF Pro + 
-   Apple SD Gothic Neo if licenses allow.
--------------------------------------------------------------------*/
+/* Fonts */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
-@import url("https://rsms.me/inter/inter.css");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap");
 
 :root {
-  /* ---------- Color · Neutrals (warm editorial, not cool gray) ----- */
-  --ink-1: #1c1916;          /* warm near-black */
-  --ink-2: #3d3833;          /* secondary */
-  --ink-3: #6b6157;          /* tertiary */
-  --ink-4: #968b7f;          /* muted */
-  --ink-5: #d9d2c7;          /* hairline */
-  --ink-6: #ece6dc;          /* subtle border */
-  --surface-0: #ffffff;       /* base white */
-  --surface-1: #faf7f3;       /* warm paper — page bg */
-  --surface-2: #f3eee6;       /* secondary surface */
-  --surface-3: #e9e2d6;       /* tertiary */
-  --surface-ink: #1c1916;     /* inverted bg */
+  /* ---------- Surfaces ---------- */
+  --paper:        #FAF7F3;   /* main page bg — warm cream */
+  --paper-soft:   #F1EBE0;   /* alternate sections */
+  --paper-deep:   #E8E1D2;   /* tertiary */
+  --night:        #1A1612;   /* inverted bg */
+  --night-soft:   #2A241D;   /* inverted secondary */
+  --white:        #FFFFFF;
 
-  /* ---------- Color · Brand (warm clay / dried-persimmon, used quietly) -- */
-  --brand:        #a85a3e;    /* warm clay — used as accent only */
-  --brand-dk:     #7a3f29;
-  --brand-lt:     #f4ebe4;
-  --brand-ink:    #2a1f18;    /* deep warm-brown bg for inverted sections */
+  /* ---------- Ink ---------- */
+  --ink-1: #1A1612;          /* primary text */
+  --ink-2: #3D3530;          /* body */
+  --ink-3: #756A60;          /* secondary, captions */
+  --ink-4: #A39A8E;          /* muted, meta */
+  --ink-5: #DDD5C8;          /* hairlines */
+  --ink-6: #ECE6DA;          /* subtle border */
 
-  /* legacy alias — old preview cards reference `--brand-red`. */
-  --brand-red:    var(--brand);
-  --brand-red-dk: var(--brand-dk);
-  --brand-red-lt: var(--brand-lt);
+  /* Inverted ink */
+  --light-1: #F7F2EA;
+  --light-2: #BFB3A4;
+  --light-3: #7E7466;
+  --line-inv:rgba(247, 242, 234, 0.18);
 
-  /* ---------- Color · Secondary accents (rare) -------------------- */
-  --accent-orange: #c47237;   /* eyebrows on data/evidence */
-  --accent-gold:   #ad8a4f;
-  --accent-blue:   #466b8a;
+  /* ---------- Accent ---------- */
+  --terra:    #B85E3E;       /* sole brand accent — warm terracotta */
+  --terra-dk: #8C4527;
+  --terra-lt: #F1E5DC;
+  --terra-glow: rgba(184, 94, 62, 0.15);
 
-  --fruit-apple:     #b8202e; /* 사과 */
-  --fruit-persimmon: #d65a1f; /* 감 */
-  --fruit-peach:     #f0a98a; /* 복숭아 */
-  --fruit-pear:      #d4c98a; /* 배 */
-  --fruit-grape:     #5e3a6e; /* 포도 */
-  --fruit-strawberry:#d23a4f; /* 딸기 */
-  --fruit-citrus:    #f2a900; /* 감귤 */
-  --fruit-leaf:      #4a7c3a; /* 잎 / accent green */
+  /* legacy aliases for any older preview cards still around */
+  --brand:        var(--terra);
+  --brand-dk:     var(--terra-dk);
+  --brand-lt:     var(--terra-lt);
+  --brand-red:    var(--terra);
+  --brand-red-dk: var(--terra-dk);
+  --brand-red-lt: var(--terra-lt);
+  --surface-0:    var(--white);
+  --surface-1:    var(--paper);
+  --surface-2:    var(--paper-soft);
+  --surface-3:    var(--paper-deep);
 
-  /* ---------- Color · Semantic ------------------------------- */
-  --color-link:    #0066cc;   /* the Apple blue */
-  --color-link-hover: #0077ed;
-  --color-success: #1f6b45;
-  --color-warning: #d97706;
-  --color-danger:  #b42318;
-
-  /* ---------- Type families ---------------------------------- */
-  --font-sans: "Pretendard Variable", "Pretendard", "Inter",
-               -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
-               "Helvetica Neue", Helvetica, Arial, "Noto Sans KR",
-               system-ui, sans-serif;
-  --font-display: "Pretendard Variable", "Pretendard", "Inter",
-                  "Helvetica Neue", "Apple SD Gothic Neo", system-ui, sans-serif;
+  /* ---------- Type families ---------- */
   --font-serif: "Noto Serif KR", "Iowan Old Style", "Apple Garamond",
                 Georgia, "Times New Roman", serif;
-  --font-mono: "SF Mono", ui-monospace, "JetBrains Mono", Menlo,
-               Consolas, monospace;
+  --font-sans: "Pretendard Variable", "Pretendard", "Inter",
+               -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+               "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  --font-italic: "Noto Serif KR", "Iowan Old Style", Georgia, serif;
+  --font-mono: "SF Mono", ui-monospace, "JetBrains Mono", Menlo, Consolas, monospace;
+  --font-display: var(--font-serif);
 
-  /* ---------- Type scale (early-Apple is BIG on top) -------- */
-  --fs-hero:    72px;                     /* product page hero */
-  --fs-display: 56px;                     /* section opener */
-  --fs-h1:      40px;
-  --fs-h2:      32px;
-  --fs-h3:      24px;
-  --fs-h4:      20px;
-  --fs-body-lg: 19px;
-  --fs-body:    17px;                     /* default reading size */
-  --fs-body-sm: 15px;
-  --fs-caption: 13px;
-  --fs-micro:   11px;
+  /* ---------- Type scale ---------- */
+  --fs-letter:   clamp(48px, 7.5vw, 112px);  /* letter-cover hero */
+  --fs-display:  clamp(36px, 5vw, 64px);     /* section opener */
+  --fs-h1:       clamp(28px, 3.8vw, 44px);
+  --fs-h2:       clamp(22px, 2.6vw, 30px);
+  --fs-h3:       20px;
+  --fs-body-lg:  19px;
+  --fs-body:     17px;
+  --fs-body-sm:  15px;
+  --fs-caption:  13px;
+  --fs-micro:    11px;
 
-  --lh-tight:  1.05;
-  --lh-snug:   1.2;
-  --lh-normal: 1.47;                       /* Apple's body lh */
-  --lh-loose:  1.65;
+  --lh-tight:   1.04;
+  --lh-snug:    1.2;
+  --lh-normal:  1.5;
+  --lh-reading: 1.75;          /* body reading */
 
-  --ls-tight:  -0.022em;                   /* large-display tightening */
-  --ls-snug:   -0.012em;
-  --ls-normal: 0;
-  --ls-wide:   0.03em;
-  --ls-eyebrow:0.08em;
+  --ls-tight:   -0.026em;
+  --ls-snug:    -0.014em;
+  --ls-normal:  -0.005em;
+  --ls-wide:    0.04em;
+  --ls-eyebrow: 0.14em;
 
-  --fw-regular: 400;
-  --fw-medium:  500;
-  --fw-semibold:600;
-  --fw-bold:    700;
-
-  /* ---------- Spacing scale (8-pt with half-steps) ----------- */
-  --space-0:   0;
-  --space-1:   4px;
-  --space-2:   8px;
-  --space-3:   12px;
-  --space-4:   16px;
-  --space-5:   24px;
-  --space-6:   32px;
-  --space-7:   48px;
-  --space-8:   64px;
-  --space-9:   96px;
+  /* ---------- Spacing scale ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
   --space-10: 128px;
   --space-11: 192px;
+  --space-12: 256px;
 
-  /* ---------- Radii ----------------------------------------- */
-  --radius-xs: 4px;
-  --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 18px;          /* cards */
-  --radius-xl: 28px;          /* large cards / images */
-  --radius-pill: 980px;       /* Apple's pill button radius */
+  /* ---------- Radii (almost flat) ---------- */
+  --r-hairline: 2px;
+  --r-soft:     4px;
+  --r-img:      6px;          /* the editorial radius — small */
+  --r-pill:     999px;
+  --r-large:    28px;         /* used only on hero image */
 
-  /* ---------- Hairlines, borders ---------------------------- */
-  --border-hairline: 1px solid var(--ink-6);
-  --border-subtle:   1px solid var(--ink-5);
-  --border-strong:   1px solid var(--ink-3);
+  /* ---------- Hairlines ---------- */
+  --hair: 1px solid var(--ink-5);
+  --hair-soft: 1px solid var(--ink-6);
+  --hair-inv: 1px solid var(--line-inv);
 
-  /* ---------- Shadows (very subtle, Apple-ish) -------------- */
-  --shadow-1: 0 1px 2px rgba(0,0,0,.04), 0 0 0 1px rgba(0,0,0,.04);
-  --shadow-2: 0 4px 14px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
-  --shadow-3: 0 18px 50px -12px rgba(0,0,0,.18), 0 1px 2px rgba(0,0,0,.06);
-  --shadow-focus: 0 0 0 4px rgba(0,102,204,.25);
-
-  /* ---------- Motion ---------------------------------------- */
+  /* ---------- Motion ---------- */
   --ease-standard: cubic-bezier(.4, 0, .2, 1);
-  --ease-emph:     cubic-bezier(.22, 1, .36, 1);  /* Apple "spring-out" */
-  --dur-fast: 160ms;
-  --dur-base: 240ms;
-  --dur-slow: 480ms;
+  --ease-emph:     cubic-bezier(.22, 1, .36, 1);
+  --ease-gentle:   cubic-bezier(.6, .04, .31, 1);
+  --dur-fast:  180ms;
+  --dur-base:  320ms;
+  --dur-slow:  640ms;
+  --dur-cinema: 1200ms;
 
-  /* ---------- Layout ---------------------------------------- */
-  --container-narrow: 720px;
-  --container:        980px;
-  --container-wide:   1200px;
-  --container-max:    1440px;
+  /* ---------- Layout ---------- */
+  --col-reading: 640px;
+  --col-letter:  720px;
+  --col-wide:    1100px;
+  --col-ultra:   1280px;
+  --pad-page:    32px;
 }
 
 /* ============================================================
-   Semantic type roles
-   Use these classes/elements in markup instead of one-off sizes.
+   Base
    ============================================================ */
-
 html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
 body {
   font-family: var(--font-sans);
   font-size: var(--fs-body);
-  line-height: var(--lh-normal);
+  line-height: var(--lh-reading);
   color: var(--ink-1);
-  background: var(--surface-1);
+  background: var(--paper);
+  margin: 0; padding: 0;
   font-feature-settings: "ss01","ss02","cv01","cv02","cv03";
 }
 
-.t-hero, .t-display, h1, h2, h3, h4 {
-  font-family: var(--font-display);
+::selection { background: var(--terra); color: var(--paper); }
+
+/* ============================================================
+   Semantic type roles
+   ============================================================ */
+.t-letter {
+  font-family: var(--font-serif);
+  font-size: var(--fs-letter);
+  font-weight: 400;
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
   color: var(--ink-1);
-  text-wrap: balance;
 }
-
-.t-hero    { font-size: var(--fs-hero);    font-weight: var(--fw-semibold); line-height: var(--lh-tight); letter-spacing: var(--ls-tight); }
-.t-display { font-size: var(--fs-display); font-weight: var(--fw-semibold); line-height: var(--lh-tight); letter-spacing: var(--ls-tight); }
-h1, .t-h1  { font-size: var(--fs-h1);      font-weight: var(--fw-semibold); line-height: var(--lh-snug);  letter-spacing: var(--ls-snug); }
-h2, .t-h2  { font-size: var(--fs-h2);      font-weight: var(--fw-semibold); line-height: var(--lh-snug);  letter-spacing: var(--ls-snug); }
-h3, .t-h3  { font-size: var(--fs-h3);      font-weight: var(--fw-semibold); line-height: var(--lh-snug);  letter-spacing: var(--ls-snug); }
-h4, .t-h4  { font-size: var(--fs-h4);      font-weight: var(--fw-semibold); line-height: var(--lh-snug); }
-
+.t-display {
+  font-family: var(--font-serif);
+  font-size: var(--fs-display);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -.022em;
+  color: var(--ink-1);
+}
+.t-h1 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-h1);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -.014em;
+}
+.t-h2 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-h2);
+  font-weight: 500;
+  line-height: 1.2;
+}
+.t-body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-reading);
+  color: var(--ink-2);
+}
+.t-body-serif {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--ink-1);
+  letter-spacing: -.005em;
+}
+.t-caption { font-size: var(--fs-caption); line-height: 1.5; color: var(--ink-3); }
 .t-eyebrow {
-  font-size: var(--fs-caption);
-  font-weight: var(--fw-semibold);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
   letter-spacing: var(--ls-eyebrow);
   text-transform: uppercase;
-  color: var(--ink-3);
+  color: var(--ink-4);
 }
-
-p, .t-body { font-size: var(--fs-body); line-height: var(--lh-normal); color: var(--ink-2); }
-.t-body-lg { font-size: var(--fs-body-lg); line-height: var(--lh-normal); }
-.t-body-sm { font-size: var(--fs-body-sm); line-height: var(--lh-normal); color: var(--ink-2); }
-.t-caption { font-size: var(--fs-caption); line-height: var(--lh-normal); color: var(--ink-3); }
-.t-micro   { font-size: var(--fs-micro);   line-height: var(--lh-normal); color: var(--ink-3); letter-spacing: var(--ls-wide); }
-.t-serif   { font-family: var(--font-serif); }
-
-a, .t-link {
-  color: var(--color-link);
-  text-decoration: none;
-  transition: opacity var(--dur-fast) var(--ease-standard);
+.t-edition {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--terra);
+  letter-spacing: .04em;
 }
-a:hover, .t-link:hover { text-decoration: underline; }
-a.t-link-arrow::after { content: " ›"; display: inline-block; transition: transform var(--dur-base) var(--ease-emph); }
-a.t-link-arrow:hover { text-decoration: none; }
-a.t-link-arrow:hover::after { transform: translateX(3px); }
-
-hr { border: 0; border-top: var(--border-hairline); margin: var(--space-7) 0; }
-
-::selection { background: var(--brand); color: #fff; }

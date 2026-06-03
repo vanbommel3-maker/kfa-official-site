@@ -17,6 +17,7 @@ const skipRoot = new Set([
 
 const allowedFilesDir = new Set([
   'tstc진단프로그램.html',
+  'tstc결과확인.html',
 ]);
 
 function copyEntry(src, dest) {

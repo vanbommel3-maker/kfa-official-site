@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../styles.css">
 <title>TSTC — 대한과일협회 공식 진단</title>
 <style>
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
@@ -180,10 +181,10 @@ body{background:var(--kfa-bg);color:var(--kfa-ink);font-family:"?? ??","Malgun G
   --tstc-accent-2:#2f6b4f;
 }
 html{scroll-behavior:smooth}
-body{background:var(--tstc-paper);color:var(--tstc-ink);font-family:"Pretendard","Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",Arial,sans-serif}
-#pbar{height:3px;background:#eee6dc}
+body{background:var(--tstc-paper);color:var(--tstc-ink);font-family:"Pretendard","Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",Arial,sans-serif;padding-top:56px}
+#pbar{position:fixed;top:56px;left:0;right:0;height:3px;background:#eee6dc;z-index:41}
 #pfill{background:var(--tstc-accent)}
-#ptxt{top:12px;right:18px;color:#b6aea5;font-size:10px;font-weight:600;letter-spacing:.02em}
+#ptxt{top:68px;right:18px;color:#b6aea5;font-size:10px;font-weight:600;letter-spacing:.02em}
 .sc{background:var(--tstc-paper)}
 .hd{min-height:62px;padding:0 32px;background:rgba(250,247,243,.86);border-bottom:1px solid rgba(231,222,211,.7);backdrop-filter:blur(18px)}
 .bk{color:var(--tstc-muted);font-size:13px;font-weight:700}
@@ -285,6 +286,8 @@ body{background:var(--tstc-paper);color:var(--tstc-ink);font-family:"Pretendard"
 .gas-config{display:none!important}
 @media(max-width:780px){
   #ptxt{display:none}
+  body{padding-top:52px}
+  #pbar{top:52px}
   .hd{padding:0 20px;min-height:56px}
   #pbar2{padding:9px 20px;gap:8px}
   #sl{padding:32px 20px}
@@ -442,6 +445,7 @@ body{font-family:var(--font-sans);font-size:17px;line-height:1.47;background:var
 </style>
 </head>
 <body>
+<div data-chrome="nav"></div>
 <div id="pbar"><div id="pfill"></div></div>
 <div id="ptxt"></div>
 
@@ -461,7 +465,7 @@ body{font-family:var(--font-sans);font-size:17px;line-height:1.47;background:var
         <button class="lbtn" onclick="goTo('sc')">
           <div class="lbtag">For Customer</div>
           <div class="lbname">시작하기</div>
-          <div class="lbinfo">참여코드가 있으면 바로 진행할 수 있습니다</div>
+          <div class="lbinfo">일반형은 바로 시작하고<br>프리미엄만 참여코드를 확인합니다</div>
         </button>
         <button class="lbtn" onclick="goTo('so')">
           <div class="lbtag">For Business</div>
@@ -478,13 +482,15 @@ body{font-family:var(--font-sans);font-size:17px;line-height:1.47;background:var
 <div class="sc" id="sc">
   <div class="hd"><button class="bk" onclick="goTo('sl')">← 처음으로</button><span class="hd-cnt">TSTC 시작</span></div>
   <div class="qb">
-    <div class="qtag">참여 코드 확인</div>
-    <div class="qtit" style="font-size:20px;margin-bottom:8px">먼저 참여 코드를 확인할게요.</div>
-    <div class="qdsc" style="margin-bottom:16px">담당자에게 받은 코드가 있으면 바로 시작할 수 있습니다.</div>
-    <label class="flabel">참여 코드</label>
-    <input class="cinput" id="pcode" placeholder="예: KFA2025" maxlength="12" oninput="this.value=this.value.toUpperCase();onCI()">
-    <div class="chint" id="chint">코드를 입력해야 검사를 시작할 수 있습니다.</div>
-    <div id="rsec">
+    <div class="qtag">시작 방식 선택</div>
+    <div class="qtit" style="font-size:20px;margin-bottom:8px">오늘은 어떤 방식으로 살펴볼까요?</div>
+    <div class="qdsc" style="margin-bottom:24px">일반형은 바로 시작할 수 있고, 프리미엄은 담당자에게 받은 참여코드가 있을 때만 열립니다.</div>
+    <div id="pcwrap" style="display:none">
+      <label class="flabel">프리미엄 참여 코드</label>
+      <input class="cinput" id="pcode" placeholder="예: KFA2025" maxlength="12" oninput="this.value=this.value.toUpperCase();onCI()">
+      <div class="chint" id="chint">프리미엄은 참여코드를 입력해야 시작할 수 있습니다.</div>
+    </div>
+    <div id="rsec" style="display:none">
       <label class="flabel">재검사 초대 코드 (선택)</label>
       <input class="rinput" id="rcode" placeholder="RETRY-XXXX-XXXX" maxlength="16" oninput="this.value=this.value.toUpperCase()">
       <div style="font-size:12px;color:#aaa;margin-top:6px;margin-bottom:20px">이전 검사 후 발급된 코드를 입력하면 1회 재검사가 가능합니다.</div>
@@ -493,13 +499,13 @@ body{font-family:var(--font-sans);font-size:17px;line-height:1.47;background:var
     <div class="mrow">
       <button class="mcard" id="mstd" onclick="pickM('standard')">
         <div class="mctag">Standard</div>
-        <div class="mcname">가볍게 보기</div>
-        <div class="mcinfo">평소 과일을 고르는 흐름을 짧게 살펴봅니다<br>약 7분</div>
+        <div class="mcname">바로 시작하기</div>
+        <div class="mcinfo">참여코드 없이 지금의 감각 흐름을 짧게 살펴봅니다<br>약 7분</div>
       </button>
       <button class="mcard" id="mprm" onclick="pickM('premium')">
         <div class="mctag">Premium</div>
-        <div class="mcname">조금 더 깊게 보기</div>
-        <div class="mcinfo">생활 맥락까지 포함해 감각 리포트를 만듭니다<br>약 12분</div>
+        <div class="mcname">깊게 읽기</div>
+        <div class="mcinfo">참여코드로 열리는 확장형 리포트입니다<br>약 12분</div>
       </button>
     </div>
     <button class="nbtn" id="sbtn" disabled onclick="startFlow()">다음</button>
@@ -944,22 +950,33 @@ function onCI(){
   var r=document.getElementById('rsec');
   var ok=v.length>=4;
   h.style.color=ok?'#2D6A4F':'#aaa';
-  h.textContent=ok?'유효한 참여 코드입니다.':'코드를 입력해야 검사를 시작할 수 있습니다.';
+  h.textContent=ok?'프리미엄 참여코드가 확인되었습니다.':'프리미엄은 참여코드를 입력해야 시작할 수 있습니다.';
   r.style.display=ok?'block':'none';
   updSB();
 }
 function pickM(m){
   selMode=m;
+  var pcw=document.getElementById('pcwrap');
+  var h=document.getElementById('chint');
+  var r=document.getElementById('rsec');
   document.getElementById('mstd').className='mcard'+(m==='standard'?' sel':'');
   document.getElementById('mprm').className='mcard'+(m==='premium'?' sel':'');
+  if(m==='premium'){
+    pcw.style.display='block';
+    h.textContent='프리미엄은 참여코드를 입력해야 시작할 수 있습니다.';
+    h.style.color='#918a81';
+  }else{
+    pcw.style.display='none';
+    r.style.display='none';
+  }
   updSB();
 }
 function updSB(){
   var v=document.getElementById('pcode').value.trim();
-  document.getElementById('sbtn').disabled=!(v.length>=4&&selMode);
+  document.getElementById('sbtn').disabled=!(selMode&&((selMode==='standard')||(v.length>=4)));
 }
 function startFlow(){
-  S.partCode=document.getElementById('pcode').value.trim();
+  S.partCode=selMode==='premium'?document.getElementById('pcode').value.trim():'OPEN-STANDARD';
   S.tstcMode=selMode;
   buildFlow();
   idx=0;
@@ -1368,5 +1385,6 @@ function submitResult(payload) {
 }
 
 </script>
+<script src="../shared.js"></script>
 </body>
 </html>

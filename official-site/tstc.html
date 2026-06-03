@@ -3,62 +3,122 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TSTC · 대한과일협회</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>TSTC — Letter 03</title>
+  <link rel="stylesheet" href="design-system.css" />
 </head>
 <body>
   <div data-chrome="nav"></div>
 
   <main>
-    <header class="kfa-page-head">
-      <p class="kfa-eyebrow">TSTC</p>
-      <h1 class="kfa-page-head__h">
-        감각을 읽습니다.
-      </h1>
-      <p class="kfa-page-head__sub">
-        Taste · Scent · Texture · Color.
-      </p>
-      <div class="kfa-page-head__cta">
-        <a href="files/tstc진단프로그램.html" class="kfa-link-arrow">당신의 감각 들여다보기</a>
+    <section class="tstc-concept">
+      <header class="tstc-concept__head">
+        <p class="t-edition" style="margin-bottom: 16px;">Letter 03</p>
+        <h1 class="t-letter" style="font-size: clamp(40px, 6vw, 84px); margin: 0 0 28px;">
+          맛, 향, 식감, 색.<br/>네 가지로 <span style="color: var(--terra);">취향</span>을 봅니다.
+        </h1>
+        <p style="font-family: var(--font-serif); font-size: clamp(18px, 1.6vw, 21px); color: var(--ink-3); margin: 0; line-height: 1.6;">
+          Taste · Scent · Texture · Color
+        </p>
+        <div class="tstc-concept__cta tstc-concept__cta--hero">
+          <p style="font-family: var(--font-serif); font-size: 15px; color: var(--ink-3); margin: 0 0 24px;">
+            약 4분
+          </p>
+          <a href="files/tstc진단프로그램.html" class="kfa-btn kfa-btn--terra">내 취향 알아보기 →</a>
+        </div>
+      </header>
+
+      <div class="tstc-concept__senses">
+        <article class="tstc-sense is-left">
+          <div class="tstc-sense__visual"><div class="tstc-sense__letter">T</div></div>
+          <div class="tstc-sense__copy">
+            <p class="tstc-sense__en">Taste <span>맛</span></p>
+            <p class="tstc-sense__line">진한 단맛을 좋아하는지, 산뜻한 맛을 좋아하는지.</p>
+          </div>
+        </article>
+
+        <article class="tstc-sense is-right">
+          <div class="tstc-sense__visual"><div class="tstc-sense__letter">S</div></div>
+          <div class="tstc-sense__copy">
+            <p class="tstc-sense__en">Scent <span>향</span></p>
+            <p class="tstc-sense__line">향이 강한 게 좋은지, 은은한 게 편한지.</p>
+          </div>
+        </article>
+
+        <article class="tstc-sense is-left">
+          <div class="tstc-sense__visual"><div class="tstc-sense__letter">T</div></div>
+          <div class="tstc-sense__copy">
+            <p class="tstc-sense__en">Texture <span>식감</span></p>
+            <p class="tstc-sense__line">아삭한 걸 좋아하는지, 부드러운 걸 좋아하는지.</p>
+          </div>
+        </article>
+
+        <article class="tstc-sense is-right">
+          <div class="tstc-sense__visual"><div class="tstc-sense__letter">C</div></div>
+          <div class="tstc-sense__copy">
+            <p class="tstc-sense__en">Color <span>색</span></p>
+            <p class="tstc-sense__line">색을 많이 보는지, 맛이 먼저인지.</p>
+          </div>
+        </article>
       </div>
-    </header>
 
-    <div class="kfa-senses">
-      <article class="kfa-sense is-left">
-        <div class="kfa-sense__letter">T</div>
-        <div class="kfa-sense__copy">
-          <p class="kfa-sense__en">Taste · <span class="ko">맛</span></p>
-          <p class="kfa-sense__line">어떤 단맛은 깊고,<br />어떤 단맛은 가볍습니다.</p>
+      <!-- What TSTC actually is ─────────────────────── -->
+      <div class="tstc-concept__essay">
+        <p class="tstc-essay__lede">
+          성격 테스트가 아닙니다.<br/>
+          <em>과일 취향을 정리해 보는 것에 가깝습니다.</em>
+        </p>
+        <div class="tstc-essay__body">
+          <p>
+            같은 답이라도 누가 했는지에 따라 다르게 봅니다.
+            혼자 사는 사람과 아이를 키우는 집,
+            마트에서 사는 사람과 정기배송으로 받는 사람은
+            과일을 고르는 상황이 다르니까요.
+          </p>
+          <p>
+            그래서 결과도 점수로 나오지 않습니다.
+            "향이 강한 과일보다 은은한 쪽이 잘 맞아요"처럼,
+            평소 내 선택을 한 번 더 들여다보는 정도입니다.
+          </p>
         </div>
-      </article>
+        <div class="tstc-diagram">
+          <article class="tstc-diagram__card">
+            <p class="tstc-diagram__eyebrow">Four Senses</p>
+            <h3>TSTC는 네 감각으로 과일을 봅니다.</h3>
+            <div class="tstc-diagram__grid">
+              <span><b>T</b><small>Taste · 맛</small></span>
+              <span><b>S</b><small>Scent · 향</small></span>
+              <span><b>T</b><small>Texture · 식감</small></span>
+              <span><b>C</b><small>Color · 색</small></span>
+            </div>
+          </article>
+          <article class="tstc-diagram__card">
+            <p class="tstc-diagram__eyebrow">How It Works</p>
+            <h3>감각과 생활 맥락을 함께 읽습니다.</h3>
+            <div class="tstc-diagram__flow">
+              <span>감각</span>
+              <b></b>
+              <span>상황</span>
+              <b></b>
+              <span>선택</span>
+              <b></b>
+              <span>기록</span>
+            </div>
+            <p class="tstc-diagram__note">점수를 매기는 테스트보다, 평소 선택 기준을 정리해 보는 도구에 가깝습니다.</p>
+          </article>
+        </div>
+      </div>
 
-      <article class="kfa-sense is-right">
-        <div class="kfa-sense__letter">S</div>
-        <div class="kfa-sense__copy">
-          <p class="kfa-sense__en">Scent · <span class="ko">향</span></p>
-          <p class="kfa-sense__line">향은 첫인상이고,<br />기억의 입구입니다.</p>
-        </div>
-      </article>
-
-      <article class="kfa-sense is-left">
-        <div class="kfa-sense__letter">T</div>
-        <div class="kfa-sense__copy">
-          <p class="kfa-sense__en">Texture · <span class="ko">식감</span></p>
-          <p class="kfa-sense__line">먹는 경험은<br />입 안에서 일어납니다.</p>
-        </div>
-      </article>
-
-      <article class="kfa-sense is-right">
-        <div class="kfa-sense__letter">C</div>
-        <div class="kfa-sense__copy">
-          <p class="kfa-sense__en">Color · <span class="ko">색</span></p>
-          <p class="kfa-sense__line">보기 좋은 과일과<br />손이 가는 과일은 다릅니다.</p>
-        </div>
-      </article>
-    </div>
+      <div class="letter__next" style="max-width: 760px; margin-left: auto; margin-right: auto;">
+        <p class="letter__next-label">다음 편지</p>
+        <a href="about.html">
+          <span class="tag">04</span>
+          이 일을 누가, 왜 할까요.
+        </a>
+      </div>
+    </section>
   </main>
 
   <div data-chrome="footer"></div>
-  <script src="shared.js"></script>
+  <script src="shared-design.js"></script>
 </body>
 </html>
