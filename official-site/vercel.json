@@ -14,5 +14,36 @@
       "destination": "/files/tstc-results",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/business", "destination": "/business.html" },
+    { "source": "/coordinator", "destination": "/coordinator.html" },
+    { "source": "/esg", "destination": "/esg.html" },
+    { "source": "/market", "destination": "/market.html" },
+    { "source": "/media", "destination": "/media.html" },
+    { "source": "/member-admin", "destination": "/member-admin.html" },
+    { "source": "/member-join", "destination": "/member-join.html" },
+    { "source": "/member-login", "destination": "/member-login.html" },
+    { "source": "/member-mypage", "destination": "/member-mypage.html" },
+    { "source": "/notice", "destination": "/notice.html" },
+    { "source": "/portfolio", "destination": "/portfolio.html" },
+    { "source": "/tstc", "destination": "/tstc.html" },
+    { "source": "/tstc-test", "destination": "/tstc-test.html" },
+    { "source": "/files/tstc-results", "destination": "/files/tstc-results.html" },
+    { "source": "/files/tstc진단프로그램", "destination": "/files/tstc진단프로그램.html" },
+    { "source": "/files/tstc결과확인", "destination": "/files/tstc결과확인.html" },
+    { "source": "/media/education", "destination": "/media/education.html" },
+    { "source": "/media/insight", "destination": "/media/insight.html" },
+    { "source": "/media/lab", "destination": "/media/lab.html" },
+    { "source": "/media/report", "destination": "/media/report.html" },
+    { "source": "/media/stories", "destination": "/media/stories.html" },
+    { "source": "/media/education/ask-about-the-day-before-fruit", "destination": "/media/education/ask-about-the-day-before-fruit.html" },
+    { "source": "/media/lab/fruit-for-tired-days", "destination": "/media/lab/fruit-for-tired-days.html" },
+    { "source": "/media/lab/why-fruit-gifts-fail", "destination": "/media/lab/why-fruit-gifts-fail.html" },
+    { "source": "/media/lab/why-kids-refuse-some-fruit", "destination": "/media/lab/why-kids-refuse-some-fruit.html" },
+    { "source": "/media/lab/why-some-fruit-is-left-behind", "destination": "/media/lab/why-some-fruit-is-left-behind.html" },
+    { "source": "/media/lab/why-the-same-apple-feels-different", "destination": "/media/lab/why-the-same-apple-feels-different.html" },
+    { "source": "/media/stories/one-bag-on-the-way-home", "destination": "/media/stories/one-bag-on-the-way-home.html" }
   ]
 }
