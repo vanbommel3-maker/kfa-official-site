@@ -1358,10 +1358,16 @@ function resetAll(){
 }
 
 /* ── Google Sheets 연동 ─────────────────────────────────── */
-var GAS_URL = 'https://script.google.com/macros/s/AKfycbz-F-OU9qpXpmRlqmKfYl5BBBGUDcnmcnAsEFHqgR6Uz0dsBKtz1e8PFi8kNHzrbuJz/exec';  // Google Sheets 연동 URL
+var MEMBER_GAS_URL = 'https://script.google.com/macros/s/AKfycbzBZMQ55OAWVlw1C_o-9_QIZ3zgVaSEYOW6wIvrJ8cN73jNBIWgv3ATTNE5jBJOjtE4HQ/exec';
+var DEFAULT_TSTC_GAS_URL = 'https://script.google.com/macros/s/AKfycbz-F-OU9qpXpmRlqmKfYl5BBBGUDcnmcnAsEFHqgR6Uz0dsBKtz1e8PFi8kNHzrbuJz/exec';
+var GAS_URL = DEFAULT_TSTC_GAS_URL;  // Google Sheets 연동 URL
 
 function setGasUrl(url) {
   GAS_URL = url.trim();
+  if (GAS_URL === MEMBER_GAS_URL) {
+    alert('회원 Apps Script URL입니다. TSTC 결과용 Apps Script URL을 넣어주세요.');
+    GAS_URL = DEFAULT_TSTC_GAS_URL;
+  }
   localStorage.setItem('kfa_gas_url', GAS_URL);
   alert('URL이 저장됐습니다.\n' + GAS_URL);
 }
@@ -1369,7 +1375,8 @@ function setGasUrl(url) {
 // 페이지 로드 시 저장된 URL 복원
 (function(){
   var saved = localStorage.getItem('kfa_gas_url');
-  if (saved) GAS_URL = saved;
+  if (saved && saved !== MEMBER_GAS_URL) GAS_URL = saved;
+  if (saved === MEMBER_GAS_URL) localStorage.setItem('kfa_gas_url', DEFAULT_TSTC_GAS_URL);
 })();
 
 var _startTime = Date.now();

@@ -231,7 +231,9 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','맑은 고딕',sans-serif;
 
 <script>
 /* ── 전역 변수 ── */
-var GAS_URL = 'https://script.google.com/macros/s/AKfycbz-F-OU9qpXpmRlqmKfYl5BBBGUDcnmcnAsEFHqgR6Uz0dsBKtz1e8PFi8kNHzrbuJz/exec';
+var MEMBER_GAS_URL = 'https://script.google.com/macros/s/AKfycbzBZMQ55OAWVlw1C_o-9_QIZ3zgVaSEYOW6wIvrJ8cN73jNBIWgv3ATTNE5jBJOjtE4HQ/exec';
+var DEFAULT_TSTC_GAS_URL = 'https://script.google.com/macros/s/AKfycbz-F-OU9qpXpmRlqmKfYl5BBBGUDcnmcnAsEFHqgR6Uz0dsBKtz1e8PFi8kNHzrbuJz/exec';
+var GAS_URL = DEFAULT_TSTC_GAS_URL;
 var allData = [];
 var filtered = [];
 var selected = [];
@@ -265,7 +267,9 @@ var chMap={online:'온라인',mart:'대형마트',market:'전통시장',convenie
 
 /* ── 초기화 ── */
 window.onload = function(){
-  GAS_URL = 'https://script.google.com/macros/s/AKfycbz-F-OU9qpXpmRlqmKfYl5BBBGUDcnmcnAsEFHqgR6Uz0dsBKtz1e8PFi8kNHzrbuJz/exec';
+  var saved = localStorage.getItem('kfa_gas_url');
+  GAS_URL = saved && saved !== MEMBER_GAS_URL ? saved : DEFAULT_TSTC_GAS_URL;
+  if (saved === MEMBER_GAS_URL) localStorage.setItem('kfa_gas_url', DEFAULT_TSTC_GAS_URL);
   document.getElementById('gas-url-input').value = GAS_URL;
   checkUrl();
   loadData();
@@ -280,6 +284,11 @@ function checkUrl(){
 function saveUrl(){
   var v = document.getElementById('gas-url-input').value.trim();
   if(!v){ alert('URL을 입력해주세요.'); return; }
+  if(v === MEMBER_GAS_URL){
+    alert('회원 Apps Script URL입니다. TSTC 결과용 Apps Script URL을 넣어주세요.');
+    v = DEFAULT_TSTC_GAS_URL;
+    document.getElementById('gas-url-input').value = v;
+  }
   GAS_URL = v;
   localStorage.setItem('kfa_gas_url', v);
   checkUrl();

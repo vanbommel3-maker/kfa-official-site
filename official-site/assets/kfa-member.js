@@ -1,5 +1,6 @@
 (function () {
-  var DEFAULT_GAS_URL = 'https://script.google.com/macros/s/AKfycbzkKVrTfbaQOivDlq6Kl7fTX_DUH1xm6zH4X2hbAfKRhBpVtU5v4Oa2xBNd7lwjIGq2fg/exec';
+  var OLD_GAS_URL = 'https://script.google.com/macros/s/AKfycbzkKVrTfbaQOivDlq6Kl7fTX_DUH1xm6zH4X2hbAfKRhBpVtU5v4Oa2xBNd7lwjIGq2fg/exec';
+  var DEFAULT_GAS_URL = 'https://script.google.com/macros/s/AKfycbzBZMQ55OAWVlw1C_o-9_QIZ3zgVaSEYOW6wIvrJ8cN73jNBIWgv3ATTNE5jBJOjtE4HQ/exec';
   var GAS_KEY = 'kfa_member_gas_url';
   var SESSION_KEY = 'kfa_member_session';
 
@@ -15,7 +16,12 @@
   }
 
   function getGasUrl() {
-    return localStorage.getItem(GAS_KEY) || DEFAULT_GAS_URL;
+    var url = localStorage.getItem(GAS_KEY) || DEFAULT_GAS_URL;
+    if (url === OLD_GAS_URL) {
+      localStorage.setItem(GAS_KEY, DEFAULT_GAS_URL);
+      return DEFAULT_GAS_URL;
+    }
+    return url;
   }
 
   function saveGasUrl() {
