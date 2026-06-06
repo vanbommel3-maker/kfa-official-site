@@ -125,6 +125,18 @@
     return getStored(KEYS.tstcUrl, DEFAULT_TSTC_DASHBOARD_URL).trim();
   }
 
+  function setAdminAccess(open) {
+    var gate = $('admin-gate');
+    var shell = $('admin-shell');
+    if (gate) gate.hidden = !!open;
+    if (shell) shell.hidden = !open;
+  }
+
+  function syncAdminKeys(value) {
+    if ($('member-admin-key')) $('member-admin-key').value = value || '';
+    if ($('member-admin-key-gate')) $('member-admin-key-gate').value = value || '';
+  }
+
   function saveConfig() {
     var savedGas = setStored(KEYS.gasUrl, $('member-gas-url').value.trim());
     var savedKey = setStored(KEYS.adminKey, $('member-admin-key').value.trim());
@@ -163,7 +175,7 @@
 
   function initInputs() {
     $('member-gas-url').value = getGasUrl();
-    $('member-admin-key').value = getAdminKey();
+    syncAdminKeys(getAdminKey());
     $('member-period').value = getStored(KEYS.period, '');
     $('member-memo').value = getStored(KEYS.memo, '');
     refreshLinks();
@@ -175,6 +187,43 @@
       state.filter = event.target.value;
       renderMembers();
     });
+  }
+
+  function unlockAdminAccess() {
+    var key = '';
+    if ($('member-admin-key-gate')) key = $('member-admin-key-gate').value.trim();
+    if (!key && $('member-admin-key')) key = $('member-admin-key').value.trim();
+    if (!key) {
+      setText('admin-gate-msg', '관리자 키를 입력해주세요.', 'err');
+      setAdminAccess(false);
+      return;
+    }
+    setStored(KEYS.adminKey, key);
+    syncAdminKeys(key);
+    setText('admin-gate-msg', '', '');
+    setAdminAccess(true);
+    loadMembers();
+  }
+
+  function initAccessGate() {
+    var unlock = $('unlock-admin');
+    if (unlock) {
+      unlock.addEventListener('click', unlockAdminAccess);
+    }
+    if ($('member-admin-key-gate')) {
+      $('member-admin-key-gate').addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+          event.preventDefault();
+          unlockAdminAccess();
+        }
+      });
+    }
+    if (getAdminKey()) {
+      setAdminAccess(true);
+      return true;
+    }
+    setAdminAccess(false);
+    return false;
   }
 
   function collectAdminConfig() {
@@ -310,6 +359,8 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     initInputs();
-    loadMembers();
+    if (initAccessGate()) {
+      loadMembers();
+    }
   });
 })();

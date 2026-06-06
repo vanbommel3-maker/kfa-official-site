@@ -344,6 +344,10 @@ body { background: var(--surface-1); color: var(--ink-1); }
 /* ============================================================
    admin page
    ============================================================ */
+.m-admin-gate {
+  width: 100%;
+  max-width: 560px;
+}
 .m-admin-shell {
   max-width: 1280px;
   width: 100%;

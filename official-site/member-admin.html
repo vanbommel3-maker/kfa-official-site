@@ -16,7 +16,27 @@
   </nav>
 
   <main class="m-page m-page--wide">
-    <div class="m-admin-shell">
+    <section class="m-admin-gate" id="admin-gate">
+      <div class="m-card m-card--narrow">
+        <div class="m-head">
+          <p class="m-head__eyebrow">KFA ADMIN</p>
+          <h1>운영 페이지는 관리자만 확인합니다.</h1>
+          <p class="m-head__lead">저장된 관리자 키가 있거나, 아래에 관리자 키를 입력한 뒤에만 회원 승인과 TSTC 결과 화면을 엽니다.</p>
+        </div>
+        <div class="m-admin-config">
+          <div class="m-admin-field">
+            <label for="member-admin-key-gate">관리자 키</label>
+            <input id="member-admin-key-gate" type="password" placeholder="Apps Script의 ADMIN_KEY" />
+          </div>
+          <div class="m-admin-actions">
+            <button type="button" class="m-btn m-btn--primary" id="unlock-admin">운영 열기</button>
+          </div>
+          <div id="admin-gate-msg" class="msg"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="m-admin-shell" id="admin-shell" hidden>
       <div class="m-head">
         <p class="m-head__eyebrow">KFA ADMIN</p>
         <h1>회원가입 상태와 TSTC 결과를<br />한 자리에서 확인합니다.</h1>
