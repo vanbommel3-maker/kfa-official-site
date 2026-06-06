@@ -527,7 +527,7 @@ body{font-family:var(--font-sans);font-size:17px;line-height:1.47;background:var
     <button class="nbtn" onclick="opLogin()">로그인</button>
     <div class="gas-config" style="margin-top:20px;padding-top:20px;border-top:1px solid #eee">
       <label class="flabel">Google Sheets 연동 URL</label>
-      <input class="oinput" id="gasurl" placeholder="Apps Script 배포 URL 입력" value="https://script.google.com/macros/s/AKfycbz-F-OU9qpXpmRlqmKfYl5BBBGUDcnmcnAsEFHqgR6Uz0dsBKtz1e8PFi8kNHzrbuJz/exec"
+      <input class="oinput" id="gasurl" placeholder="Apps Script 배포 URL 입력" value="https://script.google.com/macros/s/AKfycbwbC6MtkfASDi1vSmmOYdAOCpOMHBabno5jpUwFm8tIppntikE2bUqUfi1ITFYoATS0Fw/exec"
         style="margin-bottom:8px;font-size:13px;letter-spacing:0"
         oninput="document.getElementById('gasurl').style.borderColor='#e8e8e8'">
       <button class="nbtn" style="margin-top:0;padding:12px" onclick="setGasUrl(document.getElementById('gasurl').value)">URL 저장</button>
@@ -1359,7 +1359,8 @@ function resetAll(){
 
 /* ── Google Sheets 연동 ─────────────────────────────────── */
 var MEMBER_GAS_URL = 'https://script.google.com/macros/s/AKfycbzBZMQ55OAWVlw1C_o-9_QIZ3zgVaSEYOW6wIvrJ8cN73jNBIWgv3ATTNE5jBJOjtE4HQ/exec';
-var DEFAULT_TSTC_GAS_URL = 'https://script.google.com/macros/s/AKfycbz-F-OU9qpXpmRlqmKfYl5BBBGUDcnmcnAsEFHqgR6Uz0dsBKtz1e8PFi8kNHzrbuJz/exec';
+var OLD_TSTC_GAS_URL = 'https://script.google.com/macros/s/AKfycbz-F-OU9qpXpmRlqmKfYl5BBBGUDcnmcnAsEFHqgR6Uz0dsBKtz1e8PFi8kNHzrbuJz/exec';
+var DEFAULT_TSTC_GAS_URL = 'https://script.google.com/macros/s/AKfycbwbC6MtkfASDi1vSmmOYdAOCpOMHBabno5jpUwFm8tIppntikE2bUqUfi1ITFYoATS0Fw/exec';
 var GAS_URL = DEFAULT_TSTC_GAS_URL;  // Google Sheets 연동 URL
 
 function setGasUrl(url) {
@@ -1375,8 +1376,8 @@ function setGasUrl(url) {
 // 페이지 로드 시 저장된 URL 복원
 (function(){
   var saved = localStorage.getItem('kfa_gas_url');
-  if (saved && saved !== MEMBER_GAS_URL) GAS_URL = saved;
-  if (saved === MEMBER_GAS_URL) localStorage.setItem('kfa_gas_url', DEFAULT_TSTC_GAS_URL);
+  if (saved && saved !== MEMBER_GAS_URL && saved !== OLD_TSTC_GAS_URL) GAS_URL = saved;
+  if (saved === MEMBER_GAS_URL || saved === OLD_TSTC_GAS_URL) localStorage.setItem('kfa_gas_url', DEFAULT_TSTC_GAS_URL);
 })();
 
 var _startTime = Date.now();

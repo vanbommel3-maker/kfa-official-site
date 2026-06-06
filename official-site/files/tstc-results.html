@@ -148,7 +148,7 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','맑은 고딕',sans-serif;
 <div class="url-banner" id="url-banner">
   <span class="url-icon">⚙️</span>
   <span class="url-msg">Apps Script URL을 입력해야 데이터를 불러올 수 있습니다.</span>
-  <input class="url-input" id="gas-url-input" placeholder="https://script.google.com/macros/s/..." value="https://script.google.com/macros/s/AKfycbz-F-OU9qpXpmRlqmKfYl5BBBGUDcnmcnAsEFHqgR6Uz0dsBKtz1e8PFi8kNHzrbuJz/exec" oninput="checkUrl()">
+  <input class="url-input" id="gas-url-input" placeholder="https://script.google.com/macros/s/..." value="https://script.google.com/macros/s/AKfycbwbC6MtkfASDi1vSmmOYdAOCpOMHBabno5jpUwFm8tIppntikE2bUqUfi1ITFYoATS0Fw/exec" oninput="checkUrl()">
   <button class="url-save" onclick="saveUrl()">저장 · 불러오기</button>
 </div>
 
@@ -232,7 +232,8 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','맑은 고딕',sans-serif;
 <script>
 /* ── 전역 변수 ── */
 var MEMBER_GAS_URL = 'https://script.google.com/macros/s/AKfycbzBZMQ55OAWVlw1C_o-9_QIZ3zgVaSEYOW6wIvrJ8cN73jNBIWgv3ATTNE5jBJOjtE4HQ/exec';
-var DEFAULT_TSTC_GAS_URL = 'https://script.google.com/macros/s/AKfycbz-F-OU9qpXpmRlqmKfYl5BBBGUDcnmcnAsEFHqgR6Uz0dsBKtz1e8PFi8kNHzrbuJz/exec';
+var OLD_TSTC_GAS_URL = 'https://script.google.com/macros/s/AKfycbz-F-OU9qpXpmRlqmKfYl5BBBGUDcnmcnAsEFHqgR6Uz0dsBKtz1e8PFi8kNHzrbuJz/exec';
+var DEFAULT_TSTC_GAS_URL = 'https://script.google.com/macros/s/AKfycbwbC6MtkfASDi1vSmmOYdAOCpOMHBabno5jpUwFm8tIppntikE2bUqUfi1ITFYoATS0Fw/exec';
 var GAS_URL = DEFAULT_TSTC_GAS_URL;
 var allData = [];
 var filtered = [];
@@ -268,8 +269,8 @@ var chMap={online:'온라인',mart:'대형마트',market:'전통시장',convenie
 /* ── 초기화 ── */
 window.onload = function(){
   var saved = localStorage.getItem('kfa_gas_url');
-  GAS_URL = saved && saved !== MEMBER_GAS_URL ? saved : DEFAULT_TSTC_GAS_URL;
-  if (saved === MEMBER_GAS_URL) localStorage.setItem('kfa_gas_url', DEFAULT_TSTC_GAS_URL);
+  GAS_URL = saved && saved !== MEMBER_GAS_URL && saved !== OLD_TSTC_GAS_URL ? saved : DEFAULT_TSTC_GAS_URL;
+  if (saved === MEMBER_GAS_URL || saved === OLD_TSTC_GAS_URL) localStorage.setItem('kfa_gas_url', DEFAULT_TSTC_GAS_URL);
   document.getElementById('gas-url-input').value = GAS_URL;
   checkUrl();
   loadData();
