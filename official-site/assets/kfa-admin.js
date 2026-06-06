@@ -121,8 +121,16 @@
     return getStored(KEYS.adminKey, '').trim();
   }
 
+  function normalizeDashboardUrl(value) {
+    var url = (value || '').trim();
+    if (!url || /script\.google\.com\/macros/i.test(url)) {
+      return DEFAULT_TSTC_DASHBOARD_URL;
+    }
+    return url;
+  }
+
   function getDashboardUrl() {
-    return getStored(KEYS.tstcUrl, DEFAULT_TSTC_DASHBOARD_URL).trim();
+    return normalizeDashboardUrl(getStored(KEYS.tstcUrl, DEFAULT_TSTC_DASHBOARD_URL));
   }
 
   function setAdminAccess(open) {
@@ -154,7 +162,8 @@
   }
 
   function saveDashboardUrl() {
-    var persisted = setStored(KEYS.tstcUrl, $('tstc-dashboard-url').value.trim() || DEFAULT_TSTC_DASHBOARD_URL);
+    var dashboardUrl = normalizeDashboardUrl($('tstc-dashboard-url').value);
+    var persisted = setStored(KEYS.tstcUrl, dashboardUrl);
     refreshLinks();
     setText(
       'admin-config-msg',
