@@ -21,7 +21,7 @@ window.KFA_MEDIA_POSTS = [
       { k: "대상", v: "자영업자 · 교육생" }
     ],
     source: "KFA Editorial",
-    sourceUrl: "media.html"
+    sourceUrl: "media"
   },
   {
     id: "2026-05-27-sensory-note",
@@ -43,6 +43,6 @@ window.KFA_MEDIA_POSTS = [
       { k: "확장", v: "상담 · 선물 · 교육" }
     ],
     source: "KFA TSTC",
-    sourceUrl: "tstc.html"
+    sourceUrl: "tstc"
   }
 ];

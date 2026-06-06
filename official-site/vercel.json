@@ -1,5 +1,6 @@
 {
   "framework": null,
   "buildCommand": "node build-static.mjs",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "cleanUrls": true
 }

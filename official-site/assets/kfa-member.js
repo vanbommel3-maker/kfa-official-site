@@ -162,7 +162,7 @@
         });
         setText('login-msg', '로그인되었습니다. 마이페이지로 이동합니다.', 'ok');
         setTimeout(function () {
-          location.href = 'member-mypage.html';
+          location.href = 'member-mypage';
         }, 500);
       } catch (error) {
         setText('login-msg', error.message, 'err');
@@ -212,7 +212,7 @@
     if (logout) {
       logout.addEventListener('click', function () {
         clearSession();
-        location.href = 'member-login.html';
+        location.href = 'member-login';
       });
     }
   }
