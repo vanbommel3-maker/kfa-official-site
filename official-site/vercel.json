@@ -2,5 +2,17 @@
   "framework": null,
   "buildCommand": "node build-static.mjs",
   "outputDirectory": "dist",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/files/tstc결과확인.html",
+      "destination": "/files/tstc-results",
+      "permanent": true
+    },
+    {
+      "source": "/files/tstc결과확인",
+      "destination": "/files/tstc-results",
+      "permanent": true
+    }
+  ]
 }
