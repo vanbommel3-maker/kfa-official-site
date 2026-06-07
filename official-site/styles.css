@@ -1369,6 +1369,14 @@ body.kfa-nav-open { overflow: hidden; }
   font-size: 13px;
 }
 
+.kfa-community-message[data-type="err"] {
+  color: #b13b24 !important;
+}
+
+.kfa-community-message[data-type="ok"] {
+  color: #547c48 !important;
+}
+
 .kfa-community-list {
   padding: 28px;
 }
@@ -1447,6 +1455,12 @@ body.kfa-nav-open { overflow: hidden; }
 .kfa-community-post__foot strong {
   color: var(--ink-3);
   font-weight: 500;
+}
+
+.kfa-community-post__foot em {
+  color: var(--ink-5);
+  font-style: normal;
+  font-size: 12px;
 }
 
 .kfa-community-post__foot button {
