@@ -1247,6 +1247,223 @@ body.kfa-nav-open { overflow: hidden; }
   font-feature-settings: "tnum";
 }
 
+.kfa-community-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: clamp(28px, 5vw, 56px);
+}
+
+.kfa-community-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--ink-5);
+  border-radius: 999px;
+  color: var(--ink-2);
+  background: rgba(255, 255, 255, .44);
+  text-decoration: none;
+  transition: border-color 180ms var(--ease-standard), color 180ms var(--ease-standard);
+}
+
+.kfa-community-actions a:hover {
+  color: var(--brand);
+  border-color: var(--brand);
+}
+
+.kfa-community-board {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 1fr;
+  gap: clamp(24px, 4vw, 56px);
+  align-items: start;
+}
+
+.kfa-community-write,
+.kfa-community-list {
+  border: 1px solid var(--ink-5);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, .5);
+  box-shadow: 0 24px 70px rgba(58, 43, 30, .06);
+}
+
+.kfa-community-write {
+  position: sticky;
+  top: 104px;
+  padding: 28px;
+}
+
+.kfa-community-write h2,
+.kfa-community-list h2 {
+  margin: 4px 0 10px;
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 500;
+  letter-spacing: -.03em;
+}
+
+.kfa-community-write p {
+  margin: 0 0 24px;
+  color: var(--ink-3);
+  line-height: 1.7;
+}
+
+.kfa-community-write form,
+.kfa-community-write label {
+  display: grid;
+  gap: 10px;
+}
+
+.kfa-community-write form {
+  gap: 16px;
+}
+
+.kfa-community-write label {
+  color: var(--ink-3);
+  font-size: 13px;
+}
+
+.kfa-community-write input,
+.kfa-community-write select,
+.kfa-community-write textarea,
+.kfa-community-filter input,
+.kfa-community-filter select {
+  width: 100%;
+  border: 1px solid var(--ink-5);
+  border-radius: 18px;
+  background: var(--surface);
+  color: var(--ink-1);
+  font: inherit;
+  outline: none;
+}
+
+.kfa-community-write input,
+.kfa-community-write select,
+.kfa-community-filter input,
+.kfa-community-filter select {
+  min-height: 48px;
+  padding: 0 16px;
+}
+
+.kfa-community-write textarea {
+  resize: vertical;
+  padding: 14px 16px;
+  line-height: 1.6;
+}
+
+.kfa-community-write button {
+  min-height: 52px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.kfa-community-message {
+  min-height: 20px;
+  margin: 0 !important;
+  color: var(--brand) !important;
+  font-size: 13px;
+}
+
+.kfa-community-list {
+  padding: 28px;
+}
+
+.kfa-community-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: end;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--ink-5);
+}
+
+.kfa-community-toolbar .kfa-eyebrow {
+  margin: 0;
+}
+
+.kfa-community-filter {
+  display: grid;
+  grid-template-columns: 120px minmax(160px, 240px);
+  gap: 10px;
+}
+
+.kfa-community-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kfa-community-post {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--ink-5);
+}
+
+.kfa-community-post:last-child {
+  border-bottom: 0;
+}
+
+.kfa-community-post__meta,
+.kfa-community-post__foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.kfa-community-post__meta span {
+  color: var(--brand);
+  font-size: 12px;
+  letter-spacing: .08em;
+  font-weight: 700;
+}
+
+.kfa-community-post__meta time,
+.kfa-community-post__foot {
+  color: var(--ink-4);
+  font-size: 13px;
+}
+
+.kfa-community-post h3 {
+  margin: 12px 0 10px;
+  color: var(--ink-1);
+  font-size: clamp(21px, 2.1vw, 30px);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -.025em;
+}
+
+.kfa-community-post p {
+  margin: 0 0 18px;
+  color: var(--ink-2);
+  line-height: 1.75;
+  white-space: pre-line;
+}
+
+.kfa-community-post__foot strong {
+  color: var(--ink-3);
+  font-weight: 500;
+}
+
+.kfa-community-post__foot button {
+  border: 1px solid var(--ink-5);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-4);
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.kfa-community-empty {
+  padding: 48px 0;
+  color: var(--ink-4);
+  text-align: center;
+}
+
 /* ============================================================
    Media — daily card news and market notes
    ============================================================ */
@@ -2633,6 +2850,30 @@ body.kfa-nav-open { overflow: hidden; }
 }
 
 @media (max-width: 767px) {
+  .kfa-community-board {
+    grid-template-columns: 1fr;
+  }
+
+  .kfa-community-write {
+    position: static;
+  }
+
+  .kfa-community-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .kfa-community-filter {
+    grid-template-columns: 1fr;
+  }
+
+  .kfa-community-post__meta,
+  .kfa-community-post__foot {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
   .kfa-nav__list,
   .kfa-nav__test,
   .kfa-nav__login { display: none; }

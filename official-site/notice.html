@@ -27,42 +27,77 @@
         대한과일협회 커뮤니티
       </h1>
       <p class="kfa-page-head__sub">
-        가입 안내, 운영 공지, 교육 후기, 오픈 아카이브를 한 화면에서 정리합니다.
+        공지, 교육 문의, 회원 이야기, 현장 기록을 게시판 형태로 남깁니다.
       </p>
     </header>
 
     <section class="kfa-notice-page" aria-label="커뮤니티 게시판">
-      <ul class="kfa-notice__list">
-        <li onclick="location.href='member-login.html'">
-          <span class="kfa-notice__tag">MEMBER</span>
-          <span class="kfa-notice__title">회원 커뮤니티 · 승인 회원 전용 입구</span>
-          <span class="kfa-notice__date">상시</span>
-        </li>
-        <li onclick="location.href='member-join.html'">
-          <span class="kfa-notice__tag">JOIN</span>
-          <span class="kfa-notice__title">회원가입 신청 · 대한과일협회 활동에 참여하기</span>
-          <span class="kfa-notice__date">상시</span>
-        </li>
-        <li onclick="location.href='media.html'">
-          <span class="kfa-notice__tag">OPEN</span>
-          <span class="kfa-notice__title">비회원 오픈 아카이브 · 미디어와 관찰 기록 보기</span>
-          <span class="kfa-notice__date">공개</span>
-        </li>
-        <li onclick="location.href='coordinator.html'">
-          <span class="kfa-notice__tag">CLASS</span>
-          <span class="kfa-notice__title">교육 후기와 과정 문의 · 과일코디네이터 섹션으로 이동</span>
-          <span class="kfa-notice__date">안내</span>
-        </li>
-        <li onclick="location.href='tstc-start.html'">
-          <span class="kfa-notice__tag">TSTC</span>
-          <span class="kfa-notice__title">감각 진단 참여 · TSTC 검사 시작하기</span>
-          <span class="kfa-notice__date">진행</span>
-        </li>
-      </ul>
+      <div class="kfa-community-actions" aria-label="커뮤니티 바로가기">
+        <a href="member-login.html">회원 로그인</a>
+        <a href="member-join.html">회원가입 신청</a>
+        <a href="coordinator.html">교육 안내</a>
+        <a href="media.html">미디어 보기</a>
+      </div>
+
+      <div class="kfa-community-board">
+        <aside class="kfa-community-write" aria-label="커뮤니티 글쓰기">
+          <p class="kfa-eyebrow">WRITE</p>
+          <h2>글 남기기</h2>
+          <p>교육 문의, 활동 후기, 과일 현장 이야기를 짧게 남길 수 있습니다.</p>
+          <form id="community-form">
+            <label>
+              분류
+              <select id="community-category" required>
+                <option value="공지">공지</option>
+                <option value="교육">교육</option>
+                <option value="후기">후기</option>
+                <option value="문의">문의</option>
+                <option value="현장">현장</option>
+              </select>
+            </label>
+            <label>
+              이름
+              <input id="community-author" type="text" placeholder="이름 또는 업체명" required />
+            </label>
+            <label>
+              제목
+              <input id="community-title" type="text" placeholder="제목을 입력하세요" required />
+            </label>
+            <label>
+              내용
+              <textarea id="community-body" rows="5" placeholder="내용을 입력하세요" required></textarea>
+            </label>
+            <button type="submit">게시하기</button>
+            <p id="community-message" class="kfa-community-message" role="status"></p>
+          </form>
+        </aside>
+
+        <section class="kfa-community-list" aria-label="커뮤니티 글 목록">
+          <div class="kfa-community-toolbar">
+            <div>
+              <p class="kfa-eyebrow">BOARD</p>
+              <h2>게시글</h2>
+            </div>
+            <div class="kfa-community-filter">
+              <select id="community-filter" aria-label="분류 필터">
+                <option value="전체">전체</option>
+                <option value="공지">공지</option>
+                <option value="교육">교육</option>
+                <option value="후기">후기</option>
+                <option value="문의">문의</option>
+                <option value="현장">현장</option>
+              </select>
+              <input id="community-search" type="search" placeholder="검색" aria-label="게시글 검색" />
+            </div>
+          </div>
+          <ul id="community-posts" class="kfa-community-posts"></ul>
+        </section>
+      </div>
     </section>
   </main>
 
   <div data-chrome="footer"></div>
   <script src="shared-design.js"></script>
+  <script src="assets/community.js"></script>
 </body>
 </html>
