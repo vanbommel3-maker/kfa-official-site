@@ -187,7 +187,14 @@
       'member-region': member.region,
       'member-role': member.role,
       'member-status': member.status,
-      'member-period': member.period || '승인 후 기재'
+      'member-period': member.period || '승인 후 기재',
+      'cert-member-no': member.memberNo,
+      'cert-member-name': member.name,
+      'cert-member-email': member.email,
+      'cert-member-business': member.businessName || '개인 회원',
+      'cert-member-type': member.businessType,
+      'cert-member-region': member.region,
+      'cert-member-period': member.period || '승인 후 기재'
     };
     Object.keys(fields).forEach(function (id) {
       if ($(id)) $(id).textContent = fields[id] || '-';

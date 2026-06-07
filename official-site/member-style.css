@@ -300,6 +300,111 @@ body { background: var(--surface-1); color: var(--ink-1); }
 }
 .m-cert__caption { font-size: 13px; color: var(--ink-3); margin: 0; line-height: 1.55; }
 .m-cert__caption a { color: var(--brand); }
+.m-cert-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 360px;
+  padding: 34px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 85% 18%, rgba(212,168,67,.28), transparent 34%),
+    linear-gradient(135deg, #1B3A2D 0%, #274D3C 46%, #F6F1E8 46.2%, #F6F1E8 100%);
+  color: #fff;
+  box-shadow: 0 22px 60px -36px rgba(18, 34, 27, .55);
+}
+.m-cert-card::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  bottom: -80px;
+  width: 220px;
+  height: 220px;
+  border: 1px solid rgba(27,58,45,.16);
+  border-radius: 50%;
+}
+.m-cert-card__top,
+.m-cert-card__foot {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+.m-cert-card__top span,
+.m-cert-card__foot span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  color: rgba(255,255,255,.72);
+}
+.m-cert-card__top strong {
+  font: 700 13px/1 var(--font-mono);
+  color: #F6F1E8;
+}
+.m-cert-card__body {
+  position: relative;
+  z-index: 1;
+  margin-top: 68px;
+  max-width: 58%;
+}
+.m-cert-card__org {
+  margin: 0 0 12px;
+  font-size: 13px;
+  letter-spacing: .08em;
+  color: rgba(255,255,255,.72);
+}
+.m-cert-card__body h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1;
+  color: #fff;
+}
+.m-cert-card__email {
+  margin: 12px 0 0;
+  font-size: 14px;
+  color: rgba(255,255,255,.76);
+}
+.m-cert-card__list {
+  position: relative;
+  z-index: 1;
+  width: 48%;
+  margin: -110px 0 0 auto;
+  display: grid;
+  gap: 10px;
+  color: var(--ink-1);
+}
+.m-cert-card__list div {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 12px;
+  align-items: baseline;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(84,62,47,.12);
+}
+.m-cert-card__list dt {
+  margin: 0;
+  font-size: 12px;
+  color: var(--ink-3);
+}
+.m-cert-card__list dd {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  word-break: keep-all;
+}
+.m-cert-card__foot {
+  position: absolute;
+  left: 34px;
+  right: 34px;
+  bottom: 28px;
+  z-index: 1;
+}
+.m-cert-card__foot strong {
+  color: var(--ink-1);
+  font-size: 13px;
+}
 
 /* ============================================================
    member panel quick stats (mypage)
@@ -339,6 +444,25 @@ body { background: var(--surface-1); color: var(--ink-1); }
   .m-nav__crumbs { display: none; }
   .m-info__list .row { grid-template-columns: 90px 1fr; }
   .m-stats { grid-template-columns: 1fr; }
+  .m-cert-card {
+    min-height: auto;
+    padding: 26px;
+    background: linear-gradient(180deg, #1B3A2D 0%, #274D3C 48%, #F6F1E8 48.2%, #F6F1E8 100%);
+  }
+  .m-cert-card__body {
+    max-width: 100%;
+    margin-top: 42px;
+    padding-bottom: 68px;
+  }
+  .m-cert-card__list {
+    width: 100%;
+    margin: 34px 0 64px;
+  }
+  .m-cert-card__foot {
+    left: 26px;
+    right: 26px;
+    bottom: 22px;
+  }
 }
 
 /* ============================================================
