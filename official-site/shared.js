@@ -5,6 +5,7 @@
   const nestedIndex = Math.max(mediaIndex, filesIndex);
   const base = nestedIndex >= 0 ? "../".repeat(parts.length - nestedIndex - 1) : "";
   const href = (path) => base + path;
+  const siteUrl = "https://koreafruit.kr";
 
   const navHTML = `
     <nav class="kfa-nav" aria-label="primary">
@@ -121,7 +122,74 @@
     </footer>
   `;
 
+  function injectSeoJsonLd() {
+    if (document.getElementById("kfa-jsonld")) return;
+
+    const canonical = document.querySelector('link[rel="canonical"]');
+    const currentUrl = canonical ? canonical.href : siteUrl + location.pathname;
+    const title = document.title || "대한과일협회";
+    const description = document.querySelector('meta[name="description"]')?.content || "";
+
+    const graph = [
+      {
+        "@type": "Organization",
+        "@id": siteUrl + "/#organization",
+        "name": "대한과일협회",
+        "alternateName": "Korea Fruit Association",
+        "url": siteUrl + "/",
+        "email": "koreafruit@koreafruit.kr",
+        "description": "과일 교육, 유통 현장 경험, 과일코디네이터 양성, TSTC 취향 분석, ESG 활동을 이어가는 과일 산업 전문기관입니다."
+      },
+      {
+        "@type": "WebSite",
+        "@id": siteUrl + "/#website",
+        "url": siteUrl + "/",
+        "name": "대한과일협회",
+        "publisher": {"@id": siteUrl + "/#organization"},
+        "inLanguage": "ko-KR"
+      },
+      {
+        "@type": "WebPage",
+        "@id": currentUrl + "#webpage",
+        "url": currentUrl,
+        "name": title,
+        "description": description,
+        "isPartOf": {"@id": siteUrl + "/#website"},
+        "about": {"@id": siteUrl + "/#organization"},
+        "inLanguage": "ko-KR"
+      }
+    ];
+
+    const pageParts = decodeURI(location.pathname).split("/").filter(Boolean);
+    if (pageParts.length) {
+      const items = [{"@type": "ListItem", "position": 1, "name": "홈", "item": siteUrl + "/"}];
+      pageParts.forEach((part, index) => {
+        const clean = part.replace(".html", "");
+        const itemPath = "/" + pageParts.slice(0, index + 1).join("/");
+        items.push({
+          "@type": "ListItem",
+          "position": index + 2,
+          "name": clean,
+          "item": siteUrl + itemPath
+        });
+      });
+      graph.push({
+        "@type": "BreadcrumbList",
+        "@id": currentUrl + "#breadcrumb",
+        "itemListElement": items
+      });
+    }
+
+    const script = document.createElement("script");
+    script.id = "kfa-jsonld";
+    script.type = "application/ld+json";
+    script.textContent = JSON.stringify({"@context": "https://schema.org", "@graph": graph});
+    document.head.appendChild(script);
+  }
+
   function renderChrome() {
+    injectSeoJsonLd();
+
     const navMount = document.querySelector('[data-chrome="nav"]');
     const footMount = document.querySelector('[data-chrome="footer"]');
     if (navMount) navMount.outerHTML = navHTML;
