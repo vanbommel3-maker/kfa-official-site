@@ -240,6 +240,28 @@ var filtered = [];
 var selected = [];
 var startTime = Date.now();
 
+function normalizeResultRow(row){
+  row = row || {};
+  return {
+    '타임스탬프': row['타임스탬프'] || row.timestamp || row.savedAt || row.createdAt || '',
+    '참여코드': row['참여코드'] || row.partCode || row.participantCode || '',
+    '검사유형': row['검사유형'] || row.mode || row.testMode || '',
+    '성별': row['성별'] || row.gender || '',
+    '연령': row['연령'] || row.age || '',
+    '지역': row['지역'] || row.region || '',
+    '가족구성': row['가족구성'] || row.family || '',
+    '자녀연령': row['자녀연령'] || row.childAges || '',
+    '구매빈도': row['구매빈도'] || row.buyFreq || '',
+    '구매채널': row['구매채널'] || row.buyChannel || '',
+    'T점수': row['T점수'] || row.tScore || '',
+    'S점수': row['S점수'] || row.sScore || '',
+    'TX점수': row['TX점수'] || row.txScore || '',
+    'C점수': row['C점수'] || row.cScore || '',
+    'TSTC코드': row['TSTC코드'] || row.tstcCode || row.code || '',
+    '유형명': row['유형명'] || row.typeName || ''
+  };
+}
+
 /* ── TSTC 유형 데이터 ── */
 var TYPES = {
   RACV:{name:'풍부한 감각형',desc:'맛·향·식감·색 네 가지 감각이 모두 활성화되는 풀패키지 유형입니다.\n달콤하고 향기롭고 아삭하며 선명한 색의 과일에서만 진짜 만족을 경험합니다.\n과일 하나를 고를 때도 색을 먼저 보고, 향을 맡고, 씹는 맛까지 따집니다.\n마트에서 가장 눈에 띄는 과일에 자연스럽게 손이 가는 편입니다.\n딸기·체리·감홍사과처럼 색도 예쁘고 향도 강하고 아삭한 과일이 최고의 선택입니다.\n선물용 과일도 외관과 품질 모두를 중시하며, 포장까지 꼼꼼하게 챙깁니다.',fruits:['딸기 (설향·킹스베리)','체리 (미국산)','사과 (감홍·홍로)','천도복숭아 (천홍)','자두 (대석조생)']},
@@ -303,7 +325,7 @@ function loadData(){
   fetch(GAS_URL+'?t='+Date.now())
     .then(function(r){return r.json();})
     .then(function(res){
-      if(res.status==='ok'){ allData=res.data||[]; applyFilter(); updateStats(); }
+      if(res.status==='ok'){ allData=(res.data||res.rows||res.results||[]).map(normalizeResultRow); applyFilter(); updateStats(); }
       else{ document.getElementById('table-container').innerHTML='<div class="empty">오류: '+res.message+'</div>'; }
     })
     .catch(function(e){ document.getElementById('table-container').innerHTML='<div class="empty">연결 실패. URL을 확인해주세요.<br>'+e.message+'</div>'; });

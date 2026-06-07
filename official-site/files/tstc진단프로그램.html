@@ -1310,7 +1310,7 @@ function showResult(){
   var T2=S.tScore>0?'R':'M';var SS2=S.sScore>0?'A':'P';
   var TX2=S.txScore>0?'C':'S';var C2=S.cScore>0?'V':'N';
   var code2=T2+SS2+TX2+C2;
-  submitResult({
+  var resultPayload = {
     partCode:   S.partCode,
     mode:       S.tstcMode,
     gender:     S.gender,
@@ -1327,7 +1327,24 @@ function showResult(){
     tstcCode:   code2,
     typeName:   (TYPES[code2]||TYPES['RACV']).name,
     elapsed:    Math.round((Date.now()-_startTime)/1000)
-  });
+  };
+  resultPayload['타임스탬프'] = new Date().toISOString();
+  resultPayload['참여코드'] = resultPayload.partCode || '';
+  resultPayload['검사유형'] = resultPayload.mode || '';
+  resultPayload['성별'] = resultPayload.gender || '';
+  resultPayload['연령'] = resultPayload.age || '';
+  resultPayload['지역'] = resultPayload.region || '';
+  resultPayload['가족구성'] = (resultPayload.family || []).join(', ');
+  resultPayload['자녀연령'] = (resultPayload.childAges || []).join(', ');
+  resultPayload['구매빈도'] = resultPayload.buyFreq || '';
+  resultPayload['구매채널'] = resultPayload.buyChannel || '';
+  resultPayload['T점수'] = resultPayload.tScore;
+  resultPayload['S점수'] = resultPayload.sScore;
+  resultPayload['TX점수'] = resultPayload.txScore;
+  resultPayload['C점수'] = resultPayload.cScore;
+  resultPayload['TSTC코드'] = resultPayload.tstcCode;
+  resultPayload['유형명'] = resultPayload.typeName;
+  submitResult(resultPayload);
   _startTime = Date.now();
   // 다이어그램 바 애니메이션 — DOM 삽입 후 실행
   setTimeout(function(){
@@ -1384,12 +1401,22 @@ var _startTime = Date.now();
 
 function submitResult(payload) {
   if (!GAS_URL) return;  // URL 미설정 시 조용히 넘어감
-  fetch(GAS_URL, {
-    method: 'POST',
-    mode: 'no-cors',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(payload)
-  }).catch(function(){});  // 오류 시 무시
+  try {
+    payload = payload || {};
+    payload.savedAt = payload.savedAt || new Date().toISOString();
+    var body = JSON.stringify(payload);
+    fetch(GAS_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {'Content-Type': 'text/plain;charset=utf-8'},
+      body: body
+    }).catch(function(){
+      if (!navigator.sendBeacon) return;
+      try {
+        navigator.sendBeacon(GAS_URL, new Blob([body], {type: 'text/plain;charset=utf-8'}));
+      } catch(e) {}
+    });
+  } catch(e) {}
 }
 
 </script>
