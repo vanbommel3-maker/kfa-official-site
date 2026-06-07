@@ -45,7 +45,7 @@
             <h4>TSTC</h4>
             <ul>
               <li><a href="tstc.html">개념 소개</a></li>
-              <li><a href="files/tstc진단프로그램.html">감각 들여다보기</a></li>
+              <li><a href="tstc-start.html">감각 들여다보기</a></li>
               <li><a href="#">고급형 (준비 중)</a></li>
             </ul>
           </div>
@@ -85,7 +85,7 @@
     if (footMount) footMount.outerHTML = footerHTML;
 
     const path = location.pathname.split("/").pop().replace(".html", "").replace(/^$/, "index");
-    const activeKey = path === "tstc-test" || path === "tstc진단프로그램" ? "tstc" : path;
+    const activeKey = path === "tstc-test" || path === "tstc-start" || path === "tstc진단프로그램" ? "tstc" : path;
     const link = document.querySelector(`.kfa-nav__list a[data-nav="${activeKey}"]`);
     if (link) link.classList.add("is-active");
   }

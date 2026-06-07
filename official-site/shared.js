@@ -22,7 +22,7 @@
           <li><a href="${href("notice.html")}" data-nav="notice">커뮤니티</a></li>
         </ul>
         <div class="kfa-nav__util">
-          <a class="kfa-nav__test" href="${href("files/tstc진단프로그램.html")}">진단하기</a>
+          <a class="kfa-nav__test" href="${href("tstc-start.html")}">진단하기</a>
           <a class="kfa-nav__login" href="${href("member-login.html")}">로그인</a>
         </div>
         <button class="kfa-nav__menu" type="button" aria-expanded="false" aria-controls="kfa-mobile-menu" aria-label="메뉴 열기">
@@ -104,7 +104,7 @@
           <div class="kfa-foot__col">
             <h4>문의</h4>
             <ul>
-              <li><a href="${href("files/tstc진단프로그램.html")}">TSTC 진단</a></li>
+              <li><a href="${href("tstc-start.html")}">TSTC 진단</a></li>
               <li><a href="${href("coordinator.html")}">교육 안내</a></li>
               <li><a href="mailto:koreafruit@koreafruit.kr">이메일 문의</a></li>
             </ul>
