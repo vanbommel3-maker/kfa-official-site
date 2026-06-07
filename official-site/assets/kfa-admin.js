@@ -1,7 +1,7 @@
 (function () {
   var OLD_MEMBER_GAS_URL = 'https://script.google.com/macros/s/AKfycbzkKVrTfbaQOivDlq6Kl7fTX_DUH1xm6zH4X2hbAfKRhBpVtU5v4Oa2xBNd7lwjIGq2fg/exec';
   var DEFAULT_MEMBER_GAS_URL = 'https://script.google.com/macros/s/AKfycbzBZMQ55OAWVlw1C_o-9_QIZ3zgVaSEYOW6wIvrJ8cN73jNBIWgv3ATTNE5jBJOjtE4HQ/exec';
-  var DEFAULT_TSTC_DASHBOARD_URL = 'files/tstc-results';
+  var DEFAULT_TSTC_DASHBOARD_URL = 'files/tstc-results.html';
   var DEFAULT_MEMBER_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1PMEPuTUc2-AhPxnzXoFYPXhS7_kPN1Oxt5DOsX86GTA/edit';
 
   var KEYS = {
