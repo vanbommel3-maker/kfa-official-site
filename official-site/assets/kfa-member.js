@@ -1,6 +1,9 @@
 (function () {
-  var OLD_GAS_URL = 'https://script.google.com/macros/s/AKfycbzkKVrTfbaQOivDlq6Kl7fTX_DUH1xm6zH4X2hbAfKRhBpVtU5v4Oa2xBNd7lwjIGq2fg/exec';
-  var DEFAULT_GAS_URL = 'https://script.google.com/macros/s/AKfycbzBZMQ55OAWVlw1C_o-9_QIZ3zgVaSEYOW6wIvrJ8cN73jNBIWgv3ATTNE5jBJOjtE4HQ/exec';
+  var LEGACY_GAS_URLS = [
+    'https://script.google.com/macros/s/AKfycbzkKVrTfbaQOivDlq6Kl7fTX_DUH1xm6zH4X2hbAfKRhBpVtU5v4Oa2xBNd7lwjIGq2fg/exec',
+    'https://script.google.com/macros/s/AKfycbzBZMQ55OAWVlw1C_o-9_QIZ3zgVaSEYOW6wIvrJ8cN73jNBIWgv3ATTNE5jBJOjtE4HQ/exec'
+  ];
+  var DEFAULT_GAS_URL = 'https://script.google.com/macros/s/AKfycbw9j8C-sLm6DcsDy39YX3wHkxnpVe86PCAGL75WuXNKP78vqZSAiA3YFDIz7FamFaBwCw/exec';
   var GAS_KEY = 'kfa_member_gas_url';
   var SESSION_KEY = 'kfa_member_session';
 
@@ -17,7 +20,7 @@
 
   function getGasUrl() {
     var url = localStorage.getItem(GAS_KEY) || DEFAULT_GAS_URL;
-    if (url === OLD_GAS_URL) {
+    if (LEGACY_GAS_URLS.indexOf(url) >= 0) {
       localStorage.setItem(GAS_KEY, DEFAULT_GAS_URL);
       return DEFAULT_GAS_URL;
     }
