@@ -349,15 +349,15 @@ body { background: var(--surface-1); color: var(--ink-1); }
   max-width: 560px;
 }
 .m-admin-shell {
-  max-width: 1280px;
+  max-width: 1520px;
   width: 100%;
   display: grid;
-  gap: 24px;
+  gap: 28px;
 }
 .m-admin-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(320px, .9fr);
-  gap: 24px;
+  grid-template-columns: 1fr;
+  gap: 28px;
   align-items: start;
 }
 .m-admin-main,
@@ -374,6 +374,12 @@ body { background: var(--surface-1); color: var(--ink-1); }
 .m-admin-embed { padding: 28px; }
 .m-admin-main,
 .m-admin-side { display: grid; gap: 22px; }
+.m-admin-side {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
 .m-admin-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -493,7 +499,8 @@ body { background: var(--surface-1); color: var(--ink-1); }
 .m-admin-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 920px;
+  min-width: 1080px;
+  table-layout: fixed;
 }
 .m-admin-table th {
   background: var(--surface-1);
@@ -512,7 +519,23 @@ body { background: var(--surface-1); color: var(--ink-1); }
   font-size: 14px;
   vertical-align: top;
   color: var(--ink-2);
+  line-height: 1.6;
+  word-break: keep-all;
 }
+.m-admin-table th:nth-child(1),
+.m-admin-table td:nth-child(1) { width: 230px; }
+.m-admin-table th:nth-child(2),
+.m-admin-table td:nth-child(2) { width: 150px; }
+.m-admin-table th:nth-child(3),
+.m-admin-table td:nth-child(3) { width: 150px; }
+.m-admin-table th:nth-child(4),
+.m-admin-table td:nth-child(4) { width: 170px; }
+.m-admin-table th:nth-child(5),
+.m-admin-table td:nth-child(5) { width: 120px; text-align: center; }
+.m-admin-table th:nth-child(6),
+.m-admin-table td:nth-child(6) { width: 170px; }
+.m-admin-table th:nth-child(7),
+.m-admin-table td:nth-child(7) { width: 150px; }
 .m-admin-table tr:last-child td { border-bottom: 0; }
 .m-admin-table strong {
   display: block;
@@ -603,14 +626,14 @@ body { background: var(--surface-1); color: var(--ink-1); }
 }
 
 @media (max-width: 1120px) {
-  .m-admin-layout { grid-template-columns: 1fr; }
   .m-admin-grid { grid-template-columns: repeat(2, 1fr); }
+  .m-admin-side { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
   .m-admin-grid { grid-template-columns: 1fr; }
   .m-admin-main,
-  .m-admin-side,
   .m-admin-panel { padding: 22px; }
+  .m-admin-side { padding: 0; }
   .m-admin-section__head { display: grid; }
   .m-admin-filter { justify-content: flex-start; }
 }
