@@ -1,26 +1,26 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TSTC 寃곌낵 ??쒕낫??| ??쒓낵?쇳삊??/title>
-  <meta name="description" content="??쒓낵?쇳삊???댁쁺?먯슜 TSTC 寃곌낵 ??쒕낫?쒖엯?덈떎." />
+<title>TSTC 결과 대시보드 | 대한과일협회</title>
+  <meta name="description" content="대한과일협회 운영자용 TSTC 결과 대시보드입니다." />
   <meta name="robots" content="noindex,nofollow" />
   <link rel="canonical" href="https://koreafruit.kr/files/tstc-results.html" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="??쒓낵?쇳삊?? />
-  <meta property="og:title" content="TSTC 寃곌낵 ??쒕낫??| ??쒓낵?쇳삊?? />
-  <meta property="og:description" content="??쒓낵?쇳삊???댁쁺?먯슜 TSTC 寃곌낵 ??쒕낫?쒖엯?덈떎." />
+  <meta property="og:site_name" content="대한과일협회" />
+  <meta property="og:title" content="TSTC 결과 대시보드 | 대한과일협회" />
+  <meta property="og:description" content="대한과일협회 운영자용 TSTC 결과 대시보드입니다." />
   <meta property="og:url" content="https://koreafruit.kr/files/tstc-results.html" />
   <meta property="og:image" content="https://koreafruit.kr/assets/site/market-01.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,'Apple SD Gothic Neo','留묒? 怨좊뵓',sans-serif;background:#F2F2F0;color:#111;font-size:14px}
+body{font-family:-apple-system,'Apple SD Gothic Neo','맑은 고딕',sans-serif;background:#F2F2F0;color:#111;font-size:14px}
 :root{--g:#1B3A2D;--g2:#2D6A4F;--gd:#D4A843;--lc:#F4F9F6;--bc:#E8F4EE;--bd:#D4EDDA;--red:#C62828}
 
-/* ?ㅻ뜑 */
+/* 헤더 */
 .site-hd{background:var(--g);padding:16px 28px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
 .hd-brand{display:flex;align-items:center;gap:10px}
 .hd-line{width:3px;height:36px;background:var(--gd)}
@@ -31,7 +31,7 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','留묒? 怨좊뵓',sans-se
 .hd-btn:hover{background:rgba(255,255,255,.15)}
 .hd-btn.primary{background:var(--gd);border-color:var(--gd);color:var(--g);font-weight:700}
 
-/* URL ?ㅼ젙 諛곕꼫 */
+/* URL 설정 배너 */
 .url-banner{display:none;background:#fff3cd;border-bottom:2px solid var(--gd);padding:12px 28px;align-items:center;gap:12px}
 .url-banner.ok{background:var(--lc);border-color:var(--bd)}
 .url-icon{font-size:16px}
@@ -40,7 +40,7 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','留묒? 怨좊뵓',sans-se
 .url-input:focus{border-color:var(--g)}
 .url-save{background:var(--g);color:#fff;border:none;padding:8px 20px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit}
 
-/* ?듦퀎 移대뱶 */
+/* 통계 카드 */
 .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:20px 28px 0}
 .stat-card{background:#fff;border:1px solid #e0e0e0;padding:18px 20px}
 .stat-label{font-size:10px;letter-spacing:.1em;color:#888;text-transform:uppercase;margin-bottom:8px}
@@ -49,7 +49,7 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','留묒? 怨좊뵓',sans-se
 .stat-card.gold{border-left:3px solid var(--gd)}
 .stat-card.green{border-left:3px solid var(--g2)}
 
-/* ?꾪꽣 諛?*/
+/* 필터 바 */
 .filter-bar{background:#fff;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;padding:12px 28px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
 .f-label{font-size:11px;font-weight:700;color:#888;letter-spacing:.08em;text-transform:uppercase}
 .f-sel{border:1.5px solid #e0e0e0;padding:7px 12px;font-size:12px;font-family:inherit;outline:none;background:#fff;cursor:pointer}
@@ -59,7 +59,7 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','留묒? 怨좊뵓',sans-se
 .f-count{margin-left:auto;font-size:12px;color:#888}
 .f-count strong{color:var(--g);font-weight:700}
 
-/* ?뚯씠釉??곸뿭 */
+/* 테이블 영역 */
 .table-wrap{padding:0 28px 28px}
 .table-actions{display:flex;align-items:center;gap:8px;padding:12px 0 8px}
 .sel-count{font-size:12px;color:var(--g2);font-weight:600}
@@ -84,7 +84,7 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','留묒? 怨좊뵓',sans-se
 .empty{text-align:center;padding:60px 20px;color:#aaa;font-size:14px}
 .loading{text-align:center;padding:60px 20px;color:var(--g2);font-size:14px}
 
-/* 由ы룷???⑤꼸 */
+/* 리포트 패널 */
 #report-panel{position:fixed;top:0;right:-520px;width:520px;height:100vh;background:#fff;box-shadow:-4px 0 24px rgba(0,0,0,.12);z-index:200;transition:right .3s cubic-bezier(.4,0,.2,1);overflow-y:auto;display:flex;flex-direction:column}
 #report-panel.open{right:0}
 .rp-hd{background:var(--g);padding:20px 24px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;position:sticky;top:0;z-index:1}
@@ -96,7 +96,7 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','留묒? 怨좊뵓',sans-se
 .rp-sec{margin-bottom:20px}
 .rp-sec-title{font-size:10px;font-weight:700;letter-spacing:.14em;color:var(--g2);text-transform:uppercase;margin-bottom:10px;padding-bottom:6px;border-bottom:1.5px solid var(--bd)}
 
-/* ?덉씠??李⑦듃 */
+/* 레이더 차트 */
 .radar-wrap{display:flex;justify-content:center;margin-bottom:8px}
 .axis-labels{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
 .ax-chip{background:var(--lc);border:1px solid var(--bd);padding:8px 12px;display:flex;justify-content:space-between;align-items:center}
@@ -104,7 +104,7 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','留묒? 怨좊뵓',sans-se
 .ax-val{font-size:13px;font-weight:700;color:var(--gd)}
 .ax-dir{font-size:10px;color:var(--g2);font-weight:600}
 
-/* 諛?李⑦듃 */
+/* 바 차트 */
 .bar-item{margin-bottom:10px}
 .bar-top{display:flex;justify-content:space-between;margin-bottom:4px;font-size:12px}
 .bar-name{font-weight:600;color:#111}
@@ -112,26 +112,26 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','留묒? 怨좊뵓',sans-se
 .bar-bg{height:8px;background:#e8e8e8;border-radius:4px}
 .bar-fill{height:100%;background:var(--g);border-radius:4px;transition:width 1s}
 
-/* ?꾨줈??移?*/
+/* 프로필 칩 */
 .profile-chips{display:flex;gap:6px;flex-wrap:wrap}
 .p-chip{background:#eee;padding:4px 10px;font-size:11px;color:#555;border-radius:0}
 
-/* 異붿쿇怨쇱씪 */
+/* 추천과일 */
 .fruit-item{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #f0f0f0}
 .fruit-item:last-child{border:none}
 .fruit-rank{width:24px;height:24px;background:var(--g);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .fruit-name{font-size:13px;font-weight:500}
 
-/* ?ㅻ챸 */
+/* 설명 */
 .desc-text{font-size:13px;color:#444;line-height:1.8;white-space:pre-line}
 
-/* 蹂듭닔 ?좏깮 由ы룷??*/
+/* 복수 선택 리포트 */
 .bulk-stat{background:var(--lc);border:1px solid var(--bd);padding:14px 16px;margin-bottom:10px}
 .bulk-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-size:13px}
 .bulk-row:last-child{margin-bottom:0}
 .bl{color:#888}.bv{font-weight:700;color:var(--g)}
 
-/* 諛섏쓳??*/
+/* 반응형 */
 @media(max-width:900px){
   .stats-row{grid-template-columns:repeat(2,1fr)}
   #report-panel{width:100%;right:-100%}
@@ -140,108 +140,108 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','留묒? 怨좊뵓',sans-se
 </head>
 <body>
 
-<!-- ?ㅻ뜑 -->
+<!-- 헤더 -->
 <div class="site-hd">
   <div class="hd-brand">
     <div class="hd-line"></div>
     <div class="hd-txt">
-      <h1>TSTC 寃곌낵 ??쒕낫??/h1>
-      <p>Korea Fruit Association 쨌 ??쒓낵?쇳삊??/p>
+      <h1>TSTC 결과 대시보드</h1>
+      <p>Korea Fruit Association · 대한과일협회</p>
     </div>
   </div>
   <div class="hd-right">
-    <button class="hd-btn" onclick="loadData()">?덈줈怨좎묠</button>
-    <button class="hd-btn primary" id="report-btn" disabled onclick="openBulkReport()">?좏깮 由ы룷??/button>
+    <button class="hd-btn" onclick="loadData()">새로고침</button>
+    <button class="hd-btn primary" id="report-btn" disabled onclick="openBulkReport()">선택 리포트</button>
   </div>
 </div>
 
-<!-- URL 諛곕꼫 -->
+<!-- URL 배너 -->
 <div class="url-banner" id="url-banner">
-  <span class="url-icon">?숋툘</span>
-  <span class="url-msg">Apps Script URL???낅젰?댁빞 ?곗씠?곕? 遺덈윭?????덉뒿?덈떎.</span>
+  <span class="url-icon">⚙️</span>
+  <span class="url-msg">Apps Script URL을 입력해야 데이터를 불러올 수 있습니다.</span>
   <input class="url-input" id="gas-url-input" placeholder="https://script.google.com/macros/s/..." value="https://script.google.com/macros/s/AKfycbwbC6MtkfASDi1vSmmOYdAOCpOMHBabno5jpUwFm8tIppntikE2bUqUfi1ITFYoATS0Fw/exec" oninput="checkUrl()">
-  <button class="url-save" onclick="saveUrl()">???쨌 遺덈윭?ㅺ린</button>
+  <button class="url-save" onclick="saveUrl()">저장 · 불러오기</button>
 </div>
 
-<!-- ?듦퀎 移대뱶 -->
+<!-- 통계 카드 -->
 <div class="stats-row">
   <div class="stat-card gold">
-    <div class="stat-label">珥??묐떟 ??/div>
+    <div class="stat-label">총 응답 수</div>
     <div class="stat-num" id="st-total">-</div>
-    <div class="stat-sub">?꾩쟻 寃???꾨즺</div>
+    <div class="stat-sub">누적 검사 완료</div>
   </div>
   <div class="stat-card">
-    <div class="stat-label">?ㅻ뒛 ?묐떟</div>
+    <div class="stat-label">오늘 응답</div>
     <div class="stat-num" id="st-today">-</div>
     <div class="stat-sub" id="st-today-date">-</div>
   </div>
   <div class="stat-card green">
-    <div class="stat-label">理쒕떎 ?좏삎</div>
+    <div class="stat-label">최다 유형</div>
     <div class="stat-num" style="font-size:22px" id="st-top-code">-</div>
     <div class="stat-sub" id="st-top-name">-</div>
   </div>
   <div class="stat-card">
-    <div class="stat-label">怨좉툒??鍮꾩쑉</div>
+    <div class="stat-label">고급형 비율</div>
     <div class="stat-num" id="st-premium">-</div>
-    <div class="stat-sub">?쇰컲???鍮?/div>
+    <div class="stat-sub">일반형 대비</div>
   </div>
 </div>
 
-<!-- ?꾪꽣 諛?-->
+<!-- 필터 바 -->
 <div class="filter-bar">
-  <span class="f-label">?꾪꽣</span>
+  <span class="f-label">필터</span>
   <select class="f-sel" id="f-code" onchange="applyFilter()">
-    <option value="">TSTC肄붾뱶 ?꾩껜</option>
+    <option value="">TSTC코드 전체</option>
     <option>RACV</option><option>RACN</option><option>RASV</option><option>RASN</option>
     <option>RPCV</option><option>RPCN</option><option>RPSV</option><option>RPSN</option>
     <option>MACV</option><option>MACN</option><option>MASV</option><option>MASN</option>
     <option>MPCV</option><option>MPCN</option><option>MPSV</option><option>MPSN</option>
   </select>
   <select class="f-sel" id="f-gender" onchange="applyFilter()">
-    <option value="">?깅퀎 ?꾩껜</option>
-    <option value="M">?⑥꽦</option>
-    <option value="F">?ъ꽦</option>
-    <option value="X">誘몄쓳??/option>
+    <option value="">성별 전체</option>
+    <option value="M">남성</option>
+    <option value="F">여성</option>
+    <option value="X">미응답</option>
   </select>
   <select class="f-sel" id="f-age" onchange="applyFilter()">
-    <option value="">?곕졊 ?꾩껜</option>
-    <option value="10s">10?</option><option value="20s">20?</option>
-    <option value="30s">30?</option><option value="40s">40?</option>
-    <option value="50s">50?</option><option value="60s">60?+</option>
+    <option value="">연령 전체</option>
+    <option value="10s">10대</option><option value="20s">20대</option>
+    <option value="30s">30대</option><option value="40s">40대</option>
+    <option value="50s">50대</option><option value="60s">60대+</option>
   </select>
   <select class="f-sel" id="f-mode" onchange="applyFilter()">
-    <option value="">寃?ъ쑀???꾩껜</option>
-    <option value="standard">?쇰컲??/option>
-    <option value="premium">怨좉툒??/option>
+    <option value="">검사유형 전체</option>
+    <option value="standard">일반형</option>
+    <option value="premium">고급형</option>
   </select>
-  <button class="f-clear" onclick="clearFilter()">珥덇린??/button>
-  <span class="f-count" id="f-count">珥?<strong>0</strong>嫄?/span>
+  <button class="f-clear" onclick="clearFilter()">초기화</button>
+  <span class="f-count" id="f-count">총 <strong>0</strong>건</span>
 </div>
 
-<!-- ?뚯씠釉?-->
+<!-- 테이블 -->
 <div class="table-wrap">
   <div class="table-actions">
-    <span class="sel-count" id="sel-count">?좏깮 0嫄?/span>
-    <button class="act-btn" id="report-btn2" disabled onclick="openBulkReport()">由ы룷??蹂닿린</button>
-    <button class="act-btn outline" onclick="exportCSV()">CSV ?대낫?닿린</button>
+    <span class="sel-count" id="sel-count">선택 0건</span>
+    <button class="act-btn" id="report-btn2" disabled onclick="openBulkReport()">리포트 보기</button>
+    <button class="act-btn outline" onclick="exportCSV()">CSV 내보내기</button>
   </div>
   <div id="table-container">
-    <div class="loading">URL???ㅼ젙?섍퀬 ?곗씠?곕? 遺덈윭?ㅼ꽭??</div>
+    <div class="loading">URL을 설정하고 데이터를 불러오세요.</div>
   </div>
 </div>
 
-<!-- 由ы룷???⑤꼸 -->
+<!-- 리포트 패널 -->
 <div id="report-panel">
   <div class="rp-hd">
-    <h2 id="rp-title">寃곌낵 由ы룷??/h2>
-    <button class="rp-close" onclick="closeReport()">??/button>
+    <h2 id="rp-title">결과 리포트</h2>
+    <button class="rp-close" onclick="closeReport()">✕</button>
   </div>
   <div class="rp-body" id="rp-body"></div>
 </div>
 <div id="overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.3);z-index:199" onclick="closeReport()"></div>
 
 <script>
-/* ?? ?꾩뿭 蹂???? */
+/* ── 전역 변수 ── */
 var MEMBER_GAS_URL = 'https://script.google.com/macros/s/AKfycbzBZMQ55OAWVlw1C_o-9_QIZ3zgVaSEYOW6wIvrJ8cN73jNBIWgv3ATTNE5jBJOjtE4HQ/exec';
 var OLD_TSTC_GAS_URL = 'https://script.google.com/macros/s/AKfycbz-F-OU9qpXpmRlqmKfYl5BBBGUDcnmcnAsEFHqgR6Uz0dsBKtz1e8PFi8kNHzrbuJz/exec';
 var DEFAULT_TSTC_GAS_URL = 'https://script.google.com/macros/s/AKfycbwbC6MtkfASDi1vSmmOYdAOCpOMHBabno5jpUwFm8tIppntikE2bUqUfi1ITFYoATS0Fw/exec';
@@ -254,52 +254,52 @@ var startTime = Date.now();
 function normalizeResultRow(row){
   row = row || {};
   return {
-    '??꾩뒪?ы봽': row['??꾩뒪?ы봽'] || row.timestamp || row.savedAt || row.createdAt || '',
-    '李몄뿬肄붾뱶': row['李몄뿬肄붾뱶'] || row.partCode || row.participantCode || '',
-    '寃?ъ쑀??: row['寃?ъ쑀??] || row.mode || row.testMode || '',
-    '?깅퀎': row['?깅퀎'] || row.gender || '',
-    '?곕졊': row['?곕졊'] || row.age || '',
-    '吏??: row['吏??] || row.region || '',
-    '媛議깃뎄??: row['媛議깃뎄??] || row.family || '',
-    '?먮??곕졊': row['?먮??곕졊'] || row.childAges || '',
-    '援щℓ鍮덈룄': row['援щℓ鍮덈룄'] || row.buyFreq || '',
-    '援щℓ梨꾨꼸': row['援щℓ梨꾨꼸'] || row.buyChannel || '',
-    'T?먯닔': row['T?먯닔'] || row.tScore || '',
-    'S?먯닔': row['S?먯닔'] || row.sScore || '',
-    'TX?먯닔': row['TX?먯닔'] || row.txScore || '',
-    'C?먯닔': row['C?먯닔'] || row.cScore || '',
-    'TSTC肄붾뱶': row['TSTC肄붾뱶'] || row.tstcCode || row.code || '',
-    '?좏삎紐?: row['?좏삎紐?] || row.typeName || ''
+    '타임스탬프': row['타임스탬프'] || row.timestamp || row.savedAt || row.createdAt || '',
+    '참여코드': row['참여코드'] || row.partCode || row.participantCode || '',
+    '검사유형': row['검사유형'] || row.mode || row.testMode || '',
+    '성별': row['성별'] || row.gender || '',
+    '연령': row['연령'] || row.age || '',
+    '지역': row['지역'] || row.region || '',
+    '가족구성': row['가족구성'] || row.family || '',
+    '자녀연령': row['자녀연령'] || row.childAges || '',
+    '구매빈도': row['구매빈도'] || row.buyFreq || '',
+    '구매채널': row['구매채널'] || row.buyChannel || '',
+    'T점수': row['T점수'] || row.tScore || '',
+    'S점수': row['S점수'] || row.sScore || '',
+    'TX점수': row['TX점수'] || row.txScore || '',
+    'C점수': row['C점수'] || row.cScore || '',
+    'TSTC코드': row['TSTC코드'] || row.tstcCode || row.code || '',
+    '유형명': row['유형명'] || row.typeName || ''
   };
 }
 
-/* ?? TSTC ?좏삎 ?곗씠???? */
+/* ── TSTC 유형 데이터 ── */
 var TYPES = {
-  RACV:{name:'?띾???媛먭컖??,desc:'留쎛룻뼢쨌?앷컧쨌????媛吏 媛먭컖??紐⑤몢 ?쒖꽦?붾릺????⑦궎吏 ?좏삎?낅땲??\n?ъ숴?섍퀬 ?κ린濡?퀬 ?꾩궘?섎ŉ ?좊챸???됱쓽 怨쇱씪?먯꽌留?吏꾩쭨 留뚯”??寃쏀뿕?⑸땲??\n怨쇱씪 ?섎굹瑜?怨좊? ?뚮룄 ?됱쓣 癒쇱? 蹂닿퀬, ?μ쓣 留↔퀬, ?밸뒗 留쏄퉴吏 ?곗쭛?덈떎.\n留덊듃?먯꽌 媛???덉뿉 ?꾨뒗 怨쇱씪???먯뿰?ㅻ읇寃??먯씠 媛???몄엯?덈떎.\n?멸린쨌泥대━쨌媛먰솉?ш낵泥섎읆 ?됰룄 ?덉걯怨??λ룄 媛뺥븯怨??꾩궘??怨쇱씪??理쒓퀬???좏깮?낅땲??\n?좊Ъ??怨쇱씪???멸?怨??덉쭏 紐⑤몢瑜?以묒떆?섎ŉ, ?ъ옣源뚯? 瑗쇨세?섍쾶 梨숆퉩?덈떎.',fruits:['?멸린 (?ㅽ뼢쨌?뱀뒪踰좊━)','泥대━ (誘멸뎅??','?ш낵 (媛먰솉쨌?띾줈)','泥쒕룄蹂듭댂??(泥쒗솉)','?먮몢 (??앹“??']},
-  RACN:{name:'?λ? ?꾪넻??,desc:'?ъ숴?섍퀬 ?κ린濡?퀬 ?꾩궘?섏?留? ?붾젮???됰낫???먯뿰?ㅻ윭??留쏄낵 ?μ쓣 ??以묒떆?⑸땲??\n寃됱씠 ?붾젮??怨쇱씪蹂대떎 ?κ린媛 醫뗪퀬 留쏆씠 吏꾪븳 怨쇱씪?먯꽌 ????留뚯”???살뒿?덈떎.\n?ㅼ씤癒몄뒪罹ｌ쿂???고븳 ?됱씠?대룄 留쏆씠 洹밴컯?대㈃ 理쒓퀬濡?移섎뒗 ??낆엯?덈떎.\n怨쇱씪 蹂몄뿰???덉쭏???뚯븘蹂대뒗 ?덈ぉ???덉쑝硫? ?밸룄 ?뺣낫??愿?ъ씠 留롮뒿?덈떎.\n吏곴굅?섎굹 ?곗? 吏곷같??怨쇱씪??愿?ъ쓣 媛吏??寃쏀뼢???덉뒿?덈떎.\n?κ린濡쒖슫 怨쇱씪???좊Ъ諛쏆쑝硫?媛??湲곕퍙?섎뒗 ?ㅽ??쇱엯?덈떎.',fruits:['?ㅼ씤癒몄뒪罹?,'?ш낵 (遺??룻썑吏)','?좊퉬蹂듭댂??,'諛?(?먰솴)','肄뷀듉罹붾뵒 ?щ룄']},
-  RASV:{name:'媛먭컖 ?먰뿕??,desc:'?ъ숴?섍퀬 ?κ린濡쒖슦硫?遺?쒕윭???앷컧???좊챸???됱쓽 怨쇱씪???먮（ 利먭퉩?덈떎.\n?덈줈 ?섏삩 怨쇱씪?대굹 ?섏엯 ?ш? 怨쇱씪??癒쇱? ?덉씠 媛???먰뿕媛 湲곗쭏???덉뒿?덈떎.\n?쒕씪遊됀룹쿇?쒗뼢쨌?좏뵆留앷퀬泥섎읆 ?κ낵 鍮꾩＜?쇱씠 紐⑤몢 媛뺥븳 怨쇱씪???뱁엳 醫뗭븘?⑸땲??\n怨꾩젅留덈떎 ?덈줈??怨쇱씪???쒕룄?대낫??寃껋쓣 利먭퉩?덈떎.\n?⑤씪??怨쇱씪 援щ룆 ?쒕퉬?ㅻ굹 ?꾨━誘몄뾼 怨쇱씪 ?먮젅?댁뀡??留ㅻ젰???먮굧?덈떎.\n二쇰? ?щ엺?ㅼ뿉寃?醫뗭? 怨쇱씪??異붿쿇?댁＜????븷???먯＜ ?⑸땲??',fruits:['留앷퀬 (?좏뵆留앷퀬)','?쒕씪遊됀룹쿇?쒗뼢','?⑸룄蹂듭댂??,'嫄곕큺 ?щ룄','?ㅼ쐞 怨⑤뱶']},
-  RASN:{name:'洹좏삎 ?ы솕??,desc:'?ъ숴?섍퀬 ?κ린濡쒖슦硫?遺?쒕읇吏留? ?됰낫?ㅻ뒗 留쏄낵 ???먯껜??吏묒쨷?섎뒗 ?좏삎?낅땲??\n諛깅룄蹂듭댂?꾩쿂??寃됱? ?뚮컯?대룄 ?κ린? 遺?쒕윭???洹밴컯??怨쇱씪??吏꾩떖?쇰줈 醫뗭븘?⑸땲??\n怨쇱씪??癒뱀쓣 ???κ린?먯꽌 ?ㅻ뒗 湲곗뼲怨?媛먯젙??誘쇨컧?섍쾶 諛섏쓳?⑸땲??\n?쒖쿋 怨쇱씪?????쒓린??留쏆엳寃?癒밸뒗 寃껋씠 媛????怨쇱씪 ?됰났?대씪怨??앷컖?⑸땲??\n諛붾굹?샕룸찞濡좎쿂???κ린濡?퀬 遺?쒕윭??怨쇱씪? ?몄젣??湲곕텇 醫뗪쾶 癒뱀쓣 ???덉뒿?덈떎.\n怨쇱씪 ?좊Ъ??諛쏆쓣 ???ъ옣蹂대떎 ?κ린? ?좎꽑?꾩뿉 ??吏묒쨷?⑸땲??',fruits:['諛깅룄蹂듭댂??(誘몃갚?꽷룸갚??','諛붾굹??,'癒몄뒪?щ찞濡?,'由ъ튂','臾댄솕怨?]},
-  RPCV:{name:'吏곴? 鍮꾩＜?쇳삎',desc:'?ъ숴?섍퀬 ?됱씠 ?좊챸??怨쇱씪???먯뿰?ㅻ읇寃??뚮━??吏곴??곸씤 ?좏삎?낅땲??\n?μ씠 ?쏀빐??留쏆엳怨??됯퉼 ?덉걶 怨쇱씪?대씪硫?異⑸텇??留뚯”?ㅻ읇?듬땲??\n?섎컯쨌?멸린쨌?щ룄泥섎읆 癒뱀쑝硫??쒖썝?섍퀬 ?ъ숴??怨쇱씪??媛???몄븞???좏깮?낅땲??\n留덊듃?먯꽌 ??吏꾩뿴??怨쇱씪 肄붾꼫瑜?蹂대㈃ ?먯뿰?ㅻ읇寃?援щℓ?섍쾶 ?⑸땲??\n怨쇱씪??蹂듭옟?섍쾶 怨좊Ⅴ湲곕낫?ㅻ뒗 ?덉뿉 ?ㅼ뼱?ㅻ뒗 寃껋쓣 吏곴??곸쑝濡??좏깮?섎뒗 ?몄엯?덈떎.\n?щ쫫泥??쒖썝???섎컯?대굹 ?됱옣 蹂닿????щ룄瑜??뱁엳 利먭퉩?덈떎.',fruits:['?섎컯 (?뚰삎쨌?⑥뾾??','?띿＜?⑤뱾由ъ뒪 ?щ룄','?덈뱶湲濡쒕툕','?멸린 (湲덉떎)','?щ┝???쒕뱾由ъ뒪']},
-  RPCN:{name:'留??꾩떎??,desc:'?ъ숴?섍린留??섎㈃ 異⑸텇?섎떎???ㅼ슜?곸씤 怨쇱씪 ?뚮퉬???좏삎?낅땲??\n?μ씠 媛뺥븯嫄곕굹 ?됱씠 ?붾젮?섏? ?딆븘??留쏆엳?쇰㈃ 洹몃쭔?대씪???앷컖??媛吏怨??덉뒿?덈떎.\n?ш낵쨌諛걔룸떒媛먯쿂???몄젣 癒뱀뼱???ㅽ뙣 ?녾퀬 ?꾩궘??怨쇱씪???좏샇?⑸땲??\n怨쇱씪 援щℓ ???밸룄? ?좎꽑?꾨? 以묒떖?쇰줈 ?먮떒?섎ŉ, 釉뚮옖?쒕굹 ?ъ옣?먮뒗 ??吏묒쨷?⑸땲??\n?쒖쿋 怨쇱씪???⑸━?곸씤 媛寃⑹뿉 援щℓ?섎뒗 寃껋뿉??留뚯”媛먯쓣 ?살뒿?덈떎.\n媛議깆씠 ?④퍡 癒뱀쓣 ???덈뒗 ??⑸웾 怨쇱씪???좏샇?섎뒗 寃쏀뼢???덉뒿?덈떎.',fruits:['?ш낵 (?묎킅쨌遺??','?④컧 (遺??','諛?(?먰솴)','?섎컯','?щ룄 (罹좊꺼쨌嫄곕큺)']},
-  RPSV:{name:'媛먯꽦 怨좉툒??,desc:'?ъ숴?섍퀬 ?됱씠 ?좊챸?섎ŉ 遺?쒕윭???앷컧??醫뗭븘?섎뒗 媛먯꽦?곸씤 ?좏삎?낅땲??\n?띿떆쨌?덈뱶?μ쿂???덉뿉 ?꾧쾶 ?좊챸?섍퀬 ?ъ숴?섎㈃???낆뿉???밸뒗 怨쇱씪???뱁엳 醫뗭븘?⑸땲??\n怨쇱씪???⑥닚??癒밴굅由щ낫??媛먯꽦?곸씤 寃쏀뿕?쇰줈 諛쏆븘?ㅼ씠??寃쏀뼢???덉뒿?덈떎.\n怨좉툒 怨쇱씪 ?좊Ъ?명듃???덉걯寃??ъ옣??怨쇱씪 諛붽뎄?덉뿉 留ㅻ젰???먮굧?덈떎.\n怨쇱씪??癒뱀쓣 ?뚯쓽 遺꾩쐞湲곗? ?곹솴??以묒슂?섍쾶 ?ш린???몄엯?덈떎.\n留앷퀬?ㅽ떞쨌?뚮??꾩쿂???닿뎅?곸씠怨?媛먭컖?곸씤 怨쇱씪?먮룄 愿?ъ씠 ?믪뒿?덈떎.',fruits:['?띿떆쨌?곗떆','?덈뱶??,'留앷퀬?ㅽ떞','?뚮???,'?⑸룄蹂듭댂??]},
-  RPSN:{name:'?ъ쑀 ?덇꺽??,desc:'?ъ숴?섏?留??붾젮?섏? ?딆?, ?먯뿰?ㅻ읇怨??ъ쑀 ?덈뒗 怨쇱씪??利먭린???좏삎?낅땲??\n由ъ튂쨌臾댄솕怨쇱쿂???뚮컯??蹂댁뿬???ъ숴?섍퀬 遺?쒕윭??怨쇱씪??源딆? 留ㅻ젰???먮굧?덈떎.\n怨쇱씪??泥쒖쿇?? ?쒕?濡??뚮??섎뒗 ?ㅽ??쇱씠硫?湲됲븯寃?癒밸뒗 寃껋쓣 醫뗭븘?섏? ?딆뒿?덈떎.\n?꾩쟾???듭뼱??媛??留쏆엳???쒖젏??癒밸뒗 寃껋쓣 以묒슂?섍쾶 ?앷컖?⑸땲??\n怨쇱씪???쇱옄 議곗슜??利먭린嫄곕굹 媛源뚯슫 ?щ엺怨??섎닠 癒밸뒗 寃껋쓣 ?좏샇?⑸땲??\n?먮━?덉쿂??媛뺥븳 媛쒖꽦???덈뒗 怨쇱씪??湲곌볼???쒕룄?대낫???⑷린媛 ?덉뒿?덈떎.',fruits:['?먮━??,'由ъ튂','諛붾굹??(?꾩닕)','留앷퀬 (?꾩닕)','?⑷툑諛?]},
-  MACV:{name:'?κ린 媛쒖꽦??,desc:'?대갚?섍퀬 ?κ린濡?퀬 ?꾩궘?섎ŉ ?좊챸???됱쓣 醫뗭븘?섎뒗 媛쒖꽦 ?덈뒗 ?좏삎?낅땲??\n?ъ숴??寃껊낫???곹겮?섍퀬 ?κ린濡쒖슫 怨쇱씪?먯꽌 ????利먭굅????먮굧?덈떎.\n李몄쇅쨌?덈が쨌?좎옄泥섎읆 ?κ린媛 ?낇듅?섍퀬 媛쒖꽦 ?덈뒗 怨쇱씪???뱁엳 醫뗭븘?⑸땲??\n怨쇱씪 蹂몄뿰???곕?? ?κ린媛 ?댁븘?덈뒗 寃껋쓣 以묒슂?섍쾶 ?ш린硫? ?덈Т ?щ㈃ ?ㅽ엳??遺?댁뒪?쎌뒿?덈떎.\n怨쇱씪 泥?룻슚?뙿룹＜?????κ린瑜??쒖슜??媛怨?怨쇱씪?먮룄 愿?ъ씠 留롮뒿?덈떎.\n嫄닿컯怨??곸풄?⑥쓣 ?숈떆??異붽뎄?섎뒗 ?쇱씠?꾩뒪??쇱쓣 媛吏怨??덉뒿?덈떎.',fruits:['李몄쇅','?덈が','?좎옄','?ㅻ???,'?뚯씤?좏뵆']},
-  MACN:{name:'?먯뿰 ?덉쐞??,desc:'?대갚?섍퀬 ?κ린濡?퀬 ?꾩궘?섏?留? ?붾젮???됰낫???먯뿰?ㅻ윭???덉쐞瑜??좏샇?⑸땲??\n泥?궗怨셋룹껌?щ룄泥섎읆 ?뚮컯???됱씠?대룄 ?κ낵 ?앷컧???뚮???怨쇱씪?먯꽌 留뚯”???살뒿?덈떎.\n怨쇱씪 蹂몄뿰??留쏄낵 ?μ쓣 媛??以묒슂?쒗븯硫? ?몄쐞?곸씤 ?⑤쭧? ?ㅽ엳??嫄곕?媛먯씠 ?앷퉩?덈떎.\n?쒖쿋???섎뒗 ?먯뿰?ㅻ윭??怨쇱씪??洹몃?濡?利먭린??寃껋쓣 媛??醫뗭븘?⑸땲??\n怨쇱씪??嫄닿컯???앹뒿愿???쇰?濡??앷컖?섎ŉ, 洹쒖튃?곸쑝濡???랬?섎뒗 ?몄엯?덈떎.\n?쇱뒪硫쒕줎쨌?泥쒕찞濡좎쿂???대갚?섍퀬 ?κ린濡쒖슫 硫쒕줎瑜섎? 利먭린??寃쏀뼢???덉뒿?덈떎.',fruits:['?꾩삤由?(泥?궗怨?','?ㅼ쐞 洹몃┛','?쇱뒪硫쒕줎','?泥쒕찞濡?,'泥?룷??(泥?닔)']},
-  MASV:{name:'?곕튃 媛먭컖??,desc:'?대갚?섍퀬 ?κ린濡?퀬 遺?쒕윭?곕ŉ ?좊챸???됱쓽 怨쇱씪??醫뗭븘?섎뒗 嫄닿컯 吏?ν삎?낅땲??\n?⑥＜諛媛먃룹옄紐쎌쿂??嫄닿컯??醫뗪퀬 ?κ린濡쒖슦硫?鍮꾩＜?쇰룄 醫뗭? 怨쇱씪??理쒖꽑???좏깮?낅땲??\n怨쇱씪??癒밸뒗 寃껋씠 嫄닿컯 愿由ъ쓽 以묒슂???쇰??쇨퀬 ?앷컖?⑸땲??\n??궛?붋룸퉬?誘???嫄닿컯 湲곕뒫 ?깅텇??愿?ъ씠 留롮쑝硫? ?대? 怨좊젮?댁꽌 怨쇱씪???좏깮?⑸땲??\n遺?쒕읇怨??뚰솕媛 ???섎뒗 怨쇱씪???좏샇?섎ŉ, 猿띿쭏???뉕굅???④? ?녿뒗 寃껋쓣 醫뗭븘?⑸땲??\n怨쇱씪 二쇱뒪???ㅻТ?붾줈 媛덉븘 癒밸뒗 諛⑹떇??利먭꺼 ?쒖슜?⑸땲??',fruits:['?⑥＜諛媛?,'?먮そ (?묓겕)','蹂듬텇??,'?뚰뙆??,'?ㅻ젋吏']},
-  MASN:{name:'?먮꼫吏 洹좏삎??,desc:'?대갚?섍퀬 ?κ린濡?퀬 遺?쒕읇吏留? ?됱? ?먯뿰?ㅻ윭??寃껋쓣 ?좏샇?섎뒗 洹좏삎 ?≫엺 ?좏삎?낅땲??\n?ㅼ쐞쨌援ъ븘諛붿쿂???곸뼇???띾??섍퀬 ?κ린??醫뗭? 怨쇱씪??袁몄???梨숆꺼 ?쒖떗?덈떎.\n怨쇱씪 ??랬瑜??듯빐 ?먮꼫吏 蹂댁땐怨?嫄닿컯 ?좎?瑜??숈떆??異붽뎄?⑸땲??\n寃됰え?듬낫???곸뼇 ?깅텇怨?留쏆쓽 洹좏삎????以묒슂?섍쾶 ?앷컖?⑸땲??\n?대룞 ?꾪썑???쒕룞??留롮? ??怨쇱씪??梨숆꺼 癒밸뒗 ?듦???媛吏怨??덉뒿?덈떎.\n?덈줈??嫄닿컯 怨쇱씪??愿?ъ씠 留롮쑝硫? 湲곕뒫??怨쇱씪 ?뺣낫瑜?袁몄????섏쭛?⑸땲??',fruits:['?ㅼ쐞 洹몃┛','李쎈갑議곗깮 蹂듭댂??,'援ъ븘諛?,'?꾨낫移대룄','諛붾굹??(???숈꽦)']},
-  MPCV:{name:'寃쎌풄 ?쒓컖??,desc:'?대갚?섍퀬 ?됱씠 ?좊챸?섏?留??μ? ?놁뼱???섍퀬 ?꾩궘???앷컧??利먭린???좏삎?낅땲??\n?섎컯쨌釉붾（踰좊━泥섎읆 ?쒖썝?섍퀬 ?쒓컖?곸쑝濡?留ㅻ젰?곸씤 怨쇱씪??利먭꺼 癒뱀뒿?덈떎.\n怨쇱씪??癒뱀쓣 ??泥?웾媛먭낵 ?꾩궘???앷컧?먯꽌 ??利먭굅????먮굧?덈떎.\n蹂듭옟??留쏅낫?ㅻ뒗 源붾걫?섍퀬 ?⑥닚??留쏆쓣 ?좏샇?섎뒗 ?몄엯?덈떎.\n?щ쫫泥??됱옣 蹂닿???怨쇱씪??癒밸뒗 寃껋쓣 ?뱁엳 醫뗭븘?⑸땲??\n??궛???깅텇???띾???踰좊━瑜섏뿉 嫄닿컯??愿?ъ쓣 媛吏??寃쏀뼢???덉뒿?덈떎.',fruits:['?섎컯','釉붾（踰좊━','?꾨줈?덉븘','?앸쪟','?덈뱶湲濡쒕툕 ?щ룄']},
-  MPCN:{name:'誘몃땲硫 ?댁꽦??,desc:'怨쇱옣 ?놁씠 ?대갚?섍퀬 ?⑥닚??怨쇱씪???좏샇?섎뒗 ?댁꽦?곸씤 ?좏삎?낅땲??\n?좉퀬諛걔룹븘蹂댁뭅?꾩쿂??袁몃컝?녾퀬 蹂몄쭏??異⑹떎??怨쇱씪?먯꽌 留뚯”???살뒿?덈떎.\n怨쇱씪 ?좏깮??留ㅼ슦 ?⑸━?곸씠硫? ?꾩슂??寃껊쭔 援щℓ?섎뒗 寃쏀뼢???덉뒿?덈떎.\n怨쇰룄?섍쾶 ?ш굅???μ씠 媛뺥븳 怨쇱씪蹂대떎??源붾걫?섍퀬 遺???녿뒗 怨쇱씪???좏샇?⑸땲??\n怨쇱씪???곸뼇 ?깅텇?대굹 移쇰줈由??뺣낫瑜?鍮꾧탳??瑗쇨세?섍쾶 ?뺤씤?섎뒗 ?몄엯?덈떎.\n?뺢린 援щℓ蹂대떎???꾩슂?????곷떦?됰쭔 援щℓ?섎뒗 ?뚮퉬 ?⑦꽩??蹂댁엯?덈떎.',fruits:['?좉퀬諛?,'泥?룷??(泥?닔)','?꾨낫移대룄','?⑷툑諛?,'?泥쒕찞濡?]},
-  MPSV:{name:'?낅┰ 媛쒖꽦??,desc:'?대갚?섍퀬 遺?쒕윭?곕ŉ ?좊챸???됱뿉 ?뚮━?? ?낇듅??痍⑦뼢??媛吏??좏삎?낅땲??\n?쒕옒怨ㅽ봽猷⑥툩쨌?ㅻ뵒泥섎읆 ?낇듅?섍퀬 ?덉뿉 ?꾨뒗 怨쇱씪?먯꽌 ?밸퀎??留ㅻ젰???먮굧?덈떎.\n?쇰컲?곸씤 怨쇱씪蹂대떎?????뚮젮吏?怨쇱씪???쒕룄?대낫??寃껋쓣 利먭퉩?덈떎.\n怨쇱씪???멸??먯꽌 ?λ?濡쒖????먮겮硫? ?덉걶 ?됱씠 ?좏깮?????곹뼢??誘몄묩?덈떎.\n?⑤쭧蹂대떎??媛쒖꽦 ?덈뒗 留쏄낵 ?쒓컖??留ㅻ젰????以묒슂?섍쾶 ?앷컖?⑸땲??\n?덈줈 ?섏삩 ?뱀씠??怨쇱씪???덉쑝硫?媛??癒쇱? 癒뱀뼱蹂닿퀬 ?띠뼱?섎뒗 ?몄엯?덈떎.',fruits:['?⑷낵 (?쒕옒怨ㅽ봽猷⑥툩)','?ㅻ뵒','?띿떆 (?곗떆)','?ㅽ?濡쒖뻹 ?щ룄','釉붾옓?쒕뱾由ъ뒪']},
-  MPSN:{name:'?대㈃ 媛移섑삎',desc:'寃됰え?듬낫???대㈃???곸뼇媛? 吏꾩젙??媛移섎? 以묒떆?섎뒗 ?좎쨷???좏삎?낅땲??\n?꾨낫移대룄쨌肄붿퐫?쏆쿂??寃됱? ?됰쾾??蹂댁뿬???곸뼇???띾???怨쇱씪??媛移섎? ?뚯븘遊낅땲??\n?붾젮???ъ옣?대굹 ?덉걶 ?멸?蹂대떎???ㅼ젣 嫄닿컯???꾩????섎뒗吏瑜???以묒슂?섍쾶 ?앷컖?⑸땲??\n怨쇱씪???듯빐 吏꾩젙??嫄닿컯怨??곸뼇??異붽뎄?섎뒗 ?쇱씠?꾩뒪??쇱쓣 媛吏怨??덉뒿?덈떎.\n怨쇱씪 ?좏깮???좎쨷?섎ŉ, ?쒕쾲 醫뗫떎怨??먮떒??怨쇱씪? 袁몄???諛섎났 援щℓ?섎뒗 ?몄엯?덈떎.\n嫄닿컯 ?뺣낫??愿?ъ씠 留롮쑝硫? 怨쇱씪 ??랬瑜??앺솢 猷⑦떞?쇰줈 ?뺤갑?쒗궎??寃쏀뼢???덉뒿?덈떎.',fruits:['?꾨낫移대룄','肄붿퐫??,'援ъ븘諛?,'諛붾굹??,'紐④낵 (李?']}
+  RACV:{name:'풍부한 감각형',desc:'맛·향·식감·색 네 가지 감각이 모두 활성화되는 풀패키지 유형입니다.\n달콤하고 향기롭고 아삭하며 선명한 색의 과일에서만 진짜 만족을 경험합니다.\n과일 하나를 고를 때도 색을 먼저 보고, 향을 맡고, 씹는 맛까지 따집니다.\n마트에서 가장 눈에 띄는 과일에 자연스럽게 손이 가는 편입니다.\n딸기·체리·감홍사과처럼 색도 예쁘고 향도 강하고 아삭한 과일이 최고의 선택입니다.\n선물용 과일도 외관과 품질 모두를 중시하며, 포장까지 꼼꼼하게 챙깁니다.',fruits:['딸기 (설향·킹스베리)','체리 (미국산)','사과 (감홍·홍로)','천도복숭아 (천홍)','자두 (대석조생)']},
+  RACN:{name:'향미 전통형',desc:'달콤하고 향기롭고 아삭하지만, 화려한 색보다 자연스러운 맛과 향을 더 중시합니다.\n겉이 화려한 과일보다 향기가 좋고 맛이 진한 과일에서 더 큰 만족을 얻습니다.\n샤인머스캣처럼 연한 색이어도 맛이 극강이면 최고로 치는 타입입니다.\n과일 본연의 품질을 알아보는 안목이 있으며, 당도 정보에 관심이 많습니다.\n직거래나 산지 직배송 과일에 관심을 가지는 경향이 있습니다.\n향기로운 과일을 선물받으면 가장 기뻐하는 스타일입니다.',fruits:['샤인머스캣','사과 (부사·후지)','신비복숭아','배 (원황)','코튼캔디 포도']},
+  RASV:{name:'감각 탐험형',desc:'달콤하고 향기로우며 부드러운 식감에 선명한 색의 과일을 두루 즐깁니다.\n새로 나온 과일이나 수입 희귀 과일에 먼저 눈이 가는 탐험가 기질이 있습니다.\n한라봉·천혜향·애플망고처럼 향과 비주얼이 모두 강한 과일을 특히 좋아합니다.\n계절마다 새로운 과일을 시도해보는 것을 즐깁니다.\n온라인 과일 구독 서비스나 프리미엄 과일 큐레이션에 매력을 느낍니다.\n주변 사람들에게 좋은 과일을 추천해주는 역할을 자주 합니다.',fruits:['망고 (애플망고)','한라봉·천혜향','황도복숭아','거봉 포도','키위 골드']},
+  RASN:{name:'균형 심화형',desc:'달콤하고 향기로우며 부드럽지만, 색보다는 맛과 향 자체에 집중하는 유형입니다.\n백도복숭아처럼 겉은 소박해도 향기와 부드러움이 극강인 과일을 진심으로 좋아합니다.\n과일을 먹을 때 향기에서 오는 기억과 감정에 민감하게 반응합니다.\n제철 과일을 제 시기에 맛있게 먹는 것이 가장 큰 과일 행복이라고 생각합니다.\n바나나·멜론처럼 향기롭고 부드러운 과일은 언제나 기분 좋게 먹을 수 있습니다.\n과일 선물을 받을 때 포장보다 향기와 신선도에 더 집중합니다.',fruits:['백도복숭아 (미백도·백향)','바나나','머스크멜론','리치','무화과']},
+  RPCV:{name:'직관 비주얼형',desc:'달콤하고 색이 선명한 과일에 자연스럽게 끌리는 직관적인 유형입니다.\n향이 약해도 맛있고 색깔 예쁜 과일이라면 충분히 만족스럽습니다.\n수박·딸기·포도처럼 먹으면 시원하고 달콤한 과일이 가장 편안한 선택입니다.\n마트에서 잘 진열된 과일 코너를 보면 자연스럽게 구매하게 됩니다.\n과일을 복잡하게 고르기보다는 눈에 들어오는 것을 직관적으로 선택하는 편입니다.\n여름철 시원한 수박이나 냉장 보관한 포도를 특히 즐깁니다.',fruits:['수박 (소형·씨없는)','홍주씨들리스 포도','레드글로브','딸기 (금실)','크림슨 시들리스']},
+  RPCN:{name:'맛 현실형',desc:'달콤하기만 하면 충분하다는 실용적인 과일 소비자 유형입니다.\n향이 강하거나 색이 화려하지 않아도 맛있으면 그만이라는 생각을 가지고 있습니다.\n사과·배·단감처럼 언제 먹어도 실패 없고 아삭한 과일을 선호합니다.\n과일 구매 시 당도와 신선도를 중심으로 판단하며, 브랜드나 포장에는 덜 집중합니다.\n제철 과일을 합리적인 가격에 구매하는 것에서 만족감을 얻습니다.\n가족이 함께 먹을 수 있는 대용량 과일을 선호하는 경향이 있습니다.',fruits:['사과 (양광·부사)','단감 (부유)','배 (원황)','수박','포도 (캠벨·거봉)']},
+  RPSV:{name:'감성 고급형',desc:'달콤하고 색이 선명하며 부드러운 식감을 좋아하는 감성적인 유형입니다.\n홍시·레드향처럼 눈에 띄게 선명하고 달콤하면서 입에서 녹는 과일을 특히 좋아합니다.\n과일을 단순한 먹거리보다 감성적인 경험으로 받아들이는 경향이 있습니다.\n고급 과일 선물세트나 예쁘게 포장된 과일 바구니에 매력을 느낍니다.\n과일을 먹을 때의 분위기와 상황을 중요하게 여기는 편입니다.\n망고스틴·람부탄처럼 이국적이고 감각적인 과일에도 관심이 높습니다.',fruits:['홍시·연시','레드향','망고스틴','람부탄','황도복숭아']},
+  RPSN:{name:'여유 품격형',desc:'달콤하지만 화려하지 않은, 자연스럽고 여유 있는 과일을 즐기는 유형입니다.\n리치·무화과처럼 소박해 보여도 달콤하고 부드러운 과일에 깊은 매력을 느낍니다.\n과일을 천천히, 제대로 음미하는 스타일이며 급하게 먹는 것을 좋아하지 않습니다.\n완전히 익어서 가장 맛있는 시점에 먹는 것을 중요하게 생각합니다.\n과일을 혼자 조용히 즐기거나 가까운 사람과 나눠 먹는 것을 선호합니다.\n두리안처럼 강한 개성이 있는 과일도 기꺼이 시도해보는 용기가 있습니다.',fruits:['두리안','리치','바나나 (완숙)','망고 (완숙)','황금배']},
+  MACV:{name:'향기 개성형',desc:'담백하고 향기롭고 아삭하며 선명한 색을 좋아하는 개성 있는 유형입니다.\n달콤한 것보다 상큼하고 향기로운 과일에서 더 큰 즐거움을 느낍니다.\n참외·레몬·유자처럼 향기가 독특하고 개성 있는 과일을 특히 좋아합니다.\n과일 본연의 산미와 향기가 살아있는 것을 중요하게 여기며, 너무 달면 오히려 부담스럽습니다.\n과일 청·효소·주스 등 향기를 활용한 가공 과일에도 관심이 많습니다.\n건강과 상쾌함을 동시에 추구하는 라이프스타일을 가지고 있습니다.',fruits:['참외','레몬','유자','오미자','파인애플']},
+  MACN:{name:'자연 품위형',desc:'담백하고 향기롭고 아삭하지만, 화려한 색보다 자연스러운 품위를 선호합니다.\n청사과·청포도처럼 소박한 색이어도 향과 식감이 훌륭한 과일에서 만족을 얻습니다.\n과일 본연의 맛과 향을 가장 중요시하며, 인위적인 단맛은 오히려 거부감이 생깁니다.\n제철에 나는 자연스러운 과일을 그대로 즐기는 것을 가장 좋아합니다.\n과일을 건강한 식습관의 일부로 생각하며, 규칙적으로 섭취하는 편입니다.\n얼스멜론·은천멜론처럼 담백하고 향기로운 멜론류를 즐기는 경향이 있습니다.',fruits:['아오리 (청사과)','키위 그린','얼스멜론','은천멜론','청포도 (청수)']},
+  MASV:{name:'웰빙 감각형',desc:'담백하고 향기롭고 부드러우며 선명한 색의 과일을 좋아하는 건강 지향형입니다.\n온주밀감·자몽처럼 건강에 좋고 향기로우며 비주얼도 좋은 과일이 최선의 선택입니다.\n과일을 먹는 것이 건강 관리의 중요한 일부라고 생각합니다.\n항산화·비타민 등 건강 기능 성분에 관심이 많으며, 이를 고려해서 과일을 선택합니다.\n부드럽고 소화가 잘 되는 과일을 선호하며, 껍질이 얇거나 씨가 없는 것을 좋아합니다.\n과일 주스나 스무디로 갈아 먹는 방식도 즐겨 활용합니다.',fruits:['온주밀감','자몽 (핑크)','복분자','파파야','오렌지']},
+  MASN:{name:'에너지 균형형',desc:'담백하고 향기롭고 부드럽지만, 색은 자연스러운 것을 선호하는 균형 잡힌 유형입니다.\n키위·구아바처럼 영양이 풍부하고 향기도 좋은 과일을 꾸준히 챙겨 드십니다.\n과일 섭취를 통해 에너지 보충과 건강 유지를 동시에 추구합니다.\n겉모습보다 영양 성분과 맛의 균형을 더 중요하게 생각합니다.\n운동 전후나 활동이 많은 날 과일을 챙겨 먹는 습관을 가지고 있습니다.\n새로운 건강 과일에 관심이 많으며, 기능성 과일 정보를 꾸준히 수집합니다.',fruits:['키위 그린','창방조생 복숭아','구아바','아보카도','바나나 (덜 숙성)']},
+  MPCV:{name:'경쾌 시각형',desc:'담백하고 색이 선명하지만 향은 없어도 되고 아삭한 식감을 즐기는 유형입니다.\n수박·블루베리처럼 시원하고 시각적으로 매력적인 과일을 즐겨 먹습니다.\n과일을 먹을 때 청량감과 아삭한 식감에서 큰 즐거움을 느낍니다.\n복잡한 맛보다는 깔끔하고 단순한 맛을 선호하는 편입니다.\n여름철 냉장 보관한 과일을 먹는 것을 특히 좋아합니다.\n항산화 성분이 풍부한 베리류에 건강적 관심을 가지는 경향이 있습니다.',fruits:['수박','블루베리','아로니아','석류','레드글로브 포도']},
+  MPCN:{name:'미니멀 이성형',desc:'과장 없이 담백하고 단순한 과일을 선호하는 이성적인 유형입니다.\n신고배·아보카도처럼 꾸밈없고 본질에 충실한 과일에서 만족을 얻습니다.\n과일 선택이 매우 합리적이며, 필요한 것만 구매하는 경향이 있습니다.\n과도하게 달거나 향이 강한 과일보다는 깔끔하고 부담 없는 과일을 선호합니다.\n과일의 영양 성분이나 칼로리 정보를 비교적 꼼꼼하게 확인하는 편입니다.\n정기 구매보다는 필요할 때 적당량만 구매하는 소비 패턴을 보입니다.',fruits:['신고배','청포도 (청수)','아보카도','황금배','은천멜론']},
+  MPSV:{name:'독립 개성형',desc:'담백하고 부드러우며 선명한 색에 끌리는, 독특한 취향을 가진 유형입니다.\n드래곤프루츠·오디처럼 독특하고 눈에 띄는 과일에서 특별한 매력을 느낍니다.\n일반적인 과일보다는 덜 알려진 과일을 시도해보는 것을 즐깁니다.\n과일의 외관에서 흥미로움을 느끼며, 예쁜 색이 선택에 큰 영향을 미칩니다.\n단맛보다는 개성 있는 맛과 시각적 매력을 더 중요하게 생각합니다.\n새로 나온 특이한 과일이 있으면 가장 먼저 먹어보고 싶어하는 편입니다.',fruits:['용과 (드래곤프루츠)','오디','홍시 (연시)','오텀로얄 포도','블랙시들리스']},
+  MPSN:{name:'내면 가치형',desc:'겉모습보다 내면의 영양가와 진정한 가치를 중시하는 신중한 유형입니다.\n아보카도·코코넛처럼 겉은 평범해 보여도 영양이 풍부한 과일의 가치를 알아봅니다.\n화려한 포장이나 예쁜 외관보다는 실제 건강에 도움이 되는지를 더 중요하게 생각합니다.\n과일을 통해 진정한 건강과 영양을 추구하는 라이프스타일을 가지고 있습니다.\n과일 선택에 신중하며, 한번 좋다고 판단한 과일은 꾸준히 반복 구매하는 편입니다.\n건강 정보에 관심이 많으며, 과일 섭취를 생활 루틴으로 정착시키는 경향이 있습니다.',fruits:['아보카도','코코넛','구아바','바나나','모과 (차)']}
 };
 
-var genderMap={M:'?⑥꽦',F:'?ъ꽦',X:'誘몄쓳??};
-var ageMap={'10s':'10?','20s':'20?','30s':'30?','40s':'40?','50s':'50?','60s':'60?+'};
-var regionMap={capital:'?섎룄沅?,metro:'愿묒뿭??,small:'以묒냼?꾩떆',rural:'?띿큿'};
-var freqMap={high:'二???',mid:'二?-2??,low:'??-3??,rare:'媛??};
-var chMap={online:'?⑤씪??,mart:'??뺣쭏??,market:'?꾪넻?쒖옣',convenience:'?몄쓽??,direct:'吏곴굅??};
+var genderMap={M:'남성',F:'여성',X:'미응답'};
+var ageMap={'10s':'10대','20s':'20대','30s':'30대','40s':'40대','50s':'50대','60s':'60대+'};
+var regionMap={capital:'수도권',metro:'광역시',small:'중소도시',rural:'농촌'};
+var freqMap={high:'주3회+',mid:'주1-2회',low:'월2-3회',rare:'가끔'};
+var chMap={online:'온라인',mart:'대형마트',market:'전통시장',convenience:'편의점',direct:'직거래'};
 
-/* ?? 珥덇린???? */
+/* ── 초기화 ── */
 window.onload = function(){
   var saved = localStorage.getItem('kfa_gas_url');
   GAS_URL = saved && saved !== MEMBER_GAS_URL && saved !== OLD_TSTC_GAS_URL ? saved : DEFAULT_TSTC_GAS_URL;
@@ -309,7 +309,7 @@ window.onload = function(){
   loadData();
 };
 
-/* ?? URL 愿由??? */
+/* ── URL 관리 ── */
 function checkUrl(){
   var v = document.getElementById('gas-url-input').value.trim();
   var banner = document.getElementById('url-banner');
@@ -317,9 +317,9 @@ function checkUrl(){
 }
 function saveUrl(){
   var v = document.getElementById('gas-url-input').value.trim();
-  if(!v){ alert('URL???낅젰?댁＜?몄슂.'); return; }
+  if(!v){ alert('URL을 입력해주세요.'); return; }
   if(v === MEMBER_GAS_URL){
-    alert('?뚯썝 Apps Script URL?낅땲?? TSTC 寃곌낵??Apps Script URL???ｌ뼱二쇱꽭??');
+    alert('회원 Apps Script URL입니다. TSTC 결과용 Apps Script URL을 넣어주세요.');
     v = DEFAULT_TSTC_GAS_URL;
     document.getElementById('gas-url-input').value = v;
   }
@@ -329,53 +329,53 @@ function saveUrl(){
   loadData();
 }
 
-/* ?? ?곗씠??濡쒕뱶 ?? */
+/* ── 데이터 로드 ── */
 function loadData(){
-  if(!GAS_URL){ document.getElementById('table-container').innerHTML='<div class="empty">Apps Script URL??癒쇱? ?ㅼ젙?댁＜?몄슂.</div>'; return; }
-  document.getElementById('table-container').innerHTML='<div class="loading">?곗씠?곕? 遺덈윭?ㅻ뒗 以?..</div>';
+  if(!GAS_URL){ document.getElementById('table-container').innerHTML='<div class="empty">Apps Script URL을 먼저 설정해주세요.</div>'; return; }
+  document.getElementById('table-container').innerHTML='<div class="loading">데이터를 불러오는 중...</div>';
   fetch(GAS_URL+'?t='+Date.now())
     .then(function(r){return r.json();})
     .then(function(res){
       if(res.status==='ok'){ allData=(res.data||res.rows||res.results||[]).map(normalizeResultRow); applyFilter(); updateStats(); }
-      else{ document.getElementById('table-container').innerHTML='<div class="empty">?ㅻ쪟: '+res.message+'</div>'; }
+      else{ document.getElementById('table-container').innerHTML='<div class="empty">오류: '+res.message+'</div>'; }
     })
-    .catch(function(e){ document.getElementById('table-container').innerHTML='<div class="empty">?곌껐 ?ㅽ뙣. URL???뺤씤?댁＜?몄슂.<br>'+e.message+'</div>'; });
+    .catch(function(e){ document.getElementById('table-container').innerHTML='<div class="empty">연결 실패. URL을 확인해주세요.<br>'+e.message+'</div>'; });
 }
 
-/* ?? ?듦퀎 ?낅뜲?댄듃 ?? */
+/* ── 통계 업데이트 ── */
 function updateStats(){
   document.getElementById('st-total').textContent = allData.length;
   var today = new Date().toLocaleDateString('ko-KR',{year:'numeric',month:'2-digit',day:'2-digit'}).replace(/\. /g,'-').replace(/\.$/,'');
   document.getElementById('st-today-date').textContent = today;
-  var todayCnt = allData.filter(function(r){return (r['??꾩뒪?ы봽']||'').substring(0,10)===today.substring(0,10);}).length;
+  var todayCnt = allData.filter(function(r){return (r['타임스탬프']||'').substring(0,10)===today.substring(0,10);}).length;
   document.getElementById('st-today').textContent = todayCnt;
-  // 理쒕떎 ?좏삎
+  // 최다 유형
   var codeCnt={};
-  allData.forEach(function(r){var c=r['TSTC肄붾뱶']||'';if(c)codeCnt[c]=(codeCnt[c]||0)+1;});
+  allData.forEach(function(r){var c=r['TSTC코드']||'';if(c)codeCnt[c]=(codeCnt[c]||0)+1;});
   var topCode='',topN=0;
   Object.keys(codeCnt).forEach(function(c){if(codeCnt[c]>topN){topN=codeCnt[c];topCode=c;}});
   document.getElementById('st-top-code').textContent = topCode||'-';
   document.getElementById('st-top-name').textContent = topCode?(TYPES[topCode]||{name:''}).name:'';
-  // 怨좉툒??鍮꾩쑉
-  var prem = allData.filter(function(r){return r['寃?ъ쑀??]==='premium';}).length;
+  // 고급형 비율
+  var prem = allData.filter(function(r){return r['검사유형']==='premium';}).length;
   var pct = allData.length ? Math.round(prem/allData.length*100)+'%' : '-';
   document.getElementById('st-premium').textContent = pct;
 }
 
-/* ?? ?꾪꽣 ?곸슜 ?? */
+/* ── 필터 적용 ── */
 function applyFilter(){
   var fc=document.getElementById('f-code').value;
   var fg=document.getElementById('f-gender').value;
   var fa=document.getElementById('f-age').value;
   var fm=document.getElementById('f-mode').value;
   filtered=allData.filter(function(r){
-    if(fc&&r['TSTC肄붾뱶']!==fc)return false;
-    if(fg&&r['?깅퀎']!==fg)return false;
-    if(fa&&r['?곕졊']!==fa)return false;
-    if(fm&&r['寃?ъ쑀??]!==fm)return false;
+    if(fc&&r['TSTC코드']!==fc)return false;
+    if(fg&&r['성별']!==fg)return false;
+    if(fa&&r['연령']!==fa)return false;
+    if(fm&&r['검사유형']!==fm)return false;
     return true;
   });
-  document.getElementById('f-count').innerHTML='珥?<strong>'+filtered.length+'</strong>嫄?;
+  document.getElementById('f-count').innerHTML='총 <strong>'+filtered.length+'</strong>건';
   selected=[];
   renderTable();
 }
@@ -384,34 +384,34 @@ function clearFilter(){
   applyFilter();
 }
 
-/* ?? ?뚯씠釉??뚮뜑留??? */
+/* ── 테이블 렌더링 ── */
 function renderTable(){
-  if(!filtered.length){ document.getElementById('table-container').innerHTML='<div class="empty">?대떦?섎뒗 ?곗씠?곌? ?놁뒿?덈떎.</div>'; return; }
+  if(!filtered.length){ document.getElementById('table-container').innerHTML='<div class="empty">해당하는 데이터가 없습니다.</div>'; return; }
   var h='<table class="tbl"><thead><tr>'
     +'<th><input type="checkbox" id="chk-all" onchange="toggleAll(this)"></th>'
-    +'<th>??꾩뒪?ы봽</th><th>李몄뿬肄붾뱶</th><th>寃?ъ쑀??/th>'
-    +'<th>TSTC</th><th>?좏삎紐?/th>'
-    +'<th>?깅퀎</th><th>?곕졊</th><th>吏??/th>'
+    +'<th>타임스탬프</th><th>참여코드</th><th>검사유형</th>'
+    +'<th>TSTC</th><th>유형명</th>'
+    +'<th>성별</th><th>연령</th><th>지역</th>'
     +'<th>T</th><th>S</th><th>TX</th><th>C</th>'
-    +'<th>由ы룷??/th>'
+    +'<th>리포트</th>'
     +'</tr></thead><tbody>';
   filtered.forEach(function(r,i){
     var isSel=selected.indexOf(i)>=0;
     h+='<tr class="'+(isSel?'selected':'')+'">'
       +'<td><input type="checkbox" '+(isSel?'checked':'')+' onchange="toggleRow('+i+',this)"></td>'
-      +'<td>'+((r['??꾩뒪?ы봽']||'').substring(0,16)||'-')+'</td>'
-      +'<td>'+((r['李몄뿬肄붾뱶']||'').substring(0,8)||'-')+'</td>'
-      +'<td>'+(r['寃?ъ쑀??]==='premium'?'<span style="color:var(--gd);font-weight:700">怨좉툒??/span>':'?쇰컲??)+'</td>'
-      +'<td><span class="code-badge">'+(r['TSTC肄붾뱶']||'-')+'</span></td>'
-      +'<td class="type-badge">'+(r['?좏삎紐?]||'-')+'</td>'
-      +'<td>'+(genderMap[r['?깅퀎']]||r['?깅퀎']||'-')+'</td>'
-      +'<td>'+(ageMap[r['?곕졊']]||r['?곕졊']||'-')+'</td>'
-      +'<td>'+(regionMap[r['吏??]]||r['吏??]||'-')+'</td>'
-      +'<td style="text-align:center;font-weight:700;color:'+(r['T?먯닔']>0?'var(--g)':'#888')+'">'+(r['T?먯닔']||0)+'</td>'
-      +'<td style="text-align:center;font-weight:700;color:'+(r['S?먯닔']>0?'var(--g)':'#888')+'">'+(r['S?먯닔']||0)+'</td>'
-      +'<td style="text-align:center;font-weight:700;color:'+(r['TX?먯닔']>0?'var(--g)':'#888')+'">'+(r['TX?먯닔']||0)+'</td>'
-      +'<td style="text-align:center;font-weight:700;color:'+(r['C?먯닔']>0?'var(--g)':'#888')+'">'+(r['C?먯닔']||0)+'</td>'
-      +'<td><button class="view-btn" onclick="openReport('+i+')">蹂닿린</button></td>'
+      +'<td>'+((r['타임스탬프']||'').substring(0,16)||'-')+'</td>'
+      +'<td>'+((r['참여코드']||'').substring(0,8)||'-')+'</td>'
+      +'<td>'+(r['검사유형']==='premium'?'<span style="color:var(--gd);font-weight:700">고급형</span>':'일반형')+'</td>'
+      +'<td><span class="code-badge">'+(r['TSTC코드']||'-')+'</span></td>'
+      +'<td class="type-badge">'+(r['유형명']||'-')+'</td>'
+      +'<td>'+(genderMap[r['성별']]||r['성별']||'-')+'</td>'
+      +'<td>'+(ageMap[r['연령']]||r['연령']||'-')+'</td>'
+      +'<td>'+(regionMap[r['지역']]||r['지역']||'-')+'</td>'
+      +'<td style="text-align:center;font-weight:700;color:'+(r['T점수']>0?'var(--g)':'#888')+'">'+(r['T점수']||0)+'</td>'
+      +'<td style="text-align:center;font-weight:700;color:'+(r['S점수']>0?'var(--g)':'#888')+'">'+(r['S점수']||0)+'</td>'
+      +'<td style="text-align:center;font-weight:700;color:'+(r['TX점수']>0?'var(--g)':'#888')+'">'+(r['TX점수']||0)+'</td>'
+      +'<td style="text-align:center;font-weight:700;color:'+(r['C점수']>0?'var(--g)':'#888')+'">'+(r['C점수']||0)+'</td>'
+      +'<td><button class="view-btn" onclick="openReport('+i+')">보기</button></td>'
       +'</tr>';
   });
   h+='</tbody></table>';
@@ -419,7 +419,7 @@ function renderTable(){
   updateSelCount();
 }
 
-/* ?? 泥댄겕諛뺤뒪 ?? */
+/* ── 체크박스 ── */
 function toggleAll(cb){
   if(cb.checked){ selected=filtered.map(function(_,i){return i;}); }
   else{ selected=[]; }
@@ -433,20 +433,22 @@ function toggleRow(i,cb){
   updateSelCount();
 }
 function updateSelCount(){
-  document.getElementById('sel-count').textContent='?좏깮 '+selected.length+'嫄?;
+  document.getElementById('sel-count').textContent='선택 '+selected.length+'건';
   var dis=selected.length===0;
   document.getElementById('report-btn').disabled=dis;
   document.getElementById('report-btn2').disabled=dis;
 }
 
-/* ?? ?덉씠??李⑦듃 SVG ?? */
+/* ── 레이더 차트 SVG ── */
 function radarSVG(t,s,tx,c,mx){
   mx=mx||10;
   var cx=100,cy=100,r=72;
-  // 4媛?異??꾩튂 (?겶룹슦쨌?샕룹쥖)
+  // 4개 축 위치 (상·우·하·좌)
   var axes=[
-    {label:'T',x:cx,y:cy-r},       // ??    {label:'S',x:cx+r,y:cy},       // ?ㅻⅨ履?    {label:'TX',x:cx,y:cy+r},      // ?꾨옒
-    {label:'C',x:cx-r,y:cy}        // ?쇱そ
+    {label:'T',x:cx,y:cy-r},       // 위
+    {label:'S',x:cx+r,y:cy},       // 오른쪽
+    {label:'TX',x:cx,y:cy+r},      // 아래
+    {label:'C',x:cx-r,y:cy}        // 왼쪽
   ];
   var scores=[t,s,tx,c];
   var pts=scores.map(function(v,i){
@@ -480,35 +482,35 @@ function radarSVG(t,s,tx,c,mx){
     +'</svg>';
 }
 
-/* ?? ?⑥씪 由ы룷???닿린 ?? */
+/* ── 단일 리포트 열기 ── */
 function openReport(i){
   var r=filtered[i];
   if(!r)return;
-  var code=r['TSTC肄붾뱶']||'RACV';
+  var code=r['TSTC코드']||'RACV';
   var tp=TYPES[code]||TYPES['RACV'];
-  var t=parseInt(r['T?먯닔'])||0, s=parseInt(r['S?먯닔'])||0;
-  var tx=parseInt(r['TX?먯닔'])||0, c=parseInt(r['C?먯닔'])||0;
-  var mx=(r['寃?ъ쑀??]==='premium'?16:10);
+  var t=parseInt(r['T점수'])||0, s=parseInt(r['S점수'])||0;
+  var tx=parseInt(r['TX점수'])||0, c=parseInt(r['C점수'])||0;
+  var mx=(r['검사유형']==='premium'?16:10);
 
-  document.getElementById('rp-title').textContent='媛쒖씤 由ы룷??쨌 '+((r['??꾩뒪?ы봽']||'').substring(0,10));
+  document.getElementById('rp-title').textContent='개인 리포트 · '+((r['타임스탬프']||'').substring(0,10));
 
   var chips=[];
-  if(r['?깅퀎'])chips.push(genderMap[r['?깅퀎']]||r['?깅퀎']);
-  if(r['?곕졊'])chips.push(ageMap[r['?곕졊']]||r['?곕졊']);
-  if(r['吏??])chips.push(regionMap[r['吏??]]||r['吏??]);
-  if(r['媛議깃뎄??])chips.push(r['媛議깃뎄??]);
-  if(r['援щℓ鍮덈룄'])chips.push(freqMap[r['援щℓ鍮덈룄']]||r['援щℓ鍮덈룄']);
-  if(r['援щℓ梨꾨꼸'])chips.push(chMap[r['援щℓ梨꾨꼸']]||r['援щℓ梨꾨꼸']);
+  if(r['성별'])chips.push(genderMap[r['성별']]||r['성별']);
+  if(r['연령'])chips.push(ageMap[r['연령']]||r['연령']);
+  if(r['지역'])chips.push(regionMap[r['지역']]||r['지역']);
+  if(r['가족구성'])chips.push(r['가족구성']);
+  if(r['구매빈도'])chips.push(freqMap[r['구매빈도']]||r['구매빈도']);
+  if(r['구매채널'])chips.push(chMap[r['구매채널']]||r['구매채널']);
 
   var bars=[
-    {n:'T 쨌 留?, dir:(t>0?'Rich (?ъ숴쨌吏꾪븿)':'Mild (?대갚쨌媛踰쇱?)'), pct:Math.min(100,Math.round(Math.abs(t)/mx*100))},
-    {n:'S 쨌 ??, dir:(s>0?'Aroma (?κ린 以묒떆)':'Plain (????以묒슂)'), pct:Math.min(100,Math.round(Math.abs(s)/mx*100))},
-    {n:'TX 쨌 ?앷컧', dir:(tx>0?'Crisp (?꾩궘쨌?⑤떒)':'Soft (遺?쒕읇怨?珥됱큺)'), pct:Math.min(100,Math.round(Math.abs(tx)/mx*100))},
-    {n:'C 쨌 ??, dir:(c>0?'Vivid (?좊챸쨌媛뺣젹)':'Natural (?먯뿰?ㅻ윭?댁깋)'), pct:Math.min(100,Math.round(Math.abs(c)/mx*100))},
+    {n:'T · 맛', dir:(t>0?'Rich (달콤·진함)':'Mild (담백·가벼움)'), pct:Math.min(100,Math.round(Math.abs(t)/mx*100))},
+    {n:'S · 향', dir:(s>0?'Aroma (향기 중시)':'Plain (향 덜 중요)'), pct:Math.min(100,Math.round(Math.abs(s)/mx*100))},
+    {n:'TX · 식감', dir:(tx>0?'Crisp (아삭·단단)':'Soft (부드럽고 촉촉)'), pct:Math.min(100,Math.round(Math.abs(tx)/mx*100))},
+    {n:'C · 색', dir:(c>0?'Vivid (선명·강렬)':'Natural (자연스러운색)'), pct:Math.min(100,Math.round(Math.abs(c)/mx*100))},
   ];
   var barsHTML=bars.map(function(b){
     return '<div class="bar-item">'
-      +'<div class="bar-top"><span class="bar-name">'+b.n+'</span><span class="bar-pct">'+b.dir+' 쨌 '+b.pct+'%</span></div>'
+      +'<div class="bar-top"><span class="bar-name">'+b.n+'</span><span class="bar-pct">'+b.dir+' · '+b.pct+'%</span></div>'
       +'<div class="bar-bg"><div class="bar-fill" data-w="'+b.pct+'" style="width:0%"></div></div>'
       +'</div>';
   }).join('');
@@ -519,29 +521,30 @@ function openReport(i){
   document.getElementById('rp-body').innerHTML=
     '<div class="rp-code">'+code+'</div>'
     +'<div class="rp-type">'+tp.name+'</div>'
-    // ?덉씠??李⑦듃
+    // 레이더 차트
     +'<div class="rp-sec">'
-    +'<div class="rp-sec-title">TSTC 媛먭컖 ?덉씠??/div>'
+    +'<div class="rp-sec-title">TSTC 감각 레이더</div>'
     +'<div class="radar-wrap">'+radarSVG(t,s,tx,c,mx)+'</div>'
     +'<div class="axis-labels">'
-    +'<div class="ax-chip"><span class="ax-key">T 쨌 留?/span><div style="text-align:right"><div class="ax-dir">'+(t>0?'Rich':'Mild')+'</div><div class="ax-val">'+t+' pt</div></div></div>'
-    +'<div class="ax-chip"><span class="ax-key">S 쨌 ??/span><div style="text-align:right"><div class="ax-dir">'+(s>0?'Aroma':'Plain')+'</div><div class="ax-val">'+s+' pt</div></div></div>'
-    +'<div class="ax-chip"><span class="ax-key">TX 쨌 ?앷컧</span><div style="text-align:right"><div class="ax-dir">'+(tx>0?'Crisp':'Soft')+'</div><div class="ax-val">'+tx+' pt</div></div></div>'
-    +'<div class="ax-chip"><span class="ax-key">C 쨌 ??/span><div style="text-align:right"><div class="ax-dir">'+(c>0?'Vivid':'Natural')+'</div><div class="ax-val">'+c+' pt</div></div></div>'
+    +'<div class="ax-chip"><span class="ax-key">T · 맛</span><div style="text-align:right"><div class="ax-dir">'+(t>0?'Rich':'Mild')+'</div><div class="ax-val">'+t+' pt</div></div></div>'
+    +'<div class="ax-chip"><span class="ax-key">S · 향</span><div style="text-align:right"><div class="ax-dir">'+(s>0?'Aroma':'Plain')+'</div><div class="ax-val">'+s+' pt</div></div></div>'
+    +'<div class="ax-chip"><span class="ax-key">TX · 식감</span><div style="text-align:right"><div class="ax-dir">'+(tx>0?'Crisp':'Soft')+'</div><div class="ax-val">'+tx+' pt</div></div></div>'
+    +'<div class="ax-chip"><span class="ax-key">C · 색</span><div style="text-align:right"><div class="ax-dir">'+(c>0?'Vivid':'Natural')+'</div><div class="ax-val">'+c+' pt</div></div></div>'
     +'</div></div>'
-    // 媛뺣룄 諛?李⑦듃
-    +'<div class="rp-sec"><div class="rp-sec-title">媛먭컖 媛뺣룄 遺꾩꽍</div>'+barsHTML+'</div>'
-    // ?좏삎 ?ㅻ챸
-    +'<div class="rp-sec"><div class="rp-sec-title">?좏삎 遺꾩꽍</div>'
+    // 강도 바 차트
+    +'<div class="rp-sec"><div class="rp-sec-title">감각 강도 분석</div>'+barsHTML+'</div>'
+    // 유형 설명
+    +'<div class="rp-sec"><div class="rp-sec-title">유형 분석</div>'
     +'<div class="desc-text">'+tp.desc.replace(/\n/g,'\n')+'</div></div>'
-    // ?꾨줈??    +'<div class="rp-sec"><div class="rp-sec-title">?묐떟???꾨줈??/div>'
+    // 프로필
+    +'<div class="rp-sec"><div class="rp-sec-title">응답자 프로필</div>'
     +'<div class="profile-chips">'+chips.map(function(c){return '<span class="p-chip">'+c+'</span>';}).join('')+'</div>'
-    +'<div style="margin-top:10px;font-size:12px;color:#aaa">寃???좏삎: '+(r['寃?ъ쑀??]==='premium'?'怨좉툒??(32臾명빆)':'?쇰컲??(20臾명빆)')+'&nbsp;쨌&nbsp;李몄뿬肄붾뱶: '+(r['李몄뿬肄붾뱶']||'-')+'</div>'
+    +'<div style="margin-top:10px;font-size:12px;color:#aaa">검사 유형: '+(r['검사유형']==='premium'?'고급형 (32문항)':'일반형 (20문항)')+'&nbsp;·&nbsp;참여코드: '+(r['참여코드']||'-')+'</div>'
     +'</div>'
-    // 異붿쿇 怨쇱씪
-    +'<div class="rp-sec"><div class="rp-sec-title">異붿쿇 怨쇱씪 TOP 5</div>'+fruitsHTML+'</div>'
-    // ?몄뇙 踰꾪듉
-    +'<button onclick="printReport()" style="width:100%;background:var(--g);color:#fff;border:none;padding:14px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;margin-top:8px">?몄뇙 / PDF ???/button>';
+    // 추천 과일
+    +'<div class="rp-sec"><div class="rp-sec-title">추천 과일 TOP 5</div>'+fruitsHTML+'</div>'
+    // 인쇄 버튼
+    +'<button onclick="printReport()" style="width:100%;background:var(--g);color:#fff;border:none;padding:14px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;margin-top:8px">인쇄 / PDF 저장</button>';
 
   document.getElementById('report-panel').classList.add('open');
   document.getElementById('overlay').style.display='block';
@@ -552,24 +555,24 @@ function openReport(i){
   },200);
 }
 
-/* ?? 蹂듭닔 ?좏깮 由ы룷???? */
+/* ── 복수 선택 리포트 ── */
 function openBulkReport(){
-  if(!selected.length){alert('由ы룷?몃? 蹂???ぉ???좏깮?댁＜?몄슂.');return;}
+  if(!selected.length){alert('리포트를 볼 항목을 선택해주세요.');return;}
   if(selected.length===1){openReport(selected[0]);return;}
 
   var rows=selected.map(function(i){return filtered[i];});
-  document.getElementById('rp-title').textContent='蹂듭닔 由ы룷??쨌 '+rows.length+'紐?;
+  document.getElementById('rp-title').textContent='복수 리포트 · '+rows.length+'명';
 
-  // 吏묎퀎
+  // 집계
   var codeCnt={},typeCnt={};
   var tSum=0,sSum=0,txSum=0,cSum=0;
   rows.forEach(function(r){
-    var c=r['TSTC肄붾뱶']||'';
+    var c=r['TSTC코드']||'';
     codeCnt[c]=(codeCnt[c]||0)+1;
-    tSum+=parseInt(r['T?먯닔'])||0;
-    sSum+=parseInt(r['S?먯닔'])||0;
-    txSum+=parseInt(r['TX?먯닔'])||0;
-    cSum+=parseInt(r['C?먯닔'])||0;
+    tSum+=parseInt(r['T점수'])||0;
+    sSum+=parseInt(r['S점수'])||0;
+    txSum+=parseInt(r['TX점수'])||0;
+    cSum+=parseInt(r['C점수'])||0;
   });
   var n=rows.length;
   var tAvg=Math.round(tSum/n), sAvg=Math.round(sSum/n);
@@ -578,35 +581,35 @@ function openBulkReport(){
   var mx=10;
 
   var codeList=Object.keys(codeCnt).sort(function(a,b){return codeCnt[b]-codeCnt[a];})
-    .map(function(c){return '<div class="bulk-row"><span class="bl">'+c+'</span><span class="bv">'+codeCnt[c]+'紐?('+Math.round(codeCnt[c]/n*100)+'%)</span></div>';}).join('');
+    .map(function(c){return '<div class="bulk-row"><span class="bl">'+c+'</span><span class="bv">'+codeCnt[c]+'명 ('+Math.round(codeCnt[c]/n*100)+'%)</span></div>';}).join('');
 
   var bars2=[
-    {n:'T 쨌 留?, dir:(tAvg>0?'Rich 寃쏀뼢':'Mild 寃쏀뼢'), pct:Math.min(100,Math.round(Math.abs(tAvg)/mx*100))},
-    {n:'S 쨌 ??, dir:(sAvg>0?'Aroma 寃쏀뼢':'Plain 寃쏀뼢'), pct:Math.min(100,Math.round(Math.abs(sAvg)/mx*100))},
-    {n:'TX 쨌 ?앷컧', dir:(txAvg>0?'Crisp 寃쏀뼢':'Soft 寃쏀뼢'), pct:Math.min(100,Math.round(Math.abs(txAvg)/mx*100))},
-    {n:'C 쨌 ??, dir:(cAvg>0?'Vivid 寃쏀뼢':'Natural 寃쏀뼢'), pct:Math.min(100,Math.round(Math.abs(cAvg)/mx*100))},
+    {n:'T · 맛', dir:(tAvg>0?'Rich 경향':'Mild 경향'), pct:Math.min(100,Math.round(Math.abs(tAvg)/mx*100))},
+    {n:'S · 향', dir:(sAvg>0?'Aroma 경향':'Plain 경향'), pct:Math.min(100,Math.round(Math.abs(sAvg)/mx*100))},
+    {n:'TX · 식감', dir:(txAvg>0?'Crisp 경향':'Soft 경향'), pct:Math.min(100,Math.round(Math.abs(txAvg)/mx*100))},
+    {n:'C · 색', dir:(cAvg>0?'Vivid 경향':'Natural 경향'), pct:Math.min(100,Math.round(Math.abs(cAvg)/mx*100))},
   ].map(function(b){
     return '<div class="bar-item">'
-      +'<div class="bar-top"><span class="bar-name">'+b.n+'</span><span class="bar-pct">'+b.dir+' 쨌 '+b.pct+'%</span></div>'
+      +'<div class="bar-top"><span class="bar-name">'+b.n+'</span><span class="bar-pct">'+b.dir+' · '+b.pct+'%</span></div>'
       +'<div class="bar-bg"><div class="bar-fill" data-w="'+b.pct+'" style="width:0%"></div></div></div>';
   }).join('');
 
   document.getElementById('rp-body').innerHTML=
     '<div style="text-align:center;background:var(--lc);border:1px solid var(--bd);padding:16px;margin-bottom:20px">'
-    +'<div style="font-size:10px;color:var(--g2);letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px">遺꾩꽍 ???/div>'
-    +'<div style="font-size:36px;font-weight:800;color:var(--g);line-height:1">'+n+'<span style="font-size:16px">紐?/span></div>'
+    +'<div style="font-size:10px;color:var(--g2);letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px">분석 대상</div>'
+    +'<div style="font-size:36px;font-weight:800;color:var(--g);line-height:1">'+n+'<span style="font-size:16px">명</span></div>'
     +'</div>'
-    +'<div class="rp-sec"><div class="rp-sec-title">?됯퇏 媛먭컖 ?덉씠??/div>'
+    +'<div class="rp-sec"><div class="rp-sec-title">평균 감각 레이더</div>'
     +'<div class="radar-wrap">'+radarSVG(tAvg,sAvg,txAvg,cAvg,mx)+'</div></div>'
-    +'<div class="rp-sec"><div class="rp-sec-title">?됯퇏 媛먭컖 媛뺣룄</div>'+bars2+'</div>'
-    +'<div class="rp-sec"><div class="rp-sec-title">TSTC ?좏삎 遺꾪룷</div>'
+    +'<div class="rp-sec"><div class="rp-sec-title">평균 감각 강도</div>'+bars2+'</div>'
+    +'<div class="rp-sec"><div class="rp-sec-title">TSTC 유형 분포</div>'
     +'<div class="bulk-stat">'+codeList+'</div></div>'
-    +'<div class="rp-sec"><div class="rp-sec-title">理쒕떎 ?좏삎 ?곸꽭</div>'
+    +'<div class="rp-sec"><div class="rp-sec-title">최다 유형 상세</div>'
     +'<div class="rp-code" style="font-size:40px">'+topCode+'</div>'
     +'<div class="rp-type" style="font-size:14px;margin-bottom:16px">'+((TYPES[topCode]||{name:''}).name)+'</div>'
     +'<div class="desc-text">'+((TYPES[topCode]||{desc:''}).desc||'').replace(/\n/g,'\n')+'</div>'
     +'</div>'
-    +'<button onclick="printReport()" style="width:100%;background:var(--g);color:#fff;border:none;padding:14px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;margin-top:8px">?몄뇙 / PDF ???/button>';
+    +'<button onclick="printReport()" style="width:100%;background:var(--g);color:#fff;border:none;padding:14px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;margin-top:8px">인쇄 / PDF 저장</button>';
 
   document.getElementById('report-panel').classList.add('open');
   document.getElementById('overlay').style.display='block';
@@ -617,19 +620,19 @@ function openBulkReport(){
   },200);
 }
 
-/* ?? 由ы룷???リ린 ?? */
+/* ── 리포트 닫기 ── */
 function closeReport(){
   document.getElementById('report-panel').classList.remove('open');
   document.getElementById('overlay').style.display='none';
 }
 
-/* ?? ?몄뇙 ?? */
+/* ── 인쇄 ── */
 function printReport(){
   var content = document.getElementById('rp-body').innerHTML;
   var title = document.getElementById('rp-title').textContent;
   var w = window.open('','_blank','width=600,height=800');
   w.document.write('<html><head><title>'+title+'</title>'
-    +'<style>body{font-family:\'留묒? 怨좊뵓\',sans-serif;padding:24px;color:#111;max-width:520px;margin:0 auto}'
+    +'<style>body{font-family:\'맑은 고딕\',sans-serif;padding:24px;color:#111;max-width:520px;margin:0 auto}'
     +'.rp-code{font-size:48px;font-weight:800;color:#D4A843;text-align:center}'
     +'.rp-type{text-align:center;font-size:16px;font-weight:700;color:#1B3A2D;margin-bottom:16px}'
     +'.rp-sec{margin-bottom:20px}'
@@ -649,10 +652,10 @@ function printReport(){
   setTimeout(function(){w.print();},500);
 }
 
-/* ?? CSV ?대낫?닿린 ?? */
+/* ── CSV 내보내기 ── */
 function exportCSV(){
-  if(!filtered.length){alert('?대낫???곗씠?곌? ?놁뒿?덈떎.');return;}
-  var cols=['??꾩뒪?ы봽','李몄뿬肄붾뱶','寃?ъ쑀??,'?깅퀎','?곕졊','吏??,'媛議깃뎄??,'?먮??곕졊','援щℓ鍮덈룄','援щℓ梨꾨꼸','T?먯닔','S?먯닔','TX?먯닔','C?먯닔','TSTC肄붾뱶','?좏삎紐?];
+  if(!filtered.length){alert('내보낼 데이터가 없습니다.');return;}
+  var cols=['타임스탬프','참여코드','검사유형','성별','연령','지역','가족구성','자녀연령','구매빈도','구매채널','T점수','S점수','TX점수','C점수','TSTC코드','유형명'];
   var csv='\uFEFF'+cols.join(',')+'\n';
   filtered.forEach(function(r){
     csv+=cols.map(function(c){
@@ -664,10 +667,9 @@ function exportCSV(){
   var blob=new Blob([csv],{type:'text/csv;charset=utf-8'});
   var a=document.createElement('a');
   a.href=URL.createObjectURL(blob);
-  a.download='KFA_TSTC_寃곌낵_'+new Date().toISOString().substring(0,10)+'.csv';
+  a.download='KFA_TSTC_결과_'+new Date().toISOString().substring(0,10)+'.csv';
   a.click();
 }
 </script>
 </body>
 </html>
-
