@@ -6,9 +6,9 @@
 @import url("colors_and_type.css");
 
 :root {
-  --kfa-hero-title-size: clamp(40px, 5.2vw, 56px);
+  --kfa-hero-title-size: clamp(36px, 4.8vw, 52px);
   --kfa-section-title-size: clamp(30px, 3.8vw, 44px);
-  --kfa-lede-size: clamp(18px, 1.7vw, 22px);
+  --kfa-lede-size: clamp(17px, 1.55vw, 20px);
 }
 
 html {
@@ -277,11 +277,12 @@ main { display: block; min-height: calc(100vh - 64px - 420px); }
   font-family: var(--font-serif);
   font-size: var(--kfa-hero-title-size);
   font-weight: 400;
-  line-height: 1.08;
+  line-height: 1.14;
   letter-spacing: -.028em;
   color: var(--ink-1);
   margin: 0 0 clamp(32px, 4vw, 56px);
   text-wrap: balance;
+  max-width: 14ch;
 }
 .letter__title em {
   font-style: normal;
@@ -293,10 +294,10 @@ main { display: block; min-height: calc(100vh - 64px - 420px); }
   font-family: var(--font-serif);
   font-size: var(--kfa-lede-size);
   font-weight: 400;
-  line-height: 1.55;
+  line-height: 1.68;
   color: var(--ink-2);
   margin: 0 0 clamp(48px, 7vw, 88px);
-  max-width: 620px;
+  max-width: 34ch;
   letter-spacing: -.005em;
 }
 .letter__body {
@@ -3013,7 +3014,7 @@ main { display: block; min-height: calc(100vh - 64px - 420px); }
   gap: clamp(40px, 6vw, 80px);
   min-height: clamp(520px, 80vh, 760px);
 }
-.home-hero__copy { max-width: 540px; }
+.home-hero__copy { max-width: 540px; text-align: left; }
 .home-hero__eyebrow {
   font-family: var(--font-sans);
   font-size: 13px; font-weight: 500;
@@ -3025,17 +3026,19 @@ main { display: block; min-height: calc(100vh - 64px - 420px); }
   font-family: var(--font-serif);
   font-size: var(--kfa-hero-title-size);
   font-weight: 500;
-  line-height: 1.08;
+  line-height: 1.14;
   letter-spacing: -.026em;
   color: var(--ink-1);
   margin: 0 0 24px;
+  max-width: 13ch;
+  text-wrap: balance;
 }
 .home-hero__sub {
   font-family: var(--font-serif);
-  font-size: clamp(17px, 1.6vw, 20px);
-  line-height: 1.65;
+  font-size: var(--kfa-lede-size);
+  line-height: 1.68;
   color: var(--ink-2);
-  max-width: 44ch;
+  max-width: 34ch;
   margin: 0 0 36px;
 }
 .home-hero__cta { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }

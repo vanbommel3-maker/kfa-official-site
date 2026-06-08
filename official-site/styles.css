@@ -239,24 +239,25 @@ body.kfa-nav-open { overflow: hidden; }
   max-width: 1100px;
   margin: 0 auto;
   padding: clamp(80px, 14vw, 160px) 32px clamp(56px, 8vw, 96px);
-  text-align: center;
+  text-align: left;
 }
 .kfa-page-head--left { text-align: left; }
 .kfa-page-head__h {
   font-family: var(--font-display);
-  font-size: 64px;
+  font-size: clamp(40px, 5.2vw, 56px);
   font-weight: 500;
   letter-spacing: 0;
-  line-height: 1.04;
+  line-height: 1.16;
   color: var(--ink-1);
-  margin: 20px 0 24px;
+  margin: 18px 0 22px;
+  max-width: 13ch;
 }
 .kfa-page-head__sub {
   font-size: 18px;
-  line-height: 1.65;
+  line-height: 1.7;
   color: var(--ink-3);
-  margin: 0 auto;
-  max-width: 540px;
+  margin: 0;
+  max-width: 34ch;
 }
 .kfa-page-head--left .kfa-page-head__sub { margin-left: 0; }
 .kfa-page-head__cta { margin-top: 36px; }
@@ -1641,25 +1642,27 @@ body.kfa-nav-open { overflow: hidden; }
 
 /* Media as KFA worldview translation, not a news board. */
 .kfa-media-index-head {
-  max-width: 920px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 132px 32px 84px;
-  text-align: center;
+  padding: 128px 32px 72px;
+  text-align: left;
 }
 .kfa-media-index-head h1 {
   font-family: var(--font-serif);
-  font-size: 58px;
+  font-size: clamp(40px, 5.2vw, 56px);
   font-weight: 400;
-  line-height: 1.24;
+  line-height: 1.16;
   color: var(--ink-1);
-  margin: 24px 0 26px;
+  margin: 18px 0 22px;
+  max-width: 13ch;
+  text-wrap: balance;
 }
 .kfa-media-index-head p {
-  max-width: 620px;
-  margin: 0 auto;
+  max-width: 34ch;
+  margin: 0;
   color: var(--ink-3);
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 .kfa-media-rows {
   max-width: 1100px;
@@ -1699,24 +1702,26 @@ body.kfa-nav-open { overflow: hidden; }
   color: var(--ink-4);
 }
 .kfa-media-section-head {
-  max-width: 940px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 128px 32px 84px;
+  padding: 128px 32px 72px;
   text-align: left;
 }
 .kfa-media-section-head h1 {
   font-family: var(--font-serif);
-  font-size: 50px;
+  font-size: clamp(40px, 5.2vw, 56px);
   font-weight: 400;
-  line-height: 1.28;
-  margin: 22px 0 28px;
+  line-height: 1.16;
+  margin: 18px 0 22px;
+  max-width: 13ch;
+  text-wrap: balance;
 }
 .kfa-media-section-head p {
-  max-width: 620px;
+  max-width: 34ch;
   margin: 0;
   color: var(--ink-3);
   font-size: 18px;
-  line-height: 1.76;
+  line-height: 1.7;
 }
 .kfa-article-list {
   max-width: 900px;
@@ -1764,24 +1769,26 @@ body.kfa-nav-open { overflow: hidden; }
   padding-bottom: 160px;
 }
 .kfa-story-head {
-  max-width: 920px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 128px 32px 72px;
-  text-align: center;
+  text-align: left;
 }
 .kfa-story-head h1 {
   font-family: var(--font-serif);
-  font-size: 58px;
+  font-size: clamp(40px, 5.2vw, 56px);
   font-weight: 400;
-  line-height: 1.22;
-  margin: 24px 0;
+  line-height: 1.16;
+  margin: 18px 0 22px;
+  max-width: 13ch;
+  text-wrap: balance;
 }
 .kfa-story-head p {
-  max-width: 640px;
-  margin: 0 auto;
+  max-width: 34ch;
+  margin: 0;
   color: var(--ink-3);
-  font-size: 19px;
-  line-height: 1.76;
+  font-size: 18px;
+  line-height: 1.7;
 }
 .kfa-story-photo {
   max-width: 1120px;
@@ -2837,8 +2844,8 @@ body.kfa-nav-open { overflow: hidden; }
   .kfa-media-section-head,
   .kfa-story-head { padding-top: 88px; }
   .kfa-media-index-head h1,
-  .kfa-story-head h1 { font-size: 40px; }
-  .kfa-media-section-head h1 { font-size: 36px; }
+  .kfa-media-section-head h1,
+  .kfa-story-head h1 { font-size: 42px; }
   .kfa-media-row {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -3275,12 +3282,12 @@ body,
   }
   .kfa-media-index-head h1,
   .kfa-media-section-head h1 {
-    font-size: 54px;
+    font-size: 56px;
     line-height: 1.16;
   }
   .kfa-story-head h1 {
     font-size: 56px;
-    line-height: 1.2;
+    line-height: 1.16;
   }
 }
 
@@ -3297,14 +3304,14 @@ body,
     padding-bottom: 64px;
   }
   .kfa-page-head__h {
-    font-size: var(--kfa-mobile-page-title);
-    line-height: 1.14;
-    margin-top: 18px;
+    font-size: clamp(32px, 9vw, 42px);
+    line-height: 1.18;
+    margin: 14px 0 18px;
   }
   .kfa-page-head__sub {
-    max-width: 32ch;
-    font-size: 17px;
-    line-height: 1.7;
+    max-width: 34ch;
+    font-size: 16px;
+    line-height: 1.65;
   }
   .kfa-hero {
     padding: 42px var(--kfa-mobile-shell) 64px;
