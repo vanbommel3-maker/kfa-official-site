@@ -1642,14 +1642,14 @@ body.kfa-nav-open { overflow: hidden; }
 
 /* Media as KFA worldview translation, not a news board. */
 .kfa-media-index-head {
-  max-width: 980px;
+  max-width: var(--col-ultra);
   margin: 0 auto;
   padding: 128px 32px 72px;
   text-align: left;
 }
 .kfa-media-index-head h1 {
   font-family: var(--font-serif);
-  font-size: clamp(40px, 5.2vw, 56px);
+  font-size: var(--kfa-hero-title-size);
   font-weight: 400;
   line-height: 1.16;
   color: var(--ink-1);
@@ -1702,14 +1702,14 @@ body.kfa-nav-open { overflow: hidden; }
   color: var(--ink-4);
 }
 .kfa-media-section-head {
-  max-width: 980px;
+  max-width: var(--col-ultra);
   margin: 0 auto;
   padding: 128px 32px 72px;
   text-align: left;
 }
 .kfa-media-section-head h1 {
   font-family: var(--font-serif);
-  font-size: clamp(40px, 5.2vw, 56px);
+  font-size: var(--kfa-hero-title-size);
   font-weight: 400;
   line-height: 1.16;
   margin: 18px 0 22px;
@@ -1769,14 +1769,14 @@ body.kfa-nav-open { overflow: hidden; }
   padding-bottom: 160px;
 }
 .kfa-story-head {
-  max-width: 980px;
+  max-width: var(--col-ultra);
   margin: 0 auto;
   padding: 128px 32px 72px;
   text-align: left;
 }
 .kfa-story-head h1 {
   font-family: var(--font-serif);
-  font-size: clamp(40px, 5.2vw, 56px);
+  font-size: var(--kfa-hero-title-size);
   font-weight: 400;
   line-height: 1.16;
   margin: 18px 0 22px;
@@ -2845,7 +2845,7 @@ body.kfa-nav-open { overflow: hidden; }
   .kfa-story-head { padding-top: 88px; }
   .kfa-media-index-head h1,
   .kfa-media-section-head h1,
-  .kfa-story-head h1 { font-size: 42px; }
+  .kfa-story-head h1 { font-size: 36px; }
   .kfa-media-row {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -3246,7 +3246,7 @@ body,
   .kfa-media-index-head,
   .kfa-media-section-head,
   .kfa-story-body {
-    max-width: 1120px;
+    max-width: var(--col-ultra);
   }
   .kfa-home-media { padding-bottom: 164px; }
   .kfa-system-triad,
@@ -3282,11 +3282,11 @@ body,
   }
   .kfa-media-index-head h1,
   .kfa-media-section-head h1 {
-    font-size: 56px;
+    font-size: 52px;
     line-height: 1.16;
   }
   .kfa-story-head h1 {
-    font-size: 56px;
+    font-size: 52px;
     line-height: 1.16;
   }
 }
@@ -3364,7 +3364,7 @@ body,
   .kfa-media-index-head h1,
   .kfa-media-section-head h1,
   .kfa-story-head h1 {
-    font-size: 38px;
+    font-size: 36px;
     line-height: 1.18;
   }
   .kfa-story-body {
