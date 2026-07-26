@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>대한과일협회</title>
+    <link>https://www.koreafruit.kr/</link>
+    <description>대한과일협회의 과일 교육, 연구, 유통, 과일코디네이터, TSTC 진단 콘텐츠 소식입니다.</description>
+    <language>ko-KR</language>
+    <lastBuildDate>Sun, 26 Jul 2026 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://www.koreafruit.kr/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>전날의 과일에 대해 물어보세요</title>
+      <link>https://www.koreafruit.kr/media/education/ask-about-the-day-before-fruit.html</link>
+      <guid isPermaLink="true">https://www.koreafruit.kr/media/education/ask-about-the-day-before-fruit.html</guid>
+      <description>과일 교육 현장에서 전날의 보관, 숙도, 맛 변화를 확인하는 질문의 중요성을 다룹니다.</description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>피곤한 날의 과일</title>
+      <link>https://www.koreafruit.kr/media/lab/fruit-for-tired-days.html</link>
+      <guid isPermaLink="true">https://www.koreafruit.kr/media/lab/fruit-for-tired-days.html</guid>
+      <description>몸이 지친 날 과일을 고를 때 고려할 수 있는 맛, 식감, 섭취 경험을 정리합니다.</description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>왜 과일 선물은 실패할까</title>
+      <link>https://www.koreafruit.kr/media/lab/why-fruit-gifts-fail.html</link>
+      <guid isPermaLink="true">https://www.koreafruit.kr/media/lab/why-fruit-gifts-fail.html</guid>
+      <description>과일 선물이 기대와 다르게 받아들여지는 이유를 품질, 취향, 상황의 관점에서 살핍니다.</description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>왜 아이들은 어떤 과일을 거부할까</title>
+      <link>https://www.koreafruit.kr/media/lab/why-kids-refuse-some-fruit.html</link>
+      <guid isPermaLink="true">https://www.koreafruit.kr/media/lab/why-kids-refuse-some-fruit.html</guid>
+      <description>아이들이 특정 과일을 거부하는 이유를 향, 산미, 식감, 경험의 관점에서 설명합니다.</description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>왜 어떤 과일은 남겨질까</title>
+      <link>https://www.koreafruit.kr/media/lab/why-some-fruit-is-left-behind.html</link>
+      <guid isPermaLink="true">https://www.koreafruit.kr/media/lab/why-some-fruit-is-left-behind.html</guid>
+      <description>식탁과 행사장에서 과일이 남겨지는 이유를 소비 경험과 선택 맥락으로 풀어봅니다.</description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>왜 같은 사과도 다르게 느껴질까</title>
+      <link>https://www.koreafruit.kr/media/lab/why-the-same-apple-feels-different.html</link>
+      <guid isPermaLink="true">https://www.koreafruit.kr/media/lab/why-the-same-apple-feels-different.html</guid>
+      <description>같은 품목의 과일도 산지, 숙도, 보관, 기대에 따라 다르게 느껴지는 이유를 다룹니다.</description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>퇴근길 한 봉지</title>
+      <link>https://www.koreafruit.kr/media/stories/one-bag-on-the-way-home.html</link>
+      <guid isPermaLink="true">https://www.koreafruit.kr/media/stories/one-bag-on-the-way-home.html</guid>
+      <description>일상 속에서 과일 한 봉지가 만드는 작은 선택과 생활의 장면을 기록합니다.</description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
