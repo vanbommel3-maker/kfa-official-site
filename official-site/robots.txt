@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://koreafruit.kr/sitemap.xml
+Sitemap: https://www.koreafruit.kr/sitemap.xml
