@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>과일코디네이터 2급 발표자용 스크립트 | 대한과일협회</title>
+  <meta
+    name="description"
+    content="과일코디네이터 2급 오전 강의와 싱크를 맞춘 발표자용 스크립트입니다. 시간 흐름, 꼭 해야 할 멘트, 반응 포인트를 함께 정리했습니다."
+  />
+  <link rel="stylesheet" href="design-system.css?v=20260611a" />
+  <style>
+    :root {
+      --script-max: 1160px;
+      --script-reading: 760px;
+      --script-line: rgba(26, 22, 18, 0.1);
+      --script-soft: rgba(184, 94, 62, 0.08);
+      --script-green: rgba(45, 90, 62, 0.08);
+    }
+
+    .script-main {
+      padding: clamp(84px, 11vw, 140px) 0 120px;
+    }
+
+    .script-head,
+    .script-body {
+      max-width: var(--script-max);
+      margin: 0 auto;
+      padding: 0 var(--pad-page);
+    }
+
+    .script-head__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-top: 24px;
+      font-size: 13px;
+      color: var(--ink-3);
+    }
+
+    .script-head__cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .script-index {
+      margin: 44px 0 64px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .script-index article,
+    .script-note,
+    .script-check,
+    .script-source {
+      padding: 20px 20px 22px;
+      border: 1px solid var(--script-line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.62);
+    }
+
+    .script-index span,
+    .script-note span,
+    .script-check span,
+    .script-source span {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--terra);
+    }
+
+    .script-index h3,
+    .script-section h2 {
+      margin: 0 0 10px;
+      font-family: var(--font-serif);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--ink-1);
+    }
+
+    .script-index h3 {
+      font-size: 28px;
+      line-height: 1.15;
+    }
+
+    .script-index p,
+    .script-note p,
+    .script-check p,
+    .script-source p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--ink-2);
+    }
+
+    .script-section {
+      padding: 56px 0;
+      border-top: 1px solid var(--script-line);
+      display: grid;
+      grid-template-columns: 170px minmax(0, 1fr);
+      gap: 28px;
+    }
+
+    .script-section__rail {
+      padding-top: 6px;
+    }
+
+    .script-section__rail strong {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--terra);
+    }
+
+    .script-section__rail strong::after {
+      content: "";
+      width: 36px;
+      height: 1px;
+      background: var(--ink-5);
+    }
+
+    .script-section__time {
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--ink-3);
+      line-height: 1.7;
+    }
+
+    .script-section h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.08;
+      max-width: 12ch;
+      text-wrap: balance;
+    }
+
+    .script-section__lede {
+      margin: 0 0 26px;
+      max-width: 42ch;
+      font-family: var(--font-serif);
+      font-size: 19px;
+      line-height: 1.75;
+      color: var(--ink-2);
+    }
+
+    .script-stack {
+      max-width: var(--script-reading);
+      display: grid;
+      gap: 14px;
+    }
+
+    .script-note {
+      background: var(--script-soft);
+    }
+
+    .script-check {
+      background: var(--script-green);
+      border-color: rgba(45, 90, 62, 0.14);
+    }
+
+    .script-check ul,
+    .script-note ul,
+    .script-source ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: var(--ink-2);
+    }
+
+    .script-check li,
+    .script-note li,
+    .script-source li {
+      margin: 8px 0 0;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .script-linebox {
+      padding: 18px 18px 20px;
+      border-left: 2px solid var(--terra);
+      background: rgba(255, 255, 255, 0.44);
+      font-family: var(--font-serif);
+      font-size: 19px;
+      line-height: 1.85;
+      color: var(--ink-1);
+    }
+
+    .script-next {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 16px;
+    }
+
+    @media (max-width: 900px) {
+      .script-index,
+      .script-section {
+        grid-template-columns: 1fr;
+      }
+
+      .script-section {
+        gap: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div data-chrome="nav"></div>
+
+  <main class="script-main">
+    <section class="script-head">
+      <p class="t-edition" style="margin: 0 0 18px;">Presenter Notes · Synced Version</p>
+      <h1 class="t-display" style="max-width: 12ch; margin: 0;">
+        과일코디네이터 2급<br />
+        발표자용 스크립트
+      </h1>
+      <p class="t-body-serif" style="max-width: 34ch; margin: 24px 0 0;">
+        전체 스크립트의 호흡은 살리고, 강의안과 실제 화면 흐름이 맞도록 다시 정리한 발표자용 보조 문서입니다.
+        현장 멘트, 관객 반응 포인트, 공식 자료 삽입 위치를 함께 묶었습니다.
+      </p>
+      <div class="script-head__meta">
+        <span>총 100분 기준</span>
+        <span>오전 강의 동선에 맞춘 버전</span>
+        <span>기존 DOCX 스크립트와 1:1 대응</span>
+      </div>
+      <div class="script-head__cta">
+        <a class="kfa-btn kfa-btn--terra" href="education-masterclass.html">강의안 보기</a>
+        <a class="kfa-btn kfa-btn--line" href="education-sources.html">공식 자료 출처</a>
+      </div>
+
+      <section class="script-index">
+        <article>
+          <span>Part 01</span>
+          <h3>오프닝 스토리</h3>
+          <p>개인 스토리, 판매 감각, 창업, 위기와 공동구매 전환까지. 청중이 강사를 믿게 만드는 35분입니다.</p>
+        </article>
+        <article>
+          <span>Part 02</span>
+          <h3>시장 · 생애주기 · TSTC</h3>
+          <p>왜 지금 과일인가, 누가 결정하는가, 왜 TSTC가 필요한가를 공식 자료와 생활 언어로 연결하는 40분입니다.</p>
+        </article>
+        <article>
+          <span>Part 03</span>
+          <h3>비즈니스 포인트</h3>
+          <p>키즈, 웨딩, 실버, ESG로 내려오며 "그래서 이제 어디로 가야 하나"를 행동 언어로 바꾸는 24분입니다.</p>
+        </article>
+      </section>
+    </section>
+
+    <section class="script-body">
+      <section class="script-section">
+        <div class="script-section__rail">
+          <strong>Section 01</strong>
+          <p class="script-section__time">0~12분 · 첫 인사 · 개인 스토리</p>
+        </div>
+        <div>
+          <h2>첫 화면은 설명보다 사람으로 시작합니다</h2>
+          <p class="script-section__lede">여기서는 협회 소개보다 "왜 이 사람이 이 일을 오래 하게 되었는가"가 먼저 먹혀야 합니다.</p>
+          <div class="script-stack">
+            <div class="script-linebox">
+              과일을 좋아해서 시작한 게 아닙니다. 살아보려고 시작했는데, 하다 보니 저한테 딱 맞는 일이었습니다.
+            </div>
+            <div class="script-note">
+              <span>말할 때 포인트</span>
+              <ul>
+                <li>공무원 준비 → 알바몬 → 과일업 진입 흐름은 빠르게, 멜론 이야기에서 잠깐 멈추기</li>
+                <li>전문가처럼 꾸미지 말고, "원래 과일 좋아하던 사람 아니었다"는 반전을 살리기</li>
+                <li>웃음 포인트는 받되, 자기 과시처럼 길게 끌지 않기</li>
+              </ul>
+            </div>
+            <div class="script-check">
+              <span>슬라이드 싱크</span>
+              <p>강의안 `Slide 01`과 연결됩니다. 오프닝 이미지는 강의 현장보다 시장과 과수원 이미지가 더 잘 맞습니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="script-section">
+        <div class="script-section__rail">
+          <strong>Section 02</strong>
+          <p class="script-section__time">12~25분 · 판매 감각 · 160,000팀</p>
+        </div>
+        <div>
+          <h2>아디다스 이야기의 역할을 분명히 둡니다</h2>
+          <p class="script-section__lede">이 파트는 추억팔이가 아니라, 사람을 빨리 파악하는 습관이 어떻게 생겼는지 보여주는 장치입니다.</p>
+          <div class="script-stack">
+            <div class="script-linebox">
+              선택을 고객이 하는 것 같지만, 사실은 직원이 먼저 읽고 움직이는 경우가 많습니다.
+            </div>
+            <div class="script-note">
+              <span>말할 때 포인트</span>
+              <ul>
+                <li>신발 썰은 길어도 괜찮지만, 결론을 꼭 사람 파악 능력으로 가져오기</li>
+                <li>160,000팀 숫자를 말한 뒤 2~3초 쉬어주기</li>
+                <li>"내가 편하려고 그 사람을 빨리 나누게 된다"는 문장은 현장감이 살아 있으니 유지</li>
+              </ul>
+            </div>
+            <div class="script-check">
+              <span>슬라이드 싱크</span>
+              <p>강의안 `Slide 02` 숫자 카드와 대응됩니다. 숫자는 과장 없이 "3년의 관찰량"으로 설명하세요.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="script-section">
+        <div class="script-section__rail">
+          <strong>Section 03</strong>
+          <p class="script-section__time">25~35분 · 창업 · 상권 변화 · 공동구매</p>
+        </div>
+        <div>
+          <h2>여기서 강의의 첫 번째 핵심 문장이 나옵니다</h2>
+          <p class="script-section__lede">매장 하락의 원인을 고객 이동과 생활 변화에서 읽은 순간, 오후 내용까지 한 번에 연결됩니다.</p>
+          <div class="script-stack">
+            <div class="script-linebox">
+              저는 결국 매장이라는 틀을 부수고 나와서 움직이니까, 1개의 매장에서 4개를 운영하는 효과를 보게 됐습니다.
+            </div>
+            <div class="script-note">
+              <span>말할 때 포인트</span>
+              <ul>
+                <li>가락시장과 구리도매시장 이야기는 "사입은 판매와 완전히 다른 차원"이라는 교훈으로 묶기</li>
+                <li>부동산 제안과 밴드 공구 사례는 "고객이 있는 곳으로 간다"는 한 문장으로 회수하기</li>
+                <li>매출 수치는 자랑보다 구조 전환의 증거처럼 사용하기</li>
+              </ul>
+            </div>
+            <div class="script-check">
+              <span>슬라이드 싱크</span>
+              <p>강의안 `Slide 03`과 연결됩니다. 이 파트가 끝날 때 `문제는 과일이 아니라 사람이었다`는 정리를 꼭 남기세요.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="script-section">
+        <div class="script-section__rail">
+          <strong>Section 04</strong>
+          <p class="script-section__time">35~48분 · 공식 자료 기반 시장 설명</p>
+        </div>
+        <div>
+          <h2>숫자는 적게, 근거는 강하게 갑니다</h2>
+          <p class="script-section__lede">기존 강의안의 숫자 중 출처 강도가 약한 값은 줄이고, 통계청과 정부 자료만 남겼습니다.</p>
+          <div class="script-stack">
+            <div class="script-source">
+              <span>이번 버전에서 바로 쓰는 수치</span>
+              <ul>
+                <li>통계청: 2023년 1인 가구 35.5%, 782만 9천 가구</li>
+                <li>통계청: 2023년 대전 전체 가구 대비 1인 가구 비중 39.4%</li>
+                <li>정부 정책브리핑: 2022년 국내 과일산업 규모 약 5조 8천억원</li>
+                <li>통계청 온라인쇼핑동향조사: 농축수산물 거래액 전년 동월 대비 22.6% 증가 사례</li>
+              </ul>
+            </div>
+            <div class="script-note">
+              <span>말할 때 포인트</span>
+              <ul>
+                <li>"시장이 크다"보다 "소비 장면이 더 잘게 갈라졌다"는 해석을 먼저 주기</li>
+                <li>대전 39.4%는 지역 청중에게 바로 와닿으니 꼭 짚기</li>
+                <li>숫자를 길게 읽기보다 한 줄 해석으로 이어가기</li>
+              </ul>
+            </div>
+            <div class="script-check">
+              <span>슬라이드 싱크</span>
+              <p>강의안 `Slide 04`입니다. 기존 `7.5조`, `67%`, `74%` 같은 수치는 공식 출처 재확인 전까지 메인 근거로 쓰지 않는 쪽이 안전합니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="script-section">
+        <div class="script-section__rail">
+          <strong>Section 05</strong>
+          <p class="script-section__time">48~60분 · 생애주기 · 구매결정권자</p>
+        </div>
+        <div>
+          <h2>사람의 나이를 말하는 것이 아니라, 장면을 말해야 합니다</h2>
+          <p class="script-section__lede">각 연령대를 정보처럼 나열하지 말고, 과일이 놓이는 생활 장면으로 풀어야 더 잘 들어옵니다.</p>
+          <div class="script-stack">
+            <div class="script-linebox">
+              영유아 시기의 구매결정권자는 엄마가 아니라, 사실은 아이의 반응입니다.
+            </div>
+            <div class="script-note">
+              <span>말할 때 포인트</span>
+              <ul>
+                <li>0~10세는 "의무 과일"이라는 표현을 살리면 기억에 남습니다</li>
+                <li>21~30세는 자취와 독립의 장면으로, 31~40세는 결혼·임신·육아로 연결하기</li>
+                <li>세림이 사진 이야기는 리스크 관리 멘트와 묶어야 힘이 살아납니다</li>
+              </ul>
+            </div>
+            <div class="script-check">
+              <span>슬라이드 싱크</span>
+              <p>강의안 `Slide 05`에 대응됩니다. 생애주기 표는 길게 읽기보다 사례와 질문으로 소비시키세요.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="script-section">
+        <div class="script-section__rail">
+          <strong>Section 06</strong>
+          <p class="script-section__time">60~75분 · TSTC 탄생 · 4축 · 3시선</p>
+        </div>
+        <div>
+          <h2>TSTC는 멋있는 이론보다 설명 가능한 감각으로 들려야 합니다</h2>
+          <p class="script-section__lede">청중이 "아, 이건 원래 알던 걸 정리한 거구나"라고 느끼게 만드는 것이 중요합니다.</p>
+          <div class="script-stack">
+            <div class="script-linebox">
+              TSTC는 어렵지 않습니다. 이미 알고 계신 내용을 분류했을 뿐입니다.
+            </div>
+            <div class="script-note">
+              <span>말할 때 포인트</span>
+              <ul>
+                <li>왜 촉감이 빠졌는지 묻는 농담은 살리기</li>
+                <li>맛은 단맛 하나로 몰지 않고 "진한 맛 / 담백한 맛"으로 설명하기</li>
+                <li>3가지 시선은 판매자 · 구매자 · 과일 순으로 정리해주기</li>
+                <li>RACV 예시는 품종 연결 사례로 짧고 선명하게 말하기</li>
+              </ul>
+            </div>
+            <div class="script-check">
+              <span>슬라이드 싱크</span>
+              <p>강의안 `Slide 06~08`입니다. 이 구간에서 QR로 TSTC 체험을 붙이면 훨씬 생동감이 살아납니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="script-section">
+        <div class="script-section__rail">
+          <strong>Section 07</strong>
+          <p class="script-section__time">75~92분 · 키즈 · 웨딩 · 실버 · ESG</p>
+        </div>
+        <div>
+          <h2>철학을 시장 언어로 바꾸는 구간입니다</h2>
+          <p class="script-section__lede">여기서는 멋있는 말보다, 청중이 바로 검색하고 바로 제안할 수 있는 말이 필요합니다.</p>
+          <div class="script-stack">
+            <div class="script-linebox">
+              우리는 과일을 파는 사람이 아니라, 불편함을 해결해 주는 사람으로 들어가야 합니다.
+            </div>
+            <div class="script-note">
+              <span>말할 때 포인트</span>
+              <ul>
+                <li>키즈 시장은 "아이 건강"보다 "안 먹는 문제"에서 출발시키기</li>
+                <li>웨딩 시장은 신혼부부만 보지 말고 웨딩 플래너를 파트너로 읽기</li>
+                <li>실버 · 기업 시장은 ESG, 복지, 병문안, 선물로 연결되는 말을 준비해두기</li>
+                <li>박람회 예시는 강의 직전 최신 일정으로 바꾸기</li>
+              </ul>
+            </div>
+            <div class="script-check">
+              <span>슬라이드 싱크</span>
+              <p>강의안 `Slide 10`에 대응됩니다. 이 파트는 청중이 "나도 할 수 있겠다"는 감각을 가져가면 성공입니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="script-section">
+        <div class="script-section__rail">
+          <strong>Section 08</strong>
+          <p class="script-section__time">92~100분 · 첫 수강생 특권 · 엔딩</p>
+        </div>
+        <div>
+          <h2>마지막은 격려보다 면허를 주는 말이어야 합니다</h2>
+          <p class="script-section__lede">오늘 바로 움직여도 된다는 확신을 주고 끝내야, 강의가 교육에서 행동으로 넘어갑니다.</p>
+          <div class="script-stack">
+            <div class="script-linebox">
+              당당하게 제안하시고, 당당하게 거절당하세요. 그래도 부딪히셔야 합니다.
+            </div>
+            <div class="script-note">
+              <span>말할 때 포인트</span>
+              <ul>
+                <li>"인증 키를 풀어드리겠다"는 말은 권한 위임처럼 들리게 하기</li>
+                <li>세잎클로버 · 네잎클로버 멘트는 천천히, 눈 맞추면서 마무리하기</li>
+                <li>마지막엔 과일보다 "여러분 삶이 이미 재료다"라는 메시지를 남기기</li>
+              </ul>
+            </div>
+            <div class="script-check">
+              <span>슬라이드 싱크</span>
+              <p>강의안 `Slide 11~12`입니다. 엔딩은 좋은 말로 끝내는 게 아니라, 오전 전체를 다시 묶는 역할을 합니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="script-next">
+        <a class="kfa-btn kfa-btn--terra" href="education-masterclass.html">강의안으로 돌아가기</a>
+        <a class="kfa-btn kfa-btn--line" href="education-sources.html">공식 자료 출처 보기</a>
+      </div>
+    </section>
+  </main>
+
+  <div data-chrome="footer"></div>
+  <script src="shared-design.js?v=20260611a"></script>
+</body>
+</html>

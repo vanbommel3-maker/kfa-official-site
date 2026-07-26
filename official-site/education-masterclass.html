@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>과일코디네이터 2급 오전 강의안 | 대한과일협회</title>
+  <meta
+    name="description"
+    content="과일코디네이터 2급 오전 강의안입니다. 기존 스크립트와 강의안을 다시 맞추고, 공식 자료를 보강해 100분 흐름으로 정리했습니다."
+  />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="대한과일협회" />
+  <meta property="og:title" content="과일코디네이터 2급 오전 강의안 | 대한과일협회" />
+  <meta
+    property="og:description"
+    content="스크립트 중심으로 다시 정리한 100분 강의안. 현장 스토리, 시장 변화, TSTC, 비즈니스 포인트를 하나의 흐름으로 묶었습니다."
+  />
+  <meta property="og:image" content="https://koreafruit.kr/assets/site/hero-education-user.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="design-system.css?v=20260611a" />
+  <style>
+    :root {
+      --edu-max: 1200px;
+      --edu-reading: 760px;
+      --edu-soft: rgba(26, 22, 18, 0.05);
+      --edu-line: rgba(26, 22, 18, 0.1);
+      --edu-accent: rgba(184, 94, 62, 0.08);
+      --edu-accent-strong: rgba(184, 94, 62, 0.16);
+      --edu-green: rgba(45, 90, 62, 0.08);
+    }
+
+    .edu-main {
+      padding-bottom: 120px;
+    }
+
+    .edu-hero {
+      max-width: var(--edu-max);
+      margin: 0 auto;
+      padding: clamp(84px, 11vw, 140px) var(--pad-page) 48px;
+    }
+
+    .edu-hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      margin-top: 28px;
+      font-size: 13px;
+      color: var(--ink-3);
+    }
+
+    .edu-hero__meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .edu-hero__meta span::before {
+      content: "";
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--terra);
+      opacity: 0.8;
+    }
+
+    .edu-hero__cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .edu-hero__utility {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 180px;
+      gap: 20px;
+      align-items: center;
+      max-width: 680px;
+      margin-top: 22px;
+      padding: 22px 24px;
+      border: 1px solid var(--edu-line);
+      background: rgba(255, 255, 255, 0.88);
+    }
+
+    .edu-hero__utility-copy strong {
+      display: block;
+      font-size: 15px;
+      color: var(--ink-1);
+    }
+
+    .edu-hero__utility-copy p {
+      margin: 10px 0 0;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--ink-3);
+    }
+
+    .edu-hero__utility-copy a {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--terra);
+      word-break: break-all;
+    }
+
+    .edu-hero__qr {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      border: 1px solid var(--edu-line);
+      background: var(--paper);
+    }
+
+    .edu-hero__qr img {
+      display: block;
+      width: 100%;
+      max-width: 132px;
+      height: auto;
+    }
+
+    .edu-hero__visual {
+      margin-top: 52px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .edu-hero__visual figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--paper-soft);
+      min-height: 320px;
+    }
+
+    .edu-hero__visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .edu-hero__stack {
+      display: grid;
+      gap: 22px;
+    }
+
+    .edu-shell {
+      max-width: var(--edu-max);
+      margin: 0 auto;
+      padding: 0 var(--pad-page);
+    }
+
+    .edu-compass {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin: 20px 0 80px;
+    }
+
+    .edu-compass article {
+      padding: 22px 22px 24px;
+      border: 1px solid var(--edu-line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.58);
+    }
+
+    .edu-compass__k {
+      margin: 0 0 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--terra);
+    }
+
+    .edu-compass h3 {
+      margin: 0 0 10px;
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .edu-compass p {
+      margin: 0;
+      color: var(--ink-2);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .edu-slide {
+      padding: 70px 0;
+      border-top: 1px solid var(--edu-line);
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: 28px;
+    }
+
+    .edu-slide__rail {
+      padding-top: 6px;
+    }
+
+    .edu-slide__no {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--terra);
+    }
+
+    .edu-slide__no::after {
+      content: "";
+      width: 36px;
+      height: 1px;
+      background: var(--ink-5);
+    }
+
+    .edu-slide__part {
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--ink-3);
+      line-height: 1.6;
+    }
+
+    .edu-slide__body h2 {
+      margin: 0 0 14px;
+      font-family: var(--font-serif);
+      font-size: clamp(34px, 4vw, 52px);
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      max-width: 13ch;
+      text-wrap: balance;
+    }
+
+    .edu-slide__lede {
+      margin: 0 0 28px;
+      max-width: 42ch;
+      font-family: var(--font-serif);
+      font-size: 20px;
+      line-height: 1.75;
+      color: var(--ink-2);
+    }
+
+    .edu-body {
+      max-width: var(--edu-reading);
+    }
+
+    .edu-body p {
+      margin: 0 0 16px;
+      font-size: 17px;
+      line-height: 1.85;
+      color: var(--ink-2);
+    }
+
+    .edu-quote {
+      margin: 28px 0 0;
+      padding: 22px 24px;
+      border-left: 2px solid var(--terra);
+      background: var(--edu-accent);
+      font-family: var(--font-serif);
+      font-size: 20px;
+      line-height: 1.8;
+      color: var(--ink-1);
+    }
+
+    .edu-figure {
+      margin: 30px 0 0;
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--paper-soft);
+    }
+
+    .edu-figure--half {
+      max-width: 860px;
+    }
+
+    .edu-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .edu-figure figcaption {
+      padding: 12px 14px 14px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--ink-3);
+      background: rgba(255, 255, 255, 0.62);
+      border-top: 1px solid var(--edu-line);
+    }
+
+    .edu-number-grid,
+    .edu-biz-grid,
+    .edu-route,
+    .edu-three {
+      display: grid;
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .edu-number-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .edu-number-card,
+    .edu-biz-grid article,
+    .edu-route article,
+    .edu-three article,
+    .edu-official,
+    .edu-note {
+      padding: 20px 20px 22px;
+      border: 1px solid var(--edu-line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.62);
+    }
+
+    .edu-number-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-family: var(--font-serif);
+      font-size: clamp(26px, 3.4vw, 40px);
+      font-weight: 500;
+      line-height: 1;
+      color: var(--ink-1);
+    }
+
+    .edu-number-card span,
+    .edu-biz-grid article span,
+    .edu-route article span,
+    .edu-three article span,
+    .edu-official span {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--terra);
+    }
+
+    .edu-number-card p,
+    .edu-biz-grid p,
+    .edu-route p,
+    .edu-three p,
+    .edu-official p,
+    .edu-note p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--ink-2);
+    }
+
+    .edu-route {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .edu-three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .edu-three h3,
+    .edu-biz-grid h3,
+    .edu-route h3,
+    .edu-official h3 {
+      margin: 0 0 8px;
+      font-family: var(--font-serif);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--ink-1);
+    }
+
+    .edu-data-band {
+      margin-top: 32px;
+      padding: 22px 24px;
+      border-radius: 8px;
+      background: var(--edu-green);
+      border: 1px solid rgba(45, 90, 62, 0.12);
+    }
+
+    .edu-data-band p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--ink-2);
+    }
+
+    .edu-lifecycle {
+      margin-top: 30px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .edu-lifecycle article {
+      display: grid;
+      grid-template-columns: 140px minmax(0, 1fr);
+      gap: 18px;
+      padding: 18px 0;
+      border-top: 1px solid var(--edu-line);
+    }
+
+    .edu-lifecycle article:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .edu-lifecycle strong {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.2;
+      color: var(--ink-1);
+    }
+
+    .edu-axis {
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .edu-axis article {
+      padding: 18px 18px 20px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.58);
+      border: 1px solid var(--edu-line);
+    }
+
+    .edu-axis strong {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-family: var(--font-serif);
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1;
+      color: var(--ink-1);
+    }
+
+    .edu-axis em {
+      font-style: normal;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--terra);
+    }
+
+    .edu-axis p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--ink-2);
+    }
+
+    .edu-biz-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .edu-biz-grid article {
+      background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.58));
+    }
+
+    .edu-biz-grid ul,
+    .edu-note ul {
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: var(--ink-2);
+    }
+
+    .edu-biz-grid li,
+    .edu-note li {
+      margin: 8px 0 0;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .edu-official {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0 18px;
+      align-items: start;
+    }
+
+    .edu-official h3 {
+      margin-bottom: 6px;
+      font-size: 18px;
+    }
+
+    .edu-note {
+      margin-top: 18px;
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .edu-next {
+      margin-top: 70px;
+      padding-top: 28px;
+      border-top: 1px solid var(--edu-line);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px 24px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .edu-next p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--ink-3);
+    }
+
+    .edu-next__links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      align-items: center;
+    }
+
+    @media (max-width: 980px) {
+      .edu-hero__visual,
+      .edu-slide,
+      .edu-official {
+        grid-template-columns: 1fr;
+      }
+
+      .edu-hero__utility {
+        grid-template-columns: 1fr;
+      }
+
+      .edu-compass,
+      .edu-number-grid,
+      .edu-route,
+      .edu-three,
+      .edu-axis,
+      .edu-biz-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .edu-lifecycle article {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .edu-hero__visual,
+      .edu-compass,
+      .edu-number-grid,
+      .edu-route,
+      .edu-three,
+      .edu-axis,
+      .edu-biz-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .edu-slide {
+        gap: 14px;
+        padding: 54px 0;
+      }
+
+      .edu-slide__body h2 {
+        font-size: clamp(30px, 9vw, 42px);
+      }
+
+      .edu-slide__lede {
+        font-size: 18px;
+      }
+
+      .edu-hero__qr {
+        max-width: 168px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div data-chrome="nav"></div>
+
+  <main class="edu-main">
+    <section class="edu-hero">
+      <p class="t-edition" style="margin: 0 0 18px;">KFA EDU · Morning Session</p>
+      <h1 class="t-display" style="max-width: 10ch; margin: 0;">
+        과일코디네이터 2급<br />
+        오전 강의안
+      </h1>
+      <p class="t-body-serif" style="max-width: 32ch; margin: 24px 0 0;">
+        기존 강의자료와 전체 스크립트를 다시 맞추고, 공식 자료를 보강해 100분 흐름으로 정리한 수업안입니다.
+        스토리는 더 자연스럽게, 근거는 더 단단하게 가져갔습니다.
+      </p>
+      <div class="edu-hero__meta">
+        <span>대한과일협회 × 대전광역자활센터</span>
+        <span>2025년 6월 12일 기준 오전 강의</span>
+        <span>PART 01 · 35분 / PART 02 · 40분 / PART 03 · 24분</span>
+      </div>
+      <div class="edu-hero__cta">
+        <a class="kfa-btn kfa-btn--terra" href="education-script.html">발표자용 스크립트 보기</a>
+        <a class="kfa-btn kfa-btn--line" href="education-sources.html">공식 자료 출처 보기</a>
+        <a class="kfa-btn kfa-btn--line" href="downloads/KFA-fruit-coordinator-level2-masterclass.pptx" download="KFA_과일코디네이터2급_오전강의_발표자료.pptx">PPT 다운로드</a>
+      </div>
+      <div class="edu-hero__utility">
+        <div class="edu-hero__utility-copy">
+          <strong>TSTC 진단 시작 QR</strong>
+          <p>강의 중 바로 열어볼 수 있게 실제 진단 시작 주소를 QR로 연결했습니다. 스캔이 안 될 때는 아래 링크를 눌러도 바로 이동됩니다.</p>
+          <a href="https://koreafruit.kr/tstc-start.html" target="_blank" rel="noreferrer">https://koreafruit.kr/tstc-start.html</a>
+        </div>
+        <a class="edu-hero__qr" href="https://koreafruit.kr/tstc-start.html" target="_blank" rel="noreferrer" aria-label="TSTC 진단 시작 QR 열기">
+          <img src="assets/site/tstc-qr.png" alt="TSTC 진단 시작 QR 코드" />
+        </a>
+      </div>
+
+      <div class="edu-hero__visual">
+        <figure>
+          <img src="assets/site/hero-education-user.jpg" alt="과일코디네이터 강의 현장" />
+        </figure>
+        <div class="edu-hero__stack">
+          <figure>
+            <img src="assets/site/market-forklift.jpg" alt="새벽 과일 시장의 물류 현장" />
+          </figure>
+          <figure>
+            <img src="assets/site/hero-apples-user.png" alt="과수원에 열린 사과" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="edu-shell">
+      <section class="edu-compass" aria-label="강의 구성">
+        <article>
+          <p class="edu-compass__k">PART 01</p>
+          <h3>왜 시작됐는가</h3>
+          <p>개인 스토리, 160,000팀, 매장과 공동구매 경험을 통해 왜 사람을 먼저 읽게 되었는지 보여줍니다.</p>
+        </article>
+        <article>
+          <p class="edu-compass__k">PART 02</p>
+          <h3>무엇을 읽는가</h3>
+          <p>시장 변화, 생애주기, 구매결정권자, TSTC 4축과 3가지 시선으로 과일 경험을 해석하는 법을 정리합니다.</p>
+        </article>
+        <article>
+          <p class="edu-compass__k">PART 03</p>
+          <h3>어디에 쓰는가</h3>
+          <p>키즈, 웨딩, 실버, 기업 ESG까지 과일코디네이터가 실제로 들어갈 수 있는 시장을 현실적으로 제안합니다.</p>
+        </article>
+      </section>
+
+      <section class="edu-slide" id="slide-01">
+        <div class="edu-slide__rail">
+          <div class="edu-slide__no">Slide 01</div>
+          <p class="edu-slide__part">PART 01 · 오프닝 스토리</p>
+        </div>
+        <div class="edu-slide__body">
+          <h2>과일을 좋아해서 시작한 일은 아닙니다.</h2>
+          <p class="edu-slide__lede">살아보려고 시작했고, 팔아보면서 사람을 먼저 읽게 됐습니다.</p>
+          <div class="edu-body">
+            <p>
+              오전 강의의 첫 출발점은 이 문장입니다. 과일을 낭만으로 시작한 사람이 아니라,
+              생계와 선택의 갈림길에서 우연히 과일업에 들어온 사람이 어떻게 이 일을 오래 하게 되었는지부터 열어야 합니다.
+            </p>
+            <p>
+              공무원 준비를 접고 현장으로 들어간 이야기, 과일을 잘 알지 못했던 사람이 멜론 한 입으로
+              과일의 세계를 새롭게 보게 된 장면은 강의 초반의 집중을 만들어 줍니다.
+              여기서 청중은 "전문가의 완성된 이야기"보다 "현장에서 만들어진 사람"을 먼저 받아들이게 됩니다.
+            </p>
+          </div>
+          <blockquote class="edu-quote">
+            과일업은 학력보다 성실함이 먼저였고, 감보다 관찰력이 더 중요했습니다.
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="edu-slide" id="slide-02">
+        <div class="edu-slide__rail">
+          <div class="edu-slide__no">Slide 02</div>
+          <p class="edu-slide__part">PART 01 · 사람 파악 능력</p>
+        </div>
+        <div class="edu-slide__body">
+          <h2>160,000팀이 알려준 것</h2>
+          <p class="edu-slide__lede">많이 판 것이 아니라, 많이 만난 덕분에 사람의 패턴이 보이기 시작했습니다.</p>
+          <div class="edu-number-grid">
+            <article class="edu-number-card">
+              <strong>3년</strong>
+              <p>직원 · 점장 · 3개 매장 관리자로 일한 시간</p>
+            </article>
+            <article class="edu-number-card">
+              <strong>150~200팀</strong>
+              <p>하루 평균으로 만난 고객 팀 수</p>
+            </article>
+            <article class="edu-number-card">
+              <strong>160,000팀</strong>
+              <p>3년 동안 직접 만난 누적 고객 수</p>
+            </article>
+            <article class="edu-number-card">
+              <strong>2분 룰</strong>
+              <p>짧은 시간 안에 고객의 목적을 읽어야 했던 현장 규칙</p>
+            </article>
+          </div>
+          <div class="edu-body" style="margin-top: 28px;">
+            <p>
+              명동 아디다스 시절의 이야기와 과일 매장에서의 관찰 경험은 한 줄로 이어집니다.
+              "무엇을 살까"보다 "왜 사려고 할까"를 먼저 읽는 습관이 만들어졌다는 점입니다.
+            </p>
+            <p>
+              이 파트는 영업 자랑으로 들리면 안 됩니다. 오히려 과일코디네이터의 핵심 역량이
+              제품 설명이 아니라 <strong>목적을 빠르게 파악하는 능력</strong>이라는 걸 자연스럽게 전달해야 합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="edu-slide" id="slide-03">
+        <div class="edu-slide__rail">
+          <div class="edu-slide__no">Slide 03</div>
+          <p class="edu-slide__part">PART 01 · 매장 위기와 전환</p>
+        </div>
+        <div class="edu-slide__body">
+          <h2>문제는 과일이 아니라 사람이었습니다.</h2>
+          <p class="edu-slide__lede">상권이 바뀌고, 가족이 이동하고, 소비 장면이 달라지면 같은 가게도 다르게 읽어야 합니다.</p>
+          <div class="edu-route">
+            <article>
+              <span>전환 01</span>
+              <h3>상권 분석</h3>
+              <p>매출 하락의 원인을 과일 품질이 아니라 지역 주거 구조와 고객층 이동에서 찾았습니다.</p>
+            </article>
+            <article>
+              <span>전환 02</span>
+              <h3>제안 영업</h3>
+              <p>부동산 고객 선물을 과일로 바꾸는 제안으로 "이사 오는 사람의 첫 과일"을 설계했습니다.</p>
+            </article>
+            <article>
+              <span>전환 03</span>
+              <h3>공동구매</h3>
+              <p>매장이라는 틀을 벗어나 밴드 공동구매로 이동하며 2시간 380만원의 새로운 장면을 만들었습니다.</p>
+            </article>
+          </div>
+          <div class="edu-body" style="margin-top: 28px;">
+            <p>
+              강의 자료에서는 이 장면을 더 분명히 보여줘야 합니다.
+              기존 슬라이드는 시장 수치가 먼저 나왔지만, 실제로는 이 깨달음이 먼저 와야 TSTC와 과일코디네이터가 왜 필요한지 자연스럽게 이어집니다.
+            </p>
+            <p>
+              결국 이 파트의 메시지는 단순합니다.
+              <strong>과일이 안 팔린 게 아니라, 나와 고객의 만나는 방식이 어긋난 것</strong>이라는 점입니다.
+            </p>
+          </div>
+          <figure class="edu-figure edu-figure--half">
+            <img src="assets/site/market-01.jpg" alt="새벽 과일 시장의 현장 사진" />
+            <figcaption>현장 경험은 강의의 배경이 아니라 논리의 출발점입니다. 대한과일협회 서사는 이 장면에서 시작됩니다.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="edu-slide" id="slide-04">
+        <div class="edu-slide__rail">
+          <div class="edu-slide__no">Slide 04</div>
+          <p class="edu-slide__part">PART 02 · 시장 변화</p>
+        </div>
+        <div class="edu-slide__body">
+          <h2>왜 지금 과일인가</h2>
+          <p class="edu-slide__lede">시장은 커졌고, 소비 장면은 더 잘게 쪼개졌고, 고객은 더 똑똑해졌습니다.</p>
+          <div class="edu-number-grid">
+            <article class="edu-number-card">
+              <strong>35.5%</strong>
+              <p>2023년 1인 가구 비중 · 전국 782만 9천 가구</p>
+            </article>
+            <article class="edu-number-card">
+              <strong>39.4%</strong>
+              <p>2023년 대전 전체 가구 대비 1인 가구 비중</p>
+            </article>
+            <article class="edu-number-card">
+              <strong>5.8조 원</strong>
+              <p>2022년 기준 정부가 설명한 국내 과일산업 규모</p>
+            </article>
+            <article class="edu-number-card">
+              <strong>+22.6%</strong>
+              <p>통계청 온라인쇼핑동향조사 내 농축수산물 거래액 증가 사례</p>
+            </article>
+          </div>
+          <div class="edu-data-band">
+            <p>
+              이 수치가 말하는 건 단순한 성장보다 구조 변화입니다.
+              혼자 사는 가구가 많아질수록 소용량, 간편 구매, 선별된 추천의 필요가 커지고,
+              온라인 구매가 늘수록 고객은 "왜 이 과일을 사야 하는지"까지 묻기 시작합니다.
+            </p>
+          </div>
+          <div class="edu-body" style="margin-top: 24px;">
+            <p>
+              기존 강의안에 있던 여러 퍼센트 수치 중 일부는 출처 강도가 약했습니다.
+              이번 버전에서는 통계청, 정부 정책브리핑, 민간자격정보서비스처럼 설명할 때 바로 근거를 댈 수 있는 자료만 남겼습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="edu-slide" id="slide-05">
+        <div class="edu-slide__rail">
+          <div class="edu-slide__no">Slide 05</div>
+          <p class="edu-slide__part">PART 02 · 생애주기</p>
+        </div>
+        <div class="edu-slide__body">
+          <h2>생애주기에 따라 과일은 달라집니다</h2>
+          <p class="edu-slide__lede">사람은 같은 과일을 평생 같은 이유로 사지 않습니다.</p>
+          <div class="edu-lifecycle">
+            <article>
+              <strong>0~10세</strong>
+              <p>의무 과일의 시기입니다. 아이가 직접 계산하지 않지만, 실제 구매결정권자는 아이의 반응입니다.</p>
+            </article>
+            <article>
+              <strong>11~20세</strong>
+              <p>깎아주면 먹고 아니면 지나가는 구간입니다. 부모의 선택과 아이의 반응이 엇갈리기 쉽습니다.</p>
+            </article>
+            <article>
+              <strong>21~30세</strong>
+              <p>자취와 독립으로 과일이 사치처럼 느껴지기 쉬운 시기입니다. 용량과 편의성이 중요해집니다.</p>
+            </article>
+            <article>
+              <strong>31~40세</strong>
+              <p>결혼, 임신, 육아가 겹치며 과일 소비가 가장 활발해지는 구간입니다.</p>
+            </article>
+            <article>
+              <strong>41세 이후</strong>
+              <p>가족 건강, 선물, 품질, 가격의 균형을 더 많이 보게 됩니다. 양보다 질의 기준이 강해집니다.</p>
+            </article>
+          </div>
+          <blockquote class="edu-quote">
+            구매자와 구매결정권자를 분리해서 보면, 같은 과일도 전혀 다른 방식으로 제안할 수 있습니다.
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="edu-slide" id="slide-06">
+        <div class="edu-slide__rail">
+          <div class="edu-slide__no">Slide 06</div>
+          <p class="edu-slide__part">PART 02 · TSTC 탄생</p>
+        </div>
+        <div class="edu-slide__body">
+          <h2>TSTC는 감을 설명하려고 만든 구조입니다.</h2>
+          <p class="edu-slide__lede">잘하는 사람의 감각을 말로 옮기지 못하면, 교육은 늘 개인기에서 멈춥니다.</p>
+          <div class="edu-three">
+            <article>
+              <span>관찰</span>
+              <h3>270,000팀 이상</h3>
+              <p>매장과 직접 장사를 합치면 최소 27만 팀 이상의 고객 반응을 반복해서 보게 됩니다.</p>
+            </article>
+            <article>
+              <span>패턴</span>
+              <h3>상황마다 닮은 반응</h3>
+              <p>나이, 가족 구성, 경제력, 목적이 비슷하면 과일 선택 패턴도 일정하게 반복됩니다.</p>
+            </article>
+            <article>
+              <span>도구</span>
+              <h3>설명 가능한 구조</h3>
+              <p>직원의 감각과 추천 기준을 전달하기 위해 TSTC라는 분류 언어가 필요해졌습니다.</p>
+            </article>
+          </div>
+          <div class="edu-body" style="margin-top: 28px;">
+            <p>
+              이 파트에서는 TSTC를 멋있는 이론처럼 소개할 필요가 없습니다.
+              오히려 "설명할 방법이 없어서 만들었다"는 솔직한 문장이 더 강합니다.
+              그게 현장형 교육답고, 청중도 바로 이해합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="edu-slide" id="slide-07">
+        <div class="edu-slide__rail">
+          <div class="edu-slide__no">Slide 07</div>
+          <p class="edu-slide__part">PART 02 · TSTC 4축</p>
+        </div>
+        <div class="edu-slide__body">
+          <h2>TSTC는 네 감각을 다룹니다</h2>
+          <p class="edu-slide__lede">이미 알고 있던 과일 감각을, 다시 읽기 쉽게 나눠 놓은 것입니다.</p>
+          <div class="edu-axis">
+            <article>
+              <strong>T <em>Taste</em></strong>
+              <p>진한 맛과 담백한 맛. 단맛 하나로 밀어붙이지 않고 품종의 결을 보게 합니다.</p>
+            </article>
+            <article>
+              <strong>S <em>Scent</em></strong>
+              <p>강한 향과 은은한 향. 향은 맛의 힌트가 되지만 숙도와 후숙도 함께 읽어야 합니다.</p>
+            </article>
+            <article>
+              <strong>T <em>Texture</em></strong>
+              <p>아삭함과 부드러움. 씹는 느낌, 과즙감, 입안에서 남는 질감까지 포함합니다.</p>
+            </article>
+            <article>
+              <strong>C <em>Color</em></strong>
+              <p>선명도와 익음의 신호. 보기 좋은 색이 단순 미감이 아니라 등급과 기대치를 만듭니다.</p>
+            </article>
+          </div>
+          <div class="edu-note">
+            <span>진행 메모</span>
+            <p>
+              오감 중 왜 촉감이 빠졌는지 묻는 장면은 살리세요.
+              "과일 가게에서 가장 싫어하는 감각이라서 뺐다"는 농담이 긴장을 풀어주고,
+              청각은 텍스처에 들어간다고 설명하면 훨씬 잘 기억됩니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="edu-slide" id="slide-08">
+        <div class="edu-slide__rail">
+          <div class="edu-slide__no">Slide 08</div>
+          <p class="edu-slide__part">PART 02 · TSTC 3가지 시선</p>
+        </div>
+        <div class="edu-slide__body">
+          <h2>판매자, 구매자, 과일은 서로 다른 말을 합니다</h2>
+          <p class="edu-slide__lede">셋 중 하나가 틀린 것이 아니라, 연결이 잘못될 때 낭비가 생깁니다.</p>
+          <div class="edu-three">
+            <article>
+              <span>View 01</span>
+              <h3>판매자</h3>
+              <p>오늘 팔고 싶은 과일이 있습니다. 물량, 단가, 상태, 회전율의 사정이 있기 때문입니다.</p>
+            </article>
+            <article>
+              <span>View 02</span>
+              <h3>구매자</h3>
+              <p>지금 필요한 과일이 있습니다. 선물인지, 아이 간식인지, 부모님 건강인지에 따라 목적이 달라집니다.</p>
+            </article>
+            <article>
+              <span>View 03</span>
+              <h3>과일</h3>
+              <p>품종, 숙도, 향, 식감, 색이 각기 다른 신호를 냅니다. 과일 자체가 말하는 정보도 있습니다.</p>
+            </article>
+          </div>
+          <blockquote class="edu-quote">
+            과일코디네이터는 TSTC를 통해 사람을 파악하고, 알맞은 과일로 알맞은 연결을 하는 사람입니다.
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="edu-slide" id="slide-09">
+        <div class="edu-slide__rail">
+          <div class="edu-slide__no">Slide 09</div>
+          <p class="edu-slide__part">PART 03 · 자격과 역할</p>
+        </div>
+        <div class="edu-slide__body">
+          <h2>과일코디네이터 1급 · 2급은 이렇게 읽어야 합니다</h2>
+          <p class="edu-slide__lede">단순 판매 교육이 아니라, 목적에 맞는 과일 경험을 설계하는 사람을 만드는 과정입니다.</p>
+          <div class="edu-official">
+            <article>
+              <span>자격명</span>
+              <h3>과일코디네이터</h3>
+              <p>대한과일협회가 운영하는 민간자격 체계</p>
+            </article>
+            <article>
+              <span>등록번호</span>
+              <h3>2023-001094</h3>
+              <p>민간자격정보서비스 등록 기준</p>
+            </article>
+            <article>
+              <span>주무부처</span>
+              <h3>농림축산식품부</h3>
+              <p>민간자격 등록 현황 기준</p>
+            </article>
+            <article>
+              <span>교육 방향</span>
+              <h3>현장형</h3>
+              <p>추천 · 포장 · 상차림 · 상담 · 교육까지 잇는 실무 구조</p>
+            </article>
+          </div>
+          <div class="edu-route">
+            <article>
+              <span>2급</span>
+              <h3>입문 실무</h3>
+              <p>제철과일의 기본지식과 과일코디네이팅 기술을 바탕으로 커팅과일, 선물세트, 바구니, 상차림을 설계하는 단계입니다.</p>
+            </article>
+            <article>
+              <span>1급</span>
+              <h3>상위 적용</h3>
+              <p>2급에서 익힌 기준을 바탕으로 제안, 교육, 기획, 현장 운영 범위를 넓히는 상위 과정으로 설명하는 것이 자연스럽습니다.</p>
+            </article>
+            <article>
+              <span>핵심</span>
+              <h3>사람을 읽는 힘</h3>
+              <p>결국 자격의 가치가 아니라, 어떤 사람에게 어떤 과일 경험을 제안할 수 있는지가 핵심입니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="edu-slide" id="slide-10">
+        <div class="edu-slide__rail">
+          <div class="edu-slide__no">Slide 10</div>
+          <p class="edu-slide__part">PART 03 · 비즈니스 포인트</p>
+        </div>
+        <div class="edu-slide__body">
+          <h2>이제 어디에 쓸 수 있는지를 보여줘야 합니다</h2>
+          <p class="edu-slide__lede">오전 강의 후반은 철학을 끝내고, 바로 움직일 수 있는 시장 언어로 내려와야 합니다.</p>
+          <div class="edu-biz-grid">
+            <article>
+              <span>Kids</span>
+              <h3>키즈 시장</h3>
+              <p>엄마들의 고민은 건강이기도 하지만, 더 직접적으로는 아이가 안 먹는다는 데 있습니다.</p>
+              <ul>
+                <li>키즈카페 · 베이비페어 · 엄마 커뮤니티 접점 제안</li>
+                <li>TSTC 테스트를 고객 확보 장치로 연결</li>
+                <li>아이 반응을 먼저 보는 제안형 상담</li>
+              </ul>
+            </article>
+            <article>
+              <span>Wedding</span>
+              <h3>웨딩 시장</h3>
+              <p>신혼부부에게 직접 가는 길도 좋지만, 웨딩 플래너라는 중간 영업 채널을 읽는 것이 더 현실적입니다.</p>
+              <ul>
+                <li>양가 부모님 선물, 신혼부부 건강 과일, 식전 답례</li>
+                <li>1회성 고객을 이어주는 파트너 관계 설계</li>
+                <li>과일이 예쁜 것이 아니라 목적이 맞아야 선택됩니다</li>
+              </ul>
+            </article>
+            <article>
+              <span>Silver · ESG</span>
+              <h3>실버 · 기업</h3>
+              <p>건강, 복지, 병문안, 기업 ESG와 연결되면 과일은 단순 식품이 아니라 제안서의 한 항목이 됩니다.</p>
+              <ul>
+                <li>실버 세대 건강 선물과 소포장 제안</li>
+                <li>기업 복지, 명절 선물, ESG 서사 연결</li>
+                <li>버려지기 전 사람에게 맞는 경험으로 다시 연결</li>
+              </ul>
+            </article>
+          </div>
+          <figure class="edu-figure">
+            <img src="assets/site/f07.jpg" alt="대한과일협회 교육 활동 사진" />
+            <figcaption>과일코디네이터의 시장은 매장 안에서만 끝나지 않습니다. 교육, 행사, 선물, 복지, 콘텐츠까지 모두 후보가 됩니다.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="edu-slide" id="slide-11">
+        <div class="edu-slide__rail">
+          <div class="edu-slide__no">Slide 11</div>
+          <p class="edu-slide__part">PART 03 · 실행 유도</p>
+        </div>
+        <div class="edu-slide__body">
+          <h2>첫 번째 수강생 특권은 행동할 권리입니다</h2>
+          <p class="edu-slide__lede">자신 있게 제안하고, 당당하게 거절당하고, 그 경험으로 다음 문장을 바꾸게 해야 합니다.</p>
+          <div class="edu-body">
+            <p>
+              스크립트 후반의 힘은 여기서 나옵니다.
+              교육을 듣고 끝내는 사람이 아니라, 오늘 오후에 바로 키즈카페와 박람회를 검색하는 사람을 만들어야 합니다.
+            </p>
+            <p>
+              "인증 키를 풀어드리겠다", "대한과일협회 이름을 써도 된다"는 말은 단순한 혜택 설명이 아니라
+              수강생에게 행동의 면허를 주는 장치입니다. 이 톤을 너무 딱딱하게 바꾸지 않는 것이 좋습니다.
+            </p>
+          </div>
+          <div class="edu-note">
+            <span>강의 운영 포인트</span>
+            <ul>
+              <li>실행이 빠른 사람은 바로 검색할 것이라는 문장을 그대로 살리기</li>
+              <li>대전 지역 키즈페어, 웨딩 박람회, 기업 행사 예시는 최신 일정만 수업 직전 갱신하기</li>
+              <li>특권은 공짜보다 책임 있는 기회라는 톤으로 마무리하기</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="edu-slide" id="slide-12">
+        <div class="edu-slide__rail">
+          <div class="edu-slide__no">Slide 12</div>
+          <p class="edu-slide__part">ENDING · 마지막 멘트</p>
+        </div>
+        <div class="edu-slide__body">
+          <h2>네잎클로버는 밖에 있는 것이 아니라, 이미 살아온 삶 안에 있습니다</h2>
+          <p class="edu-slide__lede">과일을 새로 발견하는 강의가 아니라, 자기 경험을 다시 보게 하는 강의로 끝나야 합니다.</p>
+          <div class="edu-body">
+            <p>
+              마지막 멘트는 좋은 말로 끝내는 장식이 아니라 전체 강의의 결론입니다.
+              오전 내내 이야기한 현장 경험, 거절, 상권 변화, 아이의 반응, 고객의 목적이 모두
+              "당신 삶에도 이미 쓸모 있는 감각이 있다"는 문장으로 모여야 합니다.
+            </p>
+            <p>
+              그래서 이 강의는 과일만 배우는 시간이 아니라,
+              <strong>내가 살아온 경험을 어떤 일로 연결할 수 있는지 다시 보는 시간</strong>으로 기억되는 편이 좋습니다.
+            </p>
+          </div>
+          <blockquote class="edu-quote">
+            행운을 찾으려 행복을 짓밟지 않는 현명한 분들이 되실 거라 믿습니다.
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="edu-next">
+        <p>함께 만든 보조 문서도 바로 이어서 볼 수 있게 정리했습니다. 발표용 스크립트와 출처 페이지까지 연결됩니다.</p>
+        <div class="edu-next__links">
+          <a class="kfa-btn kfa-btn--terra" href="education-script.html">발표자용 스크립트</a>
+          <a class="kfa-btn kfa-btn--line" href="education-sources.html">공식 자료 출처</a>
+          <a class="kfa-btn kfa-btn--line" href="downloads/KFA-fruit-coordinator-level2-masterclass.pptx" download="KFA_과일코디네이터2급_오전강의_발표자료.pptx">PPT 다운로드</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div data-chrome="footer"></div>
+  <script src="shared-design.js?v=20260611a"></script>
+</body>
+</html>

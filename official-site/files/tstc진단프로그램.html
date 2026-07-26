@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../styles.css">
-<title>TSTC 과일 취향 진단 | 대한과일협회</title>
-  <meta name="description" content="대한과일협회 공식 TSTC 과일 취향 진단 페이지입니다." />
+<link rel="stylesheet" href="../styles.css?v=20260609f">
+<title>TSTC 怨쇱씪 痍⑦뼢 吏꾨떒 | ??쒓낵?쇳삊??/title>
+  <meta name="description" content="??쒓낵?쇳삊??怨듭떇 TSTC 怨쇱씪 痍⑦뼢 吏꾨떒 ?섏씠吏?낅땲??" />
   <meta name="robots" content="noindex,follow" />
-  <link rel="canonical" href="https://koreafruit.kr/files/tstc진단프로그램.html" />
+  <link rel="canonical" href="https://koreafruit.kr/files/tstc吏꾨떒?꾨줈洹몃옩.html" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="대한과일협회" />
-  <meta property="og:title" content="TSTC 과일 취향 진단 | 대한과일협회" />
-  <meta property="og:description" content="대한과일협회 공식 TSTC 과일 취향 진단 페이지입니다." />
-  <meta property="og:url" content="https://koreafruit.kr/files/tstc진단프로그램.html" />
+  <meta property="og:site_name" content="??쒓낵?쇳삊?? />
+  <meta property="og:title" content="TSTC 怨쇱씪 痍⑦뼢 吏꾨떒 | ??쒓낵?쇳삊?? />
+  <meta property="og:description" content="??쒓낵?쇳삊??怨듭떇 TSTC 怨쇱씪 痍⑦뼢 吏꾨떒 ?섏씠吏?낅땲??" />
+  <meta property="og:url" content="https://koreafruit.kr/files/tstc吏꾨떒?꾨줈洹몃옩.html" />
   <meta property="og:image" content="https://koreafruit.kr/assets/site/market-01.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -21,7 +21,7 @@
 @import url("https://rsms.me/inter/inter.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap");
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,'Apple SD Gothic Neo','맑은 고딕','Noto Sans KR',sans-serif;background:#fff;color:#111;min-height:100vh;-webkit-font-smoothing:antialiased}
+body{font-family:-apple-system,'Apple SD Gothic Neo','留묒? 怨좊뵓','Noto Sans KR',sans-serif;background:#fff;color:#111;min-height:100vh;-webkit-font-smoothing:antialiased}
 :root{--g:#1B3A2D;--g2:#2D6A4F;--gd:#D4A843;--lc:#F4F9F6;--bc:#E8F4EE;--bd:#D4EDDA}
 #pbar{position:fixed;top:0;left:0;right:0;height:3px;background:#eee;z-index:999}
 #pfill{height:100%;background:var(--g);width:0;transition:width .5s}
@@ -42,7 +42,7 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','맑은 고딕','Noto Sans 
 .qtit{font-size:22px;font-weight:700;line-height:1.5;color:#111;margin-bottom:8px;letter-spacing:0}
 .qdsc{font-size:14px;color:#888;line-height:1.65;margin-bottom:24px}
 .mnote{font-size:11px;color:var(--g2);margin-bottom:12px}
-/* 단일선택 */
+/* ?⑥씪?좏깮 */
 .opts{display:flex;flex-direction:column;gap:8px}
 .opt{display:flex;align-items:flex-start;gap:14px;border:1.5px solid #e8e8e8;padding:15px 18px;cursor:pointer;background:#fff;text-align:left;width:100%;font-family:inherit;transition:all .15s}
 .opt:hover,.opt.sel{border-color:var(--g);background:var(--g);color:#fff}
@@ -50,20 +50,20 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','맑은 고딕','Noto Sans 
 .opt:hover .onum,.opt.sel .onum{color:rgba(255,255,255,.35)}
 .otxt{font-size:15px;line-height:1.5}.osub{font-size:12px;color:#aaa;margin-top:3px}
 .opt:hover .osub,.opt.sel .osub{color:rgba(255,255,255,.45)}
-/* 그리드 */
+/* 洹몃━??*/
 .cgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
 .cgrid.c3{grid-template-columns:repeat(3,1fr)}
 .copt{border:1.5px solid #e8e8e8;padding:18px 14px;text-align:center;cursor:pointer;background:#fff;transition:all .15s;display:flex;flex-direction:column;gap:4px;font-family:inherit}
 .copt:hover,.copt.sel{border-color:var(--g);background:var(--g);color:#fff}
 .coname{font-size:15px;font-weight:600}.cosub{font-size:11px;color:#aaa;line-height:1.4}
 .copt:hover .cosub,.copt.sel .cosub{color:rgba(255,255,255,.5)}
-/* 다중선택 */
+/* ?ㅼ쨷?좏깮 */
 .mopt{display:flex;align-items:center;gap:12px;border:1.5px solid #e8e8e8;padding:13px 18px;cursor:pointer;background:#fff;transition:all .15s;width:100%;font-family:inherit;text-align:left}
 .mopt:hover,.mopt.msel{border-color:var(--g2);background:var(--lc)}
 .mchk{width:20px;height:20px;border:1.5px solid #ddd;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:11px;font-weight:700;transition:all .15s}
 .mopt.msel .mchk{background:var(--g);border-color:var(--g);color:#fff}
 .mt{font-size:14px;font-weight:500}.ms{font-size:11px;color:#aaa}
-/* A/B 페어 */
+/* A/B ?섏뼱 */
 .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
 .pbtn{border:1.5px solid #e8e8e8;padding:22px 16px;text-align:center;cursor:pointer;background:#fff;transition:all .15s;font-family:inherit}
 .pbtn:hover,.pbtn.sel{border-color:var(--g);background:var(--g);color:#fff}
@@ -75,12 +75,12 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','맑은 고딕','Noto Sans 
 .srow{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
 .sbtn{border:1.5px solid #e8e8e8;padding:12px 4px;text-align:center;cursor:pointer;font-size:11px;color:#888;background:#fff;transition:all .15s;font-family:inherit}
 .sbtn:hover,.sbtn.sel{border-color:var(--g2);background:var(--g2);color:#fff}
-/* 버튼 */
+/* 踰꾪듉 */
 .nbtn{background:var(--g);color:#fff;border:none;padding:16px;font-size:15px;font-weight:600;cursor:pointer;width:100%;margin-top:20px;font-family:inherit;transition:background .15s}
 .nbtn:hover{background:var(--g2)}
 .nbtn:disabled{background:#ccc;cursor:not-allowed}
 .skip{background:none;border:none;color:#bbb;font-size:13px;cursor:pointer;padding:12px;font-family:inherit;display:block;margin:0 auto;text-decoration:underline}
-/* 랜딩 */
+/* ?쒕뵫 */
 #sl{background:var(--g);justify-content:center;align-items:center;text-align:center;padding:3rem 1.5rem}
 .lorg{font-size:10px;letter-spacing:.22em;color:rgba(255,255,255,.3);margin-bottom:12px;text-transform:uppercase}
 .ltit{font-size:72px;font-weight:800;letter-spacing:0;line-height:1;color:#fff;margin-bottom:4px}
@@ -112,7 +112,7 @@ body{font-family:-apple-system,'Apple SD Gothic Neo','맑은 고딕','Noto Sans 
 .oinput{width:100%;border:1.5px solid #e8e8e8;padding:13px 18px;font-size:16px;font-weight:600;outline:none;background:#fff;font-family:inherit;margin-bottom:16px}
 .gas-config{display:none}
 .oerr{font-size:13px;color:#c62828;min-height:20px;margin-bottom:12px}
-/* 결과 */
+/* 寃곌낵 */
 #sr{background:#fff}
 .rhero{background:var(--g);color:#fff;padding:36px 28px;text-align:center}
 .rorg{font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.3);margin-bottom:8px;text-transform:uppercase}
@@ -294,6 +294,11 @@ body{background:var(--tstc-paper);color:var(--tstc-ink);font-family:"Pretendard"
 .rretry{border:1px solid var(--tstc-line);background:transparent;color:var(--tstc-ink);border-radius:999px;font-weight:800}
 .rretry:hover{border-color:var(--tstc-accent);color:var(--tstc-accent)}
 .rfoot{color:var(--tstc-muted)}
+.rcampaign{max-width:460px;margin:20px auto 0;padding:16px 18px;border:1px solid var(--tstc-line);border-radius:22px;background:rgba(184,94,62,.06)}
+.rcampaign__badge{display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border-radius:999px;background:#fff;color:var(--tstc-accent);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.rcampaign__copy{margin:12px 0 0;font-size:14px;line-height:1.8;color:var(--tstc-body)}
+.rcampaign__link{display:inline-flex;align-items:center;gap:6px;margin-top:12px;color:var(--tstc-ink);font-size:13px;font-weight:700;text-decoration:none}
+.rcampaign__link:hover{color:var(--tstc-accent)}
 .gas-config{display:none!important}
 @media(max-width:780px){
   #ptxt{display:none}
@@ -386,7 +391,7 @@ body{font-family:var(--font-sans);font-size:17px;line-height:1.47;background:var
 .opts{border-top:1px solid var(--ink-5)}
 .opt,.mopt{position:relative;display:block;width:100%;padding:22px 8px;border:0;border-bottom:1px solid var(--ink-5);background:transparent;color:var(--ink-2);text-align:left;font-size:17px;font-weight:400;transition:color .22s,padding-left .32s,background-color .2s}
 .opt::after,.mopt::after{
-  content:"→";
+  content:"??;
   position:absolute;
   right:8px;
   top:50%;
@@ -465,85 +470,85 @@ body{font-family:var(--font-sans);font-size:17px;line-height:1.47;background:var
   <div class="landing-shell">
     <div class="landing-copy">
       <div class="lorg">TSTC</div>
-      <div class="ltit">서두르지 마세요.<br>평소 떠올리던 감각을<br>하나씩 따라가 봅니다.</div>
-      <div class="lsub">Taste · Scent · Texture · Color</div>
-      <div class="lgold">간단한 안내 질문과 감각 질문을 통해, 과일을 고르고 먹고 남기는 평소의 흐름을 살펴봅니다.</div>
+      <div class="ltit">?쒕몢瑜댁? 留덉꽭??<br>?됱냼 ?좎삱由щ뜕 媛먭컖??br>?섎굹???곕씪媛 遊낅땲??</div>
+      <div class="lsub">Taste 쨌 Scent 쨌 Texture 쨌 Color</div>
+      <div class="lgold">媛꾨떒???덈궡 吏덈Ц怨?媛먭컖 吏덈Ц???듯빐, 怨쇱씪??怨좊Ⅴ怨?癒밴퀬 ?④린???됱냼???먮쫫???댄렣遊낅땲??</div>
     </div>
     <div class="landing-panel">
       <div class="panel-eyebrow">Start</div>
-      <div class="panel-title">준비되면 시작해볼까요?</div>
+      <div class="panel-title">以鍮꾨릺硫??쒖옉?대낵源뚯슂?</div>
       <div class="lbtns">
         <button class="lbtn" onclick="goTo('sc')">
           <div class="lbtag">For Customer</div>
-          <div class="lbname">시작하기</div>
-          <div class="lbinfo">일반형은 바로 시작하고<br>프리미엄만 참여코드를 확인합니다</div>
+          <div class="lbname">?쒖옉?섍린</div>
+          <div class="lbinfo">?쇰컲?뺤? 諛붾줈 ?쒖옉?섍퀬<br>?꾨━誘몄뾼留?李몄뿬肄붾뱶瑜??뺤씤?⑸땲??/div>
         </button>
         <button class="lbtn" onclick="goTo('so')">
           <div class="lbtag">For Business</div>
-          <div class="lbname">사업자 로그인</div>
-          <div class="lbinfo">고객 검사 결과를 확인하고<br>교육?상담 데이터를 관리합니다</div>
+          <div class="lbname">?ъ뾽??濡쒓렇??/div>
+          <div class="lbinfo">怨좉컼 寃??寃곌낵瑜??뺤씤?섍퀬<br>援먯쑁??곷떞 ?곗씠?곕? 愿由ы빀?덈떎</div>
         </button>
       </div>
-      <div class="lfoot">대한과일협회 공식 진단 · koreafruit.kr</div>
+      <div class="lfoot">??쒓낵?쇳삊??怨듭떇 吏꾨떒 쨌 koreafruit.kr</div>
     </div>
   </div>
 </div>
 
 <!-- CUSTOMER START -->
 <div class="sc" id="sc">
-  <div class="hd"><button class="bk" onclick="goTo('sl')">← 처음으로</button><span class="hd-cnt">TSTC 시작</span></div>
+  <div class="hd"><button class="bk" onclick="goTo('sl')">??泥섏쓬?쇰줈</button><span class="hd-cnt">TSTC ?쒖옉</span></div>
   <div class="qb">
-    <div class="qtag">시작 방식 선택</div>
-    <div class="qtit" style="font-size:20px;margin-bottom:8px">오늘은 어떤 방식으로 살펴볼까요?</div>
-    <div class="qdsc" style="margin-bottom:24px">일반형은 바로 시작할 수 있고, 프리미엄은 담당자에게 받은 참여코드가 있을 때만 열립니다.</div>
+    <div class="qtag">?쒖옉 諛⑹떇 ?좏깮</div>
+    <div class="qtit" style="font-size:20px;margin-bottom:8px">?ㅻ뒛? ?대뼡 諛⑹떇?쇰줈 ?댄렣蹂쇨퉴??</div>
+    <div class="qdsc" style="margin-bottom:24px">?쇰컲?뺤? 諛붾줈 ?쒖옉?????덇퀬, ?꾨━誘몄뾼? ?대떦?먯뿉寃?諛쏆? 李몄뿬肄붾뱶媛 ?덉쓣 ?뚮쭔 ?대┰?덈떎.</div>
     <div id="pcwrap" style="display:none">
-      <label class="flabel">프리미엄 참여 코드</label>
-      <input class="cinput" id="pcode" placeholder="예: KFA2025" maxlength="12" oninput="this.value=this.value.toUpperCase();onCI()">
-      <div class="chint" id="chint">프리미엄은 참여코드를 입력해야 시작할 수 있습니다.</div>
+      <label class="flabel">?꾨━誘몄뾼 李몄뿬 肄붾뱶</label>
+      <input class="cinput" id="pcode" placeholder="?? KFA2025" maxlength="12" oninput="this.value=this.value.toUpperCase();onCI()">
+      <div class="chint" id="chint">?꾨━誘몄뾼? 李몄뿬肄붾뱶瑜??낅젰?댁빞 ?쒖옉?????덉뒿?덈떎.</div>
     </div>
     <div id="rsec" style="display:none">
-      <label class="flabel">재검사 초대 코드 (선택)</label>
+      <label class="flabel">?ш???珥덈? 肄붾뱶 (?좏깮)</label>
       <input class="rinput" id="rcode" placeholder="RETRY-XXXX-XXXX" maxlength="16" oninput="this.value=this.value.toUpperCase()">
-      <div style="font-size:12px;color:#aaa;margin-top:6px;margin-bottom:20px">이전 검사 후 발급된 코드를 입력하면 1회 재검사가 가능합니다.</div>
+      <div style="font-size:12px;color:#aaa;margin-top:6px;margin-bottom:20px">?댁쟾 寃????諛쒓툒??肄붾뱶瑜??낅젰?섎㈃ 1???ш??ш? 媛?ν빀?덈떎.</div>
     </div>
-    <label class="flabel" style="margin-bottom:12px">진단 방식</label>
+    <label class="flabel" style="margin-bottom:12px">吏꾨떒 諛⑹떇</label>
     <div class="mrow">
       <button class="mcard" id="mstd" onclick="pickM('standard')">
         <div class="mctag">Standard</div>
-        <div class="mcname">바로 시작하기</div>
-        <div class="mcinfo">참여코드 없이 지금의 감각 흐름을 짧게 살펴봅니다<br>약 7분</div>
+        <div class="mcname">諛붾줈 ?쒖옉?섍린</div>
+        <div class="mcinfo">李몄뿬肄붾뱶 ?놁씠 吏湲덉쓽 媛먭컖 ?먮쫫??吏㏐쾶 ?댄렣遊낅땲??br>??7遺?/div>
       </button>
       <button class="mcard" id="mprm" onclick="pickM('premium')">
         <div class="mctag">Premium</div>
-        <div class="mcname">깊게 읽기</div>
-        <div class="mcinfo">참여코드로 열리는 확장형 리포트입니다<br>약 12분</div>
+        <div class="mcname">源딄쾶 ?쎄린</div>
+        <div class="mcinfo">李몄뿬肄붾뱶濡??대━???뺤옣??由ы룷?몄엯?덈떎<br>??12遺?/div>
       </button>
     </div>
-    <button class="nbtn" id="sbtn" disabled onclick="startFlow()">다음</button>
+    <button class="nbtn" id="sbtn" disabled onclick="startFlow()">?ㅼ쓬</button>
   </div>
 </div>
 
 <!-- OPERATOR LOGIN -->
 <div class="sc" id="so">
-  <div class="hd"><button class="bk" onclick="goTo('sl')">← 처음으로</button><span class="hd-cnt">사업자 로그인</span></div>
+  <div class="hd"><button class="bk" onclick="goTo('sl')">??泥섏쓬?쇰줈</button><span class="hd-cnt">?ъ뾽??濡쒓렇??/span></div>
   <div class="qb">
     <div class="qtag">For Business</div>
-    <div class="qtit" style="font-size:20px;margin-bottom:8px">사업자 인증</div>
-    <div class="qdsc" style="margin-bottom:24px">대한과일협회 파트너 사업자만 이용 가능합니다.</div>
-    <label class="flabel">사업자 ID</label>
-    <input class="oinput" id="opid" placeholder="사업자 ID 입력" maxlength="20">
-    <label class="flabel">PIN 번호</label>
-    <input class="oinput" id="oppin" type="password" placeholder="PIN 번호 (4~6자리)" maxlength="6">
+    <div class="qtit" style="font-size:20px;margin-bottom:8px">?ъ뾽???몄쬆</div>
+    <div class="qdsc" style="margin-bottom:24px">??쒓낵?쇳삊???뚰듃???ъ뾽?먮쭔 ?댁슜 媛?ν빀?덈떎.</div>
+    <label class="flabel">?ъ뾽??ID</label>
+    <input class="oinput" id="opid" placeholder="?ъ뾽??ID ?낅젰" maxlength="20">
+    <label class="flabel">PIN 踰덊샇</label>
+    <input class="oinput" id="oppin" type="password" placeholder="PIN 踰덊샇 (4~6?먮━)" maxlength="6">
     <div class="oerr" id="operr"></div>
-    <button class="nbtn" onclick="opLogin()">로그인</button>
+    <button class="nbtn" onclick="opLogin()">濡쒓렇??/button>
     <div class="gas-config" style="margin-top:20px;padding-top:20px;border-top:1px solid #eee">
-      <label class="flabel">Google Sheets 연동 URL</label>
-      <input class="oinput" id="gasurl" placeholder="Apps Script 배포 URL 입력" value="https://script.google.com/macros/s/AKfycbwbC6MtkfASDi1vSmmOYdAOCpOMHBabno5jpUwFm8tIppntikE2bUqUfi1ITFYoATS0Fw/exec"
+      <label class="flabel">Google Sheets ?곕룞 URL</label>
+      <input class="oinput" id="gasurl" placeholder="Apps Script 諛고룷 URL ?낅젰" value="https://script.google.com/macros/s/AKfycbwbC6MtkfASDi1vSmmOYdAOCpOMHBabno5jpUwFm8tIppntikE2bUqUfi1ITFYoATS0Fw/exec"
         style="margin-bottom:8px;font-size:13px;letter-spacing:0"
         oninput="document.getElementById('gasurl').style.borderColor='#e8e8e8'">
-      <button class="nbtn" style="margin-top:0;padding:12px" onclick="setGasUrl(document.getElementById('gasurl').value)">URL 저장</button>
+      <button class="nbtn" style="margin-top:0;padding:12px" onclick="setGasUrl(document.getElementById('gasurl').value)">URL ???/button>
     </div>
-    <div style="text-align:center;margin-top:16px;font-size:12px;color:#aaa">계정 문의: 대한과일협회 · 010-4034-2457</div>
+    <div style="text-align:center;margin-top:16px;font-size:12px;color:#aaa">怨꾩젙 臾몄쓽: ??쒓낵?쇳삊??쨌 010-4034-2457</div>
   </div>
 </div>
 
@@ -552,7 +557,7 @@ body{font-family:var(--font-sans);font-size:17px;line-height:1.47;background:var
   <div id="pbar2"></div>
   <div class="hd">
     <div style="display:flex;align-items:center;gap:12px">
-      <button class="bk" onclick="goBack()">← 이전</button>
+      <button class="bk" onclick="goBack()">???댁쟾</button>
       <span class="hd-sec" id="hsec"></span>
     </div>
     <span class="hd-cnt" id="hcnt"></span>
@@ -567,249 +572,291 @@ body{font-family:var(--font-sans);font-size:17px;line-height:1.47;background:var
 </div>
 
 <script>
-/* ── 상태 ── */
+/* ?? ?곹깭 ?? */
 var S={tstcMode:'standard',partCode:'',gender:null,age:null,region:null,family:[],childCount:0,childAges:[],buyFreq:null,buyChannel:null,tScore:0,sScore:0,txScore:0,cScore:0,ans:{}};
 var flow=[],idx=0,selMode=null;
 
-/* ── 질문 뱅크 ── */
-/* 값은 모두 JS 객체에만 저장 — HTML onclick에는 인덱스만 전달 */
+function isNational22EditionEnabled(){
+  var campaign=window.KFAFruitNational22;
+  if(!campaign)return false;
+  try{
+    var forced=new URLSearchParams(location.search).get('national22');
+    if(forced==='off')return false;
+    if(forced==='on')return true;
+  }catch(e){}
+  try{
+    var stored=localStorage.getItem('kfa-national22-edition');
+    if(stored==='off')return false;
+    if(stored==='on')return true;
+  }catch(e){}
+  return campaign.enabled!==false;
+}
+function getNational22Match(code){
+  var campaign=window.KFAFruitNational22;
+  if(!campaign||!campaign.matches||!campaign.entries)return null;
+  var id=campaign.matches[code];
+  if(!id)return null;
+  for(var i=0;i<campaign.entries.length;i++){
+    if(campaign.entries[i].id===id)return campaign.entries[i];
+  }
+  return null;
+}
+function getNational22Markup(code){
+  if(!isNational22EditionEnabled())return '';
+  var campaign=window.KFAFruitNational22||{};
+  var badgeText=campaign.badgeText||'국가대표 과일 에디션';
+  var landing='../'+(campaign.landingPath||'fruit-national-22.html');
+  var entry=getNational22Match(code);
+  var href=entry?landing+'#entry-'+entry.id:landing;
+  var copy=entry
+    ? entry.name+'과 같은 결의 매칭이 잡혔습니다. '+entry.line
+    : '지금 결과를 국가대표 과일 에디션으로도 이어서 읽을 수 있습니다.';
+  return '<div class="rcampaign">'
+    +'<span class="rcampaign__badge">'+badgeText+'</span>'
+    +'<p class="rcampaign__copy">'+copy+'</p>'
+    +'<a class="rcampaign__link" href="'+href+'">22개 엔트리에서 이어서 보기 →</a>'
+    +'</div>';
+}
+
+/* ?? 吏덈Ц 諭낇겕 ?? */
+/* 媛믪? 紐⑤몢 JS 媛앹껜?먮쭔 ?????HTML onclick?먮뒗 ?몃뜳?ㅻ쭔 ?꾨떖 */
 var QB={
-  A1:{sec:'A',sn:'기본 정보',tag:'1 / 7',title:'성별을 알려주세요.',type:'opt',
-    opts:[{t:'여성',s:'',v:'F'},{t:'남성',s:'',v:'M'},{t:'선택 안 함',s:'',v:'X'}]},
-  A2:{sec:'A',sn:'기본 정보',tag:'2 / 7',title:'연령대를 골라주세요.',type:'cg',chipGrid:true,
-    opts:[{n:'10대',s:'~19세',v:'10s'},{n:'20대',s:'20~29세',v:'20s'},{n:'30대',s:'30~39세',v:'30s'},{n:'40대',s:'40~49세',v:'40s'},{n:'50대',s:'50~59세',v:'50s'},{n:'60대+',s:'60세 이상',v:'60s'}]},
-  A3:{sec:'A',sn:'기본 정보',tag:'3 / 7',title:'어디에서 지내세요?',type:'cg',regionGrid:true,
-    opts:['서울','부산','대구','인천','광주','대전','울산','세종','경기','강원','충북','충남','전북','전남','경북','경남','제주'].map(function(t){return {n:t,s:'',v:t};})},
-  B1:{sec:'B',sn:'가족 구성',tag:'4 / 7',title:'어떤 가족 구성이신가요?',desc:'함께 사는 쪽을 골라주세요. 여러 개를 골라도 괜찮습니다.',type:'multi',key:'family',
-    opts:[{n:'1인가구',s:'',v:'alone'},{n:'신혼부부 · 2인 가구',s:'',v:'partner'},{n:'부모님과 함께 사는 가족',s:'',v:'parents'},{n:'아이와 함께 사는 가족',s:'',v:'children'},{n:'3대가 함께 사는 가족',s:'',v:'grandparents'},{n:'그 외',s:'',v:'roommate'}]},
-  B2:{sec:'B',sn:'가족 구성',tag:'아이 수',title:'함께 사는 아이는 몇 명인가요?',type:'cg',chipGrid:true,
-    opts:[{n:'1명',s:'',v:1},{n:'2명',s:'',v:2},{n:'3명+',s:'',v:3}]},
-  B3:{sec:'B',sn:'가족 구성',tag:'아이 나이',title:'아이 나이는 어느 쪽에 가까운가요?',desc:'해당하는 나이를 골라주세요. 여러 개를 골라도 괜찮습니다.',type:'multi',key:'childAges',
-    opts:[{n:'0~2세',s:'이유식·유아',v:'0-2'},{n:'3~5세',s:'유치원',v:'3-5'},{n:'6~9세',s:'초등 저학년',v:'6-9'},{n:'10~13세',s:'초등 고학년',v:'10-13'},{n:'14~19세',s:'중·고등학생',v:'14-19'},{n:'성인 자녀',s:'대학생 이상',v:'adult'}]},
-  C1:{sec:'C',sn:'구매 패턴',tag:'5 / 7',title:'과일을 얼마나 자주 사세요?',type:'opt',
-    opts:[{t:'월 1회 미만',s:'',v:'rare'},{t:'월 1-2회',s:'',v:'low'},{t:'주 1-2회',s:'',v:'mid'},{t:'주 3회 이상',s:'',v:'high'}]},
-  C2:{sec:'C',sn:'구매 패턴',tag:'6 / 7',title:'과일을 주로 어디서 사세요?',type:'opt',
-    opts:[{t:'대형마트',s:'',v:'mart'},{t:'동네 청과 · 전통시장',s:'',v:'market'},{t:'온라인 쇼핑몰',s:'',v:'online'},{t:'정기 구독 · 새벽배송',s:'',v:'sub'},{t:'직접 재배 · 지인 · 선물',s:'',v:'gift'}]},
-  D1:{sec:'D',sn:'생활 맥락',tag:'7 / 7',type:'opt',skip:true,
+  A1:{sec:'A',sn:'湲곕낯 ?뺣낫',tag:'1 / 7',title:'?깅퀎???뚮젮二쇱꽭??',type:'opt',
+    opts:[{t:'?ъ꽦',s:'',v:'F'},{t:'?⑥꽦',s:'',v:'M'},{t:'?좏깮 ????,s:'',v:'X'}]},
+  A2:{sec:'A',sn:'湲곕낯 ?뺣낫',tag:'2 / 7',title:'?곕졊?瑜?怨⑤씪二쇱꽭??',type:'cg',chipGrid:true,
+    opts:[{n:'10?',s:'~19??,v:'10s'},{n:'20?',s:'20~29??,v:'20s'},{n:'30?',s:'30~39??,v:'30s'},{n:'40?',s:'40~49??,v:'40s'},{n:'50?',s:'50~59??,v:'50s'},{n:'60?+',s:'60???댁긽',v:'60s'}]},
+  A3:{sec:'A',sn:'湲곕낯 ?뺣낫',tag:'3 / 7',title:'?대뵒?먯꽌 吏?댁꽭??',type:'cg',regionGrid:true,
+    opts:['?쒖슱','遺??,'?援?,'?몄쿇','愿묒＜','???,'?몄궛','?몄쥌','寃쎄린','媛뺤썝','異⑸턿','異⑸궓','?꾨턿','?꾨궓','寃쎈턿','寃쎈궓','?쒖＜'].map(function(t){return {n:t,s:'',v:t};})},
+  B1:{sec:'B',sn:'媛議?援ъ꽦',tag:'4 / 7',title:'?대뼡 媛議?援ъ꽦?댁떊媛??',desc:'?④퍡 ?щ뒗 履쎌쓣 怨⑤씪二쇱꽭?? ?щ윭 媛쒕? 怨⑤씪??愿쒖갖?듬땲??',type:'multi',key:'family',
+    opts:[{n:'1?멸?援?,s:'',v:'alone'},{n:'?좏샎遺遺 쨌 2??媛援?,s:'',v:'partner'},{n:'遺紐⑤떂怨??④퍡 ?щ뒗 媛議?,s:'',v:'parents'},{n:'?꾩씠? ?④퍡 ?щ뒗 媛議?,s:'',v:'children'},{n:'3?媛 ?④퍡 ?щ뒗 媛議?,s:'',v:'grandparents'},{n:'洹???,s:'',v:'roommate'}]},
+  B2:{sec:'B',sn:'媛議?援ъ꽦',tag:'?꾩씠 ??,title:'?④퍡 ?щ뒗 ?꾩씠??紐?紐낆씤媛??',type:'cg',chipGrid:true,
+    opts:[{n:'1紐?,s:'',v:1},{n:'2紐?,s:'',v:2},{n:'3紐?',s:'',v:3}]},
+  B3:{sec:'B',sn:'媛議?援ъ꽦',tag:'?꾩씠 ?섏씠',title:'?꾩씠 ?섏씠???대뒓 履쎌뿉 媛源뚯슫媛??',desc:'?대떦?섎뒗 ?섏씠瑜?怨⑤씪二쇱꽭?? ?щ윭 媛쒕? 怨⑤씪??愿쒖갖?듬땲??',type:'multi',key:'childAges',
+    opts:[{n:'0~2??,s:'?댁쑀?씲룹쑀??,v:'0-2'},{n:'3~5??,s:'?좎튂??,v:'3-5'},{n:'6~9??,s:'珥덈벑 ??숇뀈',v:'6-9'},{n:'10~13??,s:'珥덈벑 怨좏븰??,v:'10-13'},{n:'14~19??,s:'以뫢룰퀬?깊븰??,v:'14-19'},{n:'?깆씤 ?먮?',s:'??숈깮 ?댁긽',v:'adult'}]},
+  C1:{sec:'C',sn:'援щℓ ?⑦꽩',tag:'5 / 7',title:'怨쇱씪???쇰쭏???먯＜ ?ъ꽭??',type:'opt',
+    opts:[{t:'??1??誘몃쭔',s:'',v:'rare'},{t:'??1-2??,s:'',v:'low'},{t:'二?1-2??,s:'',v:'mid'},{t:'二?3???댁긽',s:'',v:'high'}]},
+  C2:{sec:'C',sn:'援щℓ ?⑦꽩',tag:'6 / 7',title:'怨쇱씪??二쇰줈 ?대뵒???ъ꽭??',type:'opt',
+    opts:[{t:'??뺣쭏??,s:'',v:'mart'},{t:'?숇꽕 泥?낵 쨌 ?꾪넻?쒖옣',s:'',v:'market'},{t:'?⑤씪???쇳븨紐?,s:'',v:'online'},{t:'?뺢린 援щ룆 쨌 ?덈꼍諛곗넚',s:'',v:'sub'},{t:'吏곸젒 ?щ같 쨌 吏??쨌 ?좊Ъ',s:'',v:'gift'}]},
+  D1:{sec:'D',sn:'?앺솢 留λ씫',tag:'7 / 7',type:'opt',skip:true,
     get title(){return getAT(1);},
-    opts:[{t:'그런 편이다',s:'',v:2},{t:'가끔 그렇다',s:'',v:1},{t:'잘 모르겠다',s:'',v:0},{t:'거의 아니다',s:'',v:-1}]},
-  D2:{sec:'D',sn:'생활 맥락',tag:'생활 맥락 2/2',type:'opt',skip:true,
+    opts:[{t:'洹몃윴 ?몄씠??,s:'',v:2},{t:'媛??洹몃젃??,s:'',v:1},{t:'??紐⑤Ⅴ寃좊떎',s:'',v:0},{t:'嫄곗쓽 ?꾨땲??,s:'',v:-1}]},
+  D2:{sec:'D',sn:'?앺솢 留λ씫',tag:'?앺솢 留λ씫 2/2',type:'opt',skip:true,
     get title(){return getAT(2);},
-    opts:[{t:'그런 편이다',s:'',v:2},{t:'가끔 그렇다',s:'',v:1},{t:'잘 모르겠다',s:'',v:0},{t:'거의 아니다',s:'',v:-1}]},
-  D3:{sec:'D',sn:'생활 맥락',tag:'생활 맥락 — 성별',type:'opt',skip:true,
+    opts:[{t:'洹몃윴 ?몄씠??,s:'',v:2},{t:'媛??洹몃젃??,s:'',v:1},{t:'??紐⑤Ⅴ寃좊떎',s:'',v:0},{t:'嫄곗쓽 ?꾨땲??,s:'',v:-1}]},
+  D3:{sec:'D',sn:'?앺솢 留λ씫',tag:'?앺솢 留λ씫 ???깅퀎',type:'opt',skip:true,
     get title(){return getGenderQ();},
     get opts(){return getGenderOpts();}},
-  D4:{sec:'D',sn:'생활 맥락',tag:'생활 맥락 — 가족',type:'opt',skip:true,
+  D4:{sec:'D',sn:'?앺솢 留λ씫',tag:'?앺솢 留λ씫 ??媛議?,type:'opt',skip:true,
     get title(){return getFamilyQ();},
-    opts:[{t:'그런 편이다',s:'',v:2},{t:'가끔 그렇다',s:'',v:1},{t:'잘 모르겠다',s:'',v:0},{t:'거의 아니다',s:'',v:-1}]},
-  T1:{sec:'E',sn:'TSTC 맛',tag:'Taste 1 / 5',axis:'T',type:'pair',title:'피곤한 날에는 어떤 과일이 더 당기나요?',
-    a:{n:'깊고 진한 단맛 · 풍미',ex:'부사사과, 망고, 샤인머스캣',sc:2},b:{n:'시원하고 산뜻한 산미',ex:'신고배, 수박, 청포도',sc:-2}},
-  T2:{sec:'E',sn:'TSTC 맛',tag:'Taste 2 / 5',axis:'T',type:'opt',title:'계속 손이 가는 과일은 어떤 맛인가요?',
-    opts:[{t:'깊고 진한 단맛 · 풍미',s:'',v:2},{t:'단맛과 산미가 같이 있는 쪽',s:'',v:1},{t:'부드럽고 잔잔한 단맛',s:'',v:-1},{t:'시원하고 산뜻한 산미',s:'',v:-2}]},
-  T3:{sec:'E',sn:'TSTC 맛',tag:'Taste 3 / 5',axis:'T',type:'opt',title:'한 입 먹었을 때 더 좋은 쪽은요?',
-    opts:[{t:'단맛이 바로 느껴지는 쪽',s:'',v:2},{t:'달지만 산뜻함도 있는 쪽',s:'',v:1},{t:'가볍고 맑은 쪽',s:'',v:-1},{t:'담백해서 오래 먹기 편한 쪽',s:'',v:-2}]},
-  T4:{sec:'E',sn:'TSTC 맛',tag:'Taste 4 / 5',axis:'T',type:'opt',title:'먹고 나서 어떤 말이 나오면 좋나요?',
-    opts:[{t:'달다, 더 먹고 싶다',s:'',v:2},{t:'맛있다, 과즙이 좋다',s:'',v:1},{t:'상쾌하다, 깔끔하다',s:'',v:-1},{t:'부담 없다, 편하다',s:'',v:-2}]},
-  T5:{sec:'E',sn:'TSTC 맛',tag:'Taste 5 / 5',axis:'T',type:'opt',title:'과일 살 때 단맛 표시를 얼마나 보나요?',
-    opts:[{t:'먼저 본다',s:'',v:2},{t:'어느 정도는 본다',s:'',v:1},{t:'다른 걸 더 본다',s:'',v:-1},{t:'거의 보지 않는다',s:'',v:-2}]},
-  T6:{sec:'E',sn:'TSTC 맛',tag:'Taste 6 / 8',axis:'T',type:'opt',prem:true,title:'주스나 스무디는 어느 쪽이 좋나요?',
-    opts:[{t:'진하고 묵직한 쪽',s:'',v:2},{t:'조금 진한 쪽',s:'',v:1},{t:'가볍고 산뜻한 쪽',s:'',v:-1},{t:'묽고 편하게 마시는 쪽',s:'',v:-2}]},
-  T7:{sec:'E',sn:'TSTC 맛',tag:'Taste 7 / 8',axis:'T',type:'opt',prem:true,title:'같은 과일이면 더 단 쪽에 돈을 더 쓰나요?',
-    opts:[{t:'그런 편이다',s:'',v:2},{t:'가끔 그렇다',s:'',v:1},{t:'가격 차이가 크면 망설인다',s:'',v:-1},{t:'단맛보다 가격을 본다',s:'',v:-2}]},
-  T8:{sec:'E',sn:'TSTC 맛',tag:'Taste 8 / 8',axis:'T',type:'opt',prem:true,title:'보기만 해도 달 것 같은 과일에 끌리나요?',
-    opts:[{t:'자주 그렇다',s:'',v:2},{t:'가끔 그렇다',s:'',v:1},{t:'먹어봐야 안다',s:'',v:-1},{t:'그런 기대는 별로 없다',s:'',v:-2}]},
-  S1:{sec:'E',sn:'TSTC 향',tag:'Scent 1 / 5',axis:'S',type:'pair',title:'과일을 고를 때 향을 얼마나 신경 쓰나요?',
-    a:{n:'향이 또렷한 쪽',ex:'복숭아, 머스크멜론, 바나나',sc:2},b:{n:'향이 잔잔한 쪽',ex:'수박, 신고배, 포도',sc:-2}},
-  S2:{sec:'E',sn:'TSTC 향',tag:'Scent 2 / 5',axis:'S',type:'opt',title:'봉지를 열었을 때 과일 향이 확 나면 어떤가요?',
-    opts:[{t:'진할수록 더 좋다',s:'',v:2},{t:'기분이 좋아진다',s:'',v:1},{t:'한두 입이면 충분하다',s:'',v:-1},{t:'부담스럽다',s:'',v:-2}]},
-  S3:{sec:'E',sn:'TSTC 향',tag:'Scent 3 / 5',axis:'S',type:'opt',title:'과일 살 때 냄새를 맡아보나요?',
-    opts:[{t:'일부러 맡아본다',s:'',v:2},{t:'가끔 맡아본다',s:'',v:1},{t:'거의 맡지 않는다',s:'',v:-1},{t:'전혀 신경 쓰지 않는다',s:'',v:-2}]},
-  S4:{sec:'E',sn:'TSTC 향',tag:'Scent 4 / 5',axis:'S',type:'opt',title:'향이 약해도 맛있으면 괜찮나요?',
-    opts:[{t:'맛만 좋으면 괜찮다',s:'',v:-2},{t:'대체로 괜찮다',s:'',v:-1},{t:'향도 조금은 있어야 한다',s:'',v:1},{t:'향이 없으면 아쉽다',s:'',v:2}]},
-  S5:{sec:'E',sn:'TSTC 향',tag:'Scent 5 / 5',axis:'S',type:'opt',title:'좋은 과일 향이 나면 더 자주 손이 가나요?',
-    opts:[{t:'자주 그렇다',s:'',v:2},{t:'가끔 그렇다',s:'',v:1},{t:'별로 그렇지 않다',s:'',v:-1},{t:'향은 거의 상관없다',s:'',v:-2}]},
-  S6:{sec:'E',sn:'TSTC 향',tag:'Scent 6 / 8',axis:'S',type:'opt',prem:true,title:'과일향 제품을 사본 적이 있나요?',
-    opts:[{t:'자주 산다',s:'',v:2},{t:'가끔 산다',s:'',v:1},{t:'실제 과일 향이면 충분하다',s:'',v:-1},{t:'인공 향은 별로다',s:'',v:-2}]},
-  S7:{sec:'E',sn:'TSTC 향',tag:'Scent 7 / 8',axis:'S',type:'opt',prem:true,title:'어떤 과일 냄새를 맡으면 예전 일이 떠오르나요?',
-    opts:[{t:'자주 그렇다',s:'',v:2},{t:'가끔 그렇다',s:'',v:1},{t:'별로 없다',s:'',v:-1},{t:'거의 없다',s:'',v:-2}]},
-  S8:{sec:'E',sn:'TSTC 향',tag:'Scent 8 / 8',axis:'S',type:'opt',prem:true,title:'먹기 전 향만으로 기대가 생기나요?',
-    opts:[{t:'향만으로도 기대된다',s:'',v:2},{t:'조금 기대된다',s:'',v:1},{t:'먹어봐야 안다',s:'',v:-1},{t:'향은 크게 상관없다',s:'',v:-2}]},
-  TX1:{sec:'E',sn:'TSTC 식감',tag:'Texture 1 / 5',axis:'TX',type:'pair',title:'어떤 식감이 가장 편한가요?',
-    a:{n:'씹는 느낌이 또렷한 쪽',ex:'사과, 배, 포도',sc:2},b:{n:'아주 부드럽고 즙이 많은 쪽',ex:'복숭아, 바나나, 멜론',sc:-2}},
-  TX2:{sec:'E',sn:'TSTC 식감',tag:'Texture 2 / 5',axis:'TX',type:'opt',title:'아삭하게 씹히는 과일이 좋나요?',
-    opts:[{t:'씹는 느낌이 또렷한 쪽이 좋다',s:'',v:2},{t:'단단하고 아삭한 쪽이 좋다',s:'',v:1},{t:'부드러운 쪽이 더 편하다',s:'',v:-1},{t:'아주 부드럽고 즙 많은 쪽이 좋다',s:'',v:-2}]},
-  TX3:{sec:'E',sn:'TSTC 식감',tag:'Texture 3 / 5',axis:'TX',type:'opt',title:'부드럽게 넘어가는 과일에 손이 가나요?',
-    opts:[{t:'자주 그렇다',s:'',v:-2},{t:'가끔 그렇다',s:'',v:-1},{t:'단단한 쪽이 더 좋다',s:'',v:1},{t:'씹는 느낌이 있어야 좋다',s:'',v:2}]},
-  TX4:{sec:'E',sn:'TSTC 식감',tag:'Texture 4 / 5',axis:'TX',type:'opt',title:'과즙이 많은 과일은 어떤가요?',
-    opts:[{t:'즙이 많은 쪽이 좋다',s:'',v:-1},{t:'촉촉하면 좋다',s:'',v:-1},{t:'수분이 적어도 괜찮다',s:'',v:1},{t:'단단한 쪽이 좋다',s:'',v:2}]},
-  TX5:{sec:'E',sn:'TSTC 식감',tag:'Texture 5 / 5',axis:'TX',type:'opt',title:'과일 고를 때 씹는 느낌을 떠올리나요?',
-    opts:[{t:'아삭한지 먼저 떠올린다',s:'',v:2},{t:'부드러운지 먼저 떠올린다',s:'',v:-2},{t:'조금은 떠올린다',s:'',v:1},{t:'별로 떠올리지 않는다',s:'',v:0}]},
-  TX6:{sec:'E',sn:'TSTC 식감',tag:'Texture 6 / 8',axis:'TX',type:'opt',prem:true,title:'주스보다 씹어 먹는 게 좋나요?',
-    opts:[{t:'직접 씹어 먹는 게 좋다',s:'',v:2},{t:'씹어 먹는 쪽이 조금 더 좋다',s:'',v:1},{t:'음료도 괜찮다',s:'',v:-1},{t:'마시는 게 더 편하다',s:'',v:-2}]},
-  TX7:{sec:'E',sn:'TSTC 식감',tag:'Texture 7 / 8',axis:'TX',type:'opt',prem:true,title:'아삭 소리가 나면 더 신선해 보이나요?',
-    opts:[{t:'자주 그렇다',s:'',v:2},{t:'가끔 그렇다',s:'',v:1},{t:'별로 아니다',s:'',v:-1},{t:'조용히 녹는 쪽이 좋다',s:'',v:-2}]},
-  TX8:{sec:'E',sn:'TSTC 식감',tag:'Texture 8 / 8',axis:'TX',type:'opt',prem:true,title:'물러진 과일과 단단한 과일 중 어느 쪽인가요?',
-    opts:[{t:'완전히 익어 부드러운 쪽',s:'',v:-2},{t:'살짝 부드러운 쪽',s:'',v:-1},{t:'약간 덜 익어 단단한 쪽',s:'',v:1},{t:'완전히 단단한 쪽',s:'',v:2}]},
-  C1q:{sec:'E',sn:'TSTC 색',tag:'Color 1 / 5',axis:'C',type:'pair',title:'과일을 고를 때 색감은 얼마나 중요할까요?',
-    a:{n:'선명한 색이 좋은 쪽',ex:'딸기, 체리, 수박',sc:2},b:{n:'무난한 색이 편한 쪽',ex:'배, 백도복숭아, 샤인머스캣',sc:-2}},
-  C2q:{sec:'E',sn:'TSTC 색',tag:'Color 2 / 5',axis:'C',type:'opt',title:'진열대에서 색이 예쁜 과일에 먼저 손이 가나요?',
-    opts:[{t:'색감이 먼저 눈에 들어온다',s:'',v:2},{t:'색이 선명한 쪽을 고른다',s:'',v:1},{t:'너무 칙칙하지만 않으면 된다',s:'',v:-1},{t:'거의 보지 않는다',s:'',v:-2}]},
-  C3q:{sec:'E',sn:'TSTC 색',tag:'Color 3 / 5',axis:'C',type:'opt',title:'선물용 과일은 보기 좋은 쪽을 보나요?',
-    opts:[{t:'보기 좋은 쪽을 고른다',s:'',v:2},{t:'어느 정도는 본다',s:'',v:1},{t:'맛과 신선도를 더 본다',s:'',v:-1},{t:'색은 거의 보지 않는다',s:'',v:-2}]},
-  C4q:{sec:'E',sn:'TSTC 색',tag:'Color 4 / 5',axis:'C',type:'opt',title:'예쁜 과일을 보면 사진 찍고 싶나요?',
-    opts:[{t:'자주 그런다',s:'',v:2},{t:'가끔 그런다',s:'',v:1},{t:'거의 안 한다',s:'',v:-1},{t:'전혀 안 한다',s:'',v:-2}]},
-  C5q:{sec:'E',sn:'TSTC 색',tag:'Color 5 / 5',axis:'C',type:'opt',title:'소박한 색이 더 좋아 보일 때가 있나요?',
-    opts:[{t:'자주 그렇다',s:'',v:-2},{t:'가끔 그렇다',s:'',v:-1},{t:'선명한 쪽이 더 좋다',s:'',v:1},{t:'강렬한 색이 훨씬 좋다',s:'',v:2}]},
-  C6q:{sec:'E',sn:'TSTC 색',tag:'Color 6 / 8',axis:'C',type:'opt',prem:true,title:'과일 디저트에서 색 배치를 보나요?',
-    opts:[{t:'먼저 본다',s:'',v:2},{t:'어느 정도 본다',s:'',v:1},{t:'맛과 내용이 더 중요하다',s:'',v:-1},{t:'재료 자체를 더 본다',s:'',v:-2}]},
-  C7q:{sec:'E',sn:'TSTC 색',tag:'Color 7 / 8',axis:'C',type:'opt',prem:true,title:'담음새가 예쁘면 더 맛있어 보이나요?',
-    opts:[{t:'자주 그렇다',s:'',v:2},{t:'가끔 그렇다',s:'',v:1},{t:'별로 아니다',s:'',v:-1},{t:'맛은 맛으로만 본다',s:'',v:-2}]},
-  C8q:{sec:'E',sn:'TSTC 색',tag:'Color 8 / 8',axis:'C',type:'opt',prem:true,title:'선물 박스를 열었을 때 색이 좋으면 기분이 달라지나요?',
-    opts:[{t:'열자마자 기분이 좋아진다',s:'',v:2},{t:'조금 좋아진다',s:'',v:1},{t:'내용물이 더 중요하다',s:'',v:-1},{t:'색 배치는 거의 보지 않는다',s:'',v:-2}]}
+    opts:[{t:'洹몃윴 ?몄씠??,s:'',v:2},{t:'媛??洹몃젃??,s:'',v:1},{t:'??紐⑤Ⅴ寃좊떎',s:'',v:0},{t:'嫄곗쓽 ?꾨땲??,s:'',v:-1}]},
+  T1:{sec:'E',sn:'TSTC 留?,tag:'Taste 1 / 5',axis:'T',type:'pair',title:'?쇨낀???좎뿉???대뼡 怨쇱씪?????밴린?섏슂?',
+    a:{n:'源딄퀬 吏꾪븳 ?⑤쭧 쨌 ?띾?',ex:'遺?ъ궗怨? 留앷퀬, ?ㅼ씤癒몄뒪罹?,sc:2},b:{n:'?쒖썝?섍퀬 ?곕쑜???곕?',ex:'?좉퀬諛? ?섎컯, 泥?룷??,sc:-2}},
+  T2:{sec:'E',sn:'TSTC 留?,tag:'Taste 2 / 5',axis:'T',type:'opt',title:'怨꾩냽 ?먯씠 媛??怨쇱씪? ?대뼡 留쏆씤媛??',
+    opts:[{t:'源딄퀬 吏꾪븳 ?⑤쭧 쨌 ?띾?',s:'',v:2},{t:'?⑤쭧怨??곕?媛 媛숈씠 ?덈뒗 履?,s:'',v:1},{t:'遺?쒕읇怨??붿옍???⑤쭧',s:'',v:-1},{t:'?쒖썝?섍퀬 ?곕쑜???곕?',s:'',v:-2}]},
+  T3:{sec:'E',sn:'TSTC 留?,tag:'Taste 3 / 5',axis:'T',type:'opt',title:'????癒뱀뿀??????醫뗭? 履쎌???',
+    opts:[{t:'?⑤쭧??諛붾줈 ?먭뺨吏??履?,s:'',v:2},{t:'?ъ?留??곕쑜?⑤룄 ?덈뒗 履?,s:'',v:1},{t:'媛蹂띻퀬 留묒? 履?,s:'',v:-1},{t:'?대갚?댁꽌 ?ㅻ옒 癒밴린 ?명븳 履?,s:'',v:-2}]},
+  T4:{sec:'E',sn:'TSTC 留?,tag:'Taste 4 / 5',axis:'T',type:'opt',title:'癒밴퀬 ?섏꽌 ?대뼡 留먯씠 ?섏삤硫?醫뗫굹??',
+    opts:[{t:'?щ떎, ??癒밴퀬 ?띕떎',s:'',v:2},{t:'留쏆엳?? 怨쇱쬂??醫뗫떎',s:'',v:1},{t:'?곸풄?섎떎, 源붾걫?섎떎',s:'',v:-1},{t:'遺???녿떎, ?명븯??,s:'',v:-2}]},
+  T5:{sec:'E',sn:'TSTC 留?,tag:'Taste 5 / 5',axis:'T',type:'opt',title:'怨쇱씪 ?????⑤쭧 ?쒖떆瑜??쇰쭏??蹂대굹??',
+    opts:[{t:'癒쇱? 蹂몃떎',s:'',v:2},{t:'?대뒓 ?뺣룄??蹂몃떎',s:'',v:1},{t:'?ㅻⅨ 嫄???蹂몃떎',s:'',v:-1},{t:'嫄곗쓽 蹂댁? ?딅뒗??,s:'',v:-2}]},
+  T6:{sec:'E',sn:'TSTC 留?,tag:'Taste 6 / 8',axis:'T',type:'opt',prem:true,title:'二쇱뒪???ㅻТ?붾뒗 ?대뒓 履쎌씠 醫뗫굹??',
+    opts:[{t:'吏꾪븯怨?臾듭쭅??履?,s:'',v:2},{t:'議곌툑 吏꾪븳 履?,s:'',v:1},{t:'媛蹂띻퀬 ?곕쑜??履?,s:'',v:-1},{t:'臾쎄퀬 ?명븯寃?留덉떆??履?,s:'',v:-2}]},
+  T7:{sec:'E',sn:'TSTC 留?,tag:'Taste 7 / 8',axis:'T',type:'opt',prem:true,title:'媛숈? 怨쇱씪?대㈃ ????履쎌뿉 ?덉쓣 ???곕굹??',
+    opts:[{t:'洹몃윴 ?몄씠??,s:'',v:2},{t:'媛??洹몃젃??,s:'',v:1},{t:'媛寃?李⑥씠媛 ?щ㈃ 留앹꽕?몃떎',s:'',v:-1},{t:'?⑤쭧蹂대떎 媛寃⑹쓣 蹂몃떎',s:'',v:-2}]},
+  T8:{sec:'E',sn:'TSTC 留?,tag:'Taste 8 / 8',axis:'T',type:'opt',prem:true,title:'蹂닿린留??대룄 ??寃?媛숈? 怨쇱씪???뚮━?섏슂?',
+    opts:[{t:'?먯＜ 洹몃젃??,s:'',v:2},{t:'媛??洹몃젃??,s:'',v:1},{t:'癒뱀뼱遊먯빞 ?덈떎',s:'',v:-1},{t:'洹몃윴 湲곕???蹂꾨줈 ?녿떎',s:'',v:-2}]},
+  S1:{sec:'E',sn:'TSTC ??,tag:'Scent 1 / 5',axis:'S',type:'pair',title:'怨쇱씪??怨좊? ???μ쓣 ?쇰쭏???좉꼍 ?곕굹??',
+    a:{n:'?μ씠 ?먮졆??履?,ex:'蹂듭댂?? 癒몄뒪?щ찞濡? 諛붾굹??,sc:2},b:{n:'?μ씠 ?붿옍??履?,ex:'?섎컯, ?좉퀬諛? ?щ룄',sc:-2}},
+  S2:{sec:'E',sn:'TSTC ??,tag:'Scent 2 / 5',axis:'S',type:'opt',title:'遊됱?瑜??댁뿀????怨쇱씪 ?μ씠 ???섎㈃ ?대뼡媛??',
+    opts:[{t:'吏꾪븷?섎줉 ??醫뗫떎',s:'',v:2},{t:'湲곕텇??醫뗭븘吏꾨떎',s:'',v:1},{t:'?쒕몢 ?낆씠硫?異⑸텇?섎떎',s:'',v:-1},{t:'遺?댁뒪?쎈떎',s:'',v:-2}]},
+  S3:{sec:'E',sn:'TSTC ??,tag:'Scent 3 / 5',axis:'S',type:'opt',title:'怨쇱씪 ?????꾩깉瑜?留≪븘蹂대굹??',
+    opts:[{t:'?쇰???留≪븘蹂몃떎',s:'',v:2},{t:'媛??留≪븘蹂몃떎',s:'',v:1},{t:'嫄곗쓽 留≪? ?딅뒗??,s:'',v:-1},{t:'?꾪? ?좉꼍 ?곗? ?딅뒗??,s:'',v:-2}]},
+  S4:{sec:'E',sn:'TSTC ??,tag:'Scent 4 / 5',axis:'S',type:'opt',title:'?μ씠 ?쏀빐??留쏆엳?쇰㈃ 愿쒖갖?섏슂?',
+    opts:[{t:'留쏅쭔 醫뗭쑝硫?愿쒖갖??,s:'',v:-2},{t:'?泥대줈 愿쒖갖??,s:'',v:-1},{t:'?λ룄 議곌툑? ?덉뼱???쒕떎',s:'',v:1},{t:'?μ씠 ?놁쑝硫??꾩돺??,s:'',v:2}]},
+  S5:{sec:'E',sn:'TSTC ??,tag:'Scent 5 / 5',axis:'S',type:'opt',title:'醫뗭? 怨쇱씪 ?μ씠 ?섎㈃ ???먯＜ ?먯씠 媛?섏슂?',
+    opts:[{t:'?먯＜ 洹몃젃??,s:'',v:2},{t:'媛??洹몃젃??,s:'',v:1},{t:'蹂꾨줈 洹몃젃吏 ?딅떎',s:'',v:-1},{t:'?μ? 嫄곗쓽 ?곴??녿떎',s:'',v:-2}]},
+  S6:{sec:'E',sn:'TSTC ??,tag:'Scent 6 / 8',axis:'S',type:'opt',prem:true,title:'怨쇱씪???쒗뭹???щ낯 ?곸씠 ?덈굹??',
+    opts:[{t:'?먯＜ ?곕떎',s:'',v:2},{t:'媛???곕떎',s:'',v:1},{t:'?ㅼ젣 怨쇱씪 ?μ씠硫?異⑸텇?섎떎',s:'',v:-1},{t:'?멸났 ?μ? 蹂꾨줈??,s:'',v:-2}]},
+  S7:{sec:'E',sn:'TSTC ??,tag:'Scent 7 / 8',axis:'S',type:'opt',prem:true,title:'?대뼡 怨쇱씪 ?꾩깉瑜?留≪쑝硫??덉쟾 ?쇱씠 ?좎삤瑜대굹??',
+    opts:[{t:'?먯＜ 洹몃젃??,s:'',v:2},{t:'媛??洹몃젃??,s:'',v:1},{t:'蹂꾨줈 ?녿떎',s:'',v:-1},{t:'嫄곗쓽 ?녿떎',s:'',v:-2}]},
+  S8:{sec:'E',sn:'TSTC ??,tag:'Scent 8 / 8',axis:'S',type:'opt',prem:true,title:'癒밴린 ???λ쭔?쇰줈 湲곕?媛 ?앷린?섏슂?',
+    opts:[{t:'?λ쭔?쇰줈??湲곕??쒕떎',s:'',v:2},{t:'議곌툑 湲곕??쒕떎',s:'',v:1},{t:'癒뱀뼱遊먯빞 ?덈떎',s:'',v:-1},{t:'?μ? ?ш쾶 ?곴??녿떎',s:'',v:-2}]},
+  TX1:{sec:'E',sn:'TSTC ?앷컧',tag:'Texture 1 / 5',axis:'TX',type:'pair',title:'?대뼡 ?앷컧??媛???명븳媛??',
+    a:{n:'?밸뒗 ?먮굦???먮졆??履?,ex:'?ш낵, 諛? ?щ룄',sc:2},b:{n:'?꾩＜ 遺?쒕읇怨?利숈씠 留롮? 履?,ex:'蹂듭댂?? 諛붾굹?? 硫쒕줎',sc:-2}},
+  TX2:{sec:'E',sn:'TSTC ?앷컧',tag:'Texture 2 / 5',axis:'TX',type:'opt',title:'?꾩궘?섍쾶 ?뱁엳??怨쇱씪??醫뗫굹??',
+    opts:[{t:'?밸뒗 ?먮굦???먮졆??履쎌씠 醫뗫떎',s:'',v:2},{t:'?⑤떒?섍퀬 ?꾩궘??履쎌씠 醫뗫떎',s:'',v:1},{t:'遺?쒕윭??履쎌씠 ???명븯??,s:'',v:-1},{t:'?꾩＜ 遺?쒕읇怨?利?留롮? 履쎌씠 醫뗫떎',s:'',v:-2}]},
+  TX3:{sec:'E',sn:'TSTC ?앷컧',tag:'Texture 3 / 5',axis:'TX',type:'opt',title:'遺?쒕읇寃??섏뼱媛??怨쇱씪???먯씠 媛?섏슂?',
+    opts:[{t:'?먯＜ 洹몃젃??,s:'',v:-2},{t:'媛??洹몃젃??,s:'',v:-1},{t:'?⑤떒??履쎌씠 ??醫뗫떎',s:'',v:1},{t:'?밸뒗 ?먮굦???덉뼱??醫뗫떎',s:'',v:2}]},
+  TX4:{sec:'E',sn:'TSTC ?앷컧',tag:'Texture 4 / 5',axis:'TX',type:'opt',title:'怨쇱쬂??留롮? 怨쇱씪? ?대뼡媛??',
+    opts:[{t:'利숈씠 留롮? 履쎌씠 醫뗫떎',s:'',v:-1},{t:'珥됱큺?섎㈃ 醫뗫떎',s:'',v:-1},{t:'?섎텇???곸뼱??愿쒖갖??,s:'',v:1},{t:'?⑤떒??履쎌씠 醫뗫떎',s:'',v:2}]},
+  TX5:{sec:'E',sn:'TSTC ?앷컧',tag:'Texture 5 / 5',axis:'TX',type:'opt',title:'怨쇱씪 怨좊? ???밸뒗 ?먮굦???좎삱由щ굹??',
+    opts:[{t:'?꾩궘?쒖? 癒쇱? ?좎삱由곕떎',s:'',v:2},{t:'遺?쒕윭?댁? 癒쇱? ?좎삱由곕떎',s:'',v:-2},{t:'議곌툑? ?좎삱由곕떎',s:'',v:1},{t:'蹂꾨줈 ?좎삱由ъ? ?딅뒗??,s:'',v:0}]},
+  TX6:{sec:'E',sn:'TSTC ?앷컧',tag:'Texture 6 / 8',axis:'TX',type:'opt',prem:true,title:'二쇱뒪蹂대떎 ?뱀뼱 癒밸뒗 寃?醫뗫굹??',
+    opts:[{t:'吏곸젒 ?뱀뼱 癒밸뒗 寃?醫뗫떎',s:'',v:2},{t:'?뱀뼱 癒밸뒗 履쎌씠 議곌툑 ??醫뗫떎',s:'',v:1},{t:'?뚮즺??愿쒖갖??,s:'',v:-1},{t:'留덉떆??寃????명븯??,s:'',v:-2}]},
+  TX7:{sec:'E',sn:'TSTC ?앷컧',tag:'Texture 7 / 8',axis:'TX',type:'opt',prem:true,title:'?꾩궘 ?뚮━媛 ?섎㈃ ???좎꽑??蹂댁씠?섏슂?',
+    opts:[{t:'?먯＜ 洹몃젃??,s:'',v:2},{t:'媛??洹몃젃??,s:'',v:1},{t:'蹂꾨줈 ?꾨땲??,s:'',v:-1},{t:'議곗슜???밸뒗 履쎌씠 醫뗫떎',s:'',v:-2}]},
+  TX8:{sec:'E',sn:'TSTC ?앷컧',tag:'Texture 8 / 8',axis:'TX',type:'opt',prem:true,title:'臾쇰윭吏?怨쇱씪怨??⑤떒??怨쇱씪 以??대뒓 履쎌씤媛??',
+    opts:[{t:'?꾩쟾???듭뼱 遺?쒕윭??履?,s:'',v:-2},{t:'?댁쭩 遺?쒕윭??履?,s:'',v:-1},{t:'?쎄컙 ???듭뼱 ?⑤떒??履?,s:'',v:1},{t:'?꾩쟾???⑤떒??履?,s:'',v:2}]},
+  C1q:{sec:'E',sn:'TSTC ??,tag:'Color 1 / 5',axis:'C',type:'pair',title:'怨쇱씪??怨좊? ???됯컧? ?쇰쭏??以묒슂?좉퉴??',
+    a:{n:'?좊챸???됱씠 醫뗭? 履?,ex:'?멸린, 泥대━, ?섎컯',sc:2},b:{n:'臾대궃???됱씠 ?명븳 履?,ex:'諛? 諛깅룄蹂듭댂?? ?ㅼ씤癒몄뒪罹?,sc:-2}},
+  C2q:{sec:'E',sn:'TSTC ??,tag:'Color 2 / 5',axis:'C',type:'opt',title:'吏꾩뿴??먯꽌 ?됱씠 ?덉걶 怨쇱씪??癒쇱? ?먯씠 媛?섏슂?',
+    opts:[{t:'?됯컧??癒쇱? ?덉뿉 ?ㅼ뼱?⑤떎',s:'',v:2},{t:'?됱씠 ?좊챸??履쎌쓣 怨좊Ⅸ??,s:'',v:1},{t:'?덈Т 移숈튃?섏?留??딆쑝硫??쒕떎',s:'',v:-1},{t:'嫄곗쓽 蹂댁? ?딅뒗??,s:'',v:-2}]},
+  C3q:{sec:'E',sn:'TSTC ??,tag:'Color 3 / 5',axis:'C',type:'opt',title:'?좊Ъ??怨쇱씪? 蹂닿린 醫뗭? 履쎌쓣 蹂대굹??',
+    opts:[{t:'蹂닿린 醫뗭? 履쎌쓣 怨좊Ⅸ??,s:'',v:2},{t:'?대뒓 ?뺣룄??蹂몃떎',s:'',v:1},{t:'留쏄낵 ?좎꽑?꾨? ??蹂몃떎',s:'',v:-1},{t:'?됱? 嫄곗쓽 蹂댁? ?딅뒗??,s:'',v:-2}]},
+  C4q:{sec:'E',sn:'TSTC ??,tag:'Color 4 / 5',axis:'C',type:'opt',title:'?덉걶 怨쇱씪??蹂대㈃ ?ъ쭊 李띻퀬 ?띕굹??',
+    opts:[{t:'?먯＜ 洹몃윴??,s:'',v:2},{t:'媛??洹몃윴??,s:'',v:1},{t:'嫄곗쓽 ???쒕떎',s:'',v:-1},{t:'?꾪? ???쒕떎',s:'',v:-2}]},
+  C5q:{sec:'E',sn:'TSTC ??,tag:'Color 5 / 5',axis:'C',type:'opt',title:'?뚮컯???됱씠 ??醫뗭븘 蹂댁씪 ?뚭? ?덈굹??',
+    opts:[{t:'?먯＜ 洹몃젃??,s:'',v:-2},{t:'媛??洹몃젃??,s:'',v:-1},{t:'?좊챸??履쎌씠 ??醫뗫떎',s:'',v:1},{t:'媛뺣젹???됱씠 ?⑥뵮 醫뗫떎',s:'',v:2}]},
+  C6q:{sec:'E',sn:'TSTC ??,tag:'Color 6 / 8',axis:'C',type:'opt',prem:true,title:'怨쇱씪 ?붿??몄뿉????諛곗튂瑜?蹂대굹??',
+    opts:[{t:'癒쇱? 蹂몃떎',s:'',v:2},{t:'?대뒓 ?뺣룄 蹂몃떎',s:'',v:1},{t:'留쏄낵 ?댁슜????以묒슂?섎떎',s:'',v:-1},{t:'?щ즺 ?먯껜瑜???蹂몃떎',s:'',v:-2}]},
+  C7q:{sec:'E',sn:'TSTC ??,tag:'Color 7 / 8',axis:'C',type:'opt',prem:true,title:'?댁쓬?덇? ?덉걯硫???留쏆엳??蹂댁씠?섏슂?',
+    opts:[{t:'?먯＜ 洹몃젃??,s:'',v:2},{t:'媛??洹몃젃??,s:'',v:1},{t:'蹂꾨줈 ?꾨땲??,s:'',v:-1},{t:'留쏆? 留쏆쑝濡쒕쭔 蹂몃떎',s:'',v:-2}]},
+  C8q:{sec:'E',sn:'TSTC ??,tag:'Color 8 / 8',axis:'C',type:'opt',prem:true,title:'?좊Ъ 諛뺤뒪瑜??댁뿀?????됱씠 醫뗭쑝硫?湲곕텇???щ씪吏?섏슂?',
+    opts:[{t:'?댁옄留덉옄 湲곕텇??醫뗭븘吏꾨떎',s:'',v:2},{t:'議곌툑 醫뗭븘吏꾨떎',s:'',v:1},{t:'?댁슜臾쇱씠 ??以묒슂?섎떎',s:'',v:-1},{t:'??諛곗튂??嫄곗쓽 蹂댁? ?딅뒗??,s:'',v:-2}]}
 };
 
-/* ── 16유형 ── */
+/* ?? 16?좏삎 ?? */
 var TYPES={
-  RACV:{name:'풍부한 감각형',desc:'맛·향·식감·색 네 가지 감각이 모두 활성화되는 풀패키지 유형입니다.\n달콤하고 향기롭고 아삭하며 선명한 색의 과일에서만 진짜 만족을 경험합니다.\n과일 하나를 고를 때도 색을 먼저 보고, 향을 맡고, 씹는 맛까지 따집니다.\n마트에서 가장 눈에 띄는 과일에 자연스럽게 손이 가는 편입니다.\n딸기·체리·감홍사과처럼 색도 예쁘고 향도 강하고 아삭한 과일이 최고의 선택입니다.\n선물용 과일도 외관과 품질 모두를 중시하며, 포장까지 꼼꼼하게 챙깁니다.',fruits:['딸기 (설향·킹스베리)','체리 (미국산)','사과 (감홍·홍로)','천도복숭아 (천홍)','자두 (대석조생)']},
-  RACN:{name:'향미 전통형',desc:'달콤하고 향기롭고 아삭하지만, 화려한 색보다 자연스러운 맛과 향을 더 중시합니다.\n겉이 화려한 과일보다 향기가 좋고 맛이 진한 과일에서 더 큰 만족을 얻습니다.\n샤인머스캣처럼 연한 색이어도 맛이 극강이면 최고로 치는 타입입니다.\n과일 본연의 품질을 알아보는 안목이 있으며, 당도 정보에 관심이 많습니다.\n직거래나 산지 직배송 과일에 관심을 가지는 경향이 있습니다.\n향기로운 과일을 선물받으면 가장 기뻐하는 스타일입니다.',fruits:['샤인머스캣','사과 (부사·후지)','신비복숭아','배 (원황)','코튼캔디 포도']},
-  RASV:{name:'감각 탐험형',desc:'달콤하고 향기로우며 부드러운 식감에 선명한 색의 과일을 두루 즐깁니다.\n새로 나온 과일이나 수입 희귀 과일에 먼저 눈이 가는 탐험가 기질이 있습니다.\n한라봉·천혜향·애플망고처럼 향과 비주얼이 모두 강한 과일을 특히 좋아합니다.\n계절마다 새로운 과일을 시도해보는 것을 즐기며, 과일 디저트나 스무디에도 관심이 많습니다.\n온라인 과일 구독 서비스나 프리미엄 과일 큐레이션에 매력을 느낍니다.\n주변 사람들에게 좋은 과일을 추천해주는 역할을 자주 합니다.',fruits:['망고 (애플망고)','한라봉·천혜향','황도복숭아','거봉 포도','키위 골드']},
-  RASN:{name:'균형 심화형',desc:'달콤하고 향기로우며 부드럽지만, 색보다는 맛과 향 자체에 집중하는 유형입니다.\n백도복숭아처럼 겉은 소박해도 향기와 부드러움이 극강인 과일을 진심으로 좋아합니다.\n과일을 먹을 때 향기에서 오는 기억과 감정에 민감하게 반응합니다.\n제철 과일을 제 시기에 맛있게 먹는 것이 가장 큰 과일 행복이라고 생각합니다.\n바나나·멜론처럼 향기롭고 부드러운 과일은 언제나 기분 좋게 먹을 수 있습니다.\n과일 선물을 받을 때 포장보다 향기와 신선도에 더 집중합니다.',fruits:['백도복숭아 (미백도·백향)','바나나','머스크멜론','리치','무화과']},
-  RPCV:{name:'직관 비주얼형',desc:'달콤하고 색이 선명한 과일에 자연스럽게 끌리는 직관적인 유형입니다.\n향이 약해도 맛있고 색깔 예쁜 과일이라면 충분히 만족스럽습니다.\n수박·딸기·포도처럼 먹으면 시원하고 달콤한 과일이 가장 편안한 선택입니다.\n마트에서 잘 진열된 과일 코너를 보면 자연스럽게 구매하게 됩니다.\n과일을 복잡하게 고르기보다는 눈에 들어오는 것을 직관적으로 선택하는 편입니다.\n여름철 시원한 수박이나 냉장 보관한 포도를 특히 즐깁니다.',fruits:['수박 (소형·씨없는)','홍주씨들리스 포도','레드글로브','딸기 (금실)','크림슨 시들리스']},
-  RPCN:{name:'맛 현실형',desc:'달콤하기만 하면 충분하다는 실용적인 과일 소비자 유형입니다.\n향이 강하거나 색이 화려하지 않아도 맛있으면 그만이라는 생각을 가지고 있습니다.\n사과·배·단감처럼 언제 먹어도 실패 없고 아삭한 과일을 선호합니다.\n과일 구매 시 당도와 신선도를 중심으로 판단하며, 브랜드나 포장에는 덜 집중합니다.\n제철 과일을 합리적인 가격에 구매하는 것에서 만족감을 얻습니다.\n가족이 함께 먹을 수 있는 대용량 과일을 선호하는 경향이 있습니다.',fruits:['사과 (양광·부사)','단감 (부유)','배 (원황)','수박','포도 (캠벨·거봉)']},
-  RPSV:{name:'감성 고급형',desc:'달콤하고 색이 선명하며 부드러운 식감을 좋아하는 감성적인 유형입니다.\n홍시·레드향처럼 눈에 띄게 선명하고 달콤하면서 입에서 녹는 과일을 특히 좋아합니다.\n과일을 단순한 먹거리보다 감성적인 경험으로 받아들이는 경향이 있습니다.\n고급 과일 선물세트나 예쁘게 포장된 과일 바구니에 매력을 느낍니다.\n과일을 먹을 때의 분위기와 상황을 중요하게 여기는 편입니다.\n망고스틴·람부탄처럼 이국적이고 감각적인 과일에도 관심이 높습니다.',fruits:['홍시·연시','레드향','망고스틴','람부탄','황도복숭아']},
-  RPSN:{name:'여유 품격형',desc:'달콤하지만 화려하지 않은, 자연스럽고 여유 있는 과일을 즐기는 유형입니다.\n리치·무화과처럼 소박해 보여도 달콤하고 부드러운 과일에 깊은 매력을 느낍니다.\n과일을 천천히, 제대로 음미하는 스타일이며 급하게 먹는 것을 좋아하지 않습니다.\n완전히 익어서 가장 맛있는 시점에 먹는 것을 중요하게 생각합니다.\n과일을 혼자 조용히 즐기거나 가까운 사람과 나눠 먹는 것을 선호합니다.\n두리안처럼 강한 개성이 있는 과일도 기꺼이 시도해보는 용기가 있습니다.',fruits:['두리안','리치','바나나 (완숙)','망고 (완숙)','황금배']},
-  MACV:{name:'향기 개성형',desc:'담백하고 향기롭고 아삭하며 선명한 색을 좋아하는 개성 있는 유형입니다.\n달콤한 것보다 상큼하고 향기로운 과일에서 더 큰 즐거움을 느낍니다.\n참외·레몬·유자처럼 향기가 독특하고 개성 있는 과일을 특히 좋아합니다.\n과일 본연의 산미와 향기가 살아있는 것을 중요하게 여기며, 너무 달면 오히려 부담스럽습니다.\n과일 청·효소·주스 등 향기를 활용한 가공 과일에도 관심이 많습니다.\n건강과 상쾌함을 동시에 추구하는 라이프스타일을 가지고 있습니다.',fruits:['참외','레몬','유자','오미자','파인애플']},
-  MACN:{name:'자연 품위형',desc:'담백하고 향기롭고 아삭하지만, 화려한 색보다 자연스러운 품위를 선호합니다.\n청사과·청포도처럼 소박한 색이어도 향과 식감이 훌륭한 과일에서 만족을 얻습니다.\n과일 본연의 맛과 향을 가장 중요시하며, 인위적인 단맛은 오히려 거부감이 생깁니다.\n제철에 나는 자연스러운 과일을 그대로 즐기는 것을 가장 좋아합니다.\n과일을 건강한 식습관의 일부로 생각하며, 규칙적으로 섭취하는 편입니다.\n얼스멜론·은천멜론처럼 담백하고 향기로운 멜론류를 즐기는 경향이 있습니다.',fruits:['아오리 (청사과)','키위 그린','얼스멜론','은천멜론','청포도 (청수)']},
-  MASV:{name:'웰빙 감각형',desc:'담백하고 향기롭고 부드러우며 선명한 색의 과일을 좋아하는 건강 지향형입니다.\n온주밀감·자몽처럼 건강에 좋고 향기로우며 비주얼도 좋은 과일이 최선의 선택입니다.\n과일을 먹는 것이 건강 관리의 중요한 일부라고 생각합니다.\n항산화·비타민 등 건강 기능 성분에 관심이 많으며, 이를 고려해서 과일을 선택합니다.\n부드럽고 소화가 잘 되는 과일을 선호하며, 껍질이 얇거나 씨가 없는 것을 좋아합니다.\n과일 주스나 스무디로 갈아 먹는 방식도 즐겨 활용합니다.',fruits:['온주밀감','자몽 (핑크)','복분자','파파야','오렌지']},
-  MASN:{name:'에너지 균형형',desc:'담백하고 향기롭고 부드럽지만, 색은 자연스러운 것을 선호하는 균형 잡힌 유형입니다.\n키위·구아바처럼 영양이 풍부하고 향기도 좋은 과일을 꾸준히 챙겨 드십니다.\n과일 섭취를 통해 에너지 보충과 건강 유지를 동시에 추구합니다.\n겉모습보다 영양 성분과 맛의 균형을 더 중요하게 생각합니다.\n운동 전후나 활동이 많은 날 과일을 챙겨 먹는 습관을 가지고 있습니다.\n새로운 건강 과일에 관심이 많으며, 기능성 과일 정보를 꾸준히 수집합니다.',fruits:['키위 그린','창방조생 복숭아','구아바','아보카도','바나나 (덜 숙성)']},
-  MPCV:{name:'경쾌 시각형',desc:'담백하고 색이 선명하지만 향은 없어도 되고 아삭한 식감을 즐기는 유형입니다.\n수박·블루베리처럼 시원하고 시각적으로 매력적인 과일을 즐겨 먹습니다.\n과일을 먹을 때 청량감과 아삭한 식감에서 큰 즐거움을 느낍니다.\n복잡한 맛보다는 깔끔하고 단순한 맛을 선호하는 편입니다.\n여름철 냉장 보관한 과일을 먹는 것을 특히 좋아하며, 더위에 과일로 수분을 보충합니다.\n항산화 성분이 풍부한 베리류에 건강적 관심을 가지는 경향이 있습니다.',fruits:['수박','블루베리','아로니아','석류','레드글로브 포도']},
-  MPCN:{name:'미니멀 이성형',desc:'과장 없이 담백하고 단순한 과일을 선호하는 이성적인 유형입니다.\n신고배·아보카도처럼 꾸밈없고 본질에 충실한 과일에서 만족을 얻습니다.\n과일 선택이 매우 합리적이며, 필요한 것만 구매하는 경향이 있습니다.\n과도하게 달거나 향이 강한 과일보다는 깔끔하고 부담 없는 과일을 선호합니다.\n과일의 영양 성분이나 칼로리 정보를 비교적 꼼꼼하게 확인하는 편입니다.\n정기 구매보다는 필요할 때 적당량만 구매하는 소비 패턴을 보입니다.',fruits:['신고배','청포도 (청수)','아보카도','황금배','은천멜론']},
-  MPSV:{name:'독립 개성형',desc:'담백하고 부드러우며 선명한 색에 끌리는, 독특한 취향을 가진 유형입니다.\n드래곤프루츠·오디처럼 독특하고 눈에 띄는 과일에서 특별한 매력을 느낍니다.\n일반적인 과일보다는 덜 알려진 과일을 시도해보는 것을 즐깁니다.\n과일의 외관에서 흥미로움을 느끼며, 예쁜 색이 선택에 큰 영향을 미칩니다.\n단맛보다는 개성 있는 맛과 시각적 매력을 더 중요하게 생각합니다.\n새로 나온 특이한 과일이 있으면 가장 먼저 먹어보고 싶어하는 편입니다.',fruits:['용과 (드래곤프루츠)','오디','홍시 (연시)','오텀로얄 포도','블랙시들리스']},
-  MPSN:{name:'내면 가치형',desc:'겉모습보다 내면의 영양가와 진정한 가치를 중시하는 신중한 유형입니다.\n아보카도·코코넛처럼 겉은 평범해 보여도 영양이 풍부한 과일의 가치를 알아봅니다.\n화려한 포장이나 예쁜 외관보다는 실제 건강에 도움이 되는지를 더 중요하게 생각합니다.\n과일을 통해 진정한 건강과 영양을 추구하는 라이프스타일을 가지고 있습니다.\n과일 선택에 신중하며, 한번 좋다고 판단한 과일은 꾸준히 반복 구매하는 편입니다.\n건강 정보에 관심이 많으며, 과일 섭취를 생활 루틴으로 정착시키는 경향이 있습니다.',fruits:['아보카도','코코넛','구아바','바나나','모과 (차)']},
+  RACV:{name:'?띾???媛먭컖??,desc:'留쎛룻뼢쨌?앷컧쨌????媛吏 媛먭컖??紐⑤몢 ?쒖꽦?붾릺????⑦궎吏 ?좏삎?낅땲??\n?ъ숴?섍퀬 ?κ린濡?퀬 ?꾩궘?섎ŉ ?좊챸???됱쓽 怨쇱씪?먯꽌留?吏꾩쭨 留뚯”??寃쏀뿕?⑸땲??\n怨쇱씪 ?섎굹瑜?怨좊? ?뚮룄 ?됱쓣 癒쇱? 蹂닿퀬, ?μ쓣 留↔퀬, ?밸뒗 留쏄퉴吏 ?곗쭛?덈떎.\n留덊듃?먯꽌 媛???덉뿉 ?꾨뒗 怨쇱씪???먯뿰?ㅻ읇寃??먯씠 媛???몄엯?덈떎.\n?멸린쨌泥대━쨌媛먰솉?ш낵泥섎읆 ?됰룄 ?덉걯怨??λ룄 媛뺥븯怨??꾩궘??怨쇱씪??理쒓퀬???좏깮?낅땲??\n?좊Ъ??怨쇱씪???멸?怨??덉쭏 紐⑤몢瑜?以묒떆?섎ŉ, ?ъ옣源뚯? 瑗쇨세?섍쾶 梨숆퉩?덈떎.',fruits:['?멸린 (?ㅽ뼢쨌?뱀뒪踰좊━)','泥대━ (誘멸뎅??','?ш낵 (媛먰솉쨌?띾줈)','泥쒕룄蹂듭댂??(泥쒗솉)','?먮몢 (??앹“??']},
+  RACN:{name:'?λ? ?꾪넻??,desc:'?ъ숴?섍퀬 ?κ린濡?퀬 ?꾩궘?섏?留? ?붾젮???됰낫???먯뿰?ㅻ윭??留쏄낵 ?μ쓣 ??以묒떆?⑸땲??\n寃됱씠 ?붾젮??怨쇱씪蹂대떎 ?κ린媛 醫뗪퀬 留쏆씠 吏꾪븳 怨쇱씪?먯꽌 ????留뚯”???살뒿?덈떎.\n?ㅼ씤癒몄뒪罹ｌ쿂???고븳 ?됱씠?대룄 留쏆씠 洹밴컯?대㈃ 理쒓퀬濡?移섎뒗 ??낆엯?덈떎.\n怨쇱씪 蹂몄뿰???덉쭏???뚯븘蹂대뒗 ?덈ぉ???덉쑝硫? ?밸룄 ?뺣낫??愿?ъ씠 留롮뒿?덈떎.\n吏곴굅?섎굹 ?곗? 吏곷같??怨쇱씪??愿?ъ쓣 媛吏??寃쏀뼢???덉뒿?덈떎.\n?κ린濡쒖슫 怨쇱씪???좊Ъ諛쏆쑝硫?媛??湲곕퍙?섎뒗 ?ㅽ??쇱엯?덈떎.',fruits:['?ㅼ씤癒몄뒪罹?,'?ш낵 (遺??룻썑吏)','?좊퉬蹂듭댂??,'諛?(?먰솴)','肄뷀듉罹붾뵒 ?щ룄']},
+  RASV:{name:'媛먭컖 ?먰뿕??,desc:'?ъ숴?섍퀬 ?κ린濡쒖슦硫?遺?쒕윭???앷컧???좊챸???됱쓽 怨쇱씪???먮（ 利먭퉩?덈떎.\n?덈줈 ?섏삩 怨쇱씪?대굹 ?섏엯 ?ш? 怨쇱씪??癒쇱? ?덉씠 媛???먰뿕媛 湲곗쭏???덉뒿?덈떎.\n?쒕씪遊됀룹쿇?쒗뼢쨌?좏뵆留앷퀬泥섎읆 ?κ낵 鍮꾩＜?쇱씠 紐⑤몢 媛뺥븳 怨쇱씪???뱁엳 醫뗭븘?⑸땲??\n怨꾩젅留덈떎 ?덈줈??怨쇱씪???쒕룄?대낫??寃껋쓣 利먭린硫? 怨쇱씪 ?붿??몃굹 ?ㅻТ?붿뿉??愿?ъ씠 留롮뒿?덈떎.\n?⑤씪??怨쇱씪 援щ룆 ?쒕퉬?ㅻ굹 ?꾨━誘몄뾼 怨쇱씪 ?먮젅?댁뀡??留ㅻ젰???먮굧?덈떎.\n二쇰? ?щ엺?ㅼ뿉寃?醫뗭? 怨쇱씪??異붿쿇?댁＜????븷???먯＜ ?⑸땲??',fruits:['留앷퀬 (?좏뵆留앷퀬)','?쒕씪遊됀룹쿇?쒗뼢','?⑸룄蹂듭댂??,'嫄곕큺 ?щ룄','?ㅼ쐞 怨⑤뱶']},
+  RASN:{name:'洹좏삎 ?ы솕??,desc:'?ъ숴?섍퀬 ?κ린濡쒖슦硫?遺?쒕읇吏留? ?됰낫?ㅻ뒗 留쏄낵 ???먯껜??吏묒쨷?섎뒗 ?좏삎?낅땲??\n諛깅룄蹂듭댂?꾩쿂??寃됱? ?뚮컯?대룄 ?κ린? 遺?쒕윭???洹밴컯??怨쇱씪??吏꾩떖?쇰줈 醫뗭븘?⑸땲??\n怨쇱씪??癒뱀쓣 ???κ린?먯꽌 ?ㅻ뒗 湲곗뼲怨?媛먯젙??誘쇨컧?섍쾶 諛섏쓳?⑸땲??\n?쒖쿋 怨쇱씪?????쒓린??留쏆엳寃?癒밸뒗 寃껋씠 媛????怨쇱씪 ?됰났?대씪怨??앷컖?⑸땲??\n諛붾굹?샕룸찞濡좎쿂???κ린濡?퀬 遺?쒕윭??怨쇱씪? ?몄젣??湲곕텇 醫뗪쾶 癒뱀쓣 ???덉뒿?덈떎.\n怨쇱씪 ?좊Ъ??諛쏆쓣 ???ъ옣蹂대떎 ?κ린? ?좎꽑?꾩뿉 ??吏묒쨷?⑸땲??',fruits:['諛깅룄蹂듭댂??(誘몃갚?꽷룸갚??','諛붾굹??,'癒몄뒪?щ찞濡?,'由ъ튂','臾댄솕怨?]},
+  RPCV:{name:'吏곴? 鍮꾩＜?쇳삎',desc:'?ъ숴?섍퀬 ?됱씠 ?좊챸??怨쇱씪???먯뿰?ㅻ읇寃??뚮━??吏곴??곸씤 ?좏삎?낅땲??\n?μ씠 ?쏀빐??留쏆엳怨??됯퉼 ?덉걶 怨쇱씪?대씪硫?異⑸텇??留뚯”?ㅻ읇?듬땲??\n?섎컯쨌?멸린쨌?щ룄泥섎읆 癒뱀쑝硫??쒖썝?섍퀬 ?ъ숴??怨쇱씪??媛???몄븞???좏깮?낅땲??\n留덊듃?먯꽌 ??吏꾩뿴??怨쇱씪 肄붾꼫瑜?蹂대㈃ ?먯뿰?ㅻ읇寃?援щℓ?섍쾶 ?⑸땲??\n怨쇱씪??蹂듭옟?섍쾶 怨좊Ⅴ湲곕낫?ㅻ뒗 ?덉뿉 ?ㅼ뼱?ㅻ뒗 寃껋쓣 吏곴??곸쑝濡??좏깮?섎뒗 ?몄엯?덈떎.\n?щ쫫泥??쒖썝???섎컯?대굹 ?됱옣 蹂닿????щ룄瑜??뱁엳 利먭퉩?덈떎.',fruits:['?섎컯 (?뚰삎쨌?⑥뾾??','?띿＜?⑤뱾由ъ뒪 ?щ룄','?덈뱶湲濡쒕툕','?멸린 (湲덉떎)','?щ┝???쒕뱾由ъ뒪']},
+  RPCN:{name:'留??꾩떎??,desc:'?ъ숴?섍린留??섎㈃ 異⑸텇?섎떎???ㅼ슜?곸씤 怨쇱씪 ?뚮퉬???좏삎?낅땲??\n?μ씠 媛뺥븯嫄곕굹 ?됱씠 ?붾젮?섏? ?딆븘??留쏆엳?쇰㈃ 洹몃쭔?대씪???앷컖??媛吏怨??덉뒿?덈떎.\n?ш낵쨌諛걔룸떒媛먯쿂???몄젣 癒뱀뼱???ㅽ뙣 ?녾퀬 ?꾩궘??怨쇱씪???좏샇?⑸땲??\n怨쇱씪 援щℓ ???밸룄? ?좎꽑?꾨? 以묒떖?쇰줈 ?먮떒?섎ŉ, 釉뚮옖?쒕굹 ?ъ옣?먮뒗 ??吏묒쨷?⑸땲??\n?쒖쿋 怨쇱씪???⑸━?곸씤 媛寃⑹뿉 援щℓ?섎뒗 寃껋뿉??留뚯”媛먯쓣 ?살뒿?덈떎.\n媛議깆씠 ?④퍡 癒뱀쓣 ???덈뒗 ??⑸웾 怨쇱씪???좏샇?섎뒗 寃쏀뼢???덉뒿?덈떎.',fruits:['?ш낵 (?묎킅쨌遺??','?④컧 (遺??','諛?(?먰솴)','?섎컯','?щ룄 (罹좊꺼쨌嫄곕큺)']},
+  RPSV:{name:'媛먯꽦 怨좉툒??,desc:'?ъ숴?섍퀬 ?됱씠 ?좊챸?섎ŉ 遺?쒕윭???앷컧??醫뗭븘?섎뒗 媛먯꽦?곸씤 ?좏삎?낅땲??\n?띿떆쨌?덈뱶?μ쿂???덉뿉 ?꾧쾶 ?좊챸?섍퀬 ?ъ숴?섎㈃???낆뿉???밸뒗 怨쇱씪???뱁엳 醫뗭븘?⑸땲??\n怨쇱씪???⑥닚??癒밴굅由щ낫??媛먯꽦?곸씤 寃쏀뿕?쇰줈 諛쏆븘?ㅼ씠??寃쏀뼢???덉뒿?덈떎.\n怨좉툒 怨쇱씪 ?좊Ъ?명듃???덉걯寃??ъ옣??怨쇱씪 諛붽뎄?덉뿉 留ㅻ젰???먮굧?덈떎.\n怨쇱씪??癒뱀쓣 ?뚯쓽 遺꾩쐞湲곗? ?곹솴??以묒슂?섍쾶 ?ш린???몄엯?덈떎.\n留앷퀬?ㅽ떞쨌?뚮??꾩쿂???닿뎅?곸씠怨?媛먭컖?곸씤 怨쇱씪?먮룄 愿?ъ씠 ?믪뒿?덈떎.',fruits:['?띿떆쨌?곗떆','?덈뱶??,'留앷퀬?ㅽ떞','?뚮???,'?⑸룄蹂듭댂??]},
+  RPSN:{name:'?ъ쑀 ?덇꺽??,desc:'?ъ숴?섏?留??붾젮?섏? ?딆?, ?먯뿰?ㅻ읇怨??ъ쑀 ?덈뒗 怨쇱씪??利먭린???좏삎?낅땲??\n由ъ튂쨌臾댄솕怨쇱쿂???뚮컯??蹂댁뿬???ъ숴?섍퀬 遺?쒕윭??怨쇱씪??源딆? 留ㅻ젰???먮굧?덈떎.\n怨쇱씪??泥쒖쿇?? ?쒕?濡??뚮??섎뒗 ?ㅽ??쇱씠硫?湲됲븯寃?癒밸뒗 寃껋쓣 醫뗭븘?섏? ?딆뒿?덈떎.\n?꾩쟾???듭뼱??媛??留쏆엳???쒖젏??癒밸뒗 寃껋쓣 以묒슂?섍쾶 ?앷컖?⑸땲??\n怨쇱씪???쇱옄 議곗슜??利먭린嫄곕굹 媛源뚯슫 ?щ엺怨??섎닠 癒밸뒗 寃껋쓣 ?좏샇?⑸땲??\n?먮━?덉쿂??媛뺥븳 媛쒖꽦???덈뒗 怨쇱씪??湲곌볼???쒕룄?대낫???⑷린媛 ?덉뒿?덈떎.',fruits:['?먮━??,'由ъ튂','諛붾굹??(?꾩닕)','留앷퀬 (?꾩닕)','?⑷툑諛?]},
+  MACV:{name:'?κ린 媛쒖꽦??,desc:'?대갚?섍퀬 ?κ린濡?퀬 ?꾩궘?섎ŉ ?좊챸???됱쓣 醫뗭븘?섎뒗 媛쒖꽦 ?덈뒗 ?좏삎?낅땲??\n?ъ숴??寃껊낫???곹겮?섍퀬 ?κ린濡쒖슫 怨쇱씪?먯꽌 ????利먭굅????먮굧?덈떎.\n李몄쇅쨌?덈が쨌?좎옄泥섎읆 ?κ린媛 ?낇듅?섍퀬 媛쒖꽦 ?덈뒗 怨쇱씪???뱁엳 醫뗭븘?⑸땲??\n怨쇱씪 蹂몄뿰???곕?? ?κ린媛 ?댁븘?덈뒗 寃껋쓣 以묒슂?섍쾶 ?ш린硫? ?덈Т ?щ㈃ ?ㅽ엳??遺?댁뒪?쎌뒿?덈떎.\n怨쇱씪 泥?룻슚?뙿룹＜?????κ린瑜??쒖슜??媛怨?怨쇱씪?먮룄 愿?ъ씠 留롮뒿?덈떎.\n嫄닿컯怨??곸풄?⑥쓣 ?숈떆??異붽뎄?섎뒗 ?쇱씠?꾩뒪??쇱쓣 媛吏怨??덉뒿?덈떎.',fruits:['李몄쇅','?덈が','?좎옄','?ㅻ???,'?뚯씤?좏뵆']},
+  MACN:{name:'?먯뿰 ?덉쐞??,desc:'?대갚?섍퀬 ?κ린濡?퀬 ?꾩궘?섏?留? ?붾젮???됰낫???먯뿰?ㅻ윭???덉쐞瑜??좏샇?⑸땲??\n泥?궗怨셋룹껌?щ룄泥섎읆 ?뚮컯???됱씠?대룄 ?κ낵 ?앷컧???뚮???怨쇱씪?먯꽌 留뚯”???살뒿?덈떎.\n怨쇱씪 蹂몄뿰??留쏄낵 ?μ쓣 媛??以묒슂?쒗븯硫? ?몄쐞?곸씤 ?⑤쭧? ?ㅽ엳??嫄곕?媛먯씠 ?앷퉩?덈떎.\n?쒖쿋???섎뒗 ?먯뿰?ㅻ윭??怨쇱씪??洹몃?濡?利먭린??寃껋쓣 媛??醫뗭븘?⑸땲??\n怨쇱씪??嫄닿컯???앹뒿愿???쇰?濡??앷컖?섎ŉ, 洹쒖튃?곸쑝濡???랬?섎뒗 ?몄엯?덈떎.\n?쇱뒪硫쒕줎쨌?泥쒕찞濡좎쿂???대갚?섍퀬 ?κ린濡쒖슫 硫쒕줎瑜섎? 利먭린??寃쏀뼢???덉뒿?덈떎.',fruits:['?꾩삤由?(泥?궗怨?','?ㅼ쐞 洹몃┛','?쇱뒪硫쒕줎','?泥쒕찞濡?,'泥?룷??(泥?닔)']},
+  MASV:{name:'?곕튃 媛먭컖??,desc:'?대갚?섍퀬 ?κ린濡?퀬 遺?쒕윭?곕ŉ ?좊챸???됱쓽 怨쇱씪??醫뗭븘?섎뒗 嫄닿컯 吏?ν삎?낅땲??\n?⑥＜諛媛먃룹옄紐쎌쿂??嫄닿컯??醫뗪퀬 ?κ린濡쒖슦硫?鍮꾩＜?쇰룄 醫뗭? 怨쇱씪??理쒖꽑???좏깮?낅땲??\n怨쇱씪??癒밸뒗 寃껋씠 嫄닿컯 愿由ъ쓽 以묒슂???쇰??쇨퀬 ?앷컖?⑸땲??\n??궛?붋룸퉬?誘???嫄닿컯 湲곕뒫 ?깅텇??愿?ъ씠 留롮쑝硫? ?대? 怨좊젮?댁꽌 怨쇱씪???좏깮?⑸땲??\n遺?쒕읇怨??뚰솕媛 ???섎뒗 怨쇱씪???좏샇?섎ŉ, 猿띿쭏???뉕굅???④? ?녿뒗 寃껋쓣 醫뗭븘?⑸땲??\n怨쇱씪 二쇱뒪???ㅻТ?붾줈 媛덉븘 癒밸뒗 諛⑹떇??利먭꺼 ?쒖슜?⑸땲??',fruits:['?⑥＜諛媛?,'?먮そ (?묓겕)','蹂듬텇??,'?뚰뙆??,'?ㅻ젋吏']},
+  MASN:{name:'?먮꼫吏 洹좏삎??,desc:'?대갚?섍퀬 ?κ린濡?퀬 遺?쒕읇吏留? ?됱? ?먯뿰?ㅻ윭??寃껋쓣 ?좏샇?섎뒗 洹좏삎 ?≫엺 ?좏삎?낅땲??\n?ㅼ쐞쨌援ъ븘諛붿쿂???곸뼇???띾??섍퀬 ?κ린??醫뗭? 怨쇱씪??袁몄???梨숆꺼 ?쒖떗?덈떎.\n怨쇱씪 ??랬瑜??듯빐 ?먮꼫吏 蹂댁땐怨?嫄닿컯 ?좎?瑜??숈떆??異붽뎄?⑸땲??\n寃됰え?듬낫???곸뼇 ?깅텇怨?留쏆쓽 洹좏삎????以묒슂?섍쾶 ?앷컖?⑸땲??\n?대룞 ?꾪썑???쒕룞??留롮? ??怨쇱씪??梨숆꺼 癒밸뒗 ?듦???媛吏怨??덉뒿?덈떎.\n?덈줈??嫄닿컯 怨쇱씪??愿?ъ씠 留롮쑝硫? 湲곕뒫??怨쇱씪 ?뺣낫瑜?袁몄????섏쭛?⑸땲??',fruits:['?ㅼ쐞 洹몃┛','李쎈갑議곗깮 蹂듭댂??,'援ъ븘諛?,'?꾨낫移대룄','諛붾굹??(???숈꽦)']},
+  MPCV:{name:'寃쎌풄 ?쒓컖??,desc:'?대갚?섍퀬 ?됱씠 ?좊챸?섏?留??μ? ?놁뼱???섍퀬 ?꾩궘???앷컧??利먭린???좏삎?낅땲??\n?섎컯쨌釉붾（踰좊━泥섎읆 ?쒖썝?섍퀬 ?쒓컖?곸쑝濡?留ㅻ젰?곸씤 怨쇱씪??利먭꺼 癒뱀뒿?덈떎.\n怨쇱씪??癒뱀쓣 ??泥?웾媛먭낵 ?꾩궘???앷컧?먯꽌 ??利먭굅????먮굧?덈떎.\n蹂듭옟??留쏅낫?ㅻ뒗 源붾걫?섍퀬 ?⑥닚??留쏆쓣 ?좏샇?섎뒗 ?몄엯?덈떎.\n?щ쫫泥??됱옣 蹂닿???怨쇱씪??癒밸뒗 寃껋쓣 ?뱁엳 醫뗭븘?섎ŉ, ?붿쐞??怨쇱씪濡??섎텇??蹂댁땐?⑸땲??\n??궛???깅텇???띾???踰좊━瑜섏뿉 嫄닿컯??愿?ъ쓣 媛吏??寃쏀뼢???덉뒿?덈떎.',fruits:['?섎컯','釉붾（踰좊━','?꾨줈?덉븘','?앸쪟','?덈뱶湲濡쒕툕 ?щ룄']},
+  MPCN:{name:'誘몃땲硫 ?댁꽦??,desc:'怨쇱옣 ?놁씠 ?대갚?섍퀬 ?⑥닚??怨쇱씪???좏샇?섎뒗 ?댁꽦?곸씤 ?좏삎?낅땲??\n?좉퀬諛걔룹븘蹂댁뭅?꾩쿂??袁몃컝?녾퀬 蹂몄쭏??異⑹떎??怨쇱씪?먯꽌 留뚯”???살뒿?덈떎.\n怨쇱씪 ?좏깮??留ㅼ슦 ?⑸━?곸씠硫? ?꾩슂??寃껊쭔 援щℓ?섎뒗 寃쏀뼢???덉뒿?덈떎.\n怨쇰룄?섍쾶 ?ш굅???μ씠 媛뺥븳 怨쇱씪蹂대떎??源붾걫?섍퀬 遺???녿뒗 怨쇱씪???좏샇?⑸땲??\n怨쇱씪???곸뼇 ?깅텇?대굹 移쇰줈由??뺣낫瑜?鍮꾧탳??瑗쇨세?섍쾶 ?뺤씤?섎뒗 ?몄엯?덈떎.\n?뺢린 援щℓ蹂대떎???꾩슂?????곷떦?됰쭔 援щℓ?섎뒗 ?뚮퉬 ?⑦꽩??蹂댁엯?덈떎.',fruits:['?좉퀬諛?,'泥?룷??(泥?닔)','?꾨낫移대룄','?⑷툑諛?,'?泥쒕찞濡?]},
+  MPSV:{name:'?낅┰ 媛쒖꽦??,desc:'?대갚?섍퀬 遺?쒕윭?곕ŉ ?좊챸???됱뿉 ?뚮━?? ?낇듅??痍⑦뼢??媛吏??좏삎?낅땲??\n?쒕옒怨ㅽ봽猷⑥툩쨌?ㅻ뵒泥섎읆 ?낇듅?섍퀬 ?덉뿉 ?꾨뒗 怨쇱씪?먯꽌 ?밸퀎??留ㅻ젰???먮굧?덈떎.\n?쇰컲?곸씤 怨쇱씪蹂대떎?????뚮젮吏?怨쇱씪???쒕룄?대낫??寃껋쓣 利먭퉩?덈떎.\n怨쇱씪???멸??먯꽌 ?λ?濡쒖????먮겮硫? ?덉걶 ?됱씠 ?좏깮?????곹뼢??誘몄묩?덈떎.\n?⑤쭧蹂대떎??媛쒖꽦 ?덈뒗 留쏄낵 ?쒓컖??留ㅻ젰????以묒슂?섍쾶 ?앷컖?⑸땲??\n?덈줈 ?섏삩 ?뱀씠??怨쇱씪???덉쑝硫?媛??癒쇱? 癒뱀뼱蹂닿퀬 ?띠뼱?섎뒗 ?몄엯?덈떎.',fruits:['?⑷낵 (?쒕옒怨ㅽ봽猷⑥툩)','?ㅻ뵒','?띿떆 (?곗떆)','?ㅽ?濡쒖뻹 ?щ룄','釉붾옓?쒕뱾由ъ뒪']},
+  MPSN:{name:'?대㈃ 媛移섑삎',desc:'寃됰え?듬낫???대㈃???곸뼇媛? 吏꾩젙??媛移섎? 以묒떆?섎뒗 ?좎쨷???좏삎?낅땲??\n?꾨낫移대룄쨌肄붿퐫?쏆쿂??寃됱? ?됰쾾??蹂댁뿬???곸뼇???띾???怨쇱씪??媛移섎? ?뚯븘遊낅땲??\n?붾젮???ъ옣?대굹 ?덉걶 ?멸?蹂대떎???ㅼ젣 嫄닿컯???꾩????섎뒗吏瑜???以묒슂?섍쾶 ?앷컖?⑸땲??\n怨쇱씪???듯빐 吏꾩젙??嫄닿컯怨??곸뼇??異붽뎄?섎뒗 ?쇱씠?꾩뒪??쇱쓣 媛吏怨??덉뒿?덈떎.\n怨쇱씪 ?좏깮???좎쨷?섎ŉ, ?쒕쾲 醫뗫떎怨??먮떒??怨쇱씪? 袁몄???諛섎났 援щℓ?섎뒗 ?몄엯?덈떎.\n嫄닿컯 ?뺣낫??愿?ъ씠 留롮쑝硫? 怨쇱씪 ??랬瑜??앺솢 猷⑦떞?쇰줈 ?뺤갑?쒗궎??寃쏀뼢???덉뒿?덈떎.',fruits:['?꾨낫移대룄','肄붿퐫??,'援ъ븘諛?,'諛붾굹??,'紐④낵 (李?']},
 };
 
 var AXIS_REPORT={
   T:{
-    R:{title:'맛: 단맛이 분명해야 손이 가는 편',lines:[
-      '과일을 고를 때 첫 기준이 비교적 분명합니다.',
-      '먹었을 때 바로 느껴지는 단맛과 진한 맛이 만족을 크게 만듭니다.',
-      '싱겁거나 밍밍한 과일은 좋은 품질이어도 오래 손이 가지 않을 수 있습니다.',
-      '간식, 선물, 가족용 과일을 고를 때 실패를 줄이려면 당도 정보가 도움이 됩니다.',
-      '추천 상황은 식후 디저트, 아이 간식, 기분 전환이 필요한 시간입니다.'
+    R:{title:'留? ?⑤쭧??遺꾨챸?댁빞 ?먯씠 媛????,lines:[
+      '怨쇱씪??怨좊? ??泥?湲곗???鍮꾧탳??遺꾨챸?⑸땲??',
+      '癒뱀뿀????諛붾줈 ?먭뺨吏???⑤쭧怨?吏꾪븳 留쏆씠 留뚯”???ш쾶 留뚮벊?덈떎.',
+      '?깃쾪嫄곕굹 諛띾컢??怨쇱씪? 醫뗭? ?덉쭏?댁뼱???ㅻ옒 ?먯씠 媛吏 ?딆쓣 ???덉뒿?덈떎.',
+      '媛꾩떇, ?좊Ъ, 媛議깆슜 怨쇱씪??怨좊? ???ㅽ뙣瑜?以꾩씠?ㅻ㈃ ?밸룄 ?뺣낫媛 ?꾩????⑸땲??',
+      '異붿쿇 ?곹솴? ?앺썑 ?붿??? ?꾩씠 媛꾩떇, 湲곕텇 ?꾪솚???꾩슂???쒓컙?낅땲??'
     ],deep:[
-      '이번 맛 반응은 첫맛에서 빠르게 판단되는 편에 가깝습니다. 한입 먹었을 때 단맛이 바로 올라오면 그 과일을 좋은 경험으로 기억하기 쉽습니다.',
-      '이 응답에서는 과일을 고를 때 "맛이 분명해야 한다"는 기준이 보입니다. 그래서 당도 표시, 시식 경험, 주변의 맛 평가가 선택에 영향을 줄 수 있습니다.',
-      '반대로 맛이 흐리거나 물맛처럼 느껴지는 과일은 양이 많아도 끝까지 먹기 어렵습니다. 이때 남기는 이유는 성격이 아니라 감각 만족의 부족에 가깝습니다.',
-      '단맛이 강한 과일은 피곤한 날, 식사 후, 누군가와 나눠 먹는 자리에서 더 잘 맞습니다. 즉각적인 보상이 필요한 상황에서 만족도가 높습니다.',
-      '다만 너무 진한 맛만 반복하면 금방 물릴 수 있습니다. 단맛이 분명한 과일 안에서도 산미나 수분감이 같이 있는 선택이 오래 갑니다.'
+      '?대쾲 留?諛섏쓳? 泥ル쭧?먯꽌 鍮좊Ⅴ寃??먮떒?섎뒗 ?몄뿉 媛源앹뒿?덈떎. ?쒖엯 癒뱀뿀?????⑤쭧??諛붾줈 ?щ씪?ㅻ㈃ 洹?怨쇱씪??醫뗭? 寃쏀뿕?쇰줈 湲곗뼲?섍린 ?쎌뒿?덈떎.',
+      '???묐떟?먯꽌??怨쇱씪??怨좊? ??"留쏆씠 遺꾨챸?댁빞 ?쒕떎"??湲곗???蹂댁엯?덈떎. 洹몃옒???밸룄 ?쒖떆, ?쒖떇 寃쏀뿕, 二쇰???留??됯?媛 ?좏깮???곹뼢??以????덉뒿?덈떎.',
+      '諛섎?濡?留쏆씠 ?먮━嫄곕굹 臾쇰쭧泥섎읆 ?먭뺨吏??怨쇱씪? ?묒씠 留롮븘???앷퉴吏 癒밴린 ?대졄?듬땲?? ?대븣 ?④린???댁쑀???깃꺽???꾨땲??媛먭컖 留뚯”??遺議깆뿉 媛源앹뒿?덈떎.',
+      '?⑤쭧??媛뺥븳 怨쇱씪? ?쇨낀???? ?앹궗 ?? ?꾧뎔媛? ?섎닠 癒밸뒗 ?먮━?먯꽌 ????留욎뒿?덈떎. 利됯컖?곸씤 蹂댁긽???꾩슂???곹솴?먯꽌 留뚯”?꾧? ?믪뒿?덈떎.',
+      '?ㅻ쭔 ?덈Т 吏꾪븳 留쏅쭔 諛섎났?섎㈃ 湲덈갑 臾쇰┫ ???덉뒿?덈떎. ?⑤쭧??遺꾨챸??怨쇱씪 ?덉뿉?쒕룄 ?곕????섎텇媛먯씠 媛숈씠 ?덈뒗 ?좏깮???ㅻ옒 媛묐땲??'
     ]},
-    M:{title:'맛: 가볍고 깔끔해야 오래 먹는 편',lines:[
-      '과일을 먹을 때 단맛보다 깔끔함을 먼저 느끼는 편입니다.',
-      '너무 달거나 농도가 진한 과일은 처음엔 좋아도 금방 물릴 수 있습니다.',
-      '수분감, 산뜻함, 부담 없는 맛이 있으면 더 오래 먹게 됩니다.',
-      '과일을 자주 먹는 생활형 소비에서는 이 기준이 특히 중요합니다.',
-      '추천 상황은 아침, 운동 후, 식사 전후의 가벼운 간식입니다.'
+    M:{title:'留? 媛蹂띻퀬 源붾걫?댁빞 ?ㅻ옒 癒밸뒗 ??,lines:[
+      '怨쇱씪??癒뱀쓣 ???⑤쭧蹂대떎 源붾걫?⑥쓣 癒쇱? ?먮겮???몄엯?덈떎.',
+      '?덈Т ?ш굅???띾룄媛 吏꾪븳 怨쇱씪? 泥섏쓬??醫뗭븘??湲덈갑 臾쇰┫ ???덉뒿?덈떎.',
+      '?섎텇媛? ?곕쑜?? 遺???녿뒗 留쏆씠 ?덉쑝硫????ㅻ옒 癒밴쾶 ?⑸땲??',
+      '怨쇱씪???먯＜ 癒밸뒗 ?앺솢???뚮퉬?먯꽌????湲곗????뱁엳 以묒슂?⑸땲??',
+      '異붿쿇 ?곹솴? ?꾩묠, ?대룞 ?? ?앹궗 ?꾪썑??媛踰쇱슫 媛꾩떇?낅땲??'
     ],deep:[
-      '이번 맛 반응은 강한 자극보다 부담 없는 균형에 가깝습니다. 과일이 너무 달면 맛있다는 생각보다 무겁다는 느낌이 먼저 올 수 있습니다.',
-      '이 응답은 과일을 오래 먹는 생활형 선택과 잘 맞습니다. 매일 먹거나 냉장고에 두고 조금씩 꺼내 먹을 때, 담백한 맛이 질리지 않는 기준이 됩니다.',
-      '과일을 남기는 상황도 단맛이 부족해서가 아니라, 너무 진하거나 끈적한 느낌이 피로하게 느껴질 때 생깁니다.',
-      '선물용 과일을 고를 때도 "누가 먹어도 부담 없는 맛"을 중요하게 볼 가능성이 큽니다. 가족이 함께 먹는 과일과 잘 맞습니다.',
-      '다만 지나치게 담백한 과일은 만족이 낮을 수 있습니다. 가벼운 맛 안에서도 향이나 식감이 살아있는 선택이 좋습니다.'
+      '?대쾲 留?諛섏쓳? 媛뺥븳 ?먭레蹂대떎 遺???녿뒗 洹좏삎??媛源앹뒿?덈떎. 怨쇱씪???덈Т ?щ㈃ 留쏆엳?ㅻ뒗 ?앷컖蹂대떎 臾닿쾪?ㅻ뒗 ?먮굦??癒쇱? ?????덉뒿?덈떎.',
+      '???묐떟? 怨쇱씪???ㅻ옒 癒밸뒗 ?앺솢???좏깮怨???留욎뒿?덈떎. 留ㅼ씪 癒밴굅???됱옣怨좎뿉 ?먭퀬 議곌툑??爰쇰궡 癒뱀쓣 ?? ?대갚??留쏆씠 吏덈━吏 ?딅뒗 湲곗????⑸땲??',
+      '怨쇱씪???④린???곹솴???⑤쭧??遺議깊빐?쒓? ?꾨땲?? ?덈Т 吏꾪븯嫄곕굹 ?덉쟻???먮굦???쇰줈?섍쾶 ?먭뺨吏????앷퉩?덈떎.',
+      '?좊Ъ??怨쇱씪??怨좊? ?뚮룄 "?꾧? 癒뱀뼱??遺???녿뒗 留???以묒슂?섍쾶 蹂?媛?μ꽦???쎈땲?? 媛議깆씠 ?④퍡 癒밸뒗 怨쇱씪怨???留욎뒿?덈떎.',
+      '?ㅻ쭔 吏?섏튂寃??대갚??怨쇱씪? 留뚯”????쓣 ???덉뒿?덈떎. 媛踰쇱슫 留??덉뿉?쒕룄 ?μ씠???앷컧???댁븘?덈뒗 ?좏깮??醫뗭뒿?덈떎.'
     ]}
   },
   S:{
-    A:{title:'향: 먹기 전 향에서 이미 판단이 시작되는 편',lines:[
-      '과일을 먹기 전부터 향이 먼저 기억에 남는 편입니다.',
-      '봉지를 열었을 때 나는 향이 좋으면 기대가 커집니다.',
-      '향이 약하면 맛이 좋아도 조금 심심하게 느낄 수 있습니다.',
-      '복숭아, 멜론, 감귤류처럼 향이 살아있는 과일과 잘 맞습니다.',
-      '추천 상황은 선물, 손님맞이, 기분을 바꾸고 싶은 시간입니다.'
+    A:{title:'?? 癒밴린 ???μ뿉???대? ?먮떒???쒖옉?섎뒗 ??,lines:[
+      '怨쇱씪??癒밴린 ?꾨????μ씠 癒쇱? 湲곗뼲???⑤뒗 ?몄엯?덈떎.',
+      '遊됱?瑜??댁뿀?????섎뒗 ?μ씠 醫뗭쑝硫?湲곕?媛 而ㅼ쭛?덈떎.',
+      '?μ씠 ?쏀븯硫?留쏆씠 醫뗭븘??議곌툑 ?ъ떖?섍쾶 ?먮굜 ???덉뒿?덈떎.',
+      '蹂듭댂?? 硫쒕줎, 媛먭랠瑜섏쿂???μ씠 ?댁븘?덈뒗 怨쇱씪怨???留욎뒿?덈떎.',
+      '異붿쿇 ?곹솴? ?좊Ъ, ?먮떂留욎씠, 湲곕텇??諛붽씀怨??띠? ?쒓컙?낅땲??'
     ],deep:[
-      '이번 응답은 과일을 입보다 코로 먼저 만나는 편에 가깝습니다. 향이 좋은 과일은 먹기 전부터 이미 좋은 경험으로 들어옵니다.',
-      '향은 기억과도 연결됩니다. 특정 과일 냄새가 예전 계절, 장소, 사람을 떠올리게 할 수 있습니다.',
-      '이 유형은 향이 약한 과일을 먹을 때 맛이 괜찮아도 무언가 빠진 느낌을 받을 수 있습니다. 부족한 것은 맛보다 첫인상일 수 있습니다.',
-      '과일 선물이나 접대 상황에서는 향이 공간 전체의 분위기를 만들기 때문에 만족도가 높아집니다.',
-      '다만 향이 너무 강하면 피로해질 수도 있습니다. 향이 선명하되 부담스럽지 않은 익힘 정도와 보관 상태가 중요합니다.'
+      '?대쾲 ?묐떟? 怨쇱씪???낅낫??肄붾줈 癒쇱? 留뚮굹???몄뿉 媛源앹뒿?덈떎. ?μ씠 醫뗭? 怨쇱씪? 癒밴린 ?꾨????대? 醫뗭? 寃쏀뿕?쇰줈 ?ㅼ뼱?듬땲??',
+      '?μ? 湲곗뼲怨쇰룄 ?곌껐?⑸땲?? ?뱀젙 怨쇱씪 ?꾩깉媛 ?덉쟾 怨꾩젅, ?μ냼, ?щ엺???좎삱由ш쾶 ?????덉뒿?덈떎.',
+      '???좏삎? ?μ씠 ?쏀븳 怨쇱씪??癒뱀쓣 ??留쏆씠 愿쒖갖?꾨룄 臾댁뼵媛 鍮좎쭊 ?먮굦??諛쏆쓣 ???덉뒿?덈떎. 遺議깊븳 寃껋? 留쏅낫??泥レ씤?곸씪 ???덉뒿?덈떎.',
+      '怨쇱씪 ?좊Ъ?대굹 ?묐? ?곹솴?먯꽌???μ씠 怨듦컙 ?꾩껜??遺꾩쐞湲곕? 留뚮뱾湲??뚮Ц??留뚯”?꾧? ?믪븘吏묐땲??',
+      '?ㅻ쭔 ?μ씠 ?덈Т 媛뺥븯硫??쇰줈?댁쭏 ?섎룄 ?덉뒿?덈떎. ?μ씠 ?좊챸?섎릺 遺?댁뒪?쎌? ?딆? ?듯옒 ?뺣룄? 蹂닿? ?곹깭媛 以묒슂?⑸땲??'
     ]},
-    P:{title:'향: 향보다 먹었을 때의 편안함이 중요한 편',lines:[
-      '과일을 고를 때 향이 강한지보다 먹기 편한지를 더 봅니다.',
-      '향이 약해도 맛과 식감이 맞으면 충분히 만족할 수 있습니다.',
-      '강한 향은 때로 부담이 되거나 금방 질리게 만들 수 있습니다.',
-      '배, 수박, 포도처럼 향이 은은한 과일도 잘 맞습니다.',
-      '추천 상황은 일상 간식, 가족용 과일, 자주 먹는 과일입니다.'
+    P:{title:'?? ?λ낫??癒뱀뿀???뚯쓽 ?몄븞?⑥씠 以묒슂????,lines:[
+      '怨쇱씪??怨좊? ???μ씠 媛뺥븳吏蹂대떎 癒밴린 ?명븳吏瑜???遊낅땲??',
+      '?μ씠 ?쏀빐??留쏄낵 ?앷컧??留욎쑝硫?異⑸텇??留뚯”?????덉뒿?덈떎.',
+      '媛뺥븳 ?μ? ?뚮줈 遺?댁씠 ?섍굅??湲덈갑 吏덈━寃?留뚮뱾 ???덉뒿?덈떎.',
+      '諛? ?섎컯, ?щ룄泥섎읆 ?μ씠 ????怨쇱씪????留욎뒿?덈떎.',
+      '異붿쿇 ?곹솴? ?쇱긽 媛꾩떇, 媛議깆슜 怨쇱씪, ?먯＜ 癒밸뒗 怨쇱씪?낅땲??'
     ],deep:[
-      '이번 향 반응은 비교적 차분한 편에 가깝습니다. 과일 향이 확 올라오는 순간보다 실제로 먹었을 때 편한지가 더 중요합니다.',
-      '이 유형은 향 때문에 과일을 과하게 기대하지 않습니다. 그래서 담백하고 은은한 과일도 안정적으로 즐길 수 있습니다.',
-      '강한 향의 과일은 첫인상이 좋더라도 반복해서 먹으면 피로해질 수 있습니다. 특히 냉장고나 실내에 향이 오래 남는 것을 부담스러워할 수 있습니다.',
-      '가족과 함께 먹는 과일, 아침에 먹는 과일, 자주 사두는 과일에서는 향이 약한 쪽이 오히려 오래 갑니다.',
-      '다만 향을 완전히 배제하면 과일 경험이 단조로워질 수 있습니다. 은은한 향이 있는 과일을 고르면 부담과 만족의 균형이 좋아집니다.'
+      '?대쾲 ??諛섏쓳? 鍮꾧탳??李⑤텇???몄뿉 媛源앹뒿?덈떎. 怨쇱씪 ?μ씠 ???щ씪?ㅻ뒗 ?쒓컙蹂대떎 ?ㅼ젣濡?癒뱀뿀?????명븳吏媛 ??以묒슂?⑸땲??',
+      '???좏삎? ???뚮Ц??怨쇱씪??怨쇳븯寃?湲곕??섏? ?딆뒿?덈떎. 洹몃옒???대갚?섍퀬 ????怨쇱씪???덉젙?곸쑝濡?利먭만 ???덉뒿?덈떎.',
+      '媛뺥븳 ?μ쓽 怨쇱씪? 泥レ씤?곸씠 醫뗫뜑?쇰룄 諛섎났?댁꽌 癒뱀쑝硫??쇰줈?댁쭏 ???덉뒿?덈떎. ?뱁엳 ?됱옣怨좊굹 ?ㅻ궡???μ씠 ?ㅻ옒 ?⑤뒗 寃껋쓣 遺?댁뒪?ъ썙?????덉뒿?덈떎.',
+      '媛議깃낵 ?④퍡 癒밸뒗 怨쇱씪, ?꾩묠??癒밸뒗 怨쇱씪, ?먯＜ ?щ몢??怨쇱씪?먯꽌???μ씠 ?쏀븳 履쎌씠 ?ㅽ엳???ㅻ옒 媛묐땲??',
+      '?ㅻ쭔 ?μ쓣 ?꾩쟾??諛곗젣?섎㈃ 怨쇱씪 寃쏀뿕???⑥“濡쒖썙吏????덉뒿?덈떎. ?????μ씠 ?덈뒗 怨쇱씪??怨좊Ⅴ硫?遺?닿낵 留뚯”??洹좏삎??醫뗭븘吏묐땲??'
     ]}
   },
   TX:{
-    C:{title:'식감: 씹히는 느낌이 있어야 끝까지 먹는 편',lines:[
-      '과일을 먹을 때 아삭함과 단단함이 만족을 크게 만듭니다.',
-      '씹는 소리와 탄력이 있으면 더 신선하게 느껴질 수 있습니다.',
-      '물러진 과일은 맛이 좋아도 손이 덜 갈 수 있습니다.',
-      '사과, 배, 포도처럼 씹는 느낌이 있는 과일과 잘 맞습니다.',
-      '추천 상황은 출근 전, 간식, 아이와 함께 먹는 시간입니다.'
+    C:{title:'?앷컧: ?뱁엳???먮굦???덉뼱???앷퉴吏 癒밸뒗 ??,lines:[
+      '怨쇱씪??癒뱀쓣 ???꾩궘?④낵 ?⑤떒?⑥씠 留뚯”???ш쾶 留뚮벊?덈떎.',
+      '?밸뒗 ?뚮━? ?꾨젰???덉쑝硫????좎꽑?섍쾶 ?먭뺨吏????덉뒿?덈떎.',
+      '臾쇰윭吏?怨쇱씪? 留쏆씠 醫뗭븘???먯씠 ??媛????덉뒿?덈떎.',
+      '?ш낵, 諛? ?щ룄泥섎읆 ?밸뒗 ?먮굦???덈뒗 怨쇱씪怨???留욎뒿?덈떎.',
+      '異붿쿇 ?곹솴? 異쒓렐 ?? 媛꾩떇, ?꾩씠? ?④퍡 癒밸뒗 ?쒓컙?낅땲??'
     ],deep:[
-      '이번 응답은 과일을 씹는 순간에 품질을 판단하는 편에 가깝습니다. 아삭하게 끊기는 느낌이 신선함과 만족으로 이어집니다.',
-      '이 유형은 과일을 먹는 행위 자체에서 리듬을 느낍니다. 씹는 소리, 단단함, 껍질의 탄력이 경험의 일부가 됩니다.',
-      '물러진 과일은 단맛이 충분해도 끝까지 먹기 어렵습니다. 남기는 이유는 맛의 실패보다 식감의 실패일 가능성이 큽니다.',
-      '장보기에서는 보관 기간과 숙성 정도를 함께 보는 것이 좋습니다. 조금 단단할 때 사서 원하는 시점에 먹는 방식이 잘 맞습니다.',
-      '다만 너무 단단하면 향과 과즙이 덜 느껴질 수 있습니다. 아삭함 안에 수분감이 있는 과일이 가장 안정적입니다.'
+      '?대쾲 ?묐떟? 怨쇱씪???밸뒗 ?쒓컙???덉쭏???먮떒?섎뒗 ?몄뿉 媛源앹뒿?덈떎. ?꾩궘?섍쾶 ?딄린???먮굦???좎꽑?④낵 留뚯”?쇰줈 ?댁뼱吏묐땲??',
+      '???좏삎? 怨쇱씪??癒밸뒗 ?됱쐞 ?먯껜?먯꽌 由щ벉???먮굧?덈떎. ?밸뒗 ?뚮━, ?⑤떒?? 猿띿쭏???꾨젰??寃쏀뿕???쇰?媛 ?⑸땲??',
+      '臾쇰윭吏?怨쇱씪? ?⑤쭧??異⑸텇?대룄 ?앷퉴吏 癒밴린 ?대졄?듬땲?? ?④린???댁쑀??留쏆쓽 ?ㅽ뙣蹂대떎 ?앷컧???ㅽ뙣??媛?μ꽦???쎈땲??',
+      '?λ낫湲곗뿉?쒕뒗 蹂닿? 湲곌컙怨??숈꽦 ?뺣룄瑜??④퍡 蹂대뒗 寃껋씠 醫뗭뒿?덈떎. 議곌툑 ?⑤떒?????ъ꽌 ?먰븯???쒖젏??癒밸뒗 諛⑹떇????留욎뒿?덈떎.',
+      '?ㅻ쭔 ?덈Т ?⑤떒?섎㈃ ?κ낵 怨쇱쬂?????먭뺨吏????덉뒿?덈떎. ?꾩궘???덉뿉 ?섎텇媛먯씠 ?덈뒗 怨쇱씪??媛???덉젙?곸엯?덈떎.'
     ]},
-    S:{title:'식감: 부드럽고 쉽게 넘어가는 쪽이 편한 편',lines:[
-      '과일을 먹을 때 부드럽게 넘어가는 느낌을 좋아하는 편입니다.',
-      '아삭함보다 촉촉함이나 녹는 느낌에서 만족을 얻을 수 있습니다.',
-      '너무 단단한 과일은 먹기 번거롭거나 부담스럽게 느껴질 수 있습니다.',
-      '복숭아, 바나나, 멜론처럼 부드러운 과일과 잘 맞습니다.',
-      '추천 상황은 늦은 저녁, 돌봄, 회복이 필요한 시간입니다.'
+    S:{title:'?앷컧: 遺?쒕읇怨??쎄쾶 ?섏뼱媛??履쎌씠 ?명븳 ??,lines:[
+      '怨쇱씪??癒뱀쓣 ??遺?쒕읇寃??섏뼱媛???먮굦??醫뗭븘?섎뒗 ?몄엯?덈떎.',
+      '?꾩궘?⑤낫??珥됱큺?⑥씠???밸뒗 ?먮굦?먯꽌 留뚯”???살쓣 ???덉뒿?덈떎.',
+      '?덈Т ?⑤떒??怨쇱씪? 癒밴린 踰덇굅濡?굅??遺?댁뒪?쎄쾶 ?먭뺨吏????덉뒿?덈떎.',
+      '蹂듭댂?? 諛붾굹?? 硫쒕줎泥섎읆 遺?쒕윭??怨쇱씪怨???留욎뒿?덈떎.',
+      '異붿쿇 ?곹솴? ??? ??? ?뚮큵, ?뚮났???꾩슂???쒓컙?낅땲??'
     ],deep:[
-      '이번 응답은 과일에서 자극보다 부드러운 흐름을 찾는 편에 가깝습니다. 입안에서 쉽게 풀리는 과일이 더 안정적으로 느껴질 수 있습니다.',
-      '이 유형은 씹는 힘이 많이 필요한 과일보다는 편하게 먹을 수 있는 과일을 반복 구매할 가능성이 큽니다.',
-      '아삭한 과일이 신선해 보여도 실제로는 단단함이 부담으로 남을 수 있습니다. 특히 피곤한 날에는 부드러운 과일이 더 잘 맞습니다.',
-      '돌봄, 병문안, 아이 간식, 어른 간식처럼 먹는 사람의 상태를 고려하는 상황에서 이 기준이 중요합니다.',
-      '다만 지나치게 물러지면 신선도가 낮게 느껴질 수 있습니다. 부드럽지만 형태가 무너지지 않는 정도가 좋습니다.'
+      '?대쾲 ?묐떟? 怨쇱씪?먯꽌 ?먭레蹂대떎 遺?쒕윭???먮쫫??李얜뒗 ?몄뿉 媛源앹뒿?덈떎. ?낆븞?먯꽌 ?쎄쾶 ?由щ뒗 怨쇱씪?????덉젙?곸쑝濡??먭뺨吏????덉뒿?덈떎.',
+      '???좏삎? ?밸뒗 ?섏씠 留롮씠 ?꾩슂??怨쇱씪蹂대떎???명븯寃?癒뱀쓣 ???덈뒗 怨쇱씪??諛섎났 援щℓ??媛?μ꽦???쎈땲??',
+      '?꾩궘??怨쇱씪???좎꽑??蹂댁뿬???ㅼ젣濡쒕뒗 ?⑤떒?⑥씠 遺?댁쑝濡??⑥쓣 ???덉뒿?덈떎. ?뱁엳 ?쇨낀???좎뿉??遺?쒕윭??怨쇱씪??????留욎뒿?덈떎.',
+      '?뚮큵, 蹂묐Ц?? ?꾩씠 媛꾩떇, ?대Ⅸ 媛꾩떇泥섎읆 癒밸뒗 ?щ엺???곹깭瑜?怨좊젮?섎뒗 ?곹솴?먯꽌 ??湲곗???以묒슂?⑸땲??',
+      '?ㅻ쭔 吏?섏튂寃?臾쇰윭吏硫??좎꽑?꾧? ??쾶 ?먭뺨吏????덉뒿?덈떎. 遺?쒕읇吏留??뺥깭媛 臾대꼫吏吏 ?딅뒗 ?뺣룄媛 醫뗭뒿?덈떎.'
     ]}
   },
   C:{
-    V:{title:'색: 눈에 먼저 들어오는 과일에 손이 가는 편',lines:[
-      '과일을 고를 때 색과 진열 상태가 선택에 영향을 줍니다.',
-      '선명한 색은 신선함과 기대감을 함께 만듭니다.',
-      '선물용 과일에서는 보기 좋은 첫인상이 특히 중요합니다.',
-      '딸기, 체리, 감귤류처럼 색이 살아있는 과일과 잘 맞습니다.',
-      '추천 상황은 선물, 모임, 사진을 남기고 싶은 자리입니다.'
+    V:{title:'?? ?덉뿉 癒쇱? ?ㅼ뼱?ㅻ뒗 怨쇱씪???먯씠 媛????,lines:[
+      '怨쇱씪??怨좊? ???됯낵 吏꾩뿴 ?곹깭媛 ?좏깮???곹뼢??以띾땲??',
+      '?좊챸???됱? ?좎꽑?④낵 湲곕?媛먯쓣 ?④퍡 留뚮벊?덈떎.',
+      '?좊Ъ??怨쇱씪?먯꽌??蹂닿린 醫뗭? 泥レ씤?곸씠 ?뱁엳 以묒슂?⑸땲??',
+      '?멸린, 泥대━, 媛먭랠瑜섏쿂???됱씠 ?댁븘?덈뒗 怨쇱씪怨???留욎뒿?덈떎.',
+      '異붿쿇 ?곹솴? ?좊Ъ, 紐⑥엫, ?ъ쭊???④린怨??띠? ?먮━?낅땲??'
     ],deep:[
-      '이번 응답은 과일을 눈으로 먼저 고르는 편에 가깝습니다. 색이 선명하면 먹기 전부터 이미 좋은 선택이라는 느낌이 생깁니다.',
-      '이 유형은 진열, 포장, 담음새에 영향을 받습니다. 같은 과일이라도 어떻게 보이느냐에 따라 맛있어 보이는 정도가 달라질 수 있습니다.',
-      '과일을 남기는 상황도 외형의 실망에서 시작될 수 있습니다. 색이 탁하거나 상처가 보이면 손이 덜 갑니다.',
-      '선물이나 모임에서는 이 감각이 장점이 됩니다. 받는 사람이 열었을 때 기분이 좋아지는 과일을 잘 고를 수 있습니다.',
-      '다만 색만 보고 고르면 맛과 식감에서 어긋날 수 있습니다. 선명한 색 안에서도 향과 숙성 정도를 함께 보는 것이 좋습니다.'
+      '?대쾲 ?묐떟? 怨쇱씪???덉쑝濡?癒쇱? 怨좊Ⅴ???몄뿉 媛源앹뒿?덈떎. ?됱씠 ?좊챸?섎㈃ 癒밴린 ?꾨????대? 醫뗭? ?좏깮?대씪???먮굦???앷퉩?덈떎.',
+      '???좏삎? 吏꾩뿴, ?ъ옣, ?댁쓬?덉뿉 ?곹뼢??諛쏆뒿?덈떎. 媛숈? 怨쇱씪?대씪???대뼸寃?蹂댁씠?먮깘???곕씪 留쏆엳??蹂댁씠???뺣룄媛 ?щ씪吏????덉뒿?덈떎.',
+      '怨쇱씪???④린???곹솴???명삎???ㅻ쭩?먯꽌 ?쒖옉?????덉뒿?덈떎. ?됱씠 ?곹븯嫄곕굹 ?곸쿂媛 蹂댁씠硫??먯씠 ??媛묐땲??',
+      '?좊Ъ?대굹 紐⑥엫?먯꽌????媛먭컖???μ젏???⑸땲?? 諛쏅뒗 ?щ엺???댁뿀????湲곕텇??醫뗭븘吏??怨쇱씪????怨좊? ???덉뒿?덈떎.',
+      '?ㅻ쭔 ?됰쭔 蹂닿퀬 怨좊Ⅴ硫?留쏄낵 ?앷컧?먯꽌 ?닿툔?????덉뒿?덈떎. ?좊챸?????덉뿉?쒕룄 ?κ낵 ?숈꽦 ?뺣룄瑜??④퍡 蹂대뒗 寃껋씠 醫뗭뒿?덈떎.'
     ]},
-    N:{title:'색: 겉모습보다 먹었을 때의 기준을 더 보는 편',lines:[
-      '과일의 색이 조금 소박해도 맛과 신선도가 맞으면 괜찮습니다.',
-      '화려한 포장보다 실제로 먹기 좋은지가 더 중요합니다.',
-      '외형이 덜 예쁜 과일도 좋은 경험이 될 수 있다고 느낄 수 있습니다.',
-      '배, 청포도, 바나나처럼 자연스러운 색의 과일과 잘 맞습니다.',
-      '추천 상황은 일상용 과일, 가정용 과일, 실속 구매입니다.'
+    N:{title:'?? 寃됰え?듬낫??癒뱀뿀???뚯쓽 湲곗?????蹂대뒗 ??,lines:[
+      '怨쇱씪???됱씠 議곌툑 ?뚮컯?대룄 留쏄낵 ?좎꽑?꾧? 留욎쑝硫?愿쒖갖?듬땲??',
+      '?붾젮???ъ옣蹂대떎 ?ㅼ젣濡?癒밴린 醫뗭?吏媛 ??以묒슂?⑸땲??',
+      '?명삎?????덉걶 怨쇱씪??醫뗭? 寃쏀뿕???????덈떎怨??먮굜 ???덉뒿?덈떎.',
+      '諛? 泥?룷?? 諛붾굹?섏쿂???먯뿰?ㅻ윭???됱쓽 怨쇱씪怨???留욎뒿?덈떎.',
+      '異붿쿇 ?곹솴? ?쇱긽??怨쇱씪, 媛?뺤슜 怨쇱씪, ?ㅼ냽 援щℓ?낅땲??'
     ],deep:[
-      '이번 응답은 과일의 겉모습보다 실제로 먹었을 때의 만족을 더 중요하게 보는 편에 가깝습니다. 색이 화려하지 않아도 기준에 맞으면 충분히 좋은 과일이 됩니다.',
-      '이 유형은 포장이나 진열에 크게 흔들리지 않습니다. 대신 신선도, 가격, 양, 먹기 편한지 같은 실제 기준을 더 살핍니다.',
-      '외형이 조금 부족한 과일도 맛과 식감이 맞으면 잘 받아들일 수 있습니다. 이는 못난이 과일이나 실속 과일을 이해하는 데 강점이 됩니다.',
-      '가정용 과일이나 매일 먹는 과일에서는 이 기준이 특히 현실적입니다. 보여주기보다 끝까지 먹는 경험을 중시합니다.',
-      '다만 선물 상황에서는 받는 사람의 첫인상도 함께 고려해야 합니다. 자연스러운 색 안에서도 정돈된 구성은 도움이 됩니다.'
+      '?대쾲 ?묐떟? 怨쇱씪??寃됰え?듬낫???ㅼ젣濡?癒뱀뿀???뚯쓽 留뚯”????以묒슂?섍쾶 蹂대뒗 ?몄뿉 媛源앹뒿?덈떎. ?됱씠 ?붾젮?섏? ?딆븘??湲곗???留욎쑝硫?異⑸텇??醫뗭? 怨쇱씪???⑸땲??',
+      '???좏삎? ?ъ옣?대굹 吏꾩뿴???ш쾶 ?붾뱾由ъ? ?딆뒿?덈떎. ????좎꽑?? 媛寃? ?? 癒밴린 ?명븳吏 媛숈? ?ㅼ젣 湲곗??????댄븤?덈떎.',
+      '?명삎??議곌툑 遺議깊븳 怨쇱씪??留쏄낵 ?앷컧??留욎쑝硫???諛쏆븘?ㅼ씪 ???덉뒿?덈떎. ?대뒗 紐삳궃??怨쇱씪?대굹 ?ㅼ냽 怨쇱씪???댄빐?섎뒗 ??媛뺤젏???⑸땲??',
+      '媛?뺤슜 怨쇱씪?대굹 留ㅼ씪 癒밸뒗 怨쇱씪?먯꽌????湲곗????뱁엳 ?꾩떎?곸엯?덈떎. 蹂댁뿬二쇨린蹂대떎 ?앷퉴吏 癒밸뒗 寃쏀뿕??以묒떆?⑸땲??',
+      '?ㅻ쭔 ?좊Ъ ?곹솴?먯꽌??諛쏅뒗 ?щ엺??泥レ씤?곷룄 ?④퍡 怨좊젮?댁빞 ?⑸땲?? ?먯뿰?ㅻ윭?????덉뿉?쒕룄 ?뺣룉??援ъ꽦? ?꾩????⑸땲??'
     ]}
   }
 };
 
 function getContextNote(){
   var f=S.family||[];
-  if(f.indexOf('children')>=0)return '이번 응답은 아이나 가족이 함께 먹는 장면의 영향을 많이 받습니다. 그래서 개인 취향뿐 아니라 누가 같이 먹는지도 결과 해석에 포함됩니다.';
-  if(f.indexOf('alone')>=0)return '이번 응답은 혼자 꺼내 먹는 편의성과 반복 구매 습관이 중요하게 작용합니다. 남는 과일을 줄이려면 양과 보관 방식도 함께 봐야 합니다.';
-  if(f.indexOf('parents')>=0||f.indexOf('grandparents')>=0)return '이번 응답은 어른이 먹기 편한지, 부담 없이 삼킬 수 있는지 같은 돌봄 상황이 함께 반영됩니다.';
-  if(S.buyChannel==='online')return '온라인 구매가 익숙한 경우 사진, 리뷰, 당도 표시가 실제 감각 기대를 먼저 만듭니다. 받아본 뒤의 차이가 만족도에 크게 작용할 수 있습니다.';
-  return '이번 응답은 개인의 맛 취향뿐 아니라 평소 과일을 사고 먹는 생활 장면을 함께 반영합니다.';
+  if(f.indexOf('children')>=0)return '?대쾲 ?묐떟? ?꾩씠??媛議깆씠 ?④퍡 癒밸뒗 ?λ㈃???곹뼢??留롮씠 諛쏆뒿?덈떎. 洹몃옒??媛쒖씤 痍⑦뼢肉??꾨땲???꾧? 媛숈씠 癒밸뒗吏??寃곌낵 ?댁꽍???ы븿?⑸땲??';
+  if(f.indexOf('alone')>=0)return '?대쾲 ?묐떟? ?쇱옄 爰쇰궡 癒밸뒗 ?몄쓽?깃낵 諛섎났 援щℓ ?듦???以묒슂?섍쾶 ?묒슜?⑸땲?? ?⑤뒗 怨쇱씪??以꾩씠?ㅻ㈃ ?묎낵 蹂닿? 諛⑹떇???④퍡 遊먯빞 ?⑸땲??';
+  if(f.indexOf('parents')>=0||f.indexOf('grandparents')>=0)return '?대쾲 ?묐떟? ?대Ⅸ??癒밴린 ?명븳吏, 遺???놁씠 ?쇳궗 ???덈뒗吏 媛숈? ?뚮큵 ?곹솴???④퍡 諛섏쁺?⑸땲??';
+  if(S.buyChannel==='online')return '?⑤씪??援щℓ媛 ?듭닕??寃쎌슦 ?ъ쭊, 由щ럭, ?밸룄 ?쒖떆媛 ?ㅼ젣 媛먭컖 湲곕?瑜?癒쇱? 留뚮벊?덈떎. 諛쏆븘蹂??ㅼ쓽 李⑥씠媛 留뚯”?꾩뿉 ?ш쾶 ?묒슜?????덉뒿?덈떎.';
+  return '?대쾲 ?묐떟? 媛쒖씤??留?痍⑦뼢肉??꾨땲???됱냼 怨쇱씪???ш퀬 癒밸뒗 ?앺솢 ?λ㈃???④퍡 諛섏쁺?⑸땲??';
 }
 
 function sectionH(kicker,title,lines){
@@ -827,20 +874,20 @@ function makeReportHTML(tc,tp,T,SS,TX,C){
     {k:'Color',data:AXIS_REPORT.C[C]}
   ];
   var h='<div class="report">';
-  h+=sectionH(mode==='premium'?'Advanced Report':'General Report',tp.name+' · '+tc,[
-    mode==='premium'?'이 리포트는 취향을 칭찬하는 문장이 아니라, 과일을 고르고 남기고 다시 찾는 감각 반응을 해석합니다.':'이 리포트는 어떤 과일이 맞는지보다 왜 손이 가고 왜 남는지를 짧게 정리합니다.',
+  h+=sectionH(mode==='premium'?'Advanced Report':'General Report',tp.name+' 쨌 '+tc,[
+    mode==='premium'?'??由ы룷?몃뒗 痍⑦뼢??移?갔?섎뒗 臾몄옣???꾨땲?? 怨쇱씪??怨좊Ⅴ怨??④린怨??ㅼ떆 李얜뒗 媛먭컖 諛섏쓳???댁꽍?⑸땲??':'??由ы룷?몃뒗 ?대뼡 怨쇱씪??留욌뒗吏蹂대떎 ???먯씠 媛怨????⑤뒗吏瑜?吏㏐쾶 ?뺣━?⑸땲??',
     getContextNote()
   ]);
   for(var i=0;i<axes.length;i++){
     h+=sectionH(axes[i].k,axes[i].data.title,mode==='premium'?axes[i].data.deep:axes[i].data.lines);
   }
   if(mode==='premium'){
-    h+=sectionH('Integrated Reading','종합 감각 구조',[
-      '이번 TSTC 코드는 네 가지 감각이 따로 움직인 결과가 아니라, 실제 생활에서 과일을 고르는 방식이 쌓여 만들어진 구조입니다.',
-      '맛은 첫 반응을 만들고, 향은 기억을 만들며, 식감은 끝까지 먹게 하는 힘을 만들고, 색은 손이 가는 순간을 만듭니다.',
-      '과일이 남는 이유는 대개 한 가지가 아닙니다. 단맛은 맞지만 식감이 부담스럽거나, 보기에는 좋지만 향이 맞지 않는 식으로 작은 어긋남이 겹칩니다.',
-      '따라서 추천은 과일 이름 하나로 끝나면 안 됩니다. 언제 먹는지, 누구와 먹는지, 얼마나 자주 먹는지까지 함께 봐야 합니다.',
-      '과일코디네이터는 이 결과를 바탕으로 사람의 상황에 맞는 과일, 양, 숙도, 선물 방식을 조정할 수 있습니다.'
+    h+=sectionH('Integrated Reading','醫낇빀 媛먭컖 援ъ“',[
+      '?대쾲 TSTC 肄붾뱶????媛吏 媛먭컖???곕줈 ?吏곸씤 寃곌낵媛 ?꾨땲?? ?ㅼ젣 ?앺솢?먯꽌 怨쇱씪??怨좊Ⅴ??諛⑹떇???볦뿬 留뚮뱾?댁쭊 援ъ“?낅땲??',
+      '留쏆? 泥?諛섏쓳??留뚮뱾怨? ?μ? 湲곗뼲??留뚮뱾硫? ?앷컧? ?앷퉴吏 癒밴쾶 ?섎뒗 ?섏쓣 留뚮뱾怨? ?됱? ?먯씠 媛???쒓컙??留뚮벊?덈떎.',
+      '怨쇱씪???⑤뒗 ?댁쑀???媛???媛吏媛 ?꾨떃?덈떎. ?⑤쭧? 留욎?留??앷컧??遺?댁뒪?쎄굅?? 蹂닿린?먮뒗 醫뗭?留??μ씠 留욎? ?딅뒗 ?앹쑝濡??묒? ?닿툔?⑥씠 寃뱀묩?덈떎.',
+      '?곕씪??異붿쿇? 怨쇱씪 ?대쫫 ?섎굹濡??앸굹硫????⑸땲?? ?몄젣 癒밸뒗吏, ?꾧뎄? 癒밸뒗吏, ?쇰쭏???먯＜ 癒밸뒗吏源뚯? ?④퍡 遊먯빞 ?⑸땲??',
+      '怨쇱씪肄붾뵒?ㅼ씠?곕뒗 ??寃곌낵瑜?諛뷀깢?쇰줈 ?щ엺???곹솴??留욌뒗 怨쇱씪, ?? ?숇룄, ?좊Ъ 諛⑹떇??議곗젙?????덉뒿?덈떎.'
     ]);
   }
   return h+'</div>';
@@ -860,7 +907,7 @@ function buildFlow(){
   flow=prof.concat(tstc);
 }
 
-/* ── 적응형 제목 ── */
+/* ?? ?곸쓳???쒕ぉ ?? */
 function getAT(n){
   var a=S.age||'30s';
   var g=S.gender||'X';
@@ -873,79 +920,79 @@ function getAT(n){
   var mid=(a==='30s'||a==='40s');
 
   if(n===1){
-    if(alone)return '혼자 있을 때 바로 꺼내 먹는 과일을 사두는 편인가요?';
-    if(g==='F'&&young)return '사진이나 영상에서 본 과일 디저트를 따라 사본 적 있나요?';
-    if(g==='M'&&young)return '밖에서 컵과일이나 과일 음료를 자주 사 먹나요?';
-    if(g==='F'&&hasKids&&youngKids)return '아이 간식으로 과일을 자주 챙기나요?';
-    if(g==='M'&&hasKids)return '과일 살 때 아이가 잘 먹을지를 먼저 생각하나요?';
-    if(g==='F'&&hasKids)return '아이에게 줄 과일은 원산지나 재배 방식을 더 보나요?';
-    if(g==='F'&&mid)return '몸 상태를 생각해서 과일을 고를 때가 있나요?';
-    if(g==='M'&&mid)return '명절이나 기념일에 과일 선물을 자주 고르나요?';
-    if(g==='F'&&senior)return '건강 때문에 꾸준히 챙겨 먹는 과일이 있나요?';
-    if(g==='M'&&senior)return '철이 되면 꼭 챙겨 먹는 과일이 있나요?';
-    if(young)return '밖에서 컵과일이나 과일 음료를 자주 사 먹나요?';
-    if(mid&&hasKids)return '과일 살 때 아이가 잘 먹을지를 먼저 생각하나요?';
-    if(mid)return '몸 상태를 생각해서 과일을 고를 때가 있나요?';
-    return '철이 되면 꼭 챙겨 먹는 과일이 있나요?';
+    if(alone)return '?쇱옄 ?덉쓣 ??諛붾줈 爰쇰궡 癒밸뒗 怨쇱씪???щ몢???몄씤媛??';
+    if(g==='F'&&young)return '?ъ쭊?대굹 ?곸긽?먯꽌 蹂?怨쇱씪 ?붿??몃? ?곕씪 ?щ낯 ???덈굹??';
+    if(g==='M'&&young)return '諛뽰뿉??而듦낵?쇱씠??怨쇱씪 ?뚮즺瑜??먯＜ ??癒밸굹??';
+    if(g==='F'&&hasKids&&youngKids)return '?꾩씠 媛꾩떇?쇰줈 怨쇱씪???먯＜ 梨숆린?섏슂?';
+    if(g==='M'&&hasKids)return '怨쇱씪 ?????꾩씠媛 ??癒뱀쓣吏瑜?癒쇱? ?앷컖?섎굹??';
+    if(g==='F'&&hasKids)return '?꾩씠?먭쾶 以?怨쇱씪? ?먯궛吏???щ같 諛⑹떇????蹂대굹??';
+    if(g==='F'&&mid)return '紐??곹깭瑜??앷컖?댁꽌 怨쇱씪??怨좊? ?뚭? ?덈굹??';
+    if(g==='M'&&mid)return '紐낆젅?대굹 湲곕뀗?쇱뿉 怨쇱씪 ?좊Ъ???먯＜ 怨좊Ⅴ?섏슂?';
+    if(g==='F'&&senior)return '嫄닿컯 ?뚮Ц??袁몄???梨숆꺼 癒밸뒗 怨쇱씪???덈굹??';
+    if(g==='M'&&senior)return '泥좎씠 ?섎㈃ 瑗?梨숆꺼 癒밸뒗 怨쇱씪???덈굹??';
+    if(young)return '諛뽰뿉??而듦낵?쇱씠??怨쇱씪 ?뚮즺瑜??먯＜ ??癒밸굹??';
+    if(mid&&hasKids)return '怨쇱씪 ?????꾩씠媛 ??癒뱀쓣吏瑜?癒쇱? ?앷컖?섎굹??';
+    if(mid)return '紐??곹깭瑜??앷컖?댁꽌 怨쇱씪??怨좊? ?뚭? ?덈굹??';
+    return '泥좎씠 ?섎㈃ 瑗?梨숆꺼 癒밸뒗 怨쇱씪???덈굹??';
   }
 
   // n===2
-  if(alone&&young)return '혼자 먹을 과일은 작게 포장된 쪽에 손이 가나요?';
-  if(alone&&(mid||senior))return '과일을 정기배송으로 받아본 적이 있나요?';
-  if(g==='F'&&youngKids)return '어린 아이에게 줄 과일은 더 꼼꼼히 고르나요?';
-  if(g==='M'&&youngKids)return '아이와 같이 과일을 고르거나 먹는 편인가요?';
-  if(g==='F'&&young)return '몸 관리 때문에 따로 챙겨 먹는 과일이 있나요?';
-  if(g==='M'&&young)return '운동 전후에 과일을 챙겨 먹는 편인가요?';
-  if(g==='F'&&senior)return '가족이나 지인에게 과일 선물을 자주 보내나요?';
-  if(g==='M'&&senior)return '건강 때문에 꾸준히 먹는 과일이 있나요?';
-  if(g==='F')return '온라인으로 살 때 리뷰나 당도 표시를 보는 편인가요?';
-  if(g==='M')return '과일 살 때 가격과 양을 먼저 따지는 편인가요?';
-  if(hasKids)return '아이들 때문에 과일을 넉넉히 사두는 편인가요?';
-  return '명절이나 기념일에 과일 선물을 고르는 편인가요?';
+  if(alone&&young)return '?쇱옄 癒뱀쓣 怨쇱씪? ?묎쾶 ?ъ옣??履쎌뿉 ?먯씠 媛?섏슂?';
+  if(alone&&(mid||senior))return '怨쇱씪???뺢린諛곗넚?쇰줈 諛쏆븘蹂??곸씠 ?덈굹??';
+  if(g==='F'&&youngKids)return '?대┛ ?꾩씠?먭쾶 以?怨쇱씪? ??瑗쇨세??怨좊Ⅴ?섏슂?';
+  if(g==='M'&&youngKids)return '?꾩씠? 媛숈씠 怨쇱씪??怨좊Ⅴ嫄곕굹 癒밸뒗 ?몄씤媛??';
+  if(g==='F'&&young)return '紐?愿由??뚮Ц???곕줈 梨숆꺼 癒밸뒗 怨쇱씪???덈굹??';
+  if(g==='M'&&young)return '?대룞 ?꾪썑??怨쇱씪??梨숆꺼 癒밸뒗 ?몄씤媛??';
+  if(g==='F'&&senior)return '媛議깆씠??吏?몄뿉寃?怨쇱씪 ?좊Ъ???먯＜ 蹂대궡?섏슂?';
+  if(g==='M'&&senior)return '嫄닿컯 ?뚮Ц??袁몄???癒밸뒗 怨쇱씪???덈굹??';
+  if(g==='F')return '?⑤씪?몄쑝濡?????由щ럭???밸룄 ?쒖떆瑜?蹂대뒗 ?몄씤媛??';
+  if(g==='M')return '怨쇱씪 ????媛寃⑷낵 ?묒쓣 癒쇱? ?곗????몄씤媛??';
+  if(hasKids)return '?꾩씠???뚮Ц??怨쇱씪???됰꼮???щ몢???몄씤媛??';
+  return '紐낆젅?대굹 湲곕뀗?쇱뿉 怨쇱씪 ?좊Ъ??怨좊Ⅴ???몄씤媛??';
 }
 
-/* ── 성별 맞춤 질문 제목 ── */
+/* ?? ?깅퀎 留욎땄 吏덈Ц ?쒕ぉ ?? */
 function getGenderQ(){
   var g=S.gender;
-  if(g==='M')return '과일 고를 때 은근 먼저 보는 건 무엇인가요?';
-  if(g==='F')return '과일 살 때 먼저 눈에 들어오는 건 무엇인가요?';
-  return '과일 고를 때 먼저 보는 건 무엇인가요?';
+  if(g==='M')return '怨쇱씪 怨좊? ???洹?癒쇱? 蹂대뒗 嫄?臾댁뾿?멸???';
+  if(g==='F')return '怨쇱씪 ????癒쇱? ?덉뿉 ?ㅼ뼱?ㅻ뒗 嫄?臾댁뾿?멸???';
+  return '怨쇱씪 怨좊? ??癒쇱? 蹂대뒗 嫄?臾댁뾿?멸???';
 }
 
-/* ── 성별 맞춤 선택지 ── */
+/* ?? ?깅퀎 留욎땄 ?좏깮吏 ?? */
 function getGenderOpts(){
   var g=S.gender;
   if(g==='M')return [
-    {t:'당도 표시를 먼저 본다',s:'',v:2},
-    {t:'가격과 양을 같이 본다',s:'',v:1},
-    {t:'눈에 띄는 걸 고른다',s:'',v:0},
-    {t:'크게 따지지 않는다',s:'',v:-1}
+    {t:'?밸룄 ?쒖떆瑜?癒쇱? 蹂몃떎',s:'',v:2},
+    {t:'媛寃⑷낵 ?묒쓣 媛숈씠 蹂몃떎',s:'',v:1},
+    {t:'?덉뿉 ?꾨뒗 嫄?怨좊Ⅸ??,s:'',v:0},
+    {t:'?ш쾶 ?곗?吏 ?딅뒗??,s:'',v:-1}
   ];
   if(g==='F')return [
-    {t:'색이 예쁘면 먼저 손이 간다',s:'',v:2},
-    {t:'어느 정도는 보게 된다',s:'',v:1},
-    {t:'맛과 신선도를 더 본다',s:'',v:-1},
-    {t:'겉모습은 거의 보지 않는다',s:'',v:-2}
+    {t:'?됱씠 ?덉걯硫?癒쇱? ?먯씠 媛꾨떎',s:'',v:2},
+    {t:'?대뒓 ?뺣룄??蹂닿쾶 ?쒕떎',s:'',v:1},
+    {t:'留쏄낵 ?좎꽑?꾨? ??蹂몃떎',s:'',v:-1},
+    {t:'寃됰え?듭? 嫄곗쓽 蹂댁? ?딅뒗??,s:'',v:-2}
   ];
   return [
-    {t:'맛과 당도',s:'',v:2},
-    {t:'신선도와 원산지',s:'',v:1},
-    {t:'가격과 용량',s:'',v:0},
-    {t:'색과 겉모습',s:'',v:-1}
+    {t:'留쏄낵 ?밸룄',s:'',v:2},
+    {t:'?좎꽑?꾩? ?먯궛吏',s:'',v:1},
+    {t:'媛寃⑷낵 ?⑸웾',s:'',v:0},
+    {t:'?됯낵 寃됰え??,s:'',v:-1}
   ];
 }
 
-/* ── 가족 구성 맞춤 질문 ── */
+/* ?? 媛議?援ъ꽦 留욎땄 吏덈Ц ?? */
 function getFamilyQ(){
   var f=S.family;
-  if(f.indexOf('children')>=0)return '아이들이 잘 먹는 과일을 먼저 사게 되나요?';
-  if(f.indexOf('alone')>=0)return '혼자 먹기 편한 컵과일이나 소포장에 손이 가나요?';
-  if(f.indexOf('partner')>=0)return '함께 사는 사람과 과일 취향이 비슷한 편인가요?';
-  if(f.indexOf('parents')>=0||f.indexOf('grandparents')>=0)return '부모님이나 어른이 먹기 편한 과일을 따로 챙기나요?';
-  return '과일은 주로 누구 생각을 하며 사나요?';
+  if(f.indexOf('children')>=0)return '?꾩씠?ㅼ씠 ??癒밸뒗 怨쇱씪??癒쇱? ?ш쾶 ?섎굹??';
+  if(f.indexOf('alone')>=0)return '?쇱옄 癒밴린 ?명븳 而듦낵?쇱씠???뚰룷?μ뿉 ?먯씠 媛?섏슂?';
+  if(f.indexOf('partner')>=0)return '?④퍡 ?щ뒗 ?щ엺怨?怨쇱씪 痍⑦뼢??鍮꾩듂???몄씤媛??';
+  if(f.indexOf('parents')>=0||f.indexOf('grandparents')>=0)return '遺紐⑤떂?대굹 ?대Ⅸ??癒밴린 ?명븳 怨쇱씪???곕줈 梨숆린?섏슂?';
+  return '怨쇱씪? 二쇰줈 ?꾧뎄 ?앷컖???섎ŉ ?щ굹??';
 }
 
-/* ── 화면 전환 ── */
+/* ?? ?붾㈃ ?꾪솚 ?? */
 function goTo(id){
   var all=document.querySelectorAll('.sc');
   for(var i=0;i<all.length;i++)all[i].classList.remove('on');
@@ -954,14 +1001,14 @@ function goTo(id){
   window.scrollTo(0,0);
 }
 
-/* ── cstart 로직 ── */
+/* ?? cstart 濡쒖쭅 ?? */
 function onCI(){
   var v=document.getElementById('pcode').value.trim();
   var h=document.getElementById('chint');
   var r=document.getElementById('rsec');
   var ok=v.length>=4;
   h.style.color=ok?'#2D6A4F':'#aaa';
-  h.textContent=ok?'프리미엄 참여코드가 확인되었습니다.':'프리미엄은 참여코드를 입력해야 시작할 수 있습니다.';
+  h.textContent=ok?'?꾨━誘몄뾼 李몄뿬肄붾뱶媛 ?뺤씤?섏뿀?듬땲??':'?꾨━誘몄뾼? 李몄뿬肄붾뱶瑜??낅젰?댁빞 ?쒖옉?????덉뒿?덈떎.';
   r.style.display=ok?'block':'none';
   updSB();
 }
@@ -974,7 +1021,7 @@ function pickM(m){
   document.getElementById('mprm').className='mcard'+(m==='premium'?' sel':'');
   if(m==='premium'){
     pcw.style.display='block';
-    h.textContent='프리미엄은 참여코드를 입력해야 시작할 수 있습니다.';
+    h.textContent='?꾨━誘몄뾼? 李몄뿬肄붾뱶瑜??낅젰?댁빞 ?쒖옉?????덉뒿?덈떎.';
     h.style.color='#918a81';
   }else{
     pcw.style.display='none';
@@ -998,41 +1045,41 @@ function opLogin(){
   var id=document.getElementById('opid').value.trim();
   var pin=document.getElementById('oppin').value.trim();
   var err=document.getElementById('operr');
-  if(!id||!pin){err.textContent='ID와 PIN을 모두 입력해주세요.';return;}
-  err.textContent='현재 데모 모드입니다. 대한과일협회(010-4034-2457)로 문의해주세요.';
+  if(!id||!pin){err.textContent='ID? PIN??紐⑤몢 ?낅젰?댁＜?몄슂.';return;}
+  err.textContent='?꾩옱 ?곕え 紐⑤뱶?낅땲?? ??쒓낵?쇳삊??010-4034-2457)濡?臾몄쓽?댁＜?몄슂.';
 }
 
-/* ── 진행 바 ── */
+/* ?? 吏꾪뻾 諛??? */
 function setP(){
   var pct=flow.length?Math.round(idx/flow.length*100):0;
   var p=document.getElementById('pfill');if(p)p.style.width=pct+'%';
   var t=document.getElementById('ptxt');if(t)t.textContent=(idx+1)+' / '+flow.length;
 }
 
-/* ── 페르소나 바 ── */
+/* ?? ?섎Ⅴ?뚮굹 諛??? */
 function updPB(){
   var bar=document.getElementById('pbar2');
   if(idx<4){bar.style.display='none';return;}
   bar.style.display='flex';
-  var fm={alone:'혼자',partner:'배우자',parents:'부모님',children:'자녀',grandparents:'조부모',roommate:'룸메이트'};
-  var rm={capital:'수도권',metro:'광역시',small:'중소도시',rural:'농촌'};
+  var fm={alone:'?쇱옄',partner:'諛곗슦??,parents:'遺紐⑤떂',children:'?먮?',grandparents:'議곕?紐?,roommate:'猷몃찓?댄듃'};
+  var rm={capital:'?섎룄沅?,metro:'愿묒뿭??,small:'以묒냼?꾩떆',rural:'?띿큿'};
   var items=[];
-  if(S.gender)items.push({l:'성별',v:S.gender==='M'?'남성':S.gender==='F'?'여성':'미응답'});
-  if(S.age)items.push({l:'연령',v:S.age.replace('s','대')});
-  if(S.region)items.push({l:'지역',v:rm[S.region]||S.region});
-  if(S.family.length)items.push({l:'가족',v:S.family.map(function(f){return fm[f]||f;}).join('·')});
-  if(S.childAges.length)items.push({l:'자녀',v:S.childAges.join('·')+'세'});
+  if(S.gender)items.push({l:'?깅퀎',v:S.gender==='M'?'?⑥꽦':S.gender==='F'?'?ъ꽦':'誘몄쓳??});
+  if(S.age)items.push({l:'?곕졊',v:S.age.replace('s','?')});
+  if(S.region)items.push({l:'吏??,v:rm[S.region]||S.region});
+  if(S.family.length)items.push({l:'媛議?,v:S.family.map(function(f){return fm[f]||f;}).join('쨌')});
+  if(S.childAges.length)items.push({l:'?먮?',v:S.childAges.join('쨌')+'??});
   bar.innerHTML=items.map(function(i){return '<div class="pbi"><span class="pbl">'+i.l+'</span><span class="pbv">'+i.v+'</span></div>';}).join('');
 }
 
-/* ── 질문 렌더링 ── */
+/* ?? 吏덈Ц ?뚮뜑留??? */
 function renderQ(){
   if(idx>=flow.length){showResult();return;}
   var qid=flow[idx];
   var q=QB[qid];
   if(!q){idx++;renderQ();return;}
   setP();updPB();
-  document.getElementById('hsec').textContent=q.sec+' · '+q.sn;
+  document.getElementById('hsec').textContent=q.sec+' 쨌 '+q.sn;
   document.getElementById('hcnt').textContent=q.tag||'';
   var body=document.getElementById('qbody');
   body.className='qb fade qscreen qtype-'+q.type+(q.sec==='E'?' q-sensory':' q-profile')+(q.regionGrid?' q-region':'')+(q.chipGrid?' q-chips':'');
@@ -1047,18 +1094,18 @@ function renderQ(){
   else if(q.type==='opt')html+=renderOpt(qid,q);
   else if(q.type==='cg')html+=renderCG(qid,q);
   else if(q.type==='multi'){
-    html+='<div class="mnote">맞는 것을 골라주세요. 여러 개를 골라도 괜찮습니다.</div>'
+    html+='<div class="mnote">留욌뒗 寃껋쓣 怨⑤씪二쇱꽭?? ?щ윭 媛쒕? 怨⑤씪??愿쒖갖?듬땲??</div>'
          +renderMulti(qid,q)
-         +'<button class="nbtn" onclick="advMulti(\''+qid+'\',\''+q.key+'\')">다음</button>';
+         +'<button class="nbtn" onclick="advMulti(\''+qid+'\',\''+q.key+'\')">?ㅼ쓬</button>';
   }
-  if(q.skip)html+='<button class="skip" onclick="idx++;renderQ()">건너뛰기</button>';
+  if(q.skip)html+='<button class="skip" onclick="idx++;renderQ()">嫄대꼫?곌린</button>';
   body.innerHTML=html;
 }
 
-/* ── 옵션형 (opt) — data-idx 방식 ── */
+/* ?? ?듭뀡??(opt) ??data-idx 諛⑹떇 ?? */
 function renderOpt(qid,q){
   var lb=['A','B','C','D','E'];
-  var opts=q.opts;  // getter 1회만 호출
+  var opts=q.opts;  // getter 1?뚮쭔 ?몄텧
   var h='<div class="opts" id="wrap-'+qid+'">';
   for(var i=0;i<opts.length;i++){
     var o=opts[i];
@@ -1080,7 +1127,7 @@ function ansOpt(qid,el){
   el.classList.add('sel');
   var i2=parseInt(el.dataset.idx);
   var q=QB[qid];
-  var opts=q.opts;  // getter 안전 호출
+  var opts=q.opts;  // getter ?덉쟾 ?몄텧
   var val=opts[i2].v;
   S.ans[qid]=val;
   applyPV(qid,val);
@@ -1088,7 +1135,7 @@ function ansOpt(qid,el){
   setTimeout(function(){idx++;renderQ();},240);
 }
 
-/* ── 그리드형 (cg) — data-idx 방식 ── */
+/* ?? 洹몃━?쒗삎 (cg) ??data-idx 諛⑹떇 ?? */
 function renderCG(qid,q){
   var cls=q.regionGrid?'cgrid region-grid':(q.chipGrid?'cgrid chip-grid':(q.col3?'cgrid c3':'cgrid'));
   var h='<div class="'+cls+'" id="cg-'+qid+'">';
@@ -1111,14 +1158,14 @@ function ansCG(qid,el){
   el.classList.add('sel');
   var i2=parseInt(el.dataset.idx);
   var q=QB[qid];
-  var opts=q.opts;  // getter 안전 호출
+  var opts=q.opts;  // getter ?덉쟾 ?몄텧
   var val=opts[i2].v;
   S.ans[qid]=val;
   applyPV(qid,val);
   setTimeout(function(){idx++;renderQ();},240);
 }
 
-/* ── 다중선택 (multi) — data-idx 방식 ── */
+/* ?? ?ㅼ쨷?좏깮 (multi) ??data-idx 諛⑹떇 ?? */
 function renderMulti(qid,q){
   var arr=S[q.key]||[];
   var h='<div class="opts" id="ml-'+qid+'">';
@@ -1137,7 +1184,7 @@ function renderMulti(qid,q){
 function togM(qid,key,el){
   var i2=parseInt(el.dataset.idx);
   var q=QB[qid];
-  var opts=q.opts;  // getter 안전 호출
+  var opts=q.opts;  // getter ?덉쟾 ?몄텧
   var val=opts[i2].v;
   var arr=S[key]||[];
   var pos=arr.indexOf(val);
@@ -1148,18 +1195,18 @@ function togM(qid,key,el){
 }
 function advMulti(qid,key){
   var arr=S[key]||[];
-  if(!arr.length){alert('최소 한 가지를 선택해 주세요.');return;}
+  if(!arr.length){alert('理쒖냼 ??媛吏瑜??좏깮??二쇱꽭??');return;}
   S.ans[qid]=arr.slice();
   if(qid==='B1'){
     buildFlow();
-    // B1 이후 idx 재조정 — buildFlow 후 B1 위치 재확인
+    // B1 ?댄썑 idx ?ъ“????buildFlow ??B1 ?꾩튂 ?ы솗??
     var b1pos=flow.indexOf('B1');
     if(b1pos>=0)idx=b1pos;
   }
   idx++;renderQ();
 }
 
-/* ── A/B 페어 — data-side 방식 ── */
+/* ?? A/B ?섏뼱 ??data-side 諛⑹떇 ?? */
 function renderPair(qid,q){
   return '<div class="pgrid">'
     +'<button class="pbtn" id="pa-'+qid+'" data-side="A" onclick="pickP(\''+qid+'\',this)">'
@@ -1179,9 +1226,9 @@ function pickP(qid,el){
   document.getElementById('pb-'+qid).className='pbtn'+(side==='B'?' sel':'');
   var base=side==='A'?q.a.sc:q.b.sc;
   var nm=side==='A'?q.a.n:q.b.n;
-  document.getElementById('st-'+qid).textContent='"'+nm+'"을 얼마나 더 좋아하나요?';
+  document.getElementById('st-'+qid).textContent='"'+nm+'"???쇰쭏????醫뗭븘?섎굹??';
   document.getElementById('sw-'+qid).style.display='block';
-  var fs=[{l:'훨씬 더 좋다',f:1.0},{l:'꽤 더 좋다',f:0.7},{l:'조금 더 좋다',f:0.4},{l:'약간 더 좋다',f:0.2}];
+  var fs=[{l:'?⑥뵮 ??醫뗫떎',f:1.0},{l:'苑???醫뗫떎',f:0.7},{l:'議곌툑 ??醫뗫떎',f:0.4},{l:'?쎄컙 ??醫뗫떎',f:0.2}];
   var h='';
   for(var i=0;i<fs.length;i++){
     h+='<button class="sbtn" data-base="'+base+'" data-factor="'+fs[i].f+'" data-axis="'+q.axis+'" onclick="pickSt(\''+qid+'\',this)">'+fs[i].l+'</button>';
@@ -1204,11 +1251,11 @@ function pickSt(qid,el){
   setTimeout(function(){idx++;renderQ();},280);
 }
 
-/* ── 값 적용 ── */
+/* ?? 媛??곸슜 ?? */
 function applyPV(qid,val){
   if(val===undefined||val===null)return;
   if(qid==='A1')S.gender=val;
-  if(qid==='A2'){S.age=val;buildFlow();}  // 나이 확정 후 flow 즉시 갱신
+  if(qid==='A2'){S.age=val;buildFlow();}  // ?섏씠 ?뺤젙 ??flow 利됱떆 媛깆떊
   if(qid==='A3')S.region=val;
   if(qid==='B2')S.childCount=val;
   if(qid==='C1')S.buyFreq=val;
@@ -1221,7 +1268,7 @@ function applyS(axis,val){
   if(axis==='C')S.cScore+=val;
 }
 
-/* ── 뒤로 가기 ── */
+/* ?? ?ㅻ줈 媛湲??? */
 function goBack(){
   if(idx===0){goTo('sc');return;}
   idx--;
@@ -1238,7 +1285,7 @@ function goBack(){
   renderQ();
 }
 
-/* ── 결과 ── */
+/* ?? 寃곌낵 ?? */
 function showResult(){
   var T=S.tScore>0?'R':'M';
   var SS=S.sScore>0?'A':'P';
@@ -1246,14 +1293,16 @@ function showResult(){
   var C=S.cScore>0?'V':'N';
   var tc=T+SS+TX+C;
   var tp=TYPES[tc]||TYPES['RACV'];
-  document.getElementById('rhero').innerHTML='<div class="rorg">TSTC Result · '+(S.tstcMode==='premium'?'Premium':'Standard')+'</div>'
+  var national22Markup=getNational22Markup(tc);
+  document.getElementById('rhero').innerHTML='<div class="rorg">TSTC Result 쨌 '+(S.tstcMode==='premium'?'Premium':'Standard')+'</div>'
     +'<div class="rcode">'+tc+'</div>'
-    +'<div class="rtype">'+tp.name+'</div>';
+    +'<div class="rtype">'+tp.name+'</div>'
+    +national22Markup;
   var axInfo=[
-    {l:T,w:'Taste',d:T==='R'?'달콤·진함':'담백·가벼움'},
-    {l:SS,w:'Scent',d:SS==='A'?'향기 중시':'향 덜 중요'},
-    {l:TX,w:'Texture',d:TX==='C'?'아삭·단단':'부드럽고 촉촉'},
-    {l:C,w:'Color',d:C==='V'?'선명·강렬':'자연스러운색'}
+    {l:T,w:'Taste',d:T==='R'?'?ъ숴쨌吏꾪븿':'?대갚쨌媛踰쇱?'},
+    {l:SS,w:'Scent',d:SS==='A'?'?κ린 以묒떆':'????以묒슂'},
+    {l:TX,w:'Texture',d:TX==='C'?'?꾩궘쨌?⑤떒':'遺?쒕읇怨?珥됱큺'},
+    {l:C,w:'Color',d:C==='V'?'?좊챸쨌媛뺣젹':'?먯뿰?ㅻ윭?댁깋'}
   ];
   var axH='<div class="raxes">';
   for(var i=0;i<axInfo.length;i++){
@@ -1262,42 +1311,42 @@ function showResult(){
   }
   axH+='</div>';
   var dH='';
-  // 일반형·고급형 모두 다이어그램 표시
+  // ?쇰컲?빧룰퀬湲됲삎 紐⑤몢 ?ㅼ씠?닿렇???쒖떆
   {
     var mx=S.tstcMode==='premium'?16:10;
     var bs=[
-      {n:'T · 맛',d:T==='R'?'Rich':'Mild',p:Math.min(100,Math.round(Math.abs(S.tScore)/mx*100))},
-      {n:'S · 향',d:SS==='A'?'Aroma':'Plain',p:Math.min(100,Math.round(Math.abs(S.sScore)/mx*100))},
-      {n:'TX · 식감',d:TX==='C'?'Crisp':'Soft',p:Math.min(100,Math.round(Math.abs(S.txScore)/mx*100))},
-      {n:'C · 색',d:C==='V'?'Vivid':'Natural',p:Math.min(100,Math.round(Math.abs(S.cScore)/mx*100))}
+      {n:'T 쨌 留?,d:T==='R'?'Rich':'Mild',p:Math.min(100,Math.round(Math.abs(S.tScore)/mx*100))},
+      {n:'S 쨌 ??,d:SS==='A'?'Aroma':'Plain',p:Math.min(100,Math.round(Math.abs(S.sScore)/mx*100))},
+      {n:'TX 쨌 ?앷컧',d:TX==='C'?'Crisp':'Soft',p:Math.min(100,Math.round(Math.abs(S.txScore)/mx*100))},
+      {n:'C 쨌 ??,d:C==='V'?'Vivid':'Natural',p:Math.min(100,Math.round(Math.abs(S.cScore)/mx*100))}
     ];
-    dH='<div class="diag"><div class="dtit">감각 축별 강도 분석 '+(S.tstcMode==="premium"?'(고급형 · 32문항 기준)':'(일반형 · 20문항 기준)')+'</div>';
+    dH='<div class="diag"><div class="dtit">媛먭컖 異뺣퀎 媛뺣룄 遺꾩꽍 '+(S.tstcMode==="premium"?'(怨좉툒??쨌 32臾명빆 湲곗?)':'(?쇰컲??쨌 20臾명빆 湲곗?)')+'</div>';
     for(var j=0;j<bs.length;j++){
       var b=bs[j];
-      dH+='<div class="brow"><div class="bmeta"><span style="font-weight:600">'+b.n+'</span><span style="color:var(--gd);font-weight:700">'+b.d+' · '+b.p+'%</span></div>'
+      dH+='<div class="brow"><div class="bmeta"><span style="font-weight:600">'+b.n+'</span><span style="color:var(--gd);font-weight:700">'+b.d+' 쨌 '+b.p+'%</span></div>'
          +'<div class="bbg"><div class="bfill" data-w="'+b.p+'" style="width:0%"></div></div></div>';
     }
     dH+='</div>';
   }
-  var fH='<div class="fltit">추천 과일 TOP 5</div><div class="flist">';
+  var fH='<div class="fltit">異붿쿇 怨쇱씪 TOP 5</div><div class="flist">';
   for(var k=0;k<tp.fruits.length;k++){
     fH+='<div class="fitem"><div class="frank">'+(k+1)+'</div>'
        +'<div><div class="fname">'+tp.fruits[k]+'</div><div class="fcode">'+tc+'</div></div></div>';
   }
   fH+='</div>';
-  var fm2={alone:'1인가구',partner:'배우자',parents:'부모동거',children:'자녀있음',grandparents:'3세대',roommate:'룸메이트'};
-  var rm2={capital:'수도권',metro:'광역시',small:'중소도시',rural:'농촌'};
+  var fm2={alone:'1?멸?援?,partner:'諛곗슦??,parents:'遺紐⑤룞嫄?,children:'?먮??덉쓬',grandparents:'3?몃?',roommate:'猷몃찓?댄듃'};
+  var rm2={capital:'?섎룄沅?,metro:'愿묒뿭??,small:'以묒냼?꾩떆',rural:'?띿큿'};
   var chips=[];
-  if(S.gender)chips.push(S.gender==='M'?'남성':S.gender==='F'?'여성':'미응답');
-  if(S.age)chips.push(S.age.replace('s','대'));
+  if(S.gender)chips.push(S.gender==='M'?'?⑥꽦':S.gender==='F'?'?ъ꽦':'誘몄쓳??);
+  if(S.age)chips.push(S.age.replace('s','?'));
   if(S.region)chips.push(rm2[S.region]||S.region);
-  if(S.family.length)chips.push(S.family.map(function(f){return fm2[f]||f;}).join('·'));
-  if(S.childAges.length)chips.push('자녀'+S.childAges.join('·')+'세');
-  if(S.buyFreq)chips.push({high:'주3회+',mid:'주1-2회',low:'월2-3회',rare:'가끔'}[S.buyFreq]||S.buyFreq);
-  if(S.buyChannel)chips.push({online:'온라인',mart:'대형마트',market:'전통시장',sub:'정기구독',gift:'선물·지인',convenience:'편의점',direct:'직거래'}[S.buyChannel]||S.buyChannel);
+  if(S.family.length)chips.push(S.family.map(function(f){return fm2[f]||f;}).join('쨌'));
+  if(S.childAges.length)chips.push('?먮?'+S.childAges.join('쨌')+'??);
+  if(S.buyFreq)chips.push({high:'二???',mid:'二?-2??,low:'??-3??,rare:'媛??}[S.buyFreq]||S.buyFreq);
+  if(S.buyChannel)chips.push({online:'?⑤씪??,mart:'??뺣쭏??,market:'?꾪넻?쒖옣',sub:'?뺢린援щ룆',gift:'?좊Ъ쨌吏??,convenience:'?몄쓽??,direct:'吏곴굅??}[S.buyChannel]||S.buyChannel);
   var pH='';
   if(chips.length){
-    pH='<div class="psum"><div style="font-size:11px;color:#aaa;letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">응답자 프로필</div>'
+    pH='<div class="psum"><div style="font-size:11px;color:#aaa;letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">?묐떟???꾨줈??/div>'
       +'<div class="pchips">';
     for(var m=0;m<chips.length;m++)pH+='<span class="pchip">'+chips[m]+'</span>';
     pH+='</div></div>';
@@ -1307,17 +1356,17 @@ function showResult(){
     +reportH
     +pH+fH
     +'<div class="rbtns">'
-    +'<button class="rcta" onclick="cpR()">결과 코드 복사</button>'
-    +'<button class="rretry" onclick="resetAll()">처음부터 다시 진단하기</button>'
+    +'<button class="rcta" onclick="cpR()">寃곌낵 肄붾뱶 蹂듭궗</button>'
+    +'<button class="rretry" onclick="resetAll()">泥섏쓬遺???ㅼ떆 吏꾨떒?섍린</button>'
     +'</div>'
-    +'<div class="rfoot">대한과일협회 · koreafruit.kr<br>협회장 김지훈 · 010-4034-2457</div>';
+    +'<div class="rfoot">??쒓낵?쇳삊??쨌 koreafruit.kr<br>?묓쉶??源吏??쨌 010-4034-2457</div>';
   var T2=S.tScore>0?'R':'M';var SS2=S.sScore>0?'A':'P';
   var TX2=S.txScore>0?'C':'S';var C2=S.cScore>0?'V':'N';
   window._lastCode=T2+SS2+TX2+C2;
   window._lastType=(TYPES[window._lastCode]||TYPES['RACV']).name;
   var pf=document.getElementById('pfill');if(pf)pf.style.width='100%';
   goTo('sr');
-  // Google Sheets 전송
+  // Google Sheets ?꾩넚
   var T2=S.tScore>0?'R':'M';var SS2=S.sScore>0?'A':'P';
   var TX2=S.txScore>0?'C':'S';var C2=S.cScore>0?'V':'N';
   var code2=T2+SS2+TX2+C2;
@@ -1339,25 +1388,25 @@ function showResult(){
     typeName:   (TYPES[code2]||TYPES['RACV']).name,
     elapsed:    Math.round((Date.now()-_startTime)/1000)
   };
-  resultPayload['타임스탬프'] = new Date().toISOString();
-  resultPayload['참여코드'] = resultPayload.partCode || '';
-  resultPayload['검사유형'] = resultPayload.mode || '';
-  resultPayload['성별'] = resultPayload.gender || '';
-  resultPayload['연령'] = resultPayload.age || '';
-  resultPayload['지역'] = resultPayload.region || '';
-  resultPayload['가족구성'] = (resultPayload.family || []).join(', ');
-  resultPayload['자녀연령'] = (resultPayload.childAges || []).join(', ');
-  resultPayload['구매빈도'] = resultPayload.buyFreq || '';
-  resultPayload['구매채널'] = resultPayload.buyChannel || '';
-  resultPayload['T점수'] = resultPayload.tScore;
-  resultPayload['S점수'] = resultPayload.sScore;
-  resultPayload['TX점수'] = resultPayload.txScore;
-  resultPayload['C점수'] = resultPayload.cScore;
-  resultPayload['TSTC코드'] = resultPayload.tstcCode;
-  resultPayload['유형명'] = resultPayload.typeName;
+  resultPayload['??꾩뒪?ы봽'] = new Date().toISOString();
+  resultPayload['李몄뿬肄붾뱶'] = resultPayload.partCode || '';
+  resultPayload['寃?ъ쑀??] = resultPayload.mode || '';
+  resultPayload['?깅퀎'] = resultPayload.gender || '';
+  resultPayload['?곕졊'] = resultPayload.age || '';
+  resultPayload['吏??] = resultPayload.region || '';
+  resultPayload['媛議깃뎄??] = (resultPayload.family || []).join(', ');
+  resultPayload['?먮??곕졊'] = (resultPayload.childAges || []).join(', ');
+  resultPayload['援щℓ鍮덈룄'] = resultPayload.buyFreq || '';
+  resultPayload['援щℓ梨꾨꼸'] = resultPayload.buyChannel || '';
+  resultPayload['T?먯닔'] = resultPayload.tScore;
+  resultPayload['S?먯닔'] = resultPayload.sScore;
+  resultPayload['TX?먯닔'] = resultPayload.txScore;
+  resultPayload['C?먯닔'] = resultPayload.cScore;
+  resultPayload['TSTC肄붾뱶'] = resultPayload.tstcCode;
+  resultPayload['?좏삎紐?] = resultPayload.typeName;
   submitResult(resultPayload);
   _startTime = Date.now();
-  // 다이어그램 바 애니메이션 — DOM 삽입 후 실행
+  // ?ㅼ씠?닿렇??諛??좊땲硫붿씠????DOM ?쎌엯 ???ㅽ뻾
   setTimeout(function(){
     var fills=document.querySelectorAll('.bfill');
     for(var i=0;i<fills.length;i++){
@@ -1367,9 +1416,9 @@ function showResult(){
   },100);
 }
 function cpR(){
-  var txt='TSTC 유형: '+window._lastCode+' · '+window._lastType+'\n대한과일협회 공식 진단 · koreafruit.kr';
+  var txt='TSTC ?좏삎: '+window._lastCode+' 쨌 '+window._lastType+'\n??쒓낵?쇳삊??怨듭떇 吏꾨떒 쨌 koreafruit.kr';
   if(navigator.clipboard)navigator.clipboard.writeText(txt);
-  alert('복사됐습니다!\n'+txt);
+  alert('蹂듭궗?먯뒿?덈떎!\n'+txt);
 }
 function resetAll(){
   S.tstcMode='standard';S.partCode='';S.gender=null;S.age=null;S.region=null;
@@ -1377,7 +1426,7 @@ function resetAll(){
   S.tScore=0;S.sScore=0;S.txScore=0;S.cScore=0;S.ans={};
   selMode=null;flow=[];idx=0;
   var pc=document.getElementById('pcode');if(pc)pc.value='';
-  var ch=document.getElementById('chint');if(ch){ch.textContent='코드를 입력해야 검사를 시작할 수 있습니다.';ch.style.color='#aaa';}
+  var ch=document.getElementById('chint');if(ch){ch.textContent='肄붾뱶瑜??낅젰?댁빞 寃?щ? ?쒖옉?????덉뒿?덈떎.';ch.style.color='#aaa';}
   var rs=document.getElementById('rsec');if(rs)rs.style.display='none';
   var ms=document.getElementById('mstd');if(ms)ms.className='mcard';
   var mp=document.getElementById('mprm');if(mp)mp.className='mcard';
@@ -1385,23 +1434,23 @@ function resetAll(){
   goTo('sl');
 }
 
-/* ── Google Sheets 연동 ─────────────────────────────────── */
+/* ?? Google Sheets ?곕룞 ??????????????????????????????????? */
 var MEMBER_GAS_URL = 'https://script.google.com/macros/s/AKfycbzBZMQ55OAWVlw1C_o-9_QIZ3zgVaSEYOW6wIvrJ8cN73jNBIWgv3ATTNE5jBJOjtE4HQ/exec';
 var OLD_TSTC_GAS_URL = 'https://script.google.com/macros/s/AKfycbz-F-OU9qpXpmRlqmKfYl5BBBGUDcnmcnAsEFHqgR6Uz0dsBKtz1e8PFi8kNHzrbuJz/exec';
 var DEFAULT_TSTC_GAS_URL = 'https://script.google.com/macros/s/AKfycbwbC6MtkfASDi1vSmmOYdAOCpOMHBabno5jpUwFm8tIppntikE2bUqUfi1ITFYoATS0Fw/exec';
-var GAS_URL = DEFAULT_TSTC_GAS_URL;  // Google Sheets 연동 URL
+var GAS_URL = DEFAULT_TSTC_GAS_URL;  // Google Sheets ?곕룞 URL
 
 function setGasUrl(url) {
   GAS_URL = url.trim();
   if (GAS_URL === MEMBER_GAS_URL) {
-    alert('회원 Apps Script URL입니다. TSTC 결과용 Apps Script URL을 넣어주세요.');
+    alert('?뚯썝 Apps Script URL?낅땲?? TSTC 寃곌낵??Apps Script URL???ｌ뼱二쇱꽭??');
     GAS_URL = DEFAULT_TSTC_GAS_URL;
   }
   localStorage.setItem('kfa_gas_url', GAS_URL);
-  alert('URL이 저장됐습니다.\n' + GAS_URL);
+  alert('URL????λ릱?듬땲??\n' + GAS_URL);
 }
 
-// 페이지 로드 시 저장된 URL 복원
+// ?섏씠吏 濡쒕뱶 ????λ맂 URL 蹂듭썝
 (function(){
   var saved = localStorage.getItem('kfa_gas_url');
   if (saved && saved !== MEMBER_GAS_URL && saved !== OLD_TSTC_GAS_URL) GAS_URL = saved;
@@ -1411,7 +1460,7 @@ function setGasUrl(url) {
 var _startTime = Date.now();
 
 function submitResult(payload) {
-  if (!GAS_URL) return;  // URL 미설정 시 조용히 넘어감
+  if (!GAS_URL) return;  // URL 誘몄꽕????議곗슜???섏뼱媛?
   try {
     payload = payload || {};
     payload.savedAt = payload.savedAt || new Date().toISOString();
@@ -1431,6 +1480,7 @@ function submitResult(payload) {
 }
 
 </script>
-<script src="../shared.js"></script>
+<script src="../shared.js?v=20260610a"></script>
 </body>
 </html>
+

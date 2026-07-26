@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>과일코디네이터 2급 강의 출처 정리 | 대한과일협회</title>
+  <meta
+    name="description"
+    content="과일코디네이터 2급 오전 강의안에 반영한 공식 자료 출처와 사용 원칙을 정리한 페이지입니다."
+  />
+  <link rel="stylesheet" href="design-system.css?v=20260611a" />
+  <style>
+    :root {
+      --src-max: 1100px;
+      --src-reading: 780px;
+      --src-line: rgba(26, 22, 18, 0.1);
+      --src-soft: rgba(184, 94, 62, 0.08);
+      --src-green: rgba(45, 90, 62, 0.08);
+    }
+
+    .src-main {
+      padding: clamp(84px, 11vw, 140px) 0 120px;
+    }
+
+    .src-head,
+    .src-body {
+      max-width: var(--src-max);
+      margin: 0 auto;
+      padding: 0 var(--pad-page);
+    }
+
+    .src-body {
+      margin-top: 54px;
+    }
+
+    .src-lede {
+      max-width: 34ch;
+      margin: 24px 0 0;
+      font-family: var(--font-serif);
+      font-size: 19px;
+      line-height: 1.8;
+      color: var(--ink-2);
+    }
+
+    .src-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin: 34px 0 0;
+    }
+
+    .src-card,
+    .src-rule {
+      padding: 22px 22px 24px;
+      border: 1px solid var(--src-line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.62);
+    }
+
+    .src-card span,
+    .src-rule span {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--terra);
+    }
+
+    .src-card h2,
+    .src-rule h2 {
+      margin: 0 0 12px;
+      font-family: var(--font-serif);
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--ink-1);
+    }
+
+    .src-card p,
+    .src-rule p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--ink-2);
+    }
+
+    .src-section {
+      padding: 48px 0;
+      border-top: 1px solid var(--src-line);
+      display: grid;
+      grid-template-columns: 160px minmax(0, 1fr);
+      gap: 28px;
+    }
+
+    .src-section__rail strong {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--terra);
+    }
+
+    .src-section__rail strong::after {
+      content: "";
+      width: 36px;
+      height: 1px;
+      background: var(--ink-5);
+    }
+
+    .src-section h2 {
+      margin: 0 0 18px;
+      font-family: var(--font-serif);
+      font-size: clamp(30px, 4vw, 44px);
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--ink-1);
+      max-width: 14ch;
+      text-wrap: balance;
+    }
+
+    .src-list {
+      max-width: var(--src-reading);
+      display: grid;
+      gap: 16px;
+    }
+
+    .src-item {
+      padding: 18px 18px 20px;
+      border-radius: 8px;
+      border: 1px solid var(--src-line);
+      background: rgba(255, 255, 255, 0.58);
+    }
+
+    .src-item h3 {
+      margin: 0 0 8px;
+      font-family: var(--font-serif);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--ink-1);
+    }
+
+    .src-item p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--ink-2);
+    }
+
+    .src-item a {
+      color: var(--terra-dk);
+      text-underline-offset: 3px;
+    }
+
+    .src-item ul {
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: var(--ink-2);
+    }
+
+    .src-item li {
+      margin: 8px 0 0;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .src-rule {
+      margin-top: 20px;
+      background: var(--src-green);
+      border-color: rgba(45, 90, 62, 0.14);
+    }
+
+    .src-actions {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 16px;
+    }
+
+    @media (max-width: 900px) {
+      .src-grid,
+      .src-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div data-chrome="nav"></div>
+
+  <main class="src-main">
+    <section class="src-head">
+      <p class="t-edition" style="margin: 0 0 18px;">Evidence Notes · KFA EDU</p>
+      <h1 class="t-display" style="max-width: 11ch; margin: 0;">
+        과일코디네이터 2급<br />
+        강의 출처 정리
+      </h1>
+      <p class="src-lede">
+        이번 버전은 "좋아 보이는 숫자"보다 "강의 중 바로 근거를 댈 수 있는 자료"를 우선했습니다.
+        어떤 자료를 메인에 썼고, 어떤 수치는 과감히 뺐는지 함께 정리했습니다.
+      </p>
+
+      <div class="src-grid">
+        <article class="src-card">
+          <span>Used</span>
+          <h2>공식 자료 우선</h2>
+          <p>통계청, 정부 정책브리핑, 민간자격정보서비스처럼 공개 기관 성격이 분명한 자료만 메인 슬라이드 근거로 사용했습니다.</p>
+        </article>
+        <article class="src-card">
+          <span>Removed</span>
+          <h2>약한 수치는 정리</h2>
+          <p>기존 강의안에 있던 일부 숫자는 출처 강도가 애매하거나 재확인이 어려워, 이번 메인 버전에서는 정량 근거로 쓰지 않았습니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="src-body">
+      <section class="src-section">
+        <div class="src-section__rail">
+          <strong>Source 01</strong>
+        </div>
+        <div>
+          <h2>자격 정보는 민간자격정보서비스 기준으로 맞췄습니다</h2>
+          <div class="src-list">
+            <article class="src-item">
+              <h3>민간자격정보서비스 · 과일코디네이터 등록현황</h3>
+              <p>
+                과일코디네이터 자격명, 등록번호 <strong>2023-001094</strong>, 자격발급기관 대한과일협회,
+                주무부처 <strong>농림축산식품부</strong> 기준을 이 페이지에 맞춰 정리했습니다.
+              </p>
+              <ul>
+                <li>강의안 메인에서는 등록번호와 주무부처를 한 줄 정보로 사용</li>
+                <li>2급 설명은 제철과일 기본지식 · 코디네이팅 기술 · 커팅과일 · 선물세트 · 바구니 · 상차림 방향으로 반영</li>
+                <li>1급은 상위 과정 성격을 KFA 교육 구조 안에서 설명하되, 공식 등록 표현을 과장하지 않도록 조정</li>
+              </ul>
+              <p style="margin-top: 12px;">
+                링크:
+                <a href="https://www.pqi.or.kr/inf/qul/infQulBasDetail.do?qulId=100877" target="_blank" rel="noopener noreferrer">
+                  민간자격정보서비스 과일코디네이터 등록현황
+                </a>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="src-section">
+        <div class="src-section__rail">
+          <strong>Source 02</strong>
+        </div>
+        <div>
+          <h2>시장 변화는 통계청과 정부 자료만 남겼습니다</h2>
+          <div class="src-list">
+            <article class="src-item">
+              <h3>통계청 · 2023년 1인 가구 통계</h3>
+              <p>
+                2023년 1인 가구는 전체 가구의 <strong>35.5%</strong>, <strong>782만 9천 가구</strong>였습니다.
+                지역별 비중에서는 <strong>대전 39.4%</strong>가 가장 높게 집계되었습니다.
+              </p>
+              <p style="margin-top: 12px;">
+                링크:
+                <a href="https://www.kostat.go.kr/board.es?act=view&bid=10820&list_no=434103&mid=a10301010000" target="_blank" rel="noopener noreferrer">
+                  통계청 2023년 1인 가구 통계
+                </a>
+              </p>
+            </article>
+
+            <article class="src-item">
+              <h3>정부 정책브리핑 · 과일산업 경쟁력 강화 방안</h3>
+              <p>
+                정부는 2022년 기준 국내 과일산업 규모를 <strong>약 5조 8천억원</strong> 수준으로 설명하고,
+                1인 가구 증가, 즉시 섭취 수요, 중소과 소비 수요 같은 구조 변화를 함께 언급했습니다.
+              </p>
+              <p style="margin-top: 12px;">
+                링크:
+                <a href="https://www.korea.kr/news/policyNewsView.do?newsId=156623312" target="_blank" rel="noopener noreferrer">
+                  정부 정책브리핑 · 과일산업 경쟁력 강화 방안
+                </a>
+              </p>
+            </article>
+
+            <article class="src-item">
+              <h3>통계청 · 온라인쇼핑동향조사</h3>
+              <p>
+                농축수산물 거래액이 전년 동월 대비 <strong>22.6%</strong> 증가한 공개 사례를 반영했습니다.
+                이 수치는 시점이 있는 월간 발표이므로, 강의에서는 "대표적인 증가 사례"로만 설명하는 편이 안전합니다.
+              </p>
+              <p style="margin-top: 12px;">
+                링크:
+                <a href="https://kostat.go.kr/board.es?act=view&bid=241&list_no=435317&mid=a10301010000" target="_blank" rel="noopener noreferrer">
+                  통계청 온라인쇼핑동향조사 관련 공개 페이지
+                </a>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="src-section">
+        <div class="src-section__rail">
+          <strong>Rule</strong>
+        </div>
+        <div>
+          <h2>이번 개편에서 일부 숫자는 의도적으로 뺐습니다</h2>
+          <div class="src-rule">
+            <span>편집 원칙</span>
+            <p>
+              기존 강의안에는 `7.5조`, `67%`, `74%`, `48%`처럼 인상적인 숫자가 있었습니다.
+              다만 발표 중 청중이 "출처가 어디냐"고 물었을 때 바로 기관명을 대고 설명하기 어려운 수치는
+              이번 메인 버전에서는 공식 정량 근거로 사용하지 않았습니다.
+            </p>
+            <ul>
+              <li>강의의 신뢰는 숫자가 많아서가 아니라, 질문받았을 때 흔들리지 않는 데서 나옵니다.</li>
+              <li>현장 체감은 숫자로 과장하지 않고, 사례와 관찰 언어로 풀어야 더 자연스럽습니다.</li>
+              <li>향후 aT, KREI, 협회 자체 조사로 보강할 수 있으면 별도 "산업 데이터" 슬라이드로 확장하는 편이 좋습니다.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="src-section">
+        <div class="src-section__rail">
+          <strong>Summary</strong>
+        </div>
+        <div>
+          <h2>결론적으로 이번 강의안은 이렇게 바뀌었습니다</h2>
+          <div class="src-list">
+            <article class="src-item">
+              <h3>기존 구조</h3>
+              <p>보기에 좋은 데이터형 슬라이드가 있었지만, 전체 스크립트와 말의 호흡이 완전히 맞지는 않았습니다.</p>
+            </article>
+            <article class="src-item">
+              <h3>이번 구조</h3>
+              <p>스크립트를 중심축으로 두고, 공식 자료는 그 흐름을 받쳐주는 근거 역할만 하도록 정리했습니다.</p>
+            </article>
+            <article class="src-item">
+              <h3>강의 현장 효과</h3>
+              <p>청중은 더 자연스럽게 듣고, 발표자는 더 안정적으로 설명하고, 질문이 들어와도 출처를 대며 답할 수 있게 됐습니다.</p>
+            </article>
+          </div>
+
+          <div class="src-actions">
+            <a class="kfa-btn kfa-btn--terra" href="education-masterclass.html">강의안 보기</a>
+            <a class="kfa-btn kfa-btn--line" href="education-script.html">발표자용 스크립트</a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <div data-chrome="footer"></div>
+  <script src="shared-design.js?v=20260611a"></script>
+</body>
+</html>
