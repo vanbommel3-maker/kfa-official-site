@@ -2,6 +2,28 @@
 // Daily automation appends the newest item at the top of this array.
 window.KFA_MEDIA_POSTS = [
   {
+    id: "2026-08-04-summer-night-cup-fruit",
+    date: "2026.08.04",
+    label: "STORIES",
+    type: "story",
+    title: "수박 한 통 대신 컵과일을 고르는 여름밤",
+    lead: "무거운 한 통보다 오늘 저녁 바로 먹을 만큼을 고르는 장면에서, 지금 사람들에게 필요한 과일의 크기를 읽습니다.",
+    cards: [
+      "여름 저녁 과일가게 앞에서는 큰 수박보다 바로 먹을 수 있는 컵과일이 더 오래 손에 머뭅니다.",
+      "혼자 먹는 저녁, 늦은 귀가, 아이 간식 한 번 같은 생활 단위가 과일의 형태를 바꾸고 있습니다.",
+      "보관 부담이 적고 칼이 필요 없다는 점이 컵과일을 더 가볍고 빠른 선택으로 만듭니다.",
+      "사람들은 양보다 오늘 밤의 기분과 속도에 맞는 과일을 고를 때가 많습니다.",
+      "대한과일협회는 이런 작은 장면에서 과일 소비가 사람의 하루와 더 가까워지는 흐름을 읽습니다."
+    ],
+    metrics: [
+      { k: "장면", v: "여름 저녁" },
+      { k: "선택", v: "즉시성" },
+      { k: "읽는 법", v: "생활 리듬" }
+    ],
+    source: "KFA Editorial",
+    sourceUrl: "media/stories/summer-night-cup-fruit.html"
+  },
+  {
     id: "2026-05-27-market-reading",
     date: "2026.05.27",
     label: "카드뉴스",
