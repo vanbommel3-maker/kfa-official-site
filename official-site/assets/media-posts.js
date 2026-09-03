@@ -2,6 +2,28 @@
 // Daily automation appends the newest item at the top of this array.
 window.KFA_MEDIA_POSTS = [
   {
+    id: "2026-09-04-a-second-plan-for-soft-peaches",
+    date: "2026.09.04",
+    label: "ESG / REPORT",
+    type: "report",
+    title: "조금 무른 복숭아를 잼용으로 다시 권하는 오후",
+    lead: "모양이 아니라 쓰임을 먼저 설명하는 한마디가, 남을 뻔한 복숭아를 다시 식탁으로 데려가는 장면을 따라갑니다.",
+    cards: [
+      "복숭아가 조금 무르다고 바로 뒤로 빼지 않고, 오늘은 잼이나 콤포트용으로 좋다고 먼저 설명하는 가게가 있습니다.",
+      "손님은 가장 단단한 과일만 찾는 것이 아니라, 오늘 집에서 어떻게 먹을지에 맞는 과일을 찾기도 합니다.",
+      "버려질 과일을 줄이는 일은 할인표보다 쓰임을 다시 붙여 주는 말에서 시작될 때가 많습니다.",
+      "모양 중심 진열에서 용도 중심 안내로 옮겨가면, 남는 과일의 자리는 생각보다 빨리 줄어듭니다.",
+      "대한과일협회는 이런 작은 설명의 변화가 지속가능한 과일 소비의 가장 생활적인 출발점이라고 봅니다."
+    ],
+    metrics: [
+      { k: "장면", v: "초가을 오후 과일가게" },
+      { k: "바뀌는 기준", v: "모양보다 쓰임" },
+      { k: "줄어드는 것", v: "남을 뻔한 과일" }
+    ],
+    source: "KFA Editorial",
+    sourceUrl: "media/report/a-second-plan-for-soft-peaches.html"
+  },
+  {
     id: "2026-09-03-why-a-bunch-of-grapes-moves-first",
     date: "2026.09.03",
     label: "INSIGHT",
