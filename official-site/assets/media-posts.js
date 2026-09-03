@@ -2,6 +2,28 @@
 // Daily automation appends the newest item at the top of this array.
 window.KFA_MEDIA_POSTS = [
   {
+    id: "2026-09-03-why-a-bunch-of-grapes-moves-first",
+    date: "2026.09.03",
+    label: "INSIGHT",
+    type: "insight",
+    title: "초가을 매대에서 한 송이 포도가 먼저 팔리는 이유",
+    lead: "선물 상자보다 오늘 저녁 바로 씻어 먹을 한 송이가 먼저 손에 잡히는 장면에서, 초가을 소비의 속도를 읽어봅니다.",
+    cards: [
+      "초가을 매대 앞에서는 큰 상자보다 오늘 당장 먹을 수 있는 한 송이가 더 빨리 손에 올라갑니다.",
+      "포도를 고르는 기준은 품목 설명보다 씻기 쉬운지, 혼자 먹기 부담 없는지가 먼저가 됩니다.",
+      "선물용 과일이 사라진 것이 아니라, 평일 저녁용 과일의 자리가 더 분명해졌다는 뜻에 가깝습니다.",
+      "시장의 변화는 숫자보다 손님이 얼마나 오래 망설이지 않는지에서 먼저 보일 때가 있습니다.",
+      "대한과일협회는 이런 생활의 속도를 읽어야 과일 소비를 실제 언어로 설명할 수 있다고 봅니다."
+    ],
+    metrics: [
+      { k: "관찰 장면", v: "초가을 저녁 매대" },
+      { k: "선택 기준", v: "즉시성 + 부담 없음" },
+      { k: "읽어야 할 변화", v: "선물보다 평일 리듬" }
+    ],
+    source: "KFA Editorial",
+    sourceUrl: "media/insight/why-a-bunch-of-grapes-moves-first.html"
+  },
+  {
     id: "2026-08-04-summer-night-cup-fruit",
     date: "2026.08.04",
     label: "STORIES",
