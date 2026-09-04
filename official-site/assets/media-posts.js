@@ -2,6 +2,28 @@
 // Daily automation appends the newest item at the top of this array.
 window.KFA_MEDIA_POSTS = [
   {
+    id: "2026-09-05-two-pears-on-a-rainy-morning",
+    date: "2026.09.05",
+    label: "STORIES",
+    type: "story",
+    title: "비 오는 아침, 배 두 알만 담아 가는 사람들",
+    lead: "우산과 가방으로 손이 바쁜 아침, 큰 상자보다 오늘 하루 무리 없이 들고 갈 배 두 알을 고르는 장면을 따라갑니다.",
+    cards: [
+      "비 오는 평일 아침에는 넉넉한 한 상자보다 작은 봉지 하나가 더 쉽게 선택됩니다.",
+      "배를 두 알만 담아 가는 손님은 적게 사는 것이 아니라 오늘의 이동과 식탁에 맞춰 사고 있습니다.",
+      "우산을 든 손, 젖은 바닥, 가벼운 장바구니 같은 조건이 과일의 수량과 포장을 함께 바꿉니다.",
+      "같은 배라도 명절 준비의 과일일 때와 평일 아침 간식일 때는 전혀 다른 역할을 맡습니다.",
+      "대한과일협회는 이런 작은 장면에서 과일 소비가 생활의 단위에 얼마나 가까워졌는지 읽습니다."
+    ],
+    metrics: [
+      { k: "장면", v: "비 오는 아침 과일가게" },
+      { k: "선택 기준", v: "가볍게 들고 가기" },
+      { k: "읽는 변화", v: "큰 계획보다 하루 단위" }
+    ],
+    source: "KFA Editorial",
+    sourceUrl: "media/stories/two-pears-on-a-rainy-morning.html"
+  },
+  {
     id: "2026-09-04-a-second-plan-for-soft-peaches",
     date: "2026.09.04",
     label: "ESG / REPORT",
