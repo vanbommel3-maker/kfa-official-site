@@ -1,6 +1,31 @@
 // KFA media posts.
 // Daily automation appends the newest item at the top of this array.
 window.KFA_MEDIA_POSTS = [
+{
+  "id": "2026-09-13-reading-the-cultivar-name",
+  "date": "2026.09.13",
+  "label": "INSIGHT",
+  "type": "insight",
+  "title": "가격표 옆의 품종 이름을 읽는 시간",
+  "lead": "지난번 맛있게 먹은 사과를 다시 찾고 싶을 때, 품종 이름은 가게에서 나눈 짧은 대화를 식탁까지 이어 줍니다.",
+  "cards": [
+    "지난번 먹은 사과를 다시 찾으려 할 때, 이름이 기억나지 않아 말이 막히기도 합니다.",
+    "품종 이름은 다음 장보기에서 대화를 이어 갈 작은 단서가 됩니다.",
+    "이름과 함께 내가 좋았던 느낌을 한 줄 남겨 봅니다."
+  ],
+  "metrics": [
+    {
+      "k": "장면",
+      "v": "사과 진열대 앞"
+    },
+    {
+      "k": "기억할 말",
+      "v": "품종 이름과 내 느낌"
+    }
+  ],
+  "source": "KFA Editorial · 생활 에세이",
+  "sourceUrl": "media/insight/reading-the-cultivar-name.html"
+},
   {
     id: "2026-09-05-two-pears-on-a-rainy-morning",
     date: "2026.09.05",
