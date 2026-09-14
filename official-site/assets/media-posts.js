@@ -2,6 +2,31 @@
 // Daily automation appends the newest item at the top of this array.
 window.KFA_MEDIA_POSTS = [
 {
+  "id": "2026-09-15-before-folding-the-fruit-box",
+  "date": "2026.09.15",
+  "label": "ESG / REPORT",
+  "type": "report",
+  "title": "과일 상자를 접기 전에, 다음 쓰임을 묻습니다",
+  "lead": "배를 꺼낸 뒤 식탁에 남은 빈 상자. 무작정 쌓아 두기보다 언제 어디에 다시 쓸지 떠올려 봅니다.",
+  "cards": [
+    "과일을 꺼낸 뒤 남은 상자에 다음 쓰임을 붙여 봅니다.",
+    "쓸 날짜와 담을 물건을 떠올리면 남길 상자를 정하기 쉽습니다.",
+    "다음 장보기에 가져가기 전에는 가게의 포장 방식을 먼저 물어봅니다."
+  ],
+  "metrics": [
+    {
+      "k": "장면",
+      "v": "과일을 꺼낸 뒤의 식탁"
+    },
+    {
+      "k": "떠올릴 질문",
+      "v": "언제, 무엇을 담을까"
+    }
+  ],
+  "source": "KFA Editorial · 생활 에세이",
+  "sourceUrl": "media/report/before-folding-the-fruit-box.html"
+},
+{
   "id": "2026-09-13-reading-the-cultivar-name",
   "date": "2026.09.13",
   "label": "INSIGHT",
