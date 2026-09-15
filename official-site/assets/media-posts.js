@@ -2,6 +2,31 @@
 // Daily automation appends the newest item at the top of this array.
 window.KFA_MEDIA_POSTS = [
 {
+  "id": "2026-09-16-a-conversation-while-peeling-mandarins",
+  "date": "2026.09.16",
+  "label": "STORIES",
+  "type": "story",
+  "title": "귤을 까는 동안, 식탁의 말이 조금 느려집니다",
+  "lead": "저녁 그릇을 치운 자리에 귤과 작은 접시를 놓습니다. 껍질을 벗기고 한 조각을 건네는 사이, 서둘러 묻던 안부에도 잠깐의 틈이 생깁니다.",
+  "cards": [
+    "저녁 식탁에 귤과 작은 접시를 놓고 안부의 대답을 기다립니다.",
+    "한 조각을 건넨 뒤에는 상대가 먹고 싶은 때를 기다려 봅니다.",
+    "껍질을 까고 나누는 짧은 시간이 말 사이의 틈이 됩니다."
+  ],
+  "metrics": [
+    {
+      "k": "장면",
+      "v": "저녁을 마친 식탁"
+    },
+    {
+      "k": "함께할 일",
+      "v": "나누고 기다리기"
+    }
+  ],
+  "source": "KFA Editorial · 생활 에세이",
+  "sourceUrl": "media/stories/a-conversation-while-peeling-mandarins.html"
+},
+{
   "id": "2026-09-15-before-folding-the-fruit-box",
   "date": "2026.09.15",
   "label": "ESG / REPORT",
