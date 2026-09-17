@@ -2,6 +2,25 @@
 // Daily automation appends the newest item at the top of this array.
 window.KFA_MEDIA_POSTS = [
 {
+  "id": "2026-09-17-pear-tasting-changes-the-question",
+  "date": "2026.09.17",
+  "label": "INSIGHT",
+  "type": "insight",
+  "title": "배 한 조각을 맛본 뒤, 질문이 달라집니다",
+  "lead": "과일가게의 작은 시식 접시 앞에서 막연한 ‘달아요?’ 대신 오늘 먹을 배에 대한 내 말을 찾아봅니다.",
+  "cards": [
+    "한 조각을 맛보면 내가 좋아하는 씹는 느낌을 말할 수 있습니다.",
+    "가게에서도 그 말을 듣고 오늘 먹을 과일을 함께 고를 수 있습니다.",
+    "시식이 없어도 먹을 때와 원하는 느낌을 먼저 말해 봅니다."
+  ],
+  "metrics": [
+    { "k": "장면", "v": "퇴근길 과일가게" },
+    { "k": "남는 말", "v": "내가 좋았던 느낌" }
+  ],
+  "source": "KFA Editorial · 생활 에세이",
+  "sourceUrl": "media/insight/pear-tasting-changes-the-question.html"
+},
+{
   "id": "2026-09-16-a-conversation-while-peeling-mandarins",
   "date": "2026.09.16",
   "label": "STORIES",
