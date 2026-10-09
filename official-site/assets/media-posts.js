@@ -2,6 +2,25 @@
 // Daily automation appends the newest item at the top of this array.
 window.KFA_MEDIA_POSTS = [
 {
+  "id": "2026-10-09-fruit-at-eye-level-in-the-fridge",
+  "date": "2026.10.09",
+  "label": "ESG / REPORT",
+  "type": "report",
+  "title": "냉장고 문을 열기 전에, 과일의 자리를 정합니다",
+  "lead": "사 온 과일을 채소 칸 깊숙이 넣기보다 눈이 먼저 닿는 곳에 두면, 오늘 먹을 한 조각을 고르기가 쉬워집니다.",
+  "cards": [
+    "장을 보고 돌아온 날, 과일이 보이는 자리를 먼저 비워 둡니다.",
+    "오늘 먼저 먹을 과일을 앞에 두면 냉장고를 열 때마다 선택이 쉬워집니다.",
+    "남은 양을 한 번 살피는 짧은 습관이 잊힌 과일을 줄이는 시작이 됩니다."
+  ],
+  "metrics": [
+    { "k": "장면", "v": "장을 본 뒤의 냉장고" },
+    { "k": "작은 기준", "v": "눈에 보이는 자리" }
+  ],
+  "source": "KFA Editorial · 생활 에세이",
+  "sourceUrl": "media/report/fruit-at-eye-level-in-the-fridge.html"
+},
+{
   "id": "2026-09-17-pear-tasting-changes-the-question",
   "date": "2026.09.17",
   "label": "INSIGHT",
