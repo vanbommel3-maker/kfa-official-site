@@ -2,6 +2,25 @@
 // Daily automation appends the newest item at the top of this array.
 window.KFA_MEDIA_POSTS = [
 {
+  "id": "2026-10-11-leftover-apple-for-tomorrows-lunch",
+  "date": "2026.10.11",
+  "label": "EDUCATION",
+  "type": "education",
+  "title": "남은 사과 반쪽, 내일 도시락으로 데려가는 법",
+  "lead": "오늘 다 먹지 못한 사과를 그냥 덮어 두기보다, 내일 누구의 어느 시간에 먹을지 먼저 떠올리는 작은 연습입니다.",
+  "cards": [
+    "식탁에 남은 사과 반쪽을 보며 내일의 간식 시간을 먼저 떠올립니다.",
+    "도시락통에 담을 만큼만 썰어 두면 남은 과일의 자리가 구체적으로 보입니다.",
+    "과일을 권하는 말은 무엇을 먹을지보다 언제 먹을지를 묻는 데서 시작할 수 있습니다."
+  ],
+  "metrics": [
+    { "k": "장면", "v": "아침 도시락을 챙기는 식탁" },
+    { "k": "먼저 할 질문", "v": "내일 언제 먹을까" }
+  ],
+  "source": "KFA Editorial · 생활 에세이",
+  "sourceUrl": "media/education/leftover-apple-for-tomorrows-lunch.html"
+},
+{
   "id": "2026-10-09-fruit-at-eye-level-in-the-fridge",
   "date": "2026.10.09",
   "label": "ESG / REPORT",
