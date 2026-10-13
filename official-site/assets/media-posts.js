@@ -2,6 +2,25 @@
 // Daily automation appends the newest item at the top of this array.
 window.KFA_MEDIA_POSTS = [
 {
+  "id": "2026-10-13-after-one-bite-of-apple",
+  "date": "2026.10.13",
+  "label": "TSTC LAB",
+  "type": "lab",
+  "title": "사과를 한 입 베어 문 뒤, 물을 찾는 이유",
+  "lead": "사과를 한 입 먹고 물컵을 찾는 짧은 멈춤에서, 맛과 향, 식감이 남기는 서로 다른 감각을 살펴봅니다.",
+  "cards": [
+    "사과를 한 입 먹은 뒤 물컵 쪽으로 손이 가는 순간을 알아차립니다.",
+    "단맛, 향, 아삭한 소리와 입안에 남는 느낌은 함께 기억됩니다.",
+    "다음 과일을 고를 때는 내 입안에 남았던 장면을 먼저 말해 봅니다."
+  ],
+  "metrics": [
+    { "k": "장면", "v": "오후 책상 위의 사과 한 입" },
+    { "k": "살필 감각", "v": "맛 뒤에 남는 느낌" }
+  ],
+  "source": "KFA Editorial · 생활 에세이",
+  "sourceUrl": "media/lab/after-one-bite-of-apple.html"
+},
+{
   "id": "2026-10-11-leftover-apple-for-tomorrows-lunch",
   "date": "2026.10.11",
   "label": "EDUCATION",
