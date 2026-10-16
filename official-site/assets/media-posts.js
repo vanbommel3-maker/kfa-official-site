@@ -2,6 +2,25 @@
 // Daily automation appends the newest item at the top of this array.
 window.KFA_MEDIA_POSTS = [
 {
+  "id": "2026-10-17-bananas-for-tomorrows-morning",
+  "date": "2026.10.17",
+  "label": "EDUCATION",
+  "type": "education",
+  "title": "바나나를 한 개씩 떼어 놓는 아침",
+  "lead": "익는 속도가 다른 바나나를 나란히 보며, 오늘 먹을 것과 내일 남길 것을 가늠해 보는 아침의 작은 연습입니다.",
+  "cards": [
+    "아침 식탁에서 먼저 익은 바나나와 기다릴 바나나를 나누어 봅니다.",
+    "과일을 권할 때는 좋아하는지 다음으로 언제 먹을지를 물어봅니다.",
+    "먹을 순서를 정하는 짧은 말이 과일을 끝까지 먹는 하루의 리듬이 됩니다."
+  ],
+  "metrics": [
+    { "k": "장면", "v": "아침 식탁의 바나나 한 송이" },
+    { "k": "먼저 할 질문", "v": "오늘 먹을까, 내일 먹을까" }
+  ],
+  "source": "KFA Editorial · 생활 에세이",
+  "sourceUrl": "media/education/bananas-for-tomorrows-morning.html"
+},
+{
   "id": "2026-10-13-after-one-bite-of-apple",
   "date": "2026.10.13",
   "label": "TSTC LAB",
